@@ -1,0 +1,222 @@
+{
+    "class4": {
+        "subjects": [
+            "Math",
+            "EVS",
+            "English",
+            "Hindi"
+        ],
+        "Math": {
+            "chapters": [
+                {
+                    "id": 1,
+                    "title": "Building with Bricks",
+                    "topics": [
+                        "Patterns",
+                        "Shapes"
+                    ]
+                },
+                {
+                    "id": 2,
+                    "title": "Long and Short",
+                    "topics": [
+                        "Measurement",
+                        "Comparison"
+                    ]
+                },
+                {
+                    "id": 3,
+                    "title": "A Trip to Bhopal",
+                    "topics": [
+                        "Addition",
+                        "Subtraction"
+                    ]
+                }
+            ]
+        },
+        "EVS": {
+            "chapters": [
+                {
+                    "id": 1,
+                    "title": "Going to School",
+                    "topics": [
+                        "Transportation",
+                        "Safety"
+                    ]
+                },
+                {
+                    "id": 2,
+                    "title": "Ear to Ear",
+                    "topics": [
+                        "Communication",
+                        "Animals"
+                    ]
+                }
+            ]
+        }
+    },
+    "class5": {
+        "subjects": [
+            "Math",
+            "EVS",
+            "English",
+            "Hindi"
+        ],
+        "Math": {
+            "chapters": [
+                {
+                    "id": 1,
+                    "title": "The Fish Tale",
+                    "topics": [
+                        "Numbers",
+                        "Place Value"
+                    ]
+                },
+                {
+                    "id": 2,
+                    "title": "Shapes and Angles",
+                    "topics": [
+                        "Geometry",
+                        "Angles"
+                    ]
+                }
+            ]
+        }
+    },
+    "class6": {
+        "subjects": [
+            "Math",
+            "Science",
+            "Social Science",
+            "English",
+            "Hindi"
+        ],
+        "Math": {
+            "chapters": [
+                {
+                    "id": 1,
+                    "title": "Knowing Our Numbers",
+                    "topics": [
+                        "Large Numbers",
+                        "Estimation"
+                    ]
+                },
+                {
+                    "id": 2,
+                    "title": "Whole Numbers",
+                    "topics": [
+                        "Number Line",
+                        "Properties"
+                    ]
+                },
+                {
+                    "id": 3,
+                    "title": "Playing with Numbers",
+                    "topics": [
+                        "Factors",
+                        "Multiples",
+                        "Prime Numbers"
+                    ]
+                }
+            ]
+        },
+        "Science": {
+            "chapters": [
+                {
+                    "id": 1,
+                    "title": "Food: Where Does It Come From?",
+                    "topics": [
+                        "Food Sources",
+                        "Plant Parts"
+                    ]
+                },
+                {
+                    "id": 2,
+                    "title": "Components of Food",
+                    "topics": [
+                        "Nutrients",
+                        "Balanced Diet"
+                    ]
+                }
+            ]
+        }
+    },
+    "class7": {
+        "subjects": [
+            "Math",
+            "Science",
+            "Social Science",
+            "English",
+            "Hindi"
+        ],
+        "Math": {
+            "chapters": [
+                {
+                    "id": 1,
+                    "title": "Integers",
+                    "topics": [
+                        "Positive Numbers",
+                        "Negative Numbers"
+                    ]
+                },
+                {
+                    "id": 2,
+                    "title": "Fractions and Decimals",
+                    "topics": [
+                        "Operations",
+                        "Conversion"
+                    ]
+                }
+            ]
+        }
+    },
+    "class8": {
+        "subjects": [
+            "Math",
+            "Science",
+            "Social Science",
+            "English",
+            "Hindi"
+        ],
+        "Math": {
+            "chapters": [
+                {
+                    "id": 1,
+                    "title": "Rational Numbers",
+                    "topics": [
+                        "Properties",
+                        "Operations"
+                    ]
+                },
+                {
+                    "id": 2,
+                    "title": "Linear Equations",
+                    "topics": [
+                        "Solving Equations",
+                        "Applications"
+                    ]
+                }
+            ]
+        },
+        "Science": {
+            "chapters": [
+                {
+                    "id": 1,
+                    "title": "Crop Production",
+                    "topics": [
+                        "Agriculture",
+                        "Tools"
+                    ]
+                },
+                {
+                    "id": 2,
+                    "title": "Microorganisms",
+                    "topics": [
+                        "Bacteria",
+                        "Viruses"
+                    ]
+                }
+            ]
+        }
+    }
+}

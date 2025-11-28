@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shikshak - Your AI Tutor</title>
+    
+    <!-- Global Verbose Logging Control -->
+    <script>
+      // Set to false to disable all verbose logging
+      window.__VERBOSE_LOG__ = true;
+      
+      // Helper functions for console
+      window.enableLogs = () => { window.__VERBOSE_LOG__ = true; console.log('✅ Verbose logging ENABLED'); };
+      window.disableLogs = () => { window.__VERBOSE_LOG__ = false; console.log('🔇 Verbose logging DISABLED'); };
+      window.toggleLogs = () => { 
+        window.__VERBOSE_LOG__ = !window.__VERBOSE_LOG__; 
+        console.log(window.__VERBOSE_LOG__ ? '✅ Verbose logging ENABLED' : '🔇 Verbose logging DISABLED'); 
+      };
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

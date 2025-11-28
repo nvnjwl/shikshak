@@ -1,0 +1,238 @@
+{
+    "syllabusVersion": "1.0",
+    "lastUpdated": "2025-11-24",
+    "description": "Comprehensive CBSE syllabus for Classes 4-8 with AI-powered visual teaching",
+    "classes": {
+        "class4": {
+            "subjects": {
+                "math": {
+                    "file": "class4_math.json",
+                    "chapters": 14,
+                    "totalHours": 120,
+                    "icon": "📐"
+                },
+                "evs": {
+                    "file": "class4_evs.json",
+                    "chapters": 22,
+                    "totalHours": 100,
+                    "icon": "🌍"
+                },
+                "english": {
+                    "file": "class4_english.json",
+                    "chapters": 10,
+                    "totalHours": 80,
+                    "icon": "📚"
+                },
+                "hindi": {
+                    "file": "class4_hindi.json",
+                    "chapters": 14,
+                    "totalHours": 80,
+                    "icon": "📖"
+                }
+            }
+        },
+        "class5": {
+            "subjects": {
+                "math": {
+                    "file": "class5_math.json",
+                    "chapters": 14,
+                    "totalHours": 130,
+                    "icon": "📐"
+                },
+                "evs": {
+                    "file": "class5_evs.json",
+                    "chapters": 22,
+                    "totalHours": 110,
+                    "icon": "🌍"
+                },
+                "english": {
+                    "file": "class5_english.json",
+                    "chapters": 10,
+                    "totalHours": 90,
+                    "icon": "📚"
+                },
+                "hindi": {
+                    "file": "class5_hindi.json",
+                    "chapters": 14,
+                    "totalHours": 90,
+                    "icon": "📖"
+                }
+            }
+        },
+        "class6": {
+            "subjects": {
+                "math": {
+                    "file": "class6_math.json",
+                    "chapters": 14,
+                    "totalHours": 140,
+                    "icon": "📐",
+                    "description": "Number systems, geometry, algebra basics, mensuration"
+                },
+                "science": {
+                    "file": "class6_science.json",
+                    "chapters": 16,
+                    "totalHours": 130,
+                    "icon": "🔬",
+                    "description": "Food, materials, living organisms, motion, light"
+                },
+                "socialScience": {
+                    "file": "class6_social.json",
+                    "chapters": 28,
+                    "totalHours": 120,
+                    "icon": "🌍",
+                    "description": "History, Geography, Civics"
+                },
+                "english": {
+                    "file": "class6_english.json",
+                    "chapters": 12,
+                    "totalHours": 100,
+                    "icon": "📚",
+                    "description": "Reading, writing, grammar, literature"
+                },
+                "hindi": {
+                    "file": "class6_hindi.json",
+                    "chapters": 14,
+                    "totalHours": 100,
+                    "icon": "📖",
+                    "description": "व्याकरण, साहित्य, रचना"
+                }
+            }
+        },
+        "class7": {
+            "subjects": {
+                "math": {
+                    "file": "class7_math.json",
+                    "chapters": 15,
+                    "totalHours": 150,
+                    "icon": "📐",
+                    "description": "Integers, fractions, algebra, geometry, data handling"
+                },
+                "science": {
+                    "file": "class7_science.json",
+                    "chapters": 18,
+                    "totalHours": 140,
+                    "icon": "🔬",
+                    "description": "Nutrition, respiration, heat, motion, electricity"
+                },
+                "socialScience": {
+                    "file": "class7_social.json",
+                    "chapters": 30,
+                    "totalHours": 130,
+                    "icon": "🌍"
+                },
+                "english": {
+                    "file": "class7_english.json",
+                    "chapters": 12,
+                    "totalHours": 110,
+                    "icon": "📚"
+                },
+                "hindi": {
+                    "file": "class7_hindi.json",
+                    "chapters": 16,
+                    "totalHours": 110,
+                    "icon": "📖"
+                }
+            }
+        },
+        "class8": {
+            "subjects": {
+                "math": {
+                    "file": "class8_math.json",
+                    "chapters": 16,
+                    "totalHours": 160,
+                    "icon": "📐",
+                    "description": "Rational numbers, linear equations, quadrilaterals, mensuration"
+                },
+                "science": {
+                    "file": "class8_science.json",
+                    "chapters": 18,
+                    "totalHours": 150,
+                    "icon": "🔬",
+                    "description": "Crop production, microorganisms, force, light, sound"
+                },
+                "socialScience": {
+                    "file": "class8_social.json",
+                    "chapters": 32,
+                    "totalHours": 140,
+                    "icon": "🌍"
+                },
+                "english": {
+                    "file": "class8_english.json",
+                    "chapters": 12,
+                    "totalHours": 120,
+                    "icon": "📚"
+                },
+                "hindi": {
+                    "file": "class8_hindi.json",
+                    "chapters": 16,
+                    "totalHours": 120,
+                    "icon": "📖"
+                }
+            }
+        }
+    },
+    "aiTeachingPhilosophy": {
+        "motherlyApproach": {
+            "patience": "AI never gets frustrated, explains same concept 100 times if needed",
+            "encouragement": "Celebrates every small success, builds confidence",
+            "personalization": "Remembers what child struggles with, gives extra practice",
+            "safety": "Creates safe learning environment, no fear of judgment",
+            "availability": "Available 24/7, whenever child wants to study"
+        },
+        "visualFirst": {
+            "principle": "Every concept starts with a picture, diagram, or animation",
+            "examples": "Uses real objects child sees daily (cricket, toys, food)",
+            "colors": "Bright, engaging visuals that capture attention",
+            "interactive": "Child can click, drag, rotate 3D models"
+        },
+        "conceptualClarity": {
+            "whyBeforeHow": "Explains 'why' before teaching 'how'",
+            "connections": "Links new concepts to what child already knows",
+            "realWorld": "Every topic connected to daily life",
+            "noRote": "Understanding over memorization"
+        },
+        "adaptiveLearning": {
+            "diagnostic": "Identifies gaps in understanding immediately",
+            "remedial": "Automatically provides extra practice for weak areas",
+            "enrichment": "Challenges advanced learners with harder problems",
+            "pacing": "Adjusts speed based on child's comfort level"
+        }
+    },
+    "contentStructure": {
+        "everyTopic": {
+            "introduction": "Story or real-life scenario to hook interest",
+            "visualExplanation": "Diagram, animation, or video",
+            "stepByStepTeaching": "Broken into smallest possible steps",
+            "examples": "5-10 solved examples with explanation",
+            "practice": "Graded questions from easy to hard",
+            "assessment": "Quick quiz to check understanding",
+            "realLifeApplication": "How this is used in real world",
+            "funFacts": "Interesting trivia to make it memorable"
+        },
+        "everyChapter": {
+            "learningObjectives": "What child will learn",
+            "prerequisites": "What child should know before starting",
+            "keyTerms": "Important vocabulary with simple definitions",
+            "summaryNotes": "One-page revision notes",
+            "practiceWorksheet": "50+ questions for practice",
+            "chapterTest": "Assessment with immediate feedback",
+            "parentReport": "What was covered, how child performed"
+        }
+    },
+    "differentiationFromTutors": {
+        "consistency": "Same quality teaching every day, no tutor mood swings",
+        "patience": "Infinite patience, never rushes or scolds",
+        "availability": "24/7 access, no scheduling conflicts",
+        "personalization": "Adapts to each child's pace and style",
+        "tracking": "Detailed analytics parents never get from tutors",
+        "cost": "₹2,000/month vs ₹5,000-10,000 for tutors",
+        "safety": "Child learns at home, no stranger in house",
+        "comprehensive": "All subjects, all topics, unlimited practice"
+    },
+    "parentDashboardInsights": {
+        "daily": "Time spent, topics covered, quiz scores",
+        "weekly": "Chapter completion, weak areas, improvement trends",
+        "monthly": "Overall progress, grade prediction, recommendations",
+        "alerts": "If child struggling, not studying regularly, needs help"
+    }
+}

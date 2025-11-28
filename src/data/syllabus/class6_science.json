@@ -1,0 +1,394 @@
+{
+    "class": "Class 6",
+    "subject": "Science",
+    "board": "CBSE",
+    "totalChapters": 16,
+    "chapters": [
+        {
+            "id": 1,
+            "title": "Food: Where Does It Come From?",
+            "duration": "6 hours",
+            "difficulty": "Easy",
+            "topics": [
+                {
+                    "id": "1.1",
+                    "name": "Food Variety",
+                    "concepts": [
+                        {
+                            "title": "Different Types of Food",
+                            "explanation": "Food comes from plants and animals in many forms",
+                            "visualAid": "Colorful chart showing fruits, vegetables, grains, dairy, meat",
+                            "examples": [
+                                "Plant sources: Rice (seeds), Potato (root), Spinach (leaves)",
+                                "Animal sources: Milk, Eggs, Chicken, Fish"
+                            ],
+                            "aiActivity": "Let's play 'Guess the Source'! I'll show you food items, you tell me plant or animal!",
+                            "realLifeConnection": "Look at your lunch box - can you identify where each item comes from?"
+                        },
+                        {
+                            "title": "Parts of Plants We Eat",
+                            "explanation": "We eat different parts of different plants",
+                            "visualAid": "Plant diagram showing roots, stem, leaves, flowers, fruits, seeds",
+                            "examples": [
+                                "Roots: Carrot, Radish, Beetroot",
+                                "Stems: Potato, Ginger, Sugarcane",
+                                "Leaves: Spinach, Cabbage, Lettuce",
+                                "Flowers: Cauliflower, Broccoli",
+                                "Fruits: Apple, Mango, Tomato",
+                                "Seeds: Rice, Wheat, Peas"
+                            ],
+                            "funFact": "Potato is a stem, not a root! It's called a tuber.",
+                            "aiChallenge": "Can you name one food from each plant part?",
+                            "practice": [
+                                "Classify: Onion, Banana, Peanut, Broccoli",
+                                "Which part of plant: Ginger? Coconut? Mustard?"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "1.2",
+                    "name": "Food from Animals",
+                    "concepts": [
+                        {
+                            "title": "Animal Products",
+                            "explanation": "Animals give us milk, eggs, meat, and honey",
+                            "visualAid": "Farm animals and their products",
+                            "examples": [
+                                "Cow/Buffalo → Milk → Butter, Cheese, Curd, Paneer",
+                                "Hen → Eggs",
+                                "Bee → Honey",
+                                "Sheep → Meat (Mutton)"
+                            ],
+                            "aiQuestion": "Why do we call milk a 'complete food'? Let's find out!",
+                            "culturalNote": "Different cultures eat different animal products based on beliefs and availability"
+                        },
+                        {
+                            "title": "Herbivores, Carnivores, Omnivores",
+                            "explanation": "Animals are classified by what they eat",
+                            "visualAid": "Animal classification chart with pictures",
+                            "definitions": [
+                                {
+                                    "type": "Herbivores",
+                                    "meaning": "Animals that eat only plants",
+                                    "examples": "Cow, Goat, Deer, Elephant, Rabbit",
+                                    "teeth": "Flat teeth for grinding plants"
+                                },
+                                {
+                                    "type": "Carnivores",
+                                    "meaning": "Animals that eat only other animals",
+                                    "examples": "Lion, Tiger, Eagle, Snake",
+                                    "teeth": "Sharp teeth for tearing meat"
+                                },
+                                {
+                                    "type": "Omnivores",
+                                    "meaning": "Animals that eat both plants and animals",
+                                    "examples": "Humans, Bear, Crow, Dog",
+                                    "teeth": "Both flat and sharp teeth"
+                                }
+                            ],
+                            "aiGame": "Animal diet detective - I'll describe eating habits, you guess the type!",
+                            "practice": [
+                                "Classify: Cat, Horse, Crow, Frog",
+                                "Why do carnivores have sharp claws?"
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "learningOutcomes": [
+                "Identify food sources from plants and animals",
+                "Recognize different parts of plants we eat",
+                "Classify animals based on eating habits",
+                "Understand food diversity in India"
+            ],
+            "experiments": [
+                {
+                    "name": "Sprout Seeds",
+                    "materials": "Moong dal, cotton, water, plate",
+                    "procedure": "Soak moong overnight, place on wet cotton, observe daily",
+                    "observation": "Seeds sprout in 2-3 days, showing life in seeds",
+                    "aiGuidance": "I'll remind you daily to check and water your sprouts!"
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "title": "Components of Food",
+            "duration": "8 hours",
+            "difficulty": "Medium",
+            "topics": [
+                {
+                    "id": "2.1",
+                    "name": "Nutrients in Food",
+                    "concepts": [
+                        {
+                            "title": "Carbohydrates - Energy Givers",
+                            "explanation": "Main source of energy for our body",
+                            "visualAid": "Energy pyramid showing carb-rich foods",
+                            "sources": [
+                                "Rice",
+                                "Wheat",
+                                "Potato",
+                                "Sugar",
+                                "Bread"
+                            ],
+                            "function": "Provides energy for daily activities, running, playing",
+                            "test": "Iodine test - turns blue-black in presence of starch",
+                            "aiDemo": "Let's do a virtual iodine test! I'll show you the color change.",
+                            "deficiency": "Weakness, tiredness, lack of energy"
+                        },
+                        {
+                            "title": "Proteins - Body Builders",
+                            "explanation": "Help in growth and repair of body",
+                            "visualAid": "Muscle-building diagram",
+                            "sources": [
+                                "Pulses (Dal)",
+                                "Eggs",
+                                "Milk",
+                                "Paneer",
+                                "Soybean",
+                                "Fish",
+                                "Chicken"
+                            ],
+                            "function": "Build muscles, repair damaged tissues, make hair and nails grow",
+                            "test": "Biuret test - turns violet with proteins",
+                            "aiTip": "Growing kids need lots of protein! That's why dal-chawal is perfect.",
+                            "deficiency": "Kwashiorkor (swelling), slow growth, weak muscles"
+                        },
+                        {
+                            "title": "Fats - Energy Storage",
+                            "explanation": "Provide energy and help absorb vitamins",
+                            "visualAid": "Fat molecule structure (simple)",
+                            "sources": [
+                                "Ghee",
+                                "Butter",
+                                "Oil",
+                                "Nuts",
+                                "Cheese"
+                            ],
+                            "function": "Store energy, protect organs, keep body warm",
+                            "test": "Grease spot test - leaves translucent mark on paper",
+                            "goodVsBad": "Healthy fats (nuts, fish) vs Unhealthy fats (fried food)",
+                            "aiWarning": "Too much fat can make you overweight. Balance is key!",
+                            "deficiency": "Dry skin, weak immunity"
+                        },
+                        {
+                            "title": "Vitamins - Protective Foods",
+                            "explanation": "Small amounts needed for specific body functions",
+                            "visualAid": "Vitamin chart with sources and functions",
+                            "types": [
+                                {
+                                    "name": "Vitamin A",
+                                    "sources": "Carrot, Mango, Papaya, Milk",
+                                    "function": "Good eyesight, healthy skin",
+                                    "deficiency": "Night blindness, dry eyes"
+                                },
+                                {
+                                    "name": "Vitamin B",
+                                    "sources": "Whole grains, Eggs, Leafy vegetables",
+                                    "function": "Energy production, healthy nerves",
+                                    "deficiency": "Beriberi (weak muscles)"
+                                },
+                                {
+                                    "name": "Vitamin C",
+                                    "sources": "Citrus fruits (Orange, Lemon), Amla, Tomato",
+                                    "function": "Healing wounds, strong immunity",
+                                    "deficiency": "Scurvy (bleeding gums)"
+                                },
+                                {
+                                    "name": "Vitamin D",
+                                    "sources": "Sunlight, Milk, Fish",
+                                    "function": "Strong bones and teeth",
+                                    "deficiency": "Rickets (bent bones)"
+                                }
+                            ],
+                            "aiReminder": "Play in sunlight for 15 minutes daily for Vitamin D!"
+                        },
+                        {
+                            "title": "Minerals - Bone and Blood Health",
+                            "explanation": "Needed in small amounts for specific functions",
+                            "types": [
+                                {
+                                    "name": "Calcium",
+                                    "sources": "Milk, Cheese, Ragi, Green vegetables",
+                                    "function": "Strong bones and teeth",
+                                    "deficiency": "Weak bones, tooth decay"
+                                },
+                                {
+                                    "name": "Iron",
+                                    "sources": "Spinach, Jaggery, Dates, Meat",
+                                    "function": "Make blood (hemoglobin)",
+                                    "deficiency": "Anemia (tiredness, pale skin)"
+                                },
+                                {
+                                    "name": "Iodine",
+                                    "sources": "Iodized salt, Sea food",
+                                    "function": "Thyroid gland function",
+                                    "deficiency": "Goiter (swollen neck)"
+                                }
+                            ],
+                            "aiTip": "Always use iodized salt at home!"
+                        },
+                        {
+                            "title": "Water - The Universal Solvent",
+                            "explanation": "70% of our body is water!",
+                            "visualAid": "Human body water distribution",
+                            "functions": [
+                                "Helps digest food",
+                                "Transports nutrients",
+                                "Removes waste (urine, sweat)",
+                                "Regulates body temperature"
+                            ],
+                            "requirement": "Drink 8-10 glasses (2 liters) daily",
+                            "aiReminder": "I'll remind you to drink water every 2 hours!"
+                        },
+                        {
+                            "title": "Roughage (Dietary Fiber)",
+                            "explanation": "Helps in digestion though not a nutrient",
+                            "sources": "Whole grains, Fruits, Vegetables, Salad",
+                            "function": "Prevents constipation, helps bowel movement",
+                            "aiTip": "Eat fruits with skin for more fiber!"
+                        }
+                    ]
+                },
+                {
+                    "id": "2.2",
+                    "name": "Balanced Diet",
+                    "concepts": [
+                        {
+                            "title": "What is a Balanced Diet?",
+                            "explanation": "Diet containing all nutrients in right proportions",
+                            "visualAid": "Food pyramid / My Plate diagram",
+                            "components": [
+                                "Carbohydrates: 50-60% (Rice, Roti)",
+                                "Proteins: 15-20% (Dal, Egg)",
+                                "Fats: 20-30% (Oil, Ghee)",
+                                "Vitamins & Minerals: Fruits, Vegetables",
+                                "Water: 8-10 glasses",
+                                "Roughage: Salad, Whole grains"
+                            ],
+                            "sampleMeal": {
+                                "breakfast": "Milk + Poha/Upma + Fruit",
+                                "lunch": "Roti + Dal + Vegetable + Curd + Salad",
+                                "snack": "Nuts + Juice",
+                                "dinner": "Rice + Fish/Paneer + Vegetable + Curd"
+                            },
+                            "aiPersonalization": "Based on your age and activity, I'll suggest your perfect plate!"
+                        },
+                        {
+                            "title": "Deficiency Diseases",
+                            "explanation": "Diseases caused by lack of specific nutrients",
+                            "visualAid": "Disease-nutrient connection chart",
+                            "diseases": [
+                                {
+                                    "name": "Kwashiorkor",
+                                    "cause": "Protein deficiency",
+                                    "symptoms": "Swelling, thin muscles, pot belly"
+                                },
+                                {
+                                    "name": "Marasmus",
+                                    "cause": "Protein + Carbohydrate deficiency",
+                                    "symptoms": "Very thin, wrinkled skin"
+                                },
+                                {
+                                    "name": "Scurvy",
+                                    "cause": "Vitamin C deficiency",
+                                    "symptoms": "Bleeding gums, weak immunity"
+                                },
+                                {
+                                    "name": "Rickets",
+                                    "cause": "Vitamin D + Calcium deficiency",
+                                    "symptoms": "Bent bones, bow legs"
+                                },
+                                {
+                                    "name": "Beriberi",
+                                    "cause": "Vitamin B1 deficiency",
+                                    "symptoms": "Weak muscles, nerve problems"
+                                },
+                                {
+                                    "name": "Night Blindness",
+                                    "cause": "Vitamin A deficiency",
+                                    "symptoms": "Cannot see in dim light"
+                                },
+                                {
+                                    "name": "Anemia",
+                                    "cause": "Iron deficiency",
+                                    "symptoms": "Tiredness, pale skin"
+                                },
+                                {
+                                    "name": "Goiter",
+                                    "cause": "Iodine deficiency",
+                                    "symptoms": "Swollen thyroid gland (neck)"
+                                }
+                            ],
+                            "prevention": "Eat variety of foods, don't skip meals, eat seasonal fruits",
+                            "aiAlert": "If you feel tired often, tell your parents - might need more iron!"
+                        }
+                    ]
+                }
+            ],
+            "learningOutcomes": [
+                "Identify different nutrients and their functions",
+                "Understand importance of balanced diet",
+                "Recognize deficiency diseases and prevention",
+                "Plan a balanced meal"
+            ],
+            "experiments": [
+                {
+                    "name": "Test for Starch",
+                    "materials": "Iodine solution, food samples (potato, rice, bread)",
+                    "procedure": "Put iodine drop on food sample",
+                    "observation": "Blue-black color indicates starch presence",
+                    "aiSafety": "Iodine can stain! Be careful and wash hands after."
+                },
+                {
+                    "name": "Test for Fats",
+                    "materials": "Paper, food samples (butter, oil, nuts)",
+                    "procedure": "Rub food on paper, hold against light",
+                    "observation": "Translucent (see-through) spot shows fat",
+                    "aiTip": "This is why oil stains are hard to remove from clothes!"
+                }
+            ],
+            "parentGuidance": {
+                "importance": "Nutrition in childhood affects lifelong health",
+                "tips": [
+                    "Include all food groups in every meal",
+                    "Make vegetables fun with colors and shapes",
+                    "Limit junk food to once a week",
+                    "Involve child in meal planning"
+                ],
+                "aiSupport": "I'll send you weekly meal plans based on your child's needs!"
+            }
+        }
+    ],
+    "aiTeachingFeatures": {
+        "visualLearning": {
+            "3dModels": "Rotate and explore plant parts, human digestive system",
+            "animations": "Watch how nutrients work in body",
+            "realPhotos": "Actual images of deficiency diseases, food sources"
+        },
+        "interactiveExperiments": {
+            "virtual": "Conduct experiments virtually before doing at home",
+            "stepByStep": "AI guides through each step with voice",
+            "safety": "Warns about precautions needed"
+        },
+        "personalizedLearning": {
+            "adaptivePace": "Slows down if student struggles, speeds up if confident",
+            "multipleExamples": "Gives 5-10 examples until concept is clear",
+            "culturalContext": "Uses Indian food examples student knows"
+        },
+        "assessmentApproach": {
+            "formative": "Questions after each concept",
+            "summative": "Chapter test with immediate feedback",
+            "remedial": "Extra practice for weak areas",
+            "enrichment": "Advanced questions for quick learners"
+        }
+    },
+    "studySchedule": {
+        "perTopic": "20-30 minutes with breaks",
+        "perChapter": "3-4 days with daily practice",
+        "revision": "Weekly quick revision of all topics covered",
+        "assessment": "Chapter test + practical activity"
+    }
+}

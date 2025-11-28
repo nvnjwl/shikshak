@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+@theme {
+  --font-heading: 'Outfit', sans-serif;
+  --font-body: 'Nunito', sans-serif;
+
+  --color-primary: #FFC107;
+  --color-primary-hover: #FFCA28;
+  --color-primary-foreground: #000000;
+
+  --color-secondary: #4DB6AC;
+  --color-secondary-hover: #26A69A;
+  --color-secondary-foreground: #FFFFFF;
+
+  --color-background: #FFFDF5;
+  --color-accent: #FF8A65;
+  --color-surface: #FFFFFF;
+
+  --color-text-primary: #2D3748;
+  --color-text-secondary: #718096;
+
+  --radius-xl: 1rem;
+  --radius-2xl: 1.5rem;
+  --radius-3xl: 2rem;
+
+  --shadow-soft: 0 4px 20px -2px rgba(0, 0, 0, 0.05);
+  --shadow-card: 0 10px 15px -3px rgba(0, 0, 0, 0.05), 0 4px 6px -2px rgba(0, 0, 0, 0.025);
+}
+
+@layer base {
+  body {
+    @apply bg-background text-text-primary font-body antialiased;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-heading font-bold text-text-primary;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-primary text-primary-foreground hover:bg-primary-hover px-6 py-3 rounded-2xl font-bold transition-all transform active:scale-95 shadow-soft flex items-center justify-center gap-2;
+  }
+
+  .btn-secondary {
+    @apply bg-secondary text-secondary-foreground hover:bg-secondary-hover px-6 py-3 rounded-2xl font-bold transition-all transform active:scale-95 shadow-soft flex items-center justify-center gap-2;
+  }
+
+  .card {
+    @apply bg-surface rounded-3xl shadow-card p-6 border border-gray-100;
+  }
+}

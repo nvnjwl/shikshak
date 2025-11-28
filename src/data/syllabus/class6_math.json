@@ -1,0 +1,436 @@
+{
+    "class": "Class 6",
+    "subject": "Mathematics",
+    "board": "CBSE",
+    "totalChapters": 14,
+    "chapters": [
+        {
+            "id": 1,
+            "title": "Knowing Our Numbers",
+            "duration": "8 hours",
+            "difficulty": "Easy",
+            "topics": [
+                {
+                    "id": "1.1",
+                    "name": "Comparing Numbers",
+                    "concepts": [
+                        {
+                            "title": "Place Value System",
+                            "explanation": "Understanding ones, tens, hundreds, thousands, lakhs, crores",
+                            "visualAid": "Place value chart with Indian number system",
+                            "examples": [
+                                "Compare 45,678 and 45,876 using place value",
+                                "Which is greater: 5 lakhs or 50 thousands?"
+                            ],
+                            "practice": [
+                                "Arrange in ascending order: 34,567; 3,45,678; 34,56,789",
+                                "Write the greatest 6-digit number using digits 0-9"
+                            ]
+                        },
+                        {
+                            "title": "Reading and Writing Large Numbers",
+                            "explanation": "How to read numbers in Indian and International system",
+                            "visualAid": "Comparison chart: Indian vs International number system",
+                            "realLifeExample": "Population of India: 1,40,00,00,000 (140 crores)",
+                            "practice": [
+                                "Write in words: 5,67,89,012",
+                                "Convert: 5 million to Indian system"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "1.2",
+                    "name": "Large Numbers in Practice",
+                    "concepts": [
+                        {
+                            "title": "Estimation and Rounding",
+                            "explanation": "Rounding to nearest 10, 100, 1000 for quick calculations",
+                            "visualAid": "Number line showing rounding rules",
+                            "examples": [
+                                "Round 4,567 to nearest hundred → 4,600",
+                                "Estimate: 498 + 523 ≈ 500 + 500 = 1,000"
+                            ],
+                            "aiTip": "I'll show you the 'midpoint rule': if digit is 5 or more, round up!"
+                        },
+                        {
+                            "title": "Using Brackets in Calculations",
+                            "explanation": "BODMAS/PEMDAS rule for order of operations",
+                            "visualAid": "BODMAS pyramid: Brackets → Orders → Division/Multiplication → Addition/Subtraction",
+                            "examples": [
+                                "Solve: 5 + 3 × 2 = 5 + 6 = 11 (not 16!)",
+                                "Solve: (5 + 3) × 2 = 8 × 2 = 16"
+                            ],
+                            "commonMistakes": "Students often solve left to right. Remember: Multiply/Divide before Add/Subtract!",
+                            "practice": [
+                                "Solve: 12 ÷ 3 + 4 × 2",
+                                "Solve: (15 - 3) ÷ 4 + 2"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "1.3",
+                    "name": "Roman Numerals",
+                    "concepts": [
+                        {
+                            "title": "Reading Roman Numerals",
+                            "explanation": "I=1, V=5, X=10, L=50, C=100, D=500, M=1000",
+                            "visualAid": "Roman numeral chart with symbols and values",
+                            "memoryTrick": "I Value Xylophones Lightly, Cows Don't Moo",
+                            "examples": [
+                                "XIV = 10 + (5-1) = 14",
+                                "MCMXC = 1000 + (1000-100) + (100-10) = 1990"
+                            ],
+                            "realLifeExample": "Clock faces, Super Bowl numbers, movie credits",
+                            "practice": [
+                                "Write in Roman: 49, 99, 444",
+                                "Convert to numbers: XLII, CDXC, MMXXIV"
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "learningOutcomes": [
+                "Compare and order numbers up to 10 crores",
+                "Use estimation for practical calculations",
+                "Apply BODMAS rule correctly",
+                "Read and write Roman numerals up to 1000"
+            ],
+            "assessmentQuestions": [
+                {
+                    "type": "MCQ",
+                    "question": "What is the place value of 7 in 87,65,432?",
+                    "options": [
+                        "7 lakhs",
+                        "70 lakhs",
+                        "7 crores",
+                        "70 thousands"
+                    ],
+                    "answer": "70 lakhs",
+                    "aiHint": "Count the positions from right: ones, tens, hundreds, thousands, ten thousands, lakhs, ten lakhs..."
+                },
+                {
+                    "type": "Word Problem",
+                    "question": "A city has 45,67,890 people. Round this to the nearest lakh.",
+                    "answer": "46,00,000",
+                    "aiHint": "Look at the ten thousands place (6). Is it 5 or more? Then round up!"
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "title": "Whole Numbers",
+            "duration": "10 hours",
+            "difficulty": "Medium",
+            "topics": [
+                {
+                    "id": "2.1",
+                    "name": "Number Line and Properties",
+                    "concepts": [
+                        {
+                            "title": "Representing Numbers on Number Line",
+                            "explanation": "Visual representation of numbers showing order and distance",
+                            "visualAid": "Interactive number line from 0 to 100",
+                            "examples": [
+                                "Mark 0, 25, 50, 75, 100 on a line",
+                                "Find the midpoint between 30 and 70 → 50"
+                            ],
+                            "aiActivity": "I'll draw a number line and you tell me which number I'm pointing to!"
+                        },
+                        {
+                            "title": "Predecessor and Successor",
+                            "explanation": "Number that comes before (predecessor) and after (successor)",
+                            "visualAid": "Number chain showing relationships",
+                            "examples": [
+                                "Predecessor of 100 is 99",
+                                "Successor of 999 is 1000"
+                            ],
+                            "funFact": "Every whole number has a successor, but 0 has no predecessor in whole numbers!"
+                        }
+                    ]
+                },
+                {
+                    "id": "2.2",
+                    "name": "Properties of Whole Numbers",
+                    "concepts": [
+                        {
+                            "title": "Commutative Property",
+                            "explanation": "Order doesn't matter in addition and multiplication",
+                            "visualAid": "Visual proof: 3+5 = 5+3 using blocks",
+                            "examples": [
+                                "Addition: 7 + 3 = 3 + 7 = 10",
+                                "Multiplication: 4 × 5 = 5 × 4 = 20"
+                            ],
+                            "aiQuestion": "Does this work for subtraction? Try: 5 - 3 vs 3 - 5. What do you notice?"
+                        },
+                        {
+                            "title": "Associative Property",
+                            "explanation": "Grouping doesn't matter in addition and multiplication",
+                            "visualAid": "Bracket diagrams showing different groupings",
+                            "examples": [
+                                "(2 + 3) + 4 = 2 + (3 + 4) = 9",
+                                "(2 × 3) × 4 = 2 × (3 × 4) = 24"
+                            ],
+                            "practice": [
+                                "Verify: (5 + 7) + 3 = 5 + (7 + 3)",
+                                "Calculate easily: 25 × 4 × 2 = 25 × (4 × 2) = 25 × 8"
+                            ]
+                        },
+                        {
+                            "title": "Distributive Property",
+                            "explanation": "Multiplication distributes over addition",
+                            "visualAid": "Area model showing distribution",
+                            "examples": [
+                                "3 × (4 + 5) = (3 × 4) + (3 × 5) = 12 + 15 = 27",
+                                "Quick calculation: 7 × 99 = 7 × (100-1) = 700 - 7 = 693"
+                            ],
+                            "aiTrick": "Use this property to multiply large numbers mentally!"
+                        }
+                    ]
+                },
+                {
+                    "id": "2.3",
+                    "name": "Patterns in Whole Numbers",
+                    "concepts": [
+                        {
+                            "title": "Number Patterns",
+                            "explanation": "Recognizing and extending sequences",
+                            "visualAid": "Pattern blocks and visual sequences",
+                            "examples": [
+                                "Even numbers: 2, 4, 6, 8, 10... (add 2)",
+                                "Square numbers: 1, 4, 9, 16, 25... (1², 2², 3²...)"
+                            ],
+                            "aiChallenge": "Can you find the pattern? 2, 6, 12, 20, 30, ___",
+                            "practice": [
+                                "Continue: 5, 10, 20, 40, ___",
+                                "Find the rule: 1, 3, 7, 15, 31, ___"
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "learningOutcomes": [
+                "Understand and apply properties of whole numbers",
+                "Use number line for visualization",
+                "Recognize and create number patterns",
+                "Apply properties for mental math"
+            ],
+            "realWorldConnections": [
+                "Shopping: Using distributive property for quick bill calculation",
+                "Sports: Understanding scores and rankings using number line",
+                "Patterns: Recognizing patterns in nature, art, and daily life"
+            ]
+        },
+        {
+            "id": 3,
+            "title": "Playing with Numbers",
+            "duration": "12 hours",
+            "difficulty": "Medium",
+            "topics": [
+                {
+                    "id": "3.1",
+                    "name": "Factors and Multiples",
+                    "concepts": [
+                        {
+                            "title": "Understanding Factors",
+                            "explanation": "Numbers that divide exactly into another number",
+                            "visualAid": "Factor tree diagram",
+                            "examples": [
+                                "Factors of 12: 1, 2, 3, 4, 6, 12",
+                                "Find all factors of 24 using pairs: (1,24), (2,12), (3,8), (4,6)"
+                            ],
+                            "aiMethod": "I'll teach you the 'pair method' - start with 1 and the number, then find pairs!",
+                            "practice": [
+                                "List all factors of 36",
+                                "Which numbers have exactly 2 factors? (Prime numbers!)"
+                            ]
+                        },
+                        {
+                            "title": "Understanding Multiples",
+                            "explanation": "Numbers you get when you multiply by whole numbers",
+                            "visualAid": "Multiplication table highlighting multiples",
+                            "examples": [
+                                "Multiples of 5: 5, 10, 15, 20, 25...",
+                                "First 5 multiples of 7: 7, 14, 21, 28, 35"
+                            ],
+                            "funActivity": "Skip counting game - count by 3s, 4s, 6s!"
+                        }
+                    ]
+                },
+                {
+                    "id": "3.2",
+                    "name": "Prime and Composite Numbers",
+                    "concepts": [
+                        {
+                            "title": "Prime Numbers",
+                            "explanation": "Numbers with exactly 2 factors: 1 and itself",
+                            "visualAid": "Sieve of Eratosthenes animation",
+                            "examples": [
+                                "Prime numbers up to 20: 2, 3, 5, 7, 11, 13, 17, 19",
+                                "Why is 2 the only even prime? All other evens are divisible by 2!"
+                            ],
+                            "memoryTrick": "Remember: 1 is NOT prime (it has only 1 factor, not 2)",
+                            "aiGame": "Prime number detective - I'll give you a number, you tell me if it's prime!"
+                        },
+                        {
+                            "title": "Composite Numbers",
+                            "explanation": "Numbers with more than 2 factors",
+                            "visualAid": "Factor tree showing composite breakdown",
+                            "examples": [
+                                "12 is composite: factors are 1, 2, 3, 4, 6, 12",
+                                "Every composite can be written as product of primes: 12 = 2 × 2 × 3"
+                            ]
+                        },
+                        {
+                            "title": "Prime Factorization",
+                            "explanation": "Breaking a number into prime factors",
+                            "visualAid": "Step-by-step factor tree",
+                            "examples": [
+                                "36 = 2 × 2 × 3 × 3 = 2² × 3²",
+                                "60 = 2 × 2 × 3 × 5 = 2² × 3 × 5"
+                            ],
+                            "aiMethod": "Division method: Keep dividing by smallest prime until you get 1",
+                            "practice": [
+                                "Find prime factorization of 48",
+                                "Express 100 as product of primes"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "3.3",
+                    "name": "HCF and LCM",
+                    "concepts": [
+                        {
+                            "title": "Highest Common Factor (HCF)",
+                            "explanation": "Largest number that divides all given numbers",
+                            "visualAid": "Venn diagram showing common factors",
+                            "methods": [
+                                {
+                                    "name": "Listing Method",
+                                    "example": "HCF of 12 and 18: Factors of 12: 1,2,3,4,6,12; Factors of 18: 1,2,3,6,9,18; Common: 1,2,3,6; HCF = 6"
+                                },
+                                {
+                                    "name": "Prime Factorization",
+                                    "example": "12 = 2² × 3, 18 = 2 × 3²; HCF = 2 × 3 = 6 (take lowest power of common primes)"
+                                },
+                                {
+                                    "name": "Division Method",
+                                    "example": "Continuous division by common factors"
+                                }
+                            ],
+                            "realLifeUse": "Cutting ribbons of 12cm and 18cm into equal largest pieces → 6cm each",
+                            "practice": [
+                                "Find HCF of 24 and 36",
+                                "HCF of 15, 25, 30"
+                            ]
+                        },
+                        {
+                            "title": "Lowest Common Multiple (LCM)",
+                            "explanation": "Smallest number that is a multiple of all given numbers",
+                            "visualAid": "Number line showing multiples meeting",
+                            "methods": [
+                                {
+                                    "name": "Listing Method",
+                                    "example": "LCM of 4 and 6: Multiples of 4: 4,8,12,16,20,24...; Multiples of 6: 6,12,18,24...; LCM = 12"
+                                },
+                                {
+                                    "name": "Prime Factorization",
+                                    "example": "4 = 2², 6 = 2 × 3; LCM = 2² × 3 = 12 (take highest power of all primes)"
+                                }
+                            ],
+                            "realLifeUse": "Two bells ring every 4 and 6 minutes. When will they ring together? After 12 minutes!",
+                            "aiTip": "HCF is always ≤ smallest number, LCM is always ≥ largest number"
+                        }
+                    ]
+                },
+                {
+                    "id": "3.4",
+                    "name": "Tests of Divisibility",
+                    "concepts": [
+                        {
+                            "title": "Divisibility Rules",
+                            "explanation": "Quick tricks to check if a number is divisible without actual division",
+                            "rules": [
+                                {
+                                    "divisor": 2,
+                                    "rule": "Last digit is 0, 2, 4, 6, or 8",
+                                    "example": "1234 is divisible by 2 (ends in 4)"
+                                },
+                                {
+                                    "divisor": 3,
+                                    "rule": "Sum of digits is divisible by 3",
+                                    "example": "123 → 1+2+3=6, divisible by 3 ✓"
+                                },
+                                {
+                                    "divisor": 4,
+                                    "rule": "Last 2 digits divisible by 4",
+                                    "example": "1324 → 24÷4=6 ✓"
+                                },
+                                {
+                                    "divisor": 5,
+                                    "rule": "Last digit is 0 or 5",
+                                    "example": "1235 ends in 5 ✓"
+                                },
+                                {
+                                    "divisor": 6,
+                                    "rule": "Divisible by both 2 and 3",
+                                    "example": "126 → even (÷2) and 1+2+6=9 (÷3) ✓"
+                                },
+                                {
+                                    "divisor": 9,
+                                    "rule": "Sum of digits divisible by 9",
+                                    "example": "729 → 7+2+9=18 (÷9) ✓"
+                                },
+                                {
+                                    "divisor": 10,
+                                    "rule": "Last digit is 0",
+                                    "example": "1230 ✓"
+                                },
+                                {
+                                    "divisor": 11,
+                                    "rule": "Difference of sum of alternate digits is 0 or divisible by 11",
+                                    "example": "1331 → (1+3)-(3+1)=0 ✓"
+                                }
+                            ],
+                            "aiGame": "I'll give you a number, you tell me which numbers divide it using rules!",
+                            "practice": [
+                                "Is 5436 divisible by 3? by 4? by 6?",
+                                "Find a 3-digit number divisible by 2, 3, and 5"
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "learningOutcomes": [
+                "Find factors and multiples of numbers",
+                "Identify prime and composite numbers",
+                "Calculate HCF and LCM using multiple methods",
+                "Apply divisibility rules for quick calculations"
+            ],
+            "parentTip": "This chapter builds number sense - crucial for algebra later. Practice divisibility rules daily!",
+            "assessmentQuestions": [
+                {
+                    "type": "Application",
+                    "question": "Three bells ring at intervals of 4, 6, and 8 minutes. If they ring together at 6:00 AM, when will they ring together again?",
+                    "solution": "Find LCM of 4, 6, 8 = 24 minutes. They ring together at 6:24 AM",
+                    "aiHint": "This is an LCM problem! Find when all three cycles complete together."
+                }
+            ]
+        }
+    ],
+    "aiTeachingApproach": {
+        "visualLearning": "Every concept has diagrams, animations, and real objects",
+        "interactiveQuestions": "AI asks questions during explanation to check understanding",
+        "personalizedPace": "AI adjusts speed based on student's responses",
+        "immediateCorrection": "Wrong answers get instant, gentle correction with hints",
+        "gamification": "Earn stars for completing topics, badges for mastering chapters",
+        "parentReports": "Daily summary of what child learned, time spent, areas needing help"
+    },
+    "studyPlan": {
+        "daily": "1 topic (30-45 mins): Explanation (15 mins) + Practice (15 mins) + Quiz (10 mins)",
+        "weekly": "Complete 1 chapter, take chapter test on Sunday",
+        "monthly": "Revision of all chapters + cumulative test"
+    }
+}
