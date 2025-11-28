@@ -15,6 +15,7 @@ import ParentDashboard from './pages/parent/ParentDashboard';
 import Landing from './pages/public/Landing';
 import About from './pages/public/About';
 import SuccessStories from './pages/public/SuccessStories';
+import FAQ from './pages/public/FAQ';
 import TopicLearning from './pages/student/TopicLearning';
 import Pricing from './pages/public/Pricing';
 import PracticeQuestions from './pages/student/PracticeQuestions';
@@ -46,6 +47,7 @@ function App() {
             <Route path="/" element={<Landing />} />
             <Route path="/about" element={<About />} />
             <Route path="/success-stories" element={<SuccessStories />} />
+            <Route path="/faq" element={<FAQ />} />
             <Route path="/login" element={<Login />} />
             <Route path="/parent/login" element={<ParentLogin />} />
             <Route path="/parent/dashboard" element={<ParentDashboard />} />

@@ -219,9 +219,17 @@ export default function Landing() {
                     <div>
                         <h4 className="font-bold mb-4">Support</h4>
                         <ul className="space-y-2 text-gray-400">
+                            <li><a href="/faq" className="hover:text-white">FAQ</a></li>
                             <li><a href="#" className="hover:text-white">Help Center</a></li>
                             <li><a href="#" className="hover:text-white">Contact Us</a></li>
-                            <li><a href="#" className="hover:text-white">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 className="font-bold mb-4">Legal</h4>
+                        <ul className="space-y-2 text-gray-400">
+                            <li><a href="/legal/terms-of-service" className="hover:text-white">Terms of Service</a></li>
+                            <li><a href="/legal/privacy-policy" className="hover:text-white">Privacy Policy</a></li>
+                            <li><a href="/legal/refund-policy" className="hover:text-white">Refund Policy</a></li>
                         </ul>
                     </div>
                     <div>
