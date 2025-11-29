@@ -1,14 +1,19 @@
 import { Button } from '../../components/ui/Button';
 import { Card } from '../../components/ui/Card';
-import { BookOpen, Star, MessageCircle, Calendar, Clock, Trophy, ChevronRight } from 'lucide-react';
-import { useNavigate } from 'react-router-dom';
+import { BookOpen, Star, MessageCircle, Calendar, Clock, Trophy, ChevronRight, Zap, User } from 'lucide-react';
+import { useNavigate, Link } from 'react-router-dom';
 import { useAuth } from '../../contexts/AuthContext';
+import { useProfile } from '../../contexts/ProfileContext';
+import { useSubscription } from '../../contexts/SubscriptionContext';
 import { motion } from 'framer-motion';
 import { useState } from 'react';
+import toast from 'react-hot-toast';
 
 export default function Dashboard() {
     const navigate = useNavigate();
     const { logout } = useAuth();
+    const { profile, promoteToAdmin } = useProfile();
+    const { subscription } = useSubscription();
     const [streak, setStreak] = useState(5);
 
     // Mock Daily Plan
@@ -49,17 +54,59 @@ export default function Dashboard() {
         { name: "Social Science", progress: 30, color: "bg-orange-500", icon: "🌍" },
     ];
 
+    const handleLogout = async () => {
+        try {
+            await logout();
+            toast.success('Logged out successfully!');
+            navigate('/login');
+        } catch (error) {
+            console.error('Failed to log out', error);
+            toast.error('Failed to logout. Please try again.');
+        }
+    };
+
     return (
-        <div className="min-h-screen bg-background p-6 md:p-8 font-body">
-            <div className="max-w-7xl mx-auto space-y-8">
-                {/* Header */}
-                <motion.header
+        <div className="min-h-screen bg-background font-body pb-20 md:pb-0">
+            {/* Header */}
+            <header className="bg-white border-b border-gray-200 sticky top-0 z-30">
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+                    <div className="flex items-center gap-2">
+                        <h1 className="text-2xl font-heading font-bold text-primary">Shikshak</h1>
+                    </div>
+                    <div className="flex items-center gap-4">
+                        <div className="hidden md:flex items-center gap-2 px-3 py-1.5 bg-yellow-50 text-yellow-700 rounded-full text-sm font-medium">
+                            <Zap size={16} />
+                            <span>{subscription?.plan || 'Free Plan'}</span>
+                        </div>
+                        <button
+                            onClick={async () => {
+                                await promoteToAdmin();
+                                alert('You are now an admin!');
+                            }}
+                            className="text-xs bg-gray-800 text-white px-2 py-1 rounded"
+                        >
+                            Dev: Become Admin
+                        </button>
+                        <button
+                            onClick={() => navigate('/settings')}
+                            className="p-2 text-text-secondary hover:bg-gray-100 rounded-full transition-colors"
+                            title="Settings"
+                        >
+                            <User size={20} />
+                        </button>
+                    </div>
+                </div>
+            </header>
+
+            <div className="max-w-7xl mx-auto p-6 md:p-8 space-y-8">
+                {/* Welcome Section */}
+                <motion.div
                     className="flex justify-between items-center"
                     initial={{ opacity: 0, y: -20 }}
                     animate={{ opacity: 1, y: 0 }}
                 >
                     <div>
-                        <h1 className="text-3xl md:text-4xl text-primary font-heading">Hi, Rohan! 👋</h1>
+                        <h1 className="text-3xl md:text-4xl text-primary font-heading">Hi, {profile?.name?.split(' ')[0] || 'Student'}! 👋</h1>
                         <p className="text-xl text-text-secondary">Ready to learn something new?</p>
                     </div>
                     <div className="flex items-center gap-4">
@@ -67,9 +114,9 @@ export default function Dashboard() {
                             <div className="text-sm text-text-secondary">Study Streak</div>
                             <div className="text-2xl font-bold text-primary">{streak} Days 🔥</div>
                         </div>
-                        <Button variant="ghost" onClick={() => logout()}>Logout</Button>
+                        <Button variant="ghost" onClick={handleLogout}>Logout</Button>
                     </div>
-                </motion.header>
+                </motion.div>
 
                 {/* Today's Plan */}
                 <motion.section
@@ -93,7 +140,7 @@ export default function Dashboard() {
                                 transition={{ delay: 0.2 + index * 0.1 }}
                             >
                                 <Card className={`p-4 hover:shadow-lg transition-all cursor-pointer ${activity.status === 'completed' ? 'bg-green-50 border-green-200' :
-                                        activity.status === 'in-progress' ? 'bg-primary/5 border-primary/20' : ''
+                                    activity.status === 'in-progress' ? 'bg-primary/5 border-primary/20' : ''
                                     }`}>
                                     <div className="flex items-center justify-between">
                                         <div className="flex items-center gap-4">

@@ -1,4 +1,4 @@
-import { createContext, useContext, useState, useEffect } from 'react';
+import { createContext, useContext, useState, useEffect, useCallback } from 'react';
 import { useAuth } from './AuthContext';
 import { doc, getDoc, setDoc, updateDoc } from 'firebase/firestore';
 import { db } from '../lib/firebase';
@@ -51,18 +51,44 @@ export function SubscriptionProvider({ children }) {
     });
     const [loading, setLoading] = useState(true);
 
-    // Load subscription data
-    useEffect(() => {
-        if (!currentUser) {
-            setSubscription(null);
-            setLoading(false);
-            return;
+    const loadCoupons = useCallback(async () => {
+        try {
+            const { collection, getDocs, query, where } = await import('firebase/firestore');
+            const couponsColl = collection(db, 'coupons');
+            const q = query(couponsColl, where('active', '==', true));
+            const snapshot = await getDocs(q);
+
+            const couponsMap = {};
+            snapshot.docs.forEach(doc => {
+                const data = doc.data();
+                // Check if not expired
+                const validUntil = data.validUntil?.toDate ? data.validUntil.toDate() : new Date(data.validUntil);
+                if (validUntil > new Date()) {
+                    couponsMap[data.code] = {
+                        ...data,
+                        validUntil: validUntil.toISOString().split('T')[0]
+                    };
+                }
+            });
+
+            // Merge with hardcoded if needed, or just replace
+            // For now, let's keep FREE_100 as a fallback if not in DB
+            if (!couponsMap['FREE_100']) {
+                couponsMap['FREE_100'] = COUPONS['FREE_100'];
+            }
+
+            // We can't easily update the exported COUPONS constant, 
+            // so we might need to expose availableCoupons in the context value
+            // But for now, let's just log it. 
+            // ideally we should refactor COUPONS usage to come from context state.
+            logger.info('SubscriptionContext', 'Loaded coupons', Object.keys(couponsMap));
+
+        } catch (error) {
+            logger.error('SubscriptionContext', 'Error loading coupons', error);
         }
+    }, []); // No dependencies needed
 
-        loadSubscriptionData();
-    }, [currentUser]);
-
-    const loadSubscriptionData = async () => {
+    const loadSubscriptionData = useCallback(async () => {
         try {
             logger.info('SubscriptionContext', 'Loading subscription data', { uid: currentUser.uid });
 
@@ -91,7 +117,20 @@ export function SubscriptionProvider({ children }) {
         } finally {
             setLoading(false);
         }
-    };
+    }, [currentUser]); // Add currentUser as dependency
+
+    // Load subscription data
+    useEffect(() => {
+        loadCoupons(); // Load coupons regardless of user state
+
+        if (!currentUser) {
+            setSubscription(null);
+            setLoading(false);
+            return;
+        }
+
+        loadSubscriptionData();
+    }, [currentUser, loadCoupons, loadSubscriptionData]);
 
     // Check if user is on trial
     const isOnTrial = () => {
@@ -428,7 +467,7 @@ export function SubscriptionProvider({ children }) {
 
     return (
         <SubscriptionContext.Provider value={value}>
-            {!loading && children}
+            {children}
         </SubscriptionContext.Provider>
     );
 }

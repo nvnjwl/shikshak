@@ -6,6 +6,7 @@ import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../../contexts/AuthContext';
 import { useProfile } from '../../contexts/ProfileContext';
 import { BookOpen, Check, GraduationCap, ChevronRight } from 'lucide-react';
+import toast from 'react-hot-toast';
 
 export default function ProfileSetup() {
     const [step, setStep] = useState(1);
@@ -42,24 +43,21 @@ export default function ProfileSetup() {
     };
 
     const handleSkip = async () => {
+        // Optimistic skip - navigate immediately
         try {
-            setLoading(true);
-            await skipOnboarding();
+            skipOnboarding(); // Run in background
             navigate('/app');
+            toast.success('Welcome to your Dashboard!');
         } catch (error) {
             console.error('Error skipping onboarding:', error);
-            alert('Failed to skip onboarding. Please try again.');
-        } finally {
-            setLoading(false);
+            toast.error('Something went wrong, but we\'re taking you to the dashboard anyway.');
         }
     };
 
     const handleNext = async () => {
         if (step === 1) {
-            // Save name and move to class selection
-            if (name.trim()) {
-                await updateProfile({ name: name.trim() });
-            }
+            // Move to class selection immediately
+            // We'll save the name at the end with handleSubmit
             setStep(2);
         } else if (step === 2) {
             // Move to subject selection
@@ -73,21 +71,33 @@ export default function ProfileSetup() {
     const handleSubmit = async () => {
         setLoading(true);
         try {
-            // Save profile with class and subjects
-            await updateProfile({
+            // Timeout promise to prevent hanging
+            const savePromise = updateProfile({
                 name: name.trim(),
                 class: selectedClass,
                 subjects: selectedSubjects
             });
+
+            const timeoutPromise = new Promise((_, reject) =>
+                setTimeout(() => reject(new Error('Request timed out')), 5000)
+            );
+
+            await Promise.race([savePromise, timeoutPromise]);
 
             // Mark onboarding as completed
             await completeOnboarding();
 
             // Navigate to dashboard
             navigate('/app');
+            toast.success('Profile setup complete! Welcome aboard! 🚀');
         } catch (error) {
             console.error('Error saving profile:', error);
-            alert('Failed to save profile. Please try again.');
+            if (error.message === 'Request timed out') {
+                toast.loading('Connection slow. Taking you to dashboard...', { duration: 2000 });
+                setTimeout(() => navigate('/app'), 2000);
+            } else {
+                toast.error('Failed to save profile. Please try again.');
+            }
         } finally {
             setLoading(false);
         }
@@ -183,8 +193,8 @@ export default function ProfileSetup() {
                                             whileHover={{ scale: 1.02 }}
                                             whileTap={{ scale: 0.98 }}
                                             className={`p-6 rounded-xl border-2 transition-all ${selectedClass === cls
-                                                    ? 'border-primary bg-primary/10 text-primary font-bold shadow-lg'
-                                                    : 'border-gray-200 hover:border-primary/50 hover:bg-gray-50'
+                                                ? 'border-primary bg-primary/10 text-primary font-bold shadow-lg'
+                                                : 'border-gray-200 hover:border-primary/50 hover:bg-gray-50'
                                                 }`}
                                         >
                                             <div className="text-3xl mb-2">
@@ -233,8 +243,8 @@ export default function ProfileSetup() {
                                             whileHover={{ scale: 1.01 }}
                                             whileTap={{ scale: 0.99 }}
                                             className={`w-full p-4 rounded-xl border-2 flex items-center justify-between transition-all ${selectedSubjects.includes(subject)
-                                                    ? 'border-primary bg-primary/10 text-primary font-bold'
-                                                    : 'border-gray-200 hover:bg-gray-50'
+                                                ? 'border-primary bg-primary/10 text-primary font-bold'
+                                                : 'border-gray-200 hover:bg-gray-50'
                                                 }`}
                                         >
                                             <span className="text-lg">{subject}</span>

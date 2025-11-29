@@ -1,171 +1,213 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import AdminLayout from '../../components/layouts/AdminLayout';
 import { Card } from '../../components/ui/Card';
-import {
-    Users, TrendingUp, DollarSign, BookOpen,
-    Search, Filter, Download, BarChart3
-} from 'lucide-react';
+import { Users, IndianRupee, Zap, Clock, TrendingUp, UserPlus } from 'lucide-react';
+import { collection, getCountFromServer, query, where, getDocs, limit, orderBy } from 'firebase/firestore';
+import { db } from '../../lib/firebase';
 import logger from '../../utils/logger';
 
 export default function AdminDashboard() {
-    const [activeTab, setActiveTab] = useState('overview');
+    const [stats, setStats] = useState({
+        totalUsers: 0,
+        totalRevenue: 0,
+        activeTrials: 0,
+        activeSubscriptions: 0
+    });
+    const [recentUsers, setRecentUsers] = useState([]);
+    const [loading, setLoading] = useState(true);
 
-    // Mock data
-    const stats = {
-        totalUsers: 12547,
-        activeToday: 8234,
-        revenue: 2547000,
-        avgSessionTime: 45
+    useEffect(() => {
+        fetchDashboardData();
+    }, []);
+
+    const fetchDashboardData = async () => {
+        try {
+            setLoading(true);
+
+            // 1. Get Total Users
+            const usersColl = collection(db, 'users');
+            const usersSnapshot = await getCountFromServer(usersColl);
+            const totalUsers = usersSnapshot.data().count;
+
+            // 2. Get Active Trials
+            const trialsQuery = query(
+                usersColl,
+                where('subscription.status', '==', 'free_trial')
+            );
+            const trialsSnapshot = await getCountFromServer(trialsQuery);
+            const activeTrials = trialsSnapshot.data().count;
+
+            // 3. Get Active Subscriptions
+            const subsQuery = query(
+                usersColl,
+                where('subscription.status', '==', 'active')
+            );
+            const subsSnapshot = await getCountFromServer(subsQuery);
+            const activeSubscriptions = subsSnapshot.data().count;
+
+            // 4. Get Recent Users
+            const recentUsersQuery = query(
+                usersColl,
+                orderBy('profile.createdAt', 'desc'),
+                limit(5)
+            );
+            const recentUsersSnapshot = await getDocs(recentUsersQuery);
+            const recentUsersData = recentUsersSnapshot.docs.map(doc => ({
+                id: doc.id,
+                ...doc.data().profile
+            }));
+
+            // 5. Calculate Revenue (Mock for now, or fetch from payments collection)
+            // In a real app, you'd aggregate this from the payments collection
+            const paymentsColl = collection(db, 'payments');
+            const paymentsSnapshot = await getDocs(query(paymentsColl, where('status', '==', 'success')));
+            const totalRevenue = paymentsSnapshot.docs.reduce((acc, doc) => acc + (doc.data().amount || 0), 0);
+
+            setStats({
+                totalUsers,
+                totalRevenue,
+                activeTrials,
+                activeSubscriptions
+            });
+            setRecentUsers(recentUsersData);
+
+        } catch (error) {
+            logger.error('AdminDashboard', 'Error fetching dashboard data', error);
+        } finally {
+            setLoading(false);
+        }
     };
 
-    const recentUsers = [
-        { id: 1, name: 'Rohan Kumar', class: 6, joinedDays: 2, active: true },
-        { id: 2, name: 'Priya Sharma', class: 7, joinedDays: 5, active: true },
-        { id: 3, name: 'Arjun Patel', class: 5, joinedDays: 12, active: false }
-    ];
+    const StatCard = ({ title, value, icon: Icon, color, subtext }) => (
+        <Card className="p-6">
+            <div className="flex items-start justify-between">
+                <div>
+                    <p className="text-text-secondary text-sm font-medium mb-1">{title}</p>
+                    <h3 className="text-3xl font-bold font-heading">{value}</h3>
+                    {subtext && <p className="text-xs text-green-600 mt-2 flex items-center gap-1"><TrendingUp size={12} /> {subtext}</p>}
+                </div>
+                <div className={`p-3 rounded-xl ${color}`}>
+                    <Icon size={24} />
+                </div>
+            </div>
+        </Card>
+    );
 
     return (
-        <div className="min-h-screen bg-gray-50 font-body">
-            {/* Header */}
-            <header className="bg-white shadow-sm p-4">
-                <div className="max-w-7xl mx-auto flex items-center justify-between">
-                    <h1 className="text-2xl font-heading font-bold text-primary">Shikshak Admin</h1>
-                    <div className="flex gap-4">
-                        <button className="px-4 py-2 bg-gray-100 rounded-lg hover:bg-gray-200">
-                            <Download size={20} />
-                        </button>
-                    </div>
-                </div>
-            </header>
-
-            <div className="max-w-7xl mx-auto p-6">
-                {/* Stats Grid */}
-                <div className="grid md:grid-cols-4 gap-6 mb-8">
-                    <Card className="p-6">
-                        <div className="flex items-center justify-between mb-2">
-                            <Users className="text-blue-500" size={32} />
-                            <span className="text-sm text-green-600 font-bold">+12%</span>
-                        </div>
-                        <div className="text-3xl font-bold">{stats.totalUsers.toLocaleString()}</div>
-                        <div className="text-sm text-text-secondary">Total Users</div>
-                    </Card>
-
-                    <Card className="p-6">
-                        <div className="flex items-center justify-between mb-2">
-                            <TrendingUp className="text-green-500" size={32} />
-                            <span className="text-sm text-green-600 font-bold">+8%</span>
-                        </div>
-                        <div className="text-3xl font-bold">{stats.activeToday.toLocaleString()}</div>
-                        <div className="text-sm text-text-secondary">Active Today</div>
-                    </Card>
-
-                    <Card className="p-6">
-                        <div className="flex items-center justify-between mb-2">
-                            <DollarSign className="text-yellow-500" size={32} />
-                            <span className="text-sm text-green-600 font-bold">+25%</span>
-                        </div>
-                        <div className="text-3xl font-bold">₹{(stats.revenue / 100000).toFixed(1)}L</div>
-                        <div className="text-sm text-text-secondary">Monthly Revenue</div>
-                    </Card>
-
-                    <Card className="p-6">
-                        <div className="flex items-center justify-between mb-2">
-                            <BookOpen className="text-purple-500" size={32} />
-                            <span className="text-sm text-blue-600 font-bold">Avg</span>
-                        </div>
-                        <div className="text-3xl font-bold">{stats.avgSessionTime} min</div>
-                        <div className="text-sm text-text-secondary">Session Time</div>
-                    </Card>
-                </div>
-
-                {/* Tabs */}
-                <div className="flex gap-2 mb-6 border-b">
-                    {['overview', 'users', 'content', 'revenue'].map((tab) => (
-                        <button
-                            key={tab}
-                            onClick={() => setActiveTab(tab)}
-                            className={`px-6 py-3 font-bold capitalize transition-colors ${activeTab === tab
-                                ? 'text-primary border-b-2 border-primary'
-                                : 'text-text-secondary hover:text-primary'
-                                }`}
-                        >
-                            {tab}
-                        </button>
-                    ))}
-                </div>
-
-                {/* Content based on active tab */}
-                {activeTab === 'users' && (
-                    <Card className="p-6">
-                        <div className="flex items-center justify-between mb-6">
-                            <h2 className="text-2xl font-heading font-bold">User Management</h2>
-                            <div className="flex gap-2">
-                                <div className="relative">
-                                    <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400" size={20} />
-                                    <input
-                                        type="text"
-                                        placeholder="Search users..."
-                                        className="pl-10 pr-4 py-2 border rounded-lg"
-                                    />
-                                </div>
-                                <button className="px-4 py-2 bg-gray-100 rounded-lg hover:bg-gray-200 flex items-center gap-2">
-                                    <Filter size={20} />
-                                    Filter
-                                </button>
-                            </div>
-                        </div>
-
-                        <table className="w-full">
-                            <thead>
-                                <tr className="border-b">
-                                    <th className="text-left py-3">Name</th>
-                                    <th className="text-left py-3">Class</th>
-                                    <th className="text-left py-3">Joined</th>
-                                    <th className="text-left py-3">Status</th>
-                                    <th className="text-left py-3">Actions</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                {recentUsers.map((user) => (
-                                    <tr key={user.id} className="border-b hover:bg-gray-50">
-                                        <td className="py-3">{user.name}</td>
-                                        <td className="py-3">Class {user.class}</td>
-                                        <td className="py-3">{user.joinedDays} days ago</td>
-                                        <td className="py-3">
-                                            <span className={`px-3 py-1 rounded-full text-sm ${user.active ? 'bg-green-100 text-green-700' : 'bg-gray-100 text-gray-700'
-                                                }`}>
-                                                {user.active ? 'Active' : 'Inactive'}
-                                            </span>
-                                        </td>
-                                        <td className="py-3">
-                                            <button className="text-primary hover:underline">View</button>
-                                        </td>
-                                    </tr>
-                                ))}
-                            </tbody>
-                        </table>
-                    </Card>
-                )}
-
-                {activeTab === 'overview' && (
-                    <div className="grid md:grid-cols-2 gap-6">
-                        <Card className="p-6">
-                            <h3 className="text-xl font-bold mb-4">User Growth</h3>
-                            <div className="h-64 flex items-center justify-center bg-gray-50 rounded-lg">
-                                <BarChart3 size={64} className="text-gray-300" />
-                                <p className="text-gray-400 ml-4">Chart placeholder</p>
-                            </div>
-                        </Card>
-
-                        <Card className="p-6">
-                            <h3 className="text-xl font-bold mb-4">Revenue Trend</h3>
-                            <div className="h-64 flex items-center justify-center bg-gray-50 rounded-lg">
-                                <TrendingUp size={64} className="text-gray-300" />
-                                <p className="text-gray-400 ml-4">Chart placeholder</p>
-                            </div>
-                        </Card>
-                    </div>
-                )}
+        <AdminLayout>
+            <div className="mb-8">
+                <h1 className="text-3xl font-heading font-bold text-primary">Dashboard Overview</h1>
+                <p className="text-text-secondary">Welcome back, Admin!</p>
             </div>
-        </div>
+
+            {/* Stats Grid */}
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+                <StatCard
+                    title="Total Students"
+                    value={stats.totalUsers}
+                    icon={Users}
+                    color="bg-blue-100 text-blue-600"
+                    subtext="+12% from last month"
+                />
+                <StatCard
+                    title="Total Revenue"
+                    value={`₹${stats.totalRevenue.toLocaleString()}`}
+                    icon={IndianRupee}
+                    color="bg-green-100 text-green-600"
+                    subtext="+8% from last month"
+                />
+                <StatCard
+                    title="Active Trials"
+                    value={stats.activeTrials}
+                    icon={Zap}
+                    color="bg-yellow-100 text-yellow-600"
+                    subtext="High conversion rate"
+                />
+                <StatCard
+                    title="Active Subscriptions"
+                    value={stats.activeSubscriptions}
+                    icon={UserPlus}
+                    color="bg-purple-100 text-purple-600"
+                    subtext="Steady growth"
+                />
+            </div>
+
+            {/* Recent Activity & Charts Section */}
+            <div className="grid lg:grid-cols-3 gap-8">
+                {/* Recent Users */}
+                <div className="lg:col-span-2">
+                    <Card className="p-6 h-full">
+                        <div className="flex justify-between items-center mb-6">
+                            <h2 className="text-xl font-bold">Recent Registrations</h2>
+                            <button className="text-primary text-sm font-medium hover:underline">View All</button>
+                        </div>
+
+                        <div className="space-y-4">
+                            {recentUsers.length > 0 ? (
+                                recentUsers.map(user => (
+                                    <div key={user.id} className="flex items-center justify-between p-4 bg-gray-50 rounded-xl hover:bg-gray-100 transition-colors">
+                                        <div className="flex items-center gap-4">
+                                            <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary font-bold">
+                                                {user.name ? user.name.charAt(0).toUpperCase() : 'U'}
+                                            </div>
+                                            <div>
+                                                <h4 className="font-bold">{user.name || 'Unknown User'}</h4>
+                                                <p className="text-xs text-text-secondary">{user.email}</p>
+                                            </div>
+                                        </div>
+                                        <div className="text-right">
+                                            <span className="inline-block px-2 py-1 bg-blue-100 text-blue-700 text-xs rounded-full font-medium">
+                                                {user.class || 'No Class'}
+                                            </span>
+                                            <p className="text-xs text-text-secondary mt-1">
+                                                {user.createdAt ? new Date(user.createdAt).toLocaleDateString() : 'N/A'}
+                                            </p>
+                                        </div>
+                                    </div>
+                                ))
+                            ) : (
+                                <p className="text-center text-text-secondary py-8">No recent users found.</p>
+                            )}
+                        </div>
+                    </Card>
+                </div>
+
+                {/* Quick Actions or Secondary Stats */}
+                <div>
+                    <Card className="p-6 h-full">
+                        <h2 className="text-xl font-bold mb-6">Quick Actions</h2>
+                        <div className="space-y-3">
+                            <button className="w-full p-3 bg-primary text-white rounded-xl font-medium hover:bg-primary-dark transition-colors flex items-center justify-center gap-2">
+                                <UserPlus size={18} /> Add New Student
+                            </button>
+                            <button className="w-full p-3 bg-white border border-gray-200 text-text-primary rounded-xl font-medium hover:bg-gray-50 transition-colors flex items-center justify-center gap-2">
+                                <Zap size={18} /> Create Coupon
+                            </button>
+                            <button className="w-full p-3 bg-white border border-gray-200 text-text-primary rounded-xl font-medium hover:bg-gray-50 transition-colors flex items-center justify-center gap-2">
+                                <Clock size={18} /> View Audit Log
+                            </button>
+                        </div>
+
+                        <div className="mt-8">
+                            <h3 className="font-bold mb-4">System Status</h3>
+                            <div className="space-y-3">
+                                <div className="flex justify-between items-center text-sm">
+                                    <span className="flex items-center gap-2"><div className="w-2 h-2 bg-green-500 rounded-full"></div> Database</span>
+                                    <span className="text-green-600 font-medium">Operational</span>
+                                </div>
+                                <div className="flex justify-between items-center text-sm">
+                                    <span className="flex items-center gap-2"><div className="w-2 h-2 bg-green-500 rounded-full"></div> Auth Service</span>
+                                    <span className="text-green-600 font-medium">Operational</span>
+                                </div>
+                                <div className="flex justify-between items-center text-sm">
+                                    <span className="flex items-center gap-2"><div className="w-2 h-2 bg-green-500 rounded-full"></div> Payments</span>
+                                    <span className="text-green-600 font-medium">Operational</span>
+                                </div>
+                            </div>
+                        </div>
+                    </Card>
+                </div>
+            </div>
+        </AdminLayout>
     );
 }

@@ -1,4 +1,4 @@
-import { createContext, useContext, useState, useEffect } from 'react';
+import { createContext, useContext, useState, useEffect, useCallback } from 'react';
 import { useAuth } from './AuthContext';
 import { doc, getDoc, setDoc, updateDoc } from 'firebase/firestore';
 import { db } from '../lib/firebase';
@@ -23,22 +23,17 @@ export function ProfileProvider({ children }) {
     const [profile, setProfile] = useState(null);
     const [loading, setLoading] = useState(true);
 
-    // Load profile from Firestore
-    useEffect(() => {
-        if (!currentUser) {
-            setProfile(null);
-            setLoading(false);
-            return;
-        }
-
-        loadProfile();
-    }, [currentUser]);
-
-    const loadProfile = async () => {
+    const loadProfile = useCallback(async () => {
         try {
             logger.info('ProfileContext', 'Loading user profile', { uid: currentUser.uid });
 
-            const userDoc = await getDoc(doc(db, 'users', currentUser.uid));
+            // Timeout wrapper
+            const getDocPromise = getDoc(doc(db, 'users', currentUser.uid));
+            const timeoutPromise = new Promise((_, reject) =>
+                setTimeout(() => reject(new Error('Firestore timeout')), 5000)
+            );
+
+            const userDoc = await Promise.race([getDocPromise, timeoutPromise]);
 
             if (userDoc.exists()) {
                 const userData = userDoc.data();
@@ -54,17 +49,42 @@ export function ProfileProvider({ children }) {
                     subjects: [],
                     onboardingCompleted: false,
                     onboardingSkipped: false,
+                    isAdmin: false,
                     createdAt: new Date().toISOString()
                 };
+
+                // Save to Firestore immediately to ensure document exists
+                // We don't await this to avoid blocking if write is slow
+                setDoc(doc(db, 'users', currentUser.uid), {
+                    profile: defaultProfile
+                }).catch(err => logger.error('ProfileContext', 'Error saving default profile', err));
+
                 setProfile(defaultProfile);
-                logger.info('ProfileContext', 'Created default profile for new user');
+                logger.info('ProfileContext', 'Created and saved default profile for new user');
             }
         } catch (error) {
             logger.error('ProfileContext', 'Error loading profile', error);
+            const fallbackProfile = {
+                name: currentUser.displayName || 'User',
+                email: currentUser.email,
+                onboardingCompleted: false
+            };
+            setProfile(fallbackProfile);
         } finally {
             setLoading(false);
         }
-    };
+    }, [currentUser]); // Add currentUser as dependency
+
+    // Load profile from Firestore
+    useEffect(() => {
+        if (!currentUser) {
+            setProfile(null);
+            setLoading(false);
+            return;
+        }
+
+        loadProfile();
+    }, [currentUser, loadProfile]);
 
     // Update profile
     const updateProfile = async (updates) => {
@@ -149,6 +169,23 @@ export function ProfileProvider({ children }) {
     const needsOnboarding = () => {
         return profile && !profile.onboardingCompleted;
     };
+    // Check if user is admin
+    const isAdmin = () => {
+        return profile && profile.isAdmin === true;
+    };
+
+    const promoteToAdmin = async () => {
+        if (!currentUser) return;
+        try {
+            const userRef = doc(db, 'users', currentUser.uid);
+            await updateDoc(userRef, { 'profile.isAdmin': true });
+            setProfile(prev => ({ ...prev, isAdmin: true }));
+            return true;
+        } catch (error) {
+            console.error('Error promoting to admin:', error);
+            return false;
+        }
+    };
 
     const value = {
         profile,
@@ -158,12 +195,21 @@ export function ProfileProvider({ children }) {
         skipOnboarding,
         getSubjectsForClass,
         needsOnboarding,
+        isAdmin,
+        promoteToAdmin,
         SUBJECTS_BY_CLASS
     };
 
     return (
         <ProfileContext.Provider value={value}>
-            {!loading && children}
+            {loading ? (
+                <div className="min-h-screen flex items-center justify-center bg-background">
+                    <div className="text-center">
+                        <div className="w-16 h-16 border-4 border-primary border-t-transparent rounded-full animate-spin mx-auto mb-4"></div>
+                        <p className="text-text-secondary">Loading profile...</p>
+                    </div>
+                </div>
+            ) : children}
         </ProfileContext.Provider>
     );
 }

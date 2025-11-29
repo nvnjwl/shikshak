@@ -28,7 +28,16 @@ import PaymentFailure from './pages/payment/PaymentFailure';
 import TermsOfService from './pages/legal/TermsOfService';
 import PrivacyPolicy from './pages/legal/PrivacyPolicy';
 import RefundPolicy from './pages/legal/RefundPolicy';
-
+import AdminRoute from './components/AdminRoute';
+import StudentList from './pages/admin/students/StudentList';
+import StudentDetail from './pages/admin/students/StudentDetail';
+import SalesDashboard from './pages/admin/sales/SalesDashboard';
+import CouponManager from './pages/admin/coupons/CouponManager';
+import SyllabusManager from './pages/admin/syllabus/SyllabusManager';
+import AdminLogin from './pages/admin/AdminLogin';
+import Settings from './pages/student/Settings';
+import AdminSetup from './pages/admin/AdminSetup';
+import ChangeAdminPassword from './pages/admin/ChangeAdminPassword';
 
 
 function PrivateRoute({ children }) {
@@ -39,12 +48,15 @@ function PrivateRoute({ children }) {
   return currentUser ? children : <Navigate to="/login" />;
 }
 
+import { Toaster } from 'react-hot-toast';
+
 function App() {
   return (
     <AuthProvider>
       <SubscriptionProvider>
         <ProfileProvider>
           <Router>
+            <Toaster position="top-center" toastOptions={{ duration: 4000 }} />
             <Routes>
               <Route path="/" element={<Landing />} />
               <Route path="/about" element={<About />} />
@@ -64,6 +76,7 @@ function App() {
                 <Dashboard />
                 // </PrivateRoute>
               } />
+              <Route path="/settings" element={<Settings />} />
               <Route path="/syllabus" element={<SyllabusHome />} />
               <Route path="/syllabus/:subjectId" element={<SubjectView />} />
               <Route path="/syllabus/:subjectId/:chapterId" element={<ChapterView />} />
@@ -77,7 +90,41 @@ function App() {
               <Route path="/legal/terms-of-service" element={<TermsOfService />} />
               <Route path="/legal/privacy-policy" element={<PrivacyPolicy />} />
               <Route path="/legal/refund-policy" element={<RefundPolicy />} />
-              <Route path="/admin" element={<AdminDashboard />} />
+
+              <Route path="/admin/login" element={<AdminLogin />} />
+              <Route path="/admin/setup" element={<AdminSetup />} />
+              <Route path="/admin/change-password" element={<ChangeAdminPassword />} />
+
+              <Route path="/admin" element={
+                <AdminRoute>
+                  <AdminDashboard />
+                </AdminRoute>
+              } />
+              <Route path="/admin/students" element={
+                <AdminRoute>
+                  <StudentList />
+                </AdminRoute>
+              } />
+              <Route path="/admin/students/:id" element={
+                <AdminRoute>
+                  <StudentDetail />
+                </AdminRoute>
+              } />
+              <Route path="/admin/sales" element={
+                <AdminRoute>
+                  <SalesDashboard />
+                </AdminRoute>
+              } />
+              <Route path="/admin/coupons" element={
+                <AdminRoute>
+                  <CouponManager />
+                </AdminRoute>
+              } />
+              <Route path="/admin/syllabus" element={
+                <AdminRoute>
+                  <SyllabusManager />
+                </AdminRoute>
+              } />
               <Route path="/study-session" element={<StudySession />} />
               <Route path="/chat" element={
                 // <PrivateRoute>
