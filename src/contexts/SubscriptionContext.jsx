@@ -12,11 +12,25 @@ export function useSubscription() {
 
 // Subscription plans with pricing
 export const SUBSCRIPTION_PLANS = {
-    'Class 4': { original: 2000, discounted: 1400, discount: 30 },
-    'Class 5': { original: 2500, discounted: 1700, discount: 32 },
-    'Class 6': { original: 3000, discounted: 1950, discount: 35 },
-    'Class 7': { original: 3500, discounted: 2205, discount: 37 },
-    'Class 8': { original: 4000, discounted: 2400, discount: 40 },
+    'Class 5': { monthly: 1700, trial: 1, original: 2500, discount: 32 },
+    'Class 6': { monthly: 1950, trial: 1, original: 3000, discount: 35 },
+    'Class 7': { monthly: 2205, trial: 1, original: 3500, discount: 37 },
+    'Class 8': { monthly: 2400, trial: 1, original: 4000, discount: 40 },
+};
+
+// Trial configuration
+export const TRIAL_CONFIG = {
+    price: 1, // ₹1
+    durationDays: 7,
+};
+
+// Coupon configuration
+export const COUPONS = {
+    'FREE_100': {
+        discount: 100, // 100% off
+        validUntil: '2025-02-28', // 3 months from now
+        applicableOn: ['trial', 'subscription'],
+    }
 };
 
 // Feature limits for free tier
@@ -29,6 +43,7 @@ export const FREE_TIER_LIMITS = {
 export function SubscriptionProvider({ children }) {
     const { currentUser } = useAuth();
     const [subscription, setSubscription] = useState(null);
+    const [coupons, setCoupons] = useState({ usedCoupons: [], FREE_100_used: false });
     const [usage, setUsage] = useState({
         aiQuestionsToday: 0,
         practiceQuestionsToday: 0,
@@ -57,6 +72,7 @@ export function SubscriptionProvider({ children }) {
             if (userDoc.exists()) {
                 const userData = userDoc.data();
                 setSubscription(userData.subscription || null);
+                setCoupons(userData.coupons || { usedCoupons: [], FREE_100_used: false });
                 setUsage(userData.usage || usage);
                 logger.success('SubscriptionContext', 'Loaded from Firestore', userData.subscription);
             } else {
@@ -77,20 +93,52 @@ export function SubscriptionProvider({ children }) {
         }
     };
 
-    // Check if user is on free trial
-    const isOnFreeTrial = () => {
+    // Check if user is on trial
+    const isOnTrial = () => {
         if (!subscription) return false;
-        if (subscription.status !== 'free_trial') return false;
+        if (subscription.status !== 'trial') return false;
 
         const trialEnd = new Date(subscription.trialEndDate);
         const now = new Date();
         return now < trialEnd;
     };
 
+    // Check if trial has expired
+    const hasTrialExpired = () => {
+        if (!subscription || !subscription.trialEndDate) return false;
+        const trialEnd = new Date(subscription.trialEndDate);
+        const now = new Date();
+        return now >= trialEnd && subscription.status === 'trial';
+    };
+
+    // Check if user can start trial (hasn't used it before)
+    const canStartTrial = () => {
+        if (!subscription) return true;
+        return !subscription.trialUsed;
+    };
+
     // Check if user has active subscription
     const hasActiveSubscription = () => {
         if (!subscription) return false;
-        return subscription.status === 'active' || isOnFreeTrial();
+        return subscription.status === 'active' || isOnTrial();
+    };
+
+    // Check if in grace period
+    const isInGracePeriod = () => {
+        if (!subscription || !subscription.gracePeriodEndDate) return false;
+        const graceEnd = new Date(subscription.gracePeriodEndDate);
+        const now = new Date();
+        return now < graceEnd && subscription.status === 'expired';
+    };
+
+    // Get days until downgrade (during grace period)
+    const getDaysUntilDowngrade = () => {
+        if (!isInGracePeriod()) return 0;
+        const graceEnd = new Date(subscription.gracePeriodEndDate);
+        const now = new Date();
+        const diffTime = graceEnd - now;
+        const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
+        return Math.max(0, diffDays);
     };
 
     // Get days remaining in trial
@@ -269,20 +317,112 @@ export function SubscriptionProvider({ children }) {
         return newSubscription;
     };
 
+    // Check if user has used a specific coupon
+    const hasUsedCoupon = (couponCode) => {
+        return coupons.usedCoupons.includes(couponCode) || coupons[`${couponCode}_used`];
+    };
+
+    // Mark coupon as used
+    const markCouponUsed = async (couponCode) => {
+        try {
+            const newCoupons = {
+                ...coupons,
+                usedCoupons: [...coupons.usedCoupons, couponCode],
+                [`${couponCode}_used`]: true,
+                [`${couponCode}_usedAt`]: new Date().toISOString()
+            };
+
+            setCoupons(newCoupons);
+
+            if (currentUser) {
+                await updateDoc(doc(db, 'users', currentUser.uid), {
+                    coupons: newCoupons
+                });
+                logger.success('SubscriptionContext', 'Coupon marked as used', { couponCode });
+            }
+        } catch (error) {
+            logger.error('SubscriptionContext', 'Error marking coupon as used', error);
+            throw error;
+        }
+    };
+
+    // Start ₹1 trial
+    const startTrial = async (plan, paymentDetails = null, couponCode = null) => {
+        const now = new Date();
+        const trialEnd = new Date(now.getTime() + TRIAL_CONFIG.durationDays * 24 * 60 * 60 * 1000);
+
+        const newSubscription = {
+            status: 'trial',
+            plan: plan,
+            trialUsed: true,
+            trialStartDate: now.toISOString(),
+            trialEndDate: trialEnd.toISOString(),
+            razorpayPaymentId: paymentDetails?.paymentId || null,
+            lastPaymentAmount: paymentDetails?.amount || 0,
+            lastPaymentDate: now.toISOString(),
+            autoRenew: false,
+        };
+
+        setSubscription(newSubscription);
+
+        // Save to Firestore
+        if (currentUser) {
+            try {
+                await updateDoc(doc(db, 'users', currentUser.uid), {
+                    subscription: newSubscription,
+                });
+                logger.success('SubscriptionContext', 'Started trial', { plan });
+            } catch (error) {
+                logger.error('SubscriptionContext', 'Error starting trial', error);
+            }
+        }
+
+        // Mark coupon as used if applicable
+        if (couponCode) {
+            await markCouponUsed(couponCode);
+        }
+
+        return newSubscription;
+    };
+
+    // Activate trial (for ₹0 with coupon)
+    const activateTrial = async (plan, couponCode) => {
+        return await startTrial(plan, null, couponCode);
+    };
+
     const value = {
         subscription,
+        coupons,
         usage,
         loading,
-        isOnFreeTrial,
-        hasActiveSubscription,
+        // Trial functions
+        isOnTrial,
+        hasTrialExpired,
+        canStartTrial,
         getTrialDaysRemaining,
+        startTrial,
+        activateTrial,
+        // Subscription functions
+        hasActiveSubscription,
+        activateSubscription,
+        // Grace period functions
+        isInGracePeriod,
+        getDaysUntilDowngrade,
+        // Feature access
         canAccessFeature,
         canUseFeature,
         incrementUsage,
         getRemainingUsage,
-        startFreeTrial,
-        activateSubscription,
+        // Coupon functions
+        hasUsedCoupon,
+        markCouponUsed,
+        // Legacy (keep for backward compatibility)
+        isOnFreeTrial: isOnTrial,
+        startFreeTrial: startTrial,
+        // Constants
         SUBSCRIPTION_PLANS,
+        TRIAL_CONFIG,
+        COUPONS,
         FREE_TIER_LIMITS,
     };
 

@@ -2,45 +2,43 @@ import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Button } from '../../components/ui/Button';
 import { Card } from '../../components/ui/Card';
-import { Check, Sparkles, TrendingUp, Award } from 'lucide-react';
+import { Check, Sparkles, TrendingUp, Award, Zap, Clock } from 'lucide-react';
 import { motion } from 'framer-motion';
+import { useSubscription } from '../../contexts/SubscriptionContext';
+import { useProfile } from '../../contexts/ProfileContext';
 
 const pricingPlans = [
     {
-        class: 'Class 4',
-        originalPrice: 2000,
-        discount: 30,
-        features: ['All subjects (Math, EVS, English, Hindi)', 'AI Tutor 24/7', 'Homework Help', 'Practice Questions', 'Progress Tracking'],
-        color: 'from-blue-400 to-blue-600',
-        popular: false
-    },
-    {
-        class: 'Class 5',
+        class: '5th',
         originalPrice: 2500,
+        monthlyPrice: 1700,
         discount: 32,
         features: ['All subjects (Math, EVS, English, Hindi)', 'AI Tutor 24/7', 'Homework Help', 'Practice Questions', 'Progress Tracking', 'Weekly Tests'],
         color: 'from-green-400 to-green-600',
         popular: false
     },
     {
-        class: 'Class 6',
+        class: '6th',
         originalPrice: 3000,
+        monthlyPrice: 1950,
         discount: 35,
         features: ['All subjects (Math, Science, Social, English, Hindi)', 'AI Tutor 24/7', 'Homework Help', 'Practice Questions', 'Progress Tracking', 'Weekly Tests', 'Video Explanations'],
         color: 'from-yellow-400 to-yellow-600',
         popular: true
     },
     {
-        class: 'Class 7',
+        class: '7th',
         originalPrice: 3500,
+        monthlyPrice: 2205,
         discount: 37,
         features: ['All subjects (Math, Science, Social, English, Hindi)', 'AI Tutor 24/7', 'Homework Help', 'Practice Questions', 'Progress Tracking', 'Weekly Tests', 'Video Explanations', 'Exam Preparation'],
         color: 'from-orange-400 to-orange-600',
         popular: false
     },
     {
-        class: 'Class 8',
+        class: '8th',
         originalPrice: 4000,
+        monthlyPrice: 2400,
         discount: 40,
         features: ['All subjects (Math, Science, Social, English, Hindi)', 'AI Tutor 24/7', 'Homework Help', 'Practice Questions', 'Progress Tracking', 'Weekly Tests', 'Video Explanations', 'Exam Preparation', 'Board Exam Focus'],
         color: 'from-red-400 to-red-600',
@@ -50,15 +48,18 @@ const pricingPlans = [
 
 export default function Pricing() {
     const navigate = useNavigate();
-    const [selectedClass, setSelectedClass] = useState('Class 6');
+    const { canStartTrial, hasActiveSubscription, TRIAL_CONFIG } = useSubscription();
+    const { profile } = useProfile();
+    const [selectedClass, setSelectedClass] = useState(profile?.class || '6th');
 
-    const calculateDiscountedPrice = (original, discount) => {
-        return Math.round(original * (1 - discount / 100));
+    const handleSubscribe = (classLevel, isTrial = false) => {
+        // Navigate to checkout page with selected plan
+        navigate('/checkout', { state: { selectedClass: classLevel, isTrial } });
     };
 
-    const handleSubscribe = (classLevel) => {
-        // Navigate to checkout page with selected plan
-        navigate('/checkout', { state: { selectedClass: classLevel } });
+    const handleStartTrial = () => {
+        const userClass = profile?.class || '6th';
+        navigate('/checkout', { state: { selectedClass: userClass, isTrial: true } });
     };
 
     return (
@@ -104,13 +105,93 @@ export default function Pricing() {
                         <Sparkles size={32} />
                     </div>
                     <p className="text-xl">Save 30-40% on all plans • Higher classes = Higher savings!</p>
+                    <p className="text-sm mt-2 opacity-90">💡 Hint: Use coupon code <span className="font-bold bg-white/20 px-2 py-1 rounded">FREE_100</span> for 100% off!</p>
                 </motion.div>
 
+                {/* ₹1 Trial Card - Only show if eligible */}
+                {canStartTrial() && !hasActiveSubscription() && (
+                    <motion.div
+                        initial={{ opacity: 0, y: 20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        className="mb-12"
+                    >
+                        <Card className="overflow-hidden border-4 border-purple-500 shadow-2xl">
+                            <div className="bg-gradient-to-r from-purple-600 via-pink-600 to-red-600 text-white p-8 relative">
+                                <div className="absolute top-4 right-4 bg-yellow-400 text-purple-900 px-4 py-2 rounded-full font-bold text-sm animate-pulse">
+                                    🔥 BEST DEAL
+                                </div>
+                                <div className="flex items-center gap-4 mb-4">
+                                    <Zap size={48} className="animate-bounce" />
+                                    <div>
+                                        <h2 className="text-4xl font-heading font-bold">Try Everything for Just ₹1!</h2>
+                                        <p className="text-xl opacity-90">7 Days Full Access • Cancel Anytime</p>
+                                    </div>
+                                </div>
+                                <div className="grid md:grid-cols-3 gap-4 mt-6">
+                                    <div className="bg-white/20 backdrop-blur-sm p-4 rounded-xl">
+                                        <div className="text-3xl mb-2">🎓</div>
+                                        <div className="font-bold">All Subjects</div>
+                                        <div className="text-sm opacity-90">Unlimited access</div>
+                                    </div>
+                                    <div className="bg-white/20 backdrop-blur-sm p-4 rounded-xl">
+                                        <div className="text-3xl mb-2">🤖</div>
+                                        <div className="font-bold">AI Tutor 24/7</div>
+                                        <div className="text-sm opacity-90">Ask anything, anytime</div>
+                                    </div>
+                                    <div className="bg-white/20 backdrop-blur-sm p-4 rounded-xl">
+                                        <div className="text-3xl mb-2">📝</div>
+                                        <div className="font-bold">Practice Tests</div>
+                                        <div className="text-sm opacity-90">Unlimited questions</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="p-8 bg-gradient-to-br from-purple-50 to-pink-50">
+                                <div className="flex items-center justify-between mb-6">
+                                    <div>
+                                        <div className="text-sm text-text-secondary mb-1">One-time payment</div>
+                                        <div className="flex items-end gap-2">
+                                            <span className="text-5xl font-bold text-purple-600">₹1</span>
+                                            <span className="text-2xl text-text-secondary mb-2">for 7 days</span>
+                                        </div>
+                                        <div className="flex items-center gap-2 mt-2 text-sm text-green-600">
+                                            <Clock size={16} />
+                                            <span>Offer valid for lifetime • One-time only</span>
+                                        </div>
+                                    </div>
+                                    <Button
+                                        onClick={handleStartTrial}
+                                        className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white px-8 py-6 text-xl font-bold shadow-lg"
+                                    >
+                                        Start ₹1 Trial Now 🚀
+                                    </Button>
+                                </div>
+                                <div className="grid grid-cols-2 md:grid-cols-4 gap-3 text-sm">
+                                    <div className="flex items-center gap-2">
+                                        <Check size={16} className="text-green-500" />
+                                        <span>No hidden charges</span>
+                                    </div>
+                                    <div className="flex items-center gap-2">
+                                        <Check size={16} className="text-green-500" />
+                                        <span>Cancel anytime</span>
+                                    </div>
+                                    <div className="flex items-center gap-2">
+                                        <Check size={16} className="text-green-500" />
+                                        <span>Instant activation</span>
+                                    </div>
+                                    <div className="flex items-center gap-2">
+                                        <Check size={16} className="text-green-500" />
+                                        <span>Full feature access</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </Card>
+                    </motion.div>
+                )}
+
                 {/* Pricing Cards */}
-                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+                <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
                     {pricingPlans.map((plan, index) => {
-                        const discountedPrice = calculateDiscountedPrice(plan.originalPrice, plan.discount);
-                        const savings = plan.originalPrice - discountedPrice;
+                        const savings = plan.originalPrice - plan.monthlyPrice;
 
                         return (
                             <motion.div
@@ -133,7 +214,7 @@ export default function Pricing() {
 
                                     {/* Gradient Header */}
                                     <div className={`bg-gradient-to-r ${plan.color} text-white p-6 -m-6 mb-6`}>
-                                        <h3 className="text-3xl font-heading font-bold mb-2">{plan.class}</h3>
+                                        <h3 className="text-3xl font-heading font-bold mb-2">Class {plan.class}</h3>
 
                                         {/* Discount Badge */}
                                         <div className="inline-block bg-white/20 backdrop-blur-sm px-3 py-1 rounded-full text-sm font-bold mb-4">
@@ -143,7 +224,7 @@ export default function Pricing() {
                                         {/* Pricing */}
                                         <div className="flex items-end gap-2 mb-2">
                                             <span className="text-2xl line-through opacity-70">₹{plan.originalPrice}</span>
-                                            <span className="text-5xl font-bold">₹{discountedPrice}</span>
+                                            <span className="text-5xl font-bold">₹{plan.monthlyPrice}</span>
                                             <span className="text-xl mb-2">/month</span>
                                         </div>
                                         <p className="text-white/90">Save ₹{savings}/month!</p>

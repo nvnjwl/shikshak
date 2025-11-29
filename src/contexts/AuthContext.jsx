@@ -4,7 +4,9 @@ import {
     onAuthStateChanged,
     signOut as firebaseSignOut,
     signInWithEmailAndPassword,
-    createUserWithEmailAndPassword
+    createUserWithEmailAndPassword,
+    GoogleAuthProvider,
+    signInWithPopup
 } from 'firebase/auth';
 import logger from '../utils/logger';
 
@@ -87,6 +89,22 @@ export function AuthProvider({ children }) {
         }
     };
 
+    const loginWithGoogle = async () => {
+        try {
+            logger.info('AuthContext', 'Attempting Google login');
+            const provider = new GoogleAuthProvider();
+            provider.setCustomParameters({
+                prompt: 'select_account'
+            });
+            const result = await signInWithPopup(auth, provider);
+            logger.success('AuthContext', 'Google login successful', { email: result.user.email });
+            return result;
+        } catch (error) {
+            logger.error('AuthContext', 'Google login failed', error);
+            throw error;
+        }
+    };
+
     const signOut = async () => {
         try {
             await firebaseSignOut(auth);
@@ -104,6 +122,7 @@ export function AuthProvider({ children }) {
         currentUser,
         login,
         signup,
+        loginWithGoogle,
         signOut,
         loading
     };

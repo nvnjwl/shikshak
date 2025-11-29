@@ -6,29 +6,46 @@ import { useAuth } from '../../contexts/AuthContext';
 import { useSubscription } from '../../contexts/SubscriptionContext';
 import { createOrder, displayRazorpay, savePaymentRecord } from '../../services/razorpay';
 import { db } from '../../lib/firebase';
-import { Check, Shield, CreditCard, Lock } from 'lucide-react';
+import { Check, Shield, CreditCard, Lock, Sparkles } from 'lucide-react';
 import { motion } from 'framer-motion';
 import logger from '../../utils/logger';
+import CouponInput from '../../components/CouponInput';
 
 export default function Checkout() {
     const navigate = useNavigate();
     const location = useLocation();
     const { currentUser } = useAuth();
-    const { activateSubscription, SUBSCRIPTION_PLANS } = useSubscription();
+    const {
+        activateSubscription,
+        startTrial,
+        activateTrial,
+        hasUsedCoupon,
+        canStartTrial,
+        SUBSCRIPTION_PLANS,
+        TRIAL_CONFIG,
+        COUPONS
+    } = useSubscription();
 
     const [loading, setLoading] = useState(false);
     const [selectedPlan, setSelectedPlan] = useState(null);
+    const [isTrial, setIsTrial] = useState(false);
+    const [couponCode, setCouponCode] = useState('');
+    const [discount, setDiscount] = useState(0);
+    const [finalPrice, setFinalPrice] = useState(0);
 
     useEffect(() => {
-        // Get plan from navigation state
-        const plan = location.state?.selectedClass || 'Class 6';
+        // Get plan and trial flag from navigation state
+        const plan = location.state?.selectedClass || '6th';
+        const isTrialFlow = location.state?.isTrial || false;
+
         setSelectedPlan(plan);
+        setIsTrial(isTrialFlow);
 
         // Redirect if not logged in
         if (!currentUser) {
-            navigate('/login', { state: { from: '/checkout', selectedClass: plan } });
+            navigate('/login', { state: { from: '/checkout', selectedClass: plan, isTrial: isTrialFlow } });
         }
-    }, [currentUser, location.state]);
+    }, [currentUser, location.state, navigate]);
 
     if (!selectedPlan || !SUBSCRIPTION_PLANS[selectedPlan]) {
         return (

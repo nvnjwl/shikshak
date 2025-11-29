@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import { AuthProvider, useAuth } from './contexts/AuthContext';
 import { SubscriptionProvider } from './contexts/SubscriptionContext';
+import { ProfileProvider } from './contexts/ProfileContext';
 import Dashboard from './pages/student/Dashboard';
 import Login from './pages/auth/Login';
 import ChatSession from './pages/student/ChatSession';
@@ -42,48 +43,50 @@ function App() {
   return (
     <AuthProvider>
       <SubscriptionProvider>
-        <Router>
-          <Routes>
-            <Route path="/" element={<Landing />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/success-stories" element={<SuccessStories />} />
-            <Route path="/faq" element={<FAQ />} />
-            <Route path="/login" element={<Login />} />
-            <Route path="/parent/login" element={<ParentLogin />} />
-            <Route path="/parent/dashboard" element={<ParentDashboard />} />
-            <Route path="/signup" element={<Signup />} />
-            <Route path="/onboarding" element={
-              // <PrivateRoute>
-              <ProfileSetup />
-              // </PrivateRoute>
-            } />
-            <Route path="/app" element={
-              // <PrivateRoute> 
-              <Dashboard />
-              // </PrivateRoute>
-            } />
-            <Route path="/syllabus" element={<SyllabusHome />} />
-            <Route path="/syllabus/:subjectId" element={<SubjectView />} />
-            <Route path="/syllabus/:subjectId/:chapterId" element={<ChapterView />} />
-            <Route path="/history" element={<History />} />
-            <Route path="/learn/:subjectId/:chapterId/:topicId" element={<TopicLearning />} />
-            <Route path="/practice/:subjectId/:chapterId/:topicId" element={<PracticeQuestions />} />
-            <Route path="/pricing" element={<Pricing />} />
-            <Route path="/checkout" element={<Checkout />} />
-            <Route path="/payment/success" element={<PaymentSuccess />} />
-            <Route path="/payment/failure" element={<PaymentFailure />} />
-            <Route path="/legal/terms-of-service" element={<TermsOfService />} />
-            <Route path="/legal/privacy-policy" element={<PrivacyPolicy />} />
-            <Route path="/legal/refund-policy" element={<RefundPolicy />} />
-            <Route path="/admin" element={<AdminDashboard />} />
-            <Route path="/study-session" element={<StudySession />} />
-            <Route path="/chat" element={
-              // <PrivateRoute>
-              <ChatSession />
-              // </PrivateRoute>
-            } />
-          </Routes>
-        </Router>
+        <ProfileProvider>
+          <Router>
+            <Routes>
+              <Route path="/" element={<Landing />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/success-stories" element={<SuccessStories />} />
+              <Route path="/faq" element={<FAQ />} />
+              <Route path="/login" element={<Login />} />
+              <Route path="/parent/login" element={<ParentLogin />} />
+              <Route path="/parent/dashboard" element={<ParentDashboard />} />
+              <Route path="/signup" element={<Signup />} />
+              <Route path="/onboarding" element={
+                // <PrivateRoute>
+                <ProfileSetup />
+                // </PrivateRoute>
+              } />
+              <Route path="/app" element={
+                // <PrivateRoute> 
+                <Dashboard />
+                // </PrivateRoute>
+              } />
+              <Route path="/syllabus" element={<SyllabusHome />} />
+              <Route path="/syllabus/:subjectId" element={<SubjectView />} />
+              <Route path="/syllabus/:subjectId/:chapterId" element={<ChapterView />} />
+              <Route path="/history" element={<History />} />
+              <Route path="/learn/:subjectId/:chapterId/:topicId" element={<TopicLearning />} />
+              <Route path="/practice/:subjectId/:chapterId/:topicId" element={<PracticeQuestions />} />
+              <Route path="/pricing" element={<Pricing />} />
+              <Route path="/checkout" element={<Checkout />} />
+              <Route path="/payment/success" element={<PaymentSuccess />} />
+              <Route path="/payment/failure" element={<PaymentFailure />} />
+              <Route path="/legal/terms-of-service" element={<TermsOfService />} />
+              <Route path="/legal/privacy-policy" element={<PrivacyPolicy />} />
+              <Route path="/legal/refund-policy" element={<RefundPolicy />} />
+              <Route path="/admin" element={<AdminDashboard />} />
+              <Route path="/study-session" element={<StudySession />} />
+              <Route path="/chat" element={
+                // <PrivateRoute>
+                <ChatSession />
+                // </PrivateRoute>
+              } />
+            </Routes>
+          </Router>
+        </ProfileProvider>
       </SubscriptionProvider>
     </AuthProvider>
   );
