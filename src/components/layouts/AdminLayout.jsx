@@ -9,9 +9,12 @@ import {
     BookOpen,
     LogOut,
     Menu,
-    X
+    X,
+    MessageSquare,
+    Settings
 } from 'lucide-react';
 import { Button } from '../ui/Button';
+import { useProfile } from '../../contexts/ProfileContext';
 
 export default function AdminLayout({ children }) {
     const [sidebarOpen, setSidebarOpen] = useState(false);
@@ -19,13 +22,22 @@ export default function AdminLayout({ children }) {
     const navigate = useNavigate();
     const { signOut } = useAuth();
 
-    const menuItems = [
-        { path: '/admin', icon: LayoutDashboard, label: 'Dashboard' },
-        { path: '/admin/students', icon: Users, label: 'Students' },
-        { path: '/admin/sales', icon: IndianRupee, label: 'Sales & Revenue' },
-        { path: '/admin/coupons', icon: Ticket, label: 'Coupons' },
-        { path: '/admin/syllabus', icon: BookOpen, label: 'Syllabus' },
+    const { profile } = useProfile();
+    const userRole = profile?.role;
+
+    const allMenuItems = [
+        { path: '/admin', icon: LayoutDashboard, label: 'Dashboard', roles: ['super_admin', 'teacher', 'sales', 'growth'] },
+        { path: '/admin/students', icon: Users, label: 'Students', roles: ['super_admin', 'teacher', 'sales', 'growth'] },
+        { path: '/admin/sales', icon: IndianRupee, label: 'Sales & Revenue', roles: ['super_admin', 'sales', 'growth'] },
+        { path: '/admin/coupons', icon: Ticket, label: 'Coupons', roles: ['super_admin', 'sales'] },
+        { path: '/admin/syllabus', icon: BookOpen, label: 'Syllabus', roles: ['super_admin', 'teacher'] },
+        { path: '/admin/support', icon: MessageSquare, label: 'Support', roles: ['super_admin', 'teacher'] },
+        { path: '/admin/settings', icon: Settings, label: 'Settings', roles: ['super_admin'] },
     ];
+
+    const menuItems = allMenuItems.filter(item =>
+        !item.roles || item.roles.includes(userRole) || userRole === 'super_admin'
+    );
 
     const handleLogout = async () => {
         try {

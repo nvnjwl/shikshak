@@ -38,6 +38,9 @@ import AdminLogin from './pages/admin/AdminLogin';
 import Settings from './pages/student/Settings';
 import AdminSetup from './pages/admin/AdminSetup';
 import ChangeAdminPassword from './pages/admin/ChangeAdminPassword';
+import SupportTicketList from './pages/admin/support/SupportTicketList';
+import SupportTicketDetail from './pages/admin/support/SupportTicketDetail';
+import AdminManagement from './pages/admin/settings/AdminManagement';
 
 
 function PrivateRoute({ children }) {
@@ -111,18 +114,33 @@ function App() {
                 </AdminRoute>
               } />
               <Route path="/admin/sales" element={
-                <AdminRoute>
+                <AdminRoute requiredRole="sales">
                   <SalesDashboard />
                 </AdminRoute>
               } />
               <Route path="/admin/coupons" element={
-                <AdminRoute>
+                <AdminRoute requiredRole="sales">
                   <CouponManager />
                 </AdminRoute>
               } />
               <Route path="/admin/syllabus" element={
-                <AdminRoute>
+                <AdminRoute requiredRole="teacher">
                   <SyllabusManager />
+                </AdminRoute>
+              } />
+              <Route path="/admin/support" element={
+                <AdminRoute requiredRole="teacher">
+                  <SupportTicketList />
+                </AdminRoute>
+              } />
+              <Route path="/admin/support/:id" element={
+                <AdminRoute requiredRole="teacher">
+                  <SupportTicketDetail />
+                </AdminRoute>
+              } />
+              <Route path="/admin/settings" element={
+                <AdminRoute requiredRole="super_admin">
+                  <AdminManagement />
                 </AdminRoute>
               } />
               <Route path="/study-session" element={<StudySession />} />

@@ -30,7 +30,7 @@ export function ProfileProvider({ children }) {
             // Timeout wrapper
             const getDocPromise = getDoc(doc(db, 'users', currentUser.uid));
             const timeoutPromise = new Promise((_, reject) =>
-                setTimeout(() => reject(new Error('Firestore timeout')), 5000)
+                setTimeout(() => reject(new Error('Firestore timeout')), 15000)
             );
 
             const userDoc = await Promise.race([getDocPromise, timeoutPromise]);
@@ -83,6 +83,7 @@ export function ProfileProvider({ children }) {
             return;
         }
 
+        setLoading(true);
         loadProfile();
     }, [currentUser, loadProfile]);
 
