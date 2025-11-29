@@ -4,7 +4,7 @@ import { Button } from '../../components/ui/Button';
 import { Card } from '../../components/ui/Card';
 import { useAuth } from '../../contexts/AuthContext';
 import { useSubscription } from '../../contexts/SubscriptionContext';
-import { createOrder, displayRazorpay, savePaymentRecord } from '../../services/razorpay';
+import { simulatePayment, savePaymentRecord } from '../../utils/mockRazorpay';
 import { db } from '../../lib/firebase';
 import { Check, Shield, CreditCard, Lock, Sparkles } from 'lucide-react';
 import { motion } from 'framer-motion';
@@ -63,66 +63,107 @@ export default function Checkout() {
     const handlePayment = async () => {
         setLoading(true);
         try {
-            logger.info('Checkout', 'Initiating payment', { plan: selectedPlan });
+            logger.info('Checkout', 'Initiating payment', { plan: selectedPlan, isTrial, couponCode });
 
-            // Create order
-            const orderResponse = await createOrder(
-                planDetails.discounted,
-                selectedPlan,
-                {
-                    userId: currentUser.uid,
-                    email: currentUser.email,
+            // Determine amount to pay
+            let amountToPay = isTrial ? TRIAL_CONFIG.price : planDetails.monthly;
+
+            // Apply coupon if provided
+            if (couponCode) {
+                const coupon = COUPONS[couponCode];
+                if (coupon && coupon.active) {
+                    // Check if coupon is applicable
+                    if (coupon.applicableOn.includes('trial') && isTrial) {
+                        amountToPay = amountToPay * (1 - coupon.discount / 100);
+                    } else if (coupon.applicableOn.includes('subscription') && !isTrial) {
+                        amountToPay = amountToPay * (1 - coupon.discount / 100);
+                    }
                 }
-            );
-
-            if (!orderResponse.success) {
-                throw new Error('Failed to create order');
             }
 
-            // Display Razorpay modal
-            await displayRazorpay(
-                {
-                    ...orderResponse,
-                    plan: selectedPlan,
-                },
-                {
-                    userId: currentUser.uid,
-                    email: currentUser.email,
+            // Round to 2 decimals
+            amountToPay = Math.round(amountToPay * 100) / 100;
+
+            // If amount is 0 (FREE coupon), skip payment
+            if (amountToPay === 0) {
+                logger.info('Checkout', 'Free trial via coupon', { couponCode });
+
+                // Activate trial directly
+                if (isTrial) {
+                    await activateTrial(selectedPlan, couponCode);
+                } else {
+                    await activateSubscription(selectedPlan, {
+                        subscriptionId: `free_${Date.now()}`,
+                        paymentId: `free_${Date.now()}`,
+                    });
+                }
+
+                // Navigate to success
+                navigate('/payment/success', {
+                    state: {
+                        plan: selectedPlan,
+                        amount: 0,
+                        paymentId: `free_coupon_${couponCode}`,
+                        isTrial
+                    },
+                });
+                setLoading(false);
+                return;
+            }
+
+            // Simulate payment
+            try {
+                const paymentData = await simulatePayment(amountToPay, {
                     name: currentUser.displayName || 'Student',
-                },
-                async (paymentData) => {
-                    // Payment success
-                    logger.success('Checkout', 'Payment successful', paymentData);
+                    email: currentUser.email,
+                    userId: currentUser.uid
+                });
 
-                    // Save payment record
-                    await savePaymentRecord(db, paymentData, currentUser.uid);
+                // Payment success
+                logger.success('Checkout', 'Payment successful', paymentData);
 
-                    // Activate subscription
+                // Save payment record
+                await savePaymentRecord(db, {
+                    ...paymentData,
+                    plan: selectedPlan,
+                    isTrial,
+                    couponCode: couponCode || null
+                }, currentUser.uid);
+
+                // Activate subscription or trial
+                if (isTrial) {
+                    await startTrial(selectedPlan, {
+                        paymentId: paymentData.paymentId,
+                        amount: amountToPay
+                    }, couponCode);
+                } else {
                     await activateSubscription(selectedPlan, {
                         subscriptionId: paymentData.orderId,
                         paymentId: paymentData.paymentId,
                     });
-
-                    // Redirect to success page
-                    navigate('/payment/success', {
-                        state: {
-                            plan: selectedPlan,
-                            amount: planDetails.discounted,
-                            paymentId: paymentData.paymentId,
-                        },
-                    });
-                },
-                (error) => {
-                    // Payment failure
-                    logger.error('Checkout', 'Payment failed', error);
-                    navigate('/payment/failure', {
-                        state: {
-                            plan: selectedPlan,
-                            error: error.error || 'Payment failed',
-                        },
-                    });
                 }
-            );
+
+                // Redirect to success page
+                navigate('/payment/success', {
+                    state: {
+                        plan: selectedPlan,
+                        amount: amountToPay,
+                        paymentId: paymentData.paymentId,
+                        isTrial
+                    },
+                });
+
+            } catch (paymentError) {
+                // Payment was cancelled or failed
+                logger.error('Checkout', 'Payment failed', paymentError);
+                navigate('/payment/failure', {
+                    state: {
+                        plan: selectedPlan,
+                        error: paymentError.error || 'Payment failed',
+                    },
+                });
+            }
+
         } catch (error) {
             logger.error('Checkout', 'Error in payment flow', error);
             alert('Something went wrong. Please try again.');
@@ -151,19 +192,54 @@ export default function Checkout() {
                                 <span className="text-primary font-bold">{selectedPlan}</span>
                             </div>
 
-                            <div className="flex justify-between items-center">
-                                <span className="text-text-secondary">Original Price</span>
-                                <span className="line-through text-text-secondary">₹{planDetails.original}</span>
-                            </div>
+                            {isTrial ? (
+                                <>
+                                    <div className="flex justify-between items-center">
+                                        <span className="text-text-secondary">7-Day Trial</span>
+                                        <span className="font-bold text-purple-600">₹{TRIAL_CONFIG.price}</span>
+                                    </div>
+                                    <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-3 text-sm">
+                                        <p className="text-yellow-800">🎉 <strong>Special Offer:</strong> Try all features for just ₹1!</p>
+                                    </div>
+                                </>
+                            ) : (
+                                <>
+                                    <div className="flex justify-between items-center">
+                                        <span className="text-text-secondary">Original Price</span>
+                                        <span className="line-through text-text-secondary">₹{planDetails.original}</span>
+                                    </div>
 
-                            <div className="flex justify-between items-center text-green-600">
-                                <span>Discount ({planDetails.discount}%)</span>
-                                <span>-₹{planDetails.original - planDetails.discounted}</span>
+                                    <div className="flex justify-between items-center text-green-600">
+                                        <span>Discount ({planDetails.discount}%)</span>
+                                        <span>-₹{planDetails.original - planDetails.monthly}</span>
+                                    </div>
+                                </>
+                            )}
+
+                            {/* Coupon Section */}
+                            <div className="pt-4 border-t">
+                                <CouponInput
+                                    value={couponCode}
+                                    onChange={setCouponCode}
+                                    onApply={() => {
+                                        // Coupon is applied automatically in handlePayment
+                                        logger.info('Checkout', 'Coupon entered', { couponCode });
+                                    }}
+                                />
+                                {couponCode && COUPONS[couponCode] && (
+                                    <div className="mt-2 text-sm text-green-600 flex items-center gap-1">
+                                        <Check size={16} />
+                                        <span>Coupon "{couponCode}" will be applied ({COUPONS[couponCode].discount}% off)</span>
+                                    </div>
+                                )}
                             </div>
 
                             <div className="flex justify-between items-center pt-4 border-t text-xl font-bold">
                                 <span>Total</span>
-                                <span className="text-primary">₹{planDetails.discounted}/month</span>
+                                <span className="text-primary">
+                                    ₹{isTrial ? TRIAL_CONFIG.price : planDetails.monthly}
+                                    {!isTrial && '/month'}
+                                </span>
                             </div>
                         </div>
 
@@ -201,7 +277,7 @@ export default function Checkout() {
                             ) : (
                                 <>
                                     <CreditCard size={20} />
-                                    Pay ₹{planDetails.discounted}
+                                    {isTrial ? `Start ₹1 Trial` : `Pay ₹${planDetails.monthly}`}
                                 </>
                             )}
                         </Button>

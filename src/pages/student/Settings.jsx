@@ -29,6 +29,20 @@ export default function Settings() {
         }
     }, [profile]);
 
+    // BYOK State
+    const [useOwnApiKey, setUseOwnApiKey] = useState(false);
+    const [apiKey, setApiKey] = useState('');
+    const [apiKeyStatus, setApiKeyStatus] = useState(null);
+    const [verifyingKey, setVerifyingKey] = useState(false);
+
+    useEffect(() => {
+        if (profile) {
+            setUseOwnApiKey(profile.useOwnApiKey || false);
+            setApiKey(profile.apiKey || '');
+            setApiKeyStatus(profile.apiKeyStatus || null);
+        }
+    }, [profile]);
+
     const handleSaveProfile = async () => {
         if (!name.trim()) {
             toast.error('Name cannot be empty');
@@ -86,6 +100,84 @@ export default function Settings() {
             } catch (error) {
                 console.error('Failed to log out', error);
                 toast.error('Failed to logout. Please try again.');
+            }
+        }
+    };
+
+    // BYOK Handlers
+    const handleToggleBYOK = async (enabled) => {
+        setUseOwnApiKey(enabled);
+        if (!enabled) {
+            // Disable BYOK and remove key
+            try {
+                await updateProfile({
+                    useOwnApiKey: false,
+                    apiKey: null,
+                    apiKeyStatus: null,
+                    apiKeyLastVerified: null
+                });
+                setApiKey('');
+                setApiKeyStatus(null);
+                toast.success('Switched back to platform key');
+            } catch (error) {
+                console.error('Error disabling BYOK:', error);
+                toast.error('Failed to update settings');
+            }
+        }
+    };
+
+    const handleVerifyApiKey = async () => {
+        if (!apiKey || apiKey.trim().length < 20) {
+            toast.error('Please enter a valid API key');
+            return;
+        }
+
+        setVerifyingKey(true);
+        try {
+            // Import AI service for verification
+            const { verifyGeminiKey } = await import('../../services/ai');
+
+            const isValid = await verifyGeminiKey(apiKey.trim());
+
+            if (isValid) {
+                // Save to profile
+                await updateProfile({
+                    useOwnApiKey: true,
+                    apiKey: apiKey.trim(),
+                    apiKeyStatus: 'active',
+                    apiKeyLastVerified: new Date().toISOString()
+                });
+                setApiKeyStatus('active');
+                toast.success('API key verified and saved! 🎉');
+            } else {
+                setApiKeyStatus('invalid');
+                toast.error('Invalid API key. Please check and try again.');
+            }
+        } catch (error) {
+            console.error('Error verifying API key:', error);
+            setApiKeyStatus('invalid');
+            toast.error('Failed to verify key. Please try again.');
+        } finally {
+            setVerifyingKey(false);
+        }
+    };
+
+    const handleRemoveApiKey = async () => {
+        if (window.confirm('Are you sure you want to remove your API key? You\'ll switch back to the platform key with rate limits.')) {
+            try {
+                await updateProfile({
+                    useOwnApiKey: false,
+                    apiKey: null,
+                    apiKeyStatus: null,
+                    apiKeyLastVerified: null
+                });
+                setUseOwnApiKey(false);
+                setApiKey('');
+                setApiKeyStatus(null);
+                toast.success('API key removed successfully');
+            } catch (error) {
+                console.error('Error removing API key:', error);
+                toast.error('Failed to remove key');
             }
         }
     };
@@ -159,8 +251,8 @@ export default function Settings() {
                                             key={cls}
                                             onClick={() => setSelectedClass(cls)}
                                             className={`p-3 rounded-lg border-2 transition-all ${selectedClass === cls
-                                                    ? 'border-primary bg-primary/10 text-primary font-bold'
-                                                    : 'border-gray-200 hover:border-primary/50'
+                                                ? 'border-primary bg-primary/10 text-primary font-bold'
+                                                : 'border-gray-200 hover:border-primary/50'
                                                 }`}
                                         >
                                             Class {cls}
@@ -181,8 +273,8 @@ export default function Settings() {
                                                 key={subject}
                                                 onClick={() => handleSubjectToggle(subject)}
                                                 className={`w-full p-3 rounded-lg border-2 flex items-center justify-between transition-all ${selectedSubjects.includes(subject)
-                                                        ? 'border-primary bg-primary/10 text-primary font-bold'
-                                                        : 'border-gray-200 hover:bg-gray-50'
+                                                    ? 'border-primary bg-primary/10 text-primary font-bold'
+                                                    : 'border-gray-200 hover:bg-gray-50'
                                                     }`}
                                             >
                                                 <span>{subject}</span>
@@ -282,6 +374,25 @@ export default function Settings() {
                         >
                             Upgrade Plan
                         </Button>
+                    </div>
+                </Card>
+
+                {/* AI Configuration Section */}
+                <Card className="p-6">
+                    <div className="flex items-center gap-3 mb-4">
+                        <div className="p-3 bg-purple-100 rounded-full">
+                            <BookOpen className="text-purple-600" size={24} />
+                        </div>
+                        <div>
+                            <h2 className="text-xl font-heading font-bold">AI Configuration</h2>
+                            <p className="text-sm text-text-secondary">Coming soon: Use your own Gemini API key for unlimited access!</p>
+                        </div>
+                    </div>
+
+                    <div className="p-4 bg-purple-50 border border-purple-200 rounded-lg">
+                        <p className="text-sm text-text-secondary">
+                            🚀 <strong>Feature in Development:</strong> Soon you'll be able to bring your own Gemini API key for unlimited AI tutoring with complete privacy and cost control.
+                        </p>
                     </div>
                 </Card>
 
