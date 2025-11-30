@@ -1,0 +1,265 @@
+{
+    "grade": 7,
+    "board": "CBSE",
+    "subject": "Hindi",
+    "subject_code": "HIN",
+    "language_of_instruction": "Hindi",
+    "script": "Devanagari",
+    "syllabus_version": "NCERT_2025_26_APPROX",
+    "ncert_core_books": [
+        {
+            "name": "वसंत भाग 2 (Vasant II)",
+            "type": "main_reader"
+        }
+    ],
+    "skills_taxonomy": {
+        "PATHAN": {
+            "code": "PATHAN",
+            "description": "सुगठित और प्रवाहपूर्ण पठन।"
+        },
+        "APATHIT_BODH": {
+            "code": "APATHIT_BODH",
+            "description": "अपठित बोध गद्य/पद्य।"
+        },
+        "VYAKARAN_MADHYAM": {
+            "code": "VYAKARAN_MADHYAM",
+            "description": "समास, संधि, मुहावरे, लोकोक्तियाँ।"
+        },
+        "RACHANATMAK_LEKHAN": {
+            "code": "RACHANATMAK_LEKHAN",
+            "description": "रूपरेखा, निबंध, संवाद लेखन।"
+        },
+        "KAVITA_VISHLESHAN": {
+            "code": "KAVITA_VISHLESHAN",
+            "description": "कविता का भावार्थ, काव्य-सौंदर्य की पहचान।"
+        }
+    },
+    "default_assessment_blueprint": {
+        "objective": 0.20,
+        "short_answer": 0.35,
+        "long_answer": 0.30,
+        "apathit_bodh": 0.15
+    },
+    "chapters": [
+        {
+            "chapter_no": 1,
+            "book": "वसंत",
+            "chapter_id": "HIN7_VASANT_01",
+            "title": "हम पंछी उन्मुक्त गगन के",
+            "type": "poem",
+            "term": "T1",
+            "linked_skills": [
+                "PATHAN",
+                "KAVITA_VISHLESHAN"
+            ],
+            "themes": [
+                "स्वतंत्रता",
+                "प्रकृति"
+            ]
+        },
+        {
+            "chapter_no": 2,
+            "book": "वसंत",
+            "chapter_id": "HIN7_VASANT_02",
+            "title": "दादी माँ",
+            "type": "prose",
+            "term": "T1",
+            "linked_skills": [
+                "APATHIT_BODH",
+                "RACHANATMAK_LEKHAN"
+            ],
+            "themes": [
+                "संस्कार",
+                "परिवार"
+            ]
+        },
+        {
+            "chapter_no": 3,
+            "book": "वसंत",
+            "chapter_id": "HIN7_VASANT_03",
+            "title": "हिमालय की बेटियाँ",
+            "type": "prose",
+            "term": "T1",
+            "linked_skills": [
+                "APATHIT_BODH",
+                "VYAKARAN_MADHYAM"
+            ],
+            "themes": [
+                "भूगोल",
+                "समाज",
+                "नदियाँ"
+            ]
+        },
+        {
+            "chapter_no": 4,
+            "book": "वसंत",
+            "chapter_id": "HIN7_VASANT_04",
+            "title": "कठपुतली",
+            "type": "prose",
+            "term": "T1",
+            "linked_skills": [
+                "APATHIT_BODH"
+            ],
+            "themes": [
+                "लोक-संस्कृति",
+                "मनोरंजन"
+            ]
+        },
+        {
+            "chapter_no": 5,
+            "book": "वसंत",
+            "chapter_id": "HIN7_VASANT_05",
+            "title": "मिठाईवाला",
+            "type": "prose",
+            "term": "T1",
+            "linked_skills": [
+                "APATHIT_BODH",
+                "RACHANATMAK_LEKHAN"
+            ],
+            "themes": [
+                "बाल्य_जीवन",
+                "व्यापार"
+            ]
+        },
+        {
+            "chapter_no": 6,
+            "book": "वसंत",
+            "chapter_id": "HIN7_VASANT_06",
+            "title": "रक्त और हमारा शरीर",
+            "type": "prose",
+            "term": "T1",
+            "linked_skills": [
+                "APATHIT_BODH"
+            ],
+            "themes": [
+                "विज्ञान",
+                "स्वास्थ्य"
+            ]
+        },
+        {
+            "chapter_no": 7,
+            "book": "वसंत",
+            "chapter_id": "HIN7_VASANT_07",
+            "title": "पापा खो गए",
+            "type": "prose",
+            "term": "T2",
+            "linked_skills": [
+                "APATHIT_BODH"
+            ],
+            "themes": [
+                "भावनाएँ",
+                "परिवार"
+            ]
+        },
+        {
+            "chapter_no": 8,
+            "book": "वसंत",
+            "chapter_id": "HIN7_VASANT_08",
+            "title": "शाम – एक किसान",
+            "type": "poem",
+            "term": "T2",
+            "linked_skills": [
+                "PATHAN",
+                "KAVITA_VISHLESHAN"
+            ],
+            "themes": [
+                "किसान_जीवन",
+                "प्रकृति"
+            ]
+        },
+        {
+            "chapter_no": 9,
+            "book": "वसंत",
+            "chapter_id": "HIN7_VASANT_09",
+            "title": "अपूर्व अनुभव",
+            "type": "prose",
+            "term": "T2",
+            "linked_skills": [
+                "APATHIT_BODH",
+                "RACHANATMAK_LEKHAN"
+            ],
+            "themes": [
+                "अनुभव",
+                "यात्रा"
+            ]
+        },
+        {
+            "chapter_no": 10,
+            "book": "वसंत",
+            "chapter_id": "HIN7_VASANT_10",
+            "title": "रहीम के दोहे",
+            "type": "poem",
+            "term": "T2",
+            "linked_skills": [
+                "PATHAN",
+                "KAVITA_VISHLESHAN"
+            ],
+            "themes": [
+                "नीतिवचन",
+                "लोक_ज्ञान"
+            ]
+        },
+        {
+            "chapter_no": 11,
+            "book": "वसंत",
+            "chapter_id": "HIN7_VASANT_11",
+            "title": "नीलकंठ",
+            "type": "prose",
+            "term": "T2",
+            "linked_skills": [
+                "APATHIT_BODH"
+            ],
+            "themes": [
+                "पक्षी_अवलोकन",
+                "पर्यावरण"
+            ]
+        },
+        {
+            "chapter_no": 12,
+            "book": "वसंत",
+            "chapter_id": "HIN7_VASANT_12",
+            "title": "भोर और बरखा",
+            "type": "poem",
+            "term": "T2",
+            "linked_skills": [
+                "PATHAN",
+                "KAVITA_VISHLESHAN"
+            ],
+            "themes": [
+                "ऋतु_चित्रण",
+                "प्रकृति"
+            ]
+        },
+        {
+            "chapter_no": 13,
+            "book": "वसंत",
+            "chapter_id": "HIN7_VASANT_13",
+            "title": "वीर कुँवर सिंह",
+            "type": "prose",
+            "term": "T2",
+            "linked_skills": [
+                "APATHIT_BODH"
+            ],
+            "themes": [
+                "स्वतंत्रता_संग्राम",
+                "वीरता"
+            ]
+        },
+        {
+            "chapter_no": 14,
+            "book": "वसंत",
+            "chapter_id": "HIN7_VASANT_14",
+            "title": "संघर्ष के कारण मैं तुनुकमिज़ाज हो गया: धनराज",
+            "type": "prose",
+            "term": "T2",
+            "linked_skills": [
+                "APATHIT_BODH",
+                "RACHANATMAK_LEKHAN"
+            ],
+            "themes": [
+                "संघर्ष",
+                "व्यक्तित्व_विकास"
+            ]
+        }
+    ]
+}

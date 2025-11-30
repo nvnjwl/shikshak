@@ -35,8 +35,14 @@ export default function Checkout() {
 
     useEffect(() => {
         // Get plan and trial flag from navigation state
-        const plan = location.state?.selectedClass || '6th';
+        let plan = location.state?.selectedClass || '6th';
         const isTrialFlow = location.state?.isTrial || false;
+
+        // Normalize plan name to match SUBSCRIPTION_PLANS keys (e.g. "6th" -> "Class 6")
+        const classNum = plan.toString().replace(/\D/g, '');
+        if (classNum) {
+            plan = `Class ${classNum}`;
+        }
 
         setSelectedPlan(plan);
         setIsTrial(isTrialFlow);

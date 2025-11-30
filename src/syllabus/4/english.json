@@ -1,0 +1,149 @@
+{
+    "class": 4,
+    "board": "CBSE",
+    "academic_year": "2025-26",
+    "subject_code": "ENG",
+    "subject_name": "English",
+    "chapters": [
+        {
+            "number": 1,
+            "name": "Wake Up! / Neha's Alarm Clock",
+            "theme": "Morning Routine",
+            "key_topics": [
+                "Nature in morning",
+                "Punctuality",
+                "Reading comprehension"
+            ],
+            "learning_outcomes": [
+                "Recites poems with expression.",
+                "Understands the importance of time."
+            ]
+        },
+        {
+            "number": 2,
+            "name": "Noses / The Little Fir Tree",
+            "theme": "Self-acceptance",
+            "key_topics": [
+                "Body parts",
+                "Contentment",
+                "Magician story"
+            ],
+            "learning_outcomes": [
+                "Appreciates one's own features.",
+                "Learns new vocabulary related to nature."
+            ]
+        },
+        {
+            "number": 3,
+            "name": "Run! / Nasruddin's Aim",
+            "theme": "Sports and Fun",
+            "key_topics": [
+                "Outdoor games",
+                "Archery",
+                "Boasting vs Skill"
+            ],
+            "learning_outcomes": [
+                "Enjoys reading adventure stories.",
+                "Uses action words correctly."
+            ]
+        },
+        {
+            "number": 4,
+            "name": "Why? / Alice in Wonderland",
+            "theme": "Curiosity",
+            "key_topics": [
+                "Asking questions",
+                "Fantasy world",
+                "Describing words"
+            ],
+            "learning_outcomes": [
+                "Frames questions using 'why'.",
+                "Describes imaginary scenes."
+            ]
+        },
+        {
+            "number": 5,
+            "name": "Don't be Afraid of the Dark / Helen Keller",
+            "theme": "Courage",
+            "key_topics": [
+                "Overcoming fear",
+                "Disability and determination",
+                "Sign language"
+            ],
+            "learning_outcomes": [
+                "Overcomes fear of darkness.",
+                "Inspires from lives of great people."
+            ]
+        },
+        {
+            "number": 6,
+            "name": "The Donkey / I had a Little Pony / The Milkman's Cow",
+            "theme": "Animals",
+            "key_topics": [
+                "Kindness to animals",
+                "Animal sounds",
+                "Humour"
+            ],
+            "learning_outcomes": [
+                "Treats animals with kindness.",
+                "Enjoys humorous stories."
+            ]
+        },
+        {
+            "number": 7,
+            "name": "Hiawatha / The Scholar's Mother Tongue",
+            "theme": "Culture and Language",
+            "key_topics": [
+                "Native American life",
+                "Languages",
+                "Wit and wisdom (Akbar-Birbal)"
+            ],
+            "learning_outcomes": [
+                "Respects different cultures.",
+                "Appreciates folk tales."
+            ]
+        },
+        {
+            "number": 8,
+            "name": "A Watering Rhyme / The Giving Tree",
+            "theme": "Nature",
+            "key_topics": [
+                "Gardening",
+                "Sacrifice and love",
+                "Trees"
+            ],
+            "learning_outcomes": [
+                "Cares for plants.",
+                "Understands the value of giving."
+            ]
+        },
+        {
+            "number": 9,
+            "name": "Books / Going to Buy a Book",
+            "theme": "Reading",
+            "key_topics": [
+                "Library",
+                "Choosing books",
+                "Joy of reading"
+            ],
+            "learning_outcomes": [
+                "Develops habit of reading.",
+                "Describes experience of visiting a library."
+            ]
+        },
+        {
+            "number": 10,
+            "name": "The Naughty Boy / Pinocchio",
+            "theme": "Adventure",
+            "key_topics": [
+                "Puppets",
+                "Truth vs Lie",
+                "Carpentry"
+            ],
+            "learning_outcomes": [
+                "Learns moral values.",
+                "Retells story in own words."
+            ]
+        }
+    ]
+}

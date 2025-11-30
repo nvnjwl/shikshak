@@ -1,6 +1,6 @@
 import { createContext, useContext, useState, useEffect, useCallback } from 'react';
 import { useAuth } from './AuthContext';
-import { doc, getDoc, setDoc, updateDoc } from 'firebase/firestore';
+import { doc, getDoc, setDoc, updateDoc, deleteDoc, collection, getDocs, writeBatch } from 'firebase/firestore';
 import { db } from '../lib/firebase';
 import logger from '../utils/logger';
 
@@ -188,6 +188,49 @@ export function ProfileProvider({ children }) {
         }
     };
 
+    // Switch Class and Reset Progress
+    const switchClass = async (newClass) => {
+        if (!currentUser) return;
+
+        try {
+            logger.info('ProfileContext', 'Switching class', { from: profile.class, to: newClass });
+            setLoading(true);
+
+            // 1. Delete all progress documents
+            const progressRef = collection(db, 'users', currentUser.uid, 'progress');
+            const progressSnapshot = await getDocs(progressRef);
+
+            const batch = writeBatch(db);
+            progressSnapshot.docs.forEach((doc) => {
+                batch.delete(doc.ref);
+            });
+
+            // 2. Update user profile with new class
+            const userRef = doc(db, 'users', currentUser.uid);
+            batch.update(userRef, {
+                'profile.class': newClass,
+                'profile.subjects': SUBJECTS_BY_CLASS[newClass] || []
+            });
+
+            await batch.commit();
+
+            // 3. Update local state
+            setProfile(prev => ({
+                ...prev,
+                class: newClass,
+                subjects: SUBJECTS_BY_CLASS[newClass] || []
+            }));
+
+            logger.success('ProfileContext', 'Class switched and progress reset');
+            return true;
+        } catch (error) {
+            logger.error('ProfileContext', 'Error switching class', error);
+            throw error;
+        } finally {
+            setLoading(false);
+        }
+    };
+
     const value = {
         profile,
         loading,
@@ -197,7 +240,9 @@ export function ProfileProvider({ children }) {
         getSubjectsForClass,
         needsOnboarding,
         isAdmin,
+        isAdmin,
         promoteToAdmin,
+        switchClass,
         SUBJECTS_BY_CLASS
     };
 

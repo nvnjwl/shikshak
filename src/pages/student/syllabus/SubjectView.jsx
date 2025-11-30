@@ -3,53 +3,55 @@ import { useParams, useNavigate } from 'react-router-dom';
 import { Card } from '../../../components/ui/Card';
 import { Button } from '../../../components/ui/Button';
 import { ArrowLeft, BookOpen, ChevronRight, PlayCircle, FileText } from 'lucide-react';
-import { collection, getDocs, query, where, orderBy, doc, getDoc } from 'firebase/firestore';
+
+import { doc, getDoc } from 'firebase/firestore';
 import { db } from '../../../lib/firebase';
 import logger from '../../../utils/logger';
+import { useProfile } from '../../../contexts/ProfileContext';
+import toast from 'react-hot-toast';
 
 export default function SubjectView() {
     const { subjectId } = useParams();
     const navigate = useNavigate();
+    const { profile } = useProfile();
     const [subjectName, setSubjectName] = useState('Subject');
     const [chapters, setChapters] = useState([]);
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
         fetchSubjectAndChapters();
-    }, [subjectId]);
+    }, [subjectId, profile]);
 
     const fetchSubjectAndChapters = async () => {
+        if (!profile?.class) return;
+
         try {
             setLoading(true);
+            const classNum = profile.class.replace(/\D/g, '');
+            const docId = `class${classNum}_${subjectId}`;
+            const syllabusRef = doc(db, 'syllabus', docId);
+            const syllabusSnap = await getDoc(syllabusRef);
 
-            // 1. Fetch Subject Name
-            const subjectDoc = await getDoc(doc(db, 'syllabus_subjects', subjectId));
-            if (subjectDoc.exists()) {
-                setSubjectName(subjectDoc.data().name);
+            if (syllabusSnap.exists()) {
+                const data = syllabusSnap.data();
+                setSubjectName(data.subject_name);
+
+                // Map chapters to include ID (using number as ID for now)
+                const chaptersData = data.chapters.map(c => ({
+                    id: c.number,
+                    title: c.name,
+                    topics: c.key_topics,
+                    progress: 0 // TODO: Calculate real progress
+                }));
+
+                setChapters(chaptersData);
             } else {
-                // Fallback for hardcoded IDs if any (legacy support)
-                const legacyNames = { 'math': 'Mathematics', 'science': 'Science', 'english': 'English', 'social': 'Social Science' };
-                if (legacyNames[subjectId]) setSubjectName(legacyNames[subjectId]);
+                toast.error("Subject not found");
+                setChapters([]);
             }
-
-            // 2. Fetch Chapters
-            const chaptersColl = collection(db, 'syllabus_chapters');
-            const q = query(
-                chaptersColl,
-                where('subjectId', '==', subjectId),
-                orderBy('order', 'asc')
-            );
-            const snapshot = await getDocs(q);
-
-            const data = snapshot.docs.map(doc => ({
-                id: doc.id,
-                ...doc.data(),
-                progress: 0 // TODO: Calculate real progress
-            }));
-
-            setChapters(data);
         } catch (error) {
             logger.error('SubjectView', 'Error fetching chapters', error);
+            toast.error("Failed to load chapters");
         } finally {
             setLoading(false);
         }

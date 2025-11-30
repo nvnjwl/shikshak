@@ -1,0 +1,233 @@
+{
+    "class": 8,
+    "board": "CBSE",
+    "academic_year": "2025-26",
+    "subject_code": "MATH",
+    "subject_name": "Mathematics",
+    "chapters": [
+        {
+            "number": 1,
+            "name": "Rational Numbers",
+            "theme": "Properties and operations of rational numbers",
+            "key_topics": [
+                "Rational numbers on number line",
+                "Standard form of rational numbers",
+                "Operations and properties (closure, associativity, etc.)"
+            ],
+            "learning_outcomes": [
+                "Represents rational numbers and identifies their position on number line.",
+                "Performs operations on rational numbers and simplifies."
+            ]
+        },
+        {
+            "number": 2,
+            "name": "Linear Equations in One Variable",
+            "theme": "Solving linear equations systematically",
+            "key_topics": [
+                "Equations with variables on one or both sides",
+                "Equations reducible to linear form",
+                "Real-life word problems"
+            ],
+            "learning_outcomes": [
+                "Solves linear equations involving brackets and fractions.",
+                "Formulates and solves word problems using linear equations."
+            ]
+        },
+        {
+            "number": 3,
+            "name": "Understanding Quadrilaterals",
+            "theme": "Polygon and quadrilateral properties",
+            "key_topics": [
+                "Polygons and their classification",
+                "Angle sum of polygons",
+                "Special quadrilaterals: parallelogram, rhombus, rectangle, square, kite"
+            ],
+            "learning_outcomes": [
+                "Finds interior angle sum of polygons.",
+                "Identifies and uses properties of special quadrilaterals."
+            ]
+        },
+        {
+            "number": 4,
+            "name": "Practical Geometry",
+            "theme": "Construction of quadrilaterals",
+            "key_topics": [
+                "Constructing quadrilaterals with given conditions (sides, angles, diagonals)",
+                "Special cases (parallelogram, rhombus)",
+                "Checking construction accuracy"
+            ],
+            "learning_outcomes": [
+                "Constructs quadrilaterals using ruler and compass given required data.",
+                "Verifies properties of constructed quadrilaterals."
+            ]
+        },
+        {
+            "number": 5,
+            "name": "Data Handling",
+            "theme": "Statistical representation and interpretation",
+            "key_topics": [
+                "Bar graphs, pie charts (intro)",
+                "Mean, median, mode",
+                "Probability as chance (intuitive)"
+            ],
+            "learning_outcomes": [
+                "Computes central tendency measures for given data.",
+                "Represents data using suitable graph and interprets it."
+            ]
+        },
+        {
+            "number": 6,
+            "name": "Squares and Square Roots",
+            "theme": "Square numbers and their roots",
+            "key_topics": [
+                "Patterns of square numbers",
+                "Finding squares by formula and patterns",
+                "Finding square roots by prime factorisation and division method"
+            ],
+            "learning_outcomes": [
+                "Identifies perfect squares up to a reasonable limit.",
+                "Finds square roots of perfect squares using methods learnt."
+            ]
+        },
+        {
+            "number": 7,
+            "name": "Cubes and Cube Roots",
+            "theme": "Cubes and cube roots of numbers",
+            "key_topics": [
+                "Patterns in cubes",
+                "Finding cubes of numbers",
+                "Cube roots by factorisation"
+            ],
+            "learning_outcomes": [
+                "Recognises perfect cubes and their cube roots.",
+                "Uses cubes and cube roots in simple problems."
+            ]
+        },
+        {
+            "number": 8,
+            "name": "Comparing Quantities",
+            "theme": "Percent, discount, profit-loss, tax and compound interest",
+            "key_topics": [
+                "Percentage increase and decrease",
+                "Discount, sales tax/GST (basic idea)",
+                "Simple compound interest (two years, three years)"
+            ],
+            "learning_outcomes": [
+                "Solves problems involving percentage change.",
+                "Computes profit, loss, discount and simple compound interest."
+            ]
+        },
+        {
+            "number": 9,
+            "name": "Algebraic Expressions and Identities",
+            "theme": "Manipulation of algebraic expressions",
+            "key_topics": [
+                "Addition, subtraction and multiplication of expressions",
+                "Standard identities (a+b)², (a-b)², a²-b²",
+                "Using identities for fast computation"
+            ],
+            "learning_outcomes": [
+                "Multiplies algebraic expressions systematically.",
+                "Applies identities to simplify and compute quickly."
+            ]
+        },
+        {
+            "number": 10,
+            "name": "Visualising Solid Shapes",
+            "theme": "3D shapes and cross-sections",
+            "key_topics": [
+                "Views of 3D shapes",
+                "Nets of common solids",
+                "Cross-sections of solids"
+            ],
+            "learning_outcomes": [
+                "Matches solids with nets and views.",
+                "Describes cross-sections formed by cutting solids."
+            ]
+        },
+        {
+            "number": 11,
+            "name": "Mensuration",
+            "theme": "Areas and volumes of 2D & 3D shapes",
+            "key_topics": [
+                "Area of trapezium and special quadrilaterals",
+                "Surface area and volume of cube and cuboid",
+                "Conversion of units in mensuration"
+            ],
+            "learning_outcomes": [
+                "Finds surface area and volume of basic 3D solids.",
+                "Solves word problems involving mixed shapes."
+            ]
+        },
+        {
+            "number": 12,
+            "name": "Exponents and Powers",
+            "theme": "Scientific notation and exponent rules",
+            "key_topics": [
+                "Negative exponents",
+                "Standard form of numbers (scientific notation)",
+                "Laws of exponents (extended)"
+            ],
+            "learning_outcomes": [
+                "Uses laws of exponents to simplify expressions.",
+                "Expresses very large and very small numbers in standard form."
+            ]
+        },
+        {
+            "number": 13,
+            "name": "Direct and Inverse Proportions",
+            "theme": "Relationships between varying quantities",
+            "key_topics": [
+                "Direct proportion (x ∝ y)",
+                "Inverse proportion (x ∝ 1/y)",
+                "Graphical understanding and simple applications"
+            ],
+            "learning_outcomes": [
+                "Identifies situations of direct and inverse proportion.",
+                "Solves numerical problems based on proportional reasoning."
+            ]
+        },
+        {
+            "number": 14,
+            "name": "Factorisation",
+            "theme": "Breaking expressions into factors",
+            "key_topics": [
+                "Common factor method",
+                "Grouping terms",
+                "Using identities for factorisation"
+            ],
+            "learning_outcomes": [
+                "Factorises simple algebraic expressions.",
+                "Checks factorisation by back multiplication."
+            ]
+        },
+        {
+            "number": 15,
+            "name": "Introduction to Graphs",
+            "theme": "Cartesian plane and basic graphs",
+            "key_topics": [
+                "Coordinate axes and plotting points",
+                "Line graphs for real-life data",
+                "Reading information from graphs"
+            ],
+            "learning_outcomes": [
+                "Plots ordered pairs on Cartesian plane.",
+                "Interprets simple line graphs representing real data."
+            ]
+        },
+        {
+            "number": 16,
+            "name": "Playing with Numbers",
+            "theme": "Patterns and divisibility in number system",
+            "key_topics": [
+                "General form of numbers",
+                "Tests of divisibility revisited",
+                "Number puzzles and digit games"
+            ],
+            "learning_outcomes": [
+                "Represents numbers algebraically using digits.",
+                "Solves simple puzzles using divisibility and patterns."
+            ]
+        }
+    ]
+}

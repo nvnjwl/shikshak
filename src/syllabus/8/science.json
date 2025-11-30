@@ -1,0 +1,261 @@
+{
+    "class": 8,
+    "board": "CBSE",
+    "academic_year": "2025-26",
+    "subject_code": "SCI",
+    "subject_name": "Science",
+    "chapters": [
+        {
+            "number": 1,
+            "name": "Crop Production and Management",
+            "theme": "Agricultural practices",
+            "key_topics": [
+                "Basic practices of crop production",
+                "Soil preparation, sowing, manuring and irrigation",
+                "Harvesting, storage and protection from pests"
+            ],
+            "learning_outcomes": [
+                "Lists major steps of crop production in sequence.",
+                "Explains need for manure, fertilisers and proper irrigation."
+            ]
+        },
+        {
+            "number": 2,
+            "name": "Microorganisms: Friend and Foe",
+            "theme": "Beneficial and harmful microbes",
+            "key_topics": [
+                "Types of microorganisms (bacteria, fungi, protozoa, viruses)",
+                "Use in food, medicine and industry",
+                "Diseases and food spoilage caused by microbes"
+            ],
+            "learning_outcomes": [
+                "Classifies microorganisms with examples.",
+                "Explains both helpful and harmful roles of microbes."
+            ]
+        },
+        {
+            "number": 3,
+            "name": "Synthetic Fibres and Plastics",
+            "theme": "Man-made materials and environment",
+            "key_topics": [
+                "Types of synthetic fibres (rayon, nylon, polyester, acrylic)",
+                "Properties and uses of plastics",
+                "Environmental issues of plastic waste"
+            ],
+            "learning_outcomes": [
+                "Differentiates between natural and synthetic fibres.",
+                "Discusses advantages and environmental problems of plastics."
+            ]
+        },
+        {
+            "number": 4,
+            "name": "Materials: Metals and Non-metals",
+            "theme": "Properties and uses of metals and non-metals",
+            "key_topics": [
+                "Physical properties (lustre, malleability, ductility, conductivity)",
+                "Chemical properties (reaction with air, water, acids)",
+                "Everyday uses based on properties"
+            ],
+            "learning_outcomes": [
+                "Compares metals and non-metals using experiments.",
+                "Matches material properties with suitable uses."
+            ]
+        },
+        {
+            "number": 5,
+            "name": "Coal and Petroleum",
+            "theme": "Fossil fuels and their impact",
+            "key_topics": [
+                "Formation of coal and petroleum",
+                "Refining and products of petroleum",
+                "Conservation and environmental effects"
+            ],
+            "learning_outcomes": [
+                "Explains why coal and petroleum are exhaustible resources.",
+                "Lists steps to reduce dependence on fossil fuels."
+            ]
+        },
+        {
+            "number": 6,
+            "name": "Combustion and Flame",
+            "theme": "Burning of fuels and safety",
+            "key_topics": [
+                "Conditions necessary for combustion",
+                "Structure of flame",
+                "Good and bad fuels; fuel efficiency"
+            ],
+            "learning_outcomes": [
+                "Identifies zones of a candle flame and their properties.",
+                "Discusses safe handling of fuels and fire."
+            ]
+        },
+        {
+            "number": 7,
+            "name": "Conservation of Plants and Animals",
+            "theme": "Biodiversity and conservation measures",
+            "key_topics": [
+                "Deforestation and its causes",
+                "Protected areas (wildlife sanctuaries, national parks, biosphere reserves)",
+                "Red Data Book and endemic species"
+            ],
+            "learning_outcomes": [
+                "Explains effects of deforestation on environment.",
+                "Describes role of protected areas in conservation."
+            ]
+        },
+        {
+            "number": 8,
+            "name": "Cell – Structure and Functions",
+            "theme": "Fundamental unit of life",
+            "key_topics": [
+                "Discovery of cell and cell theory (intuitive)",
+                "Cell organelles (nucleus, cytoplasm, cell membrane)",
+                "Differences between plant and animal cells"
+            ],
+            "learning_outcomes": [
+                "Identifies major cell parts in diagrams.",
+                "Differentiates between typical plant and animal cells."
+            ]
+        },
+        {
+            "number": 9,
+            "name": "Reproduction in Animals",
+            "theme": "Reproductive processes",
+            "key_topics": [
+                "Sexual reproduction: male and female reproductive systems",
+                "Fertilisation and development",
+                "Viviparous and oviparous animals"
+            ],
+            "learning_outcomes": [
+                "Explains basic steps of sexual reproduction in humans (age-appropriate).",
+                "Classifies animals based on mode of birth."
+            ]
+        },
+        {
+            "number": 10,
+            "name": "Reaching the Age of Adolescence",
+            "theme": "Adolescence and puberty",
+            "key_topics": [
+                "Physical and emotional changes",
+                "Endocrine glands and hormones (intro)",
+                "Health, hygiene and balanced diet during adolescence"
+            ],
+            "learning_outcomes": [
+                "Recognises physical and emotional changes at puberty as natural.",
+                "Lists healthy habits important during adolescence."
+            ]
+        },
+        {
+            "number": 11,
+            "name": "Force and Pressure",
+            "theme": "Effects and types of forces",
+            "key_topics": [
+                "Contact and non-contact forces",
+                "Pressure and its dependence on area",
+                "Pressure in fluids (basic)"
+            ],
+            "learning_outcomes": [
+                "Gives examples of different types of forces.",
+                "Explains everyday situations using concept of pressure."
+            ]
+        },
+        {
+            "number": 12,
+            "name": "Friction",
+            "theme": "Friction as a force and its effects",
+            "key_topics": [
+                "Factors affecting friction",
+                "Static, sliding and rolling friction",
+                "Advantages and disadvantages of friction"
+            ],
+            "learning_outcomes": [
+                "Identifies situations where friction is useful or undesirable.",
+                "Suggests ways to increase or reduce friction as needed."
+            ]
+        },
+        {
+            "number": 13,
+            "name": "Sound",
+            "theme": "Production and propagation of sound",
+            "key_topics": [
+                "Vibration as source of sound",
+                "Propagation of sound through different media",
+                "Amplitude, frequency and loudness (qualitative)"
+            ],
+            "learning_outcomes": [
+                "Explains how sound is produced in common instruments.",
+                "Relates pitch and loudness to characteristics of vibration."
+            ]
+        },
+        {
+            "number": 14,
+            "name": "Chemical Effects of Electric Current",
+            "theme": "Electrolysis and electroplating (intro)",
+            "key_topics": [
+                "Conducting liquids",
+                "Electrolytic decomposition effects",
+                "Electroplating and its applications"
+            ],
+            "learning_outcomes": [
+                "Differentiates between conductors and non-conductors among liquids.",
+                "Describes simple applications of electroplating."
+            ]
+        },
+        {
+            "number": 15,
+            "name": "Some Natural Phenomena",
+            "theme": "Lightning and earthquakes",
+            "key_topics": [
+                "Electric charges and lightning formation (conceptual)",
+                "Lightning safety",
+                "Earthquakes and preparedness"
+            ],
+            "learning_outcomes": [
+                "Explains lightning as a large electric discharge.",
+                "Lists safety measures during lightning and earthquakes."
+            ]
+        },
+        {
+            "number": 16,
+            "name": "Light",
+            "theme": "Reflection, refraction basics and human eye (intro)",
+            "key_topics": [
+                "Regular and diffused reflection",
+                "Multiple reflections",
+                "Structure of human eye (basic)"
+            ],
+            "learning_outcomes": [
+                "Describes reflection from smooth and rough surfaces.",
+                "Explains simple use of mirrors in daily life and devices."
+            ]
+        },
+        {
+            "number": 17,
+            "name": "Stars and the Solar System",
+            "theme": "Astronomy basics",
+            "key_topics": [
+                "Planets, stars and constellations",
+                "Phases of the Moon",
+                "Solar system structure"
+            ],
+            "learning_outcomes": [
+                "Names planets in order from the Sun.",
+                "Explains cause of lunar phases qualitatively."
+            ]
+        },
+        {
+            "number": 18,
+            "name": "Pollution of Air and Water",
+            "theme": "Environmental pollution and control",
+            "key_topics": [
+                "Sources of air and water pollution",
+                "Effects on health and environment",
+                "Prevention and control measures"
+            ],
+            "learning_outcomes": [
+                "Identifies major pollutants and their sources.",
+                "Suggests individual and community actions to reduce pollution."
+            ]
+        }
+    ]
+}

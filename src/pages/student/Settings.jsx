@@ -378,23 +378,82 @@ export default function Settings() {
                 </Card>
 
                 {/* AI Configuration Section */}
-                <Card className="p-6">
-                    <div className="flex items-center gap-3 mb-4">
-                        <div className="p-3 bg-purple-100 rounded-full">
-                            <BookOpen className="text-purple-600" size={24} />
-                        </div>
+                <div className="flex items-center gap-3 mb-4">
+                    <div className="p-3 bg-purple-100 rounded-full">
+                        <BookOpen className="text-purple-600" size={24} />
+                    </div>
+                    <div>
+                        <h2 className="text-xl font-heading font-bold">AI Configuration</h2>
+                        <p className="text-sm text-text-secondary">Use your own Gemini API key for unlimited access</p>
+                    </div>
+                </div>
+
+                <div className="space-y-4">
+                    <div className="flex items-center justify-between p-4 bg-gray-50 rounded-lg">
                         <div>
-                            <h2 className="text-xl font-heading font-bold">AI Configuration</h2>
-                            <p className="text-sm text-text-secondary">Coming soon: Use your own Gemini API key for unlimited access!</p>
+                            <h3 className="font-bold text-gray-900">Bring Your Own Key (BYOK)</h3>
+                            <p className="text-sm text-text-secondary">Use your personal Gemini API key instead of the platform key</p>
                         </div>
+                        <label className="relative inline-flex items-center cursor-pointer">
+                            <input
+                                type="checkbox"
+                                className="sr-only peer"
+                                checked={useOwnApiKey}
+                                onChange={(e) => handleToggleBYOK(e.target.checked)}
+                            />
+                            <div className="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-purple-300 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-purple-600"></div>
+                        </label>
                     </div>
 
-                    <div className="p-4 bg-purple-50 border border-purple-200 rounded-lg">
-                        <p className="text-sm text-text-secondary">
-                            🚀 <strong>Feature in Development:</strong> Soon you'll be able to bring your own Gemini API key for unlimited AI tutoring with complete privacy and cost control.
-                        </p>
-                    </div>
-                </Card>
+                    {useOwnApiKey && (
+                        <div className="p-4 border border-gray-200 rounded-lg space-y-4 animate-in fade-in slide-in-from-top-2">
+                            <div>
+                                <label className="block text-sm font-medium text-text-secondary mb-2">
+                                    Gemini API Key
+                                </label>
+                                <div className="flex gap-2">
+                                    <input
+                                        type="password"
+                                        value={apiKey}
+                                        onChange={(e) => setApiKey(e.target.value)}
+                                        placeholder="AIzaSy..."
+                                        className="flex-1 p-3 rounded-lg border-2 border-gray-200 focus:border-purple-500 focus:ring-2 focus:ring-purple-200 outline-none font-mono text-sm"
+                                        disabled={apiKeyStatus === 'active'}
+                                    />
+                                    {apiKeyStatus === 'active' ? (
+                                        <Button
+                                            variant="outline"
+                                            onClick={handleRemoveApiKey}
+                                            className="text-red-500 hover:text-red-600 border-red-200 hover:bg-red-50"
+                                        >
+                                            Remove
+                                        </Button>
+                                    ) : (
+                                        <Button
+                                            onClick={handleVerifyApiKey}
+                                            disabled={verifyingKey || !apiKey}
+                                            className="bg-purple-600 hover:bg-purple-700"
+                                        >
+                                            {verifyingKey ? 'Verifying...' : 'Verify & Save'}
+                                        </Button>
+                                    )}
+                                </div>
+                            </div>
+
+                            {apiKeyStatus === 'active' && (
+                                <div className="flex items-center gap-2 text-green-600 text-sm bg-green-50 p-3 rounded-lg">
+                                    <Check size={16} />
+                                    <span>API Key verified and active! You have unlimited access.</span>
+                                </div>
+                            )}
+
+                            <div className="text-xs text-text-secondary">
+                                <p>Don't have a key? <a href="https://aistudio.google.com/app/apikey" target="_blank" rel="noopener noreferrer" className="text-purple-600 hover:underline">Get one from Google AI Studio</a> (it's free!)</p>
+                                <p className="mt-1">Your key is stored securely on your device and never shared.</p>
+                            </div>
+                        </div>
+                    )}
+                </div>
 
                 {/* Account Actions */}
                 <Card className="p-6">

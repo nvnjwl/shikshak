@@ -1,0 +1,201 @@
+{
+    "grade": 8,
+    "board": "CBSE",
+    "subject": "Hindi",
+    "subject_code": "HIN",
+    "language_of_instruction": "Hindi",
+    "script": "Devanagari",
+    "syllabus_version": "NCERT_2025_26_APPROX",
+    "ncert_core_books": [
+        {
+            "name": "वसंत भाग 3 (Vasant III)",
+            "type": "main_reader"
+        }
+    ],
+    "skills_taxonomy": {
+        "PATHAN": {
+            "code": "PATHAN",
+            "description": "गंभीर और लम्बे पाठों का प्रभावी पठन।"
+        },
+        "APATHIT_BODH": {
+            "code": "APATHIT_BODH",
+            "description": "उच्च स्तर का अपठित बोध।"
+        },
+        "VYAKARAN_ADV": {
+            "code": "VYAKARAN_ADV",
+            "description": "वाक्य-विन्यास, काल, वाच्य, अव्यय, वाक्य-भेद।"
+        },
+        "RACHANATMAK_LEKHAN": {
+            "code": "RACHANATMAK_LEKHAN",
+            "description": "औपचारिक व अनौपचारिक लेखन, रचनात्मक लेख।"
+        },
+        "KAVITA_VISHLESHAN": {
+            "code": "KAVITA_VISHLESHAN",
+            "description": "काव्य-विधान, प्रतीक, बिम्ब, छंद की बुनियादी समझ।"
+        }
+    },
+    "default_assessment_blueprint": {
+        "objective": 0.20,
+        "short_answer": 0.30,
+        "long_answer": 0.30,
+        "apathit_bodh": 0.20
+    },
+    "chapters": [
+        {
+            "chapter_no": 1,
+            "book": "वसंत",
+            "chapter_id": "HIN8_VASANT_01",
+            "title": "ध्वनि",
+            "type": "poem",
+            "term": "T1",
+            "linked_skills": [
+                "PATHAN",
+                "KAVITA_VISHLESHAN"
+            ],
+            "themes": [
+                "ध्वनि_अनुभव",
+                "संवेग"
+            ]
+        },
+        {
+            "chapter_no": 2,
+            "book": "वसंत",
+            "chapter_id": "HIN8_VASANT_02",
+            "title": "लाख की चूड़ियाँ",
+            "type": "prose",
+            "term": "T1",
+            "linked_skills": [
+                "APATHIT_BODH",
+                "RACHANATMAK_LEKHAN"
+            ],
+            "themes": [
+                "परिवार",
+                "आर्थिक_स्थिति"
+            ]
+        },
+        {
+            "chapter_no": 3,
+            "book": "वसंत",
+            "chapter_id": "HIN8_VASANT_03",
+            "title": "बस की यात्रा",
+            "type": "prose",
+            "term": "T1",
+            "linked_skills": [
+                "APATHIT_BODH"
+            ],
+            "themes": [
+                "यात्रा",
+                "समाज_अवलोकन"
+            ]
+        },
+        {
+            "chapter_no": 4,
+            "book": "वसंत",
+            "chapter_id": "HIN8_VASANT_04",
+            "title": "दीवानों की हस्ती",
+            "type": "poem",
+            "term": "T1",
+            "linked_skills": [
+                "PATHAN",
+                "KAVITA_VISHLESHAN"
+            ],
+            "themes": [
+                "विचार_स्वतंत्रता",
+                "संघर्ष"
+            ]
+        },
+        {
+            "chapter_no": 5,
+            "book": "वसंत",
+            "chapter_id": "HIN8_VASANT_05",
+            "title": "चिट्ठियों की अनूठी दुनिया",
+            "type": "prose",
+            "term": "T1",
+            "linked_skills": [
+                "APATHIT_BODH",
+                "RACHANATMAK_LEKHAN"
+            ],
+            "themes": [
+                "संचार",
+                "संबंध"
+            ]
+        },
+        {
+            "chapter_no": 6,
+            "book": "वसंत",
+            "chapter_id": "HIN8_VASANT_06",
+            "title": "भगवान के डाकिए",
+            "type": "prose",
+            "term": "T2",
+            "linked_skills": [
+                "APATHIT_BODH"
+            ],
+            "themes": [
+                "सेवा",
+                "समर्पण"
+            ]
+        },
+        {
+            "chapter_no": 7,
+            "book": "वसंत",
+            "chapter_id": "HIN8_VASANT_07",
+            "title": "क्या निराश हुआ जाए",
+            "type": "poem",
+            "term": "T2",
+            "linked_skills": [
+                "PATHAN",
+                "KAVITA_VISHLESHAN"
+            ],
+            "themes": [
+                "आशावाद",
+                "संघर्ष"
+            ]
+        },
+        {
+            "chapter_no": 8,
+            "book": "वसंत",
+            "chapter_id": "HIN8_VASANT_08",
+            "title": "यह सबसे कठिन समय नहीं",
+            "type": "prose",
+            "term": "T2",
+            "linked_skills": [
+                "APATHIT_BODH"
+            ],
+            "themes": [
+                "आत्मबल",
+                "समस्याएँ"
+            ]
+        },
+        {
+            "chapter_no": 9,
+            "book": "वसंत",
+            "chapter_id": "HIN8_VASANT_09",
+            "title": "कबीर की साखियाँ",
+            "type": "poem",
+            "term": "T2",
+            "linked_skills": [
+                "PATHAN",
+                "KAVITA_VISHLESHAN"
+            ],
+            "themes": [
+                "भक्ति",
+                "नीति"
+            ]
+        },
+        {
+            "chapter_no": 10,
+            "book": "वसंत",
+            "chapter_id": "HIN8_VASANT_10",
+            "title": "कामचोर",
+            "type": "prose",
+            "term": "T2",
+            "linked_skills": [
+                "APATHIT_BODH"
+            ],
+            "themes": [
+                "आलस्य",
+                "कर्तव्य"
+            ]
+        }
+    ]
+}

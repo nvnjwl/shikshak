@@ -1,11 +1,12 @@
 import { GoogleGenerativeAI } from "@google/generative-ai";
 import logger from "../utils/logger";
+import { selectTeacher, buildTeacherPrompt } from "./ai/personas/personaSelector.js";
 
-// Initialize Gemini AI
-const genAI = new GoogleGenerativeAI(import.meta.env.VITE_GEMINI_API_KEY);
+// Initialize Gemini AI with default key (fallback)
+const defaultGenAI = new GoogleGenerativeAI(import.meta.env.VITE_GEMINI_API_KEY);
 
-// System prompt for Shikshak AI - defines personality and teaching style
-const SYSTEM_PROMPT = `You are Shikshak, a friendly and patient AI tutor for Indian students (Class 4-8). 
+// Legacy system prompt (fallback when no persona is selected)
+const LEGACY_SYSTEM_PROMPT = `You are Shikshak, a friendly and patient AI tutor for Indian students (Class 4-8). 
 
 Your personality:
 - Warm, encouraging, and patient like a caring teacher
@@ -36,6 +37,29 @@ Language:
 
 Remember: You're replacing a home tutor, so be as helpful and patient as a good teacher would be!`;
 
+// Get system prompt based on student profile
+function getSystemPrompt(studentProfile = null, subject = null, context = {}) {
+    // If no student profile, use legacy prompt
+    if (!studentProfile || !studentProfile.class) {
+        return LEGACY_SYSTEM_PROMPT;
+    }
+
+    try {
+        // Select appropriate teacher persona
+        const teacher = selectTeacher(studentProfile, subject);
+
+        // Build personalized prompt
+        const prompt = buildTeacherPrompt(teacher, subject, studentProfile.performance, context);
+
+        logger.info(`Selected teacher: ${teacher.name} for class ${studentProfile.class}`);
+
+        return prompt;
+    } catch (error) {
+        logger.error("Error selecting teacher persona:", error);
+        return LEGACY_SYSTEM_PROMPT;
+    }
+}
+
 // Video explanation prompt
 const VIDEO_EXPLANATION_PROMPT = `Create a detailed video script for explaining this concept to a Class {class} student.
 
@@ -54,13 +78,35 @@ For each section, describe:
 
 Make it engaging and visual-first!`;
 
+// Verify Gemini API Key
+export async function verifyGeminiKey(apiKey) {
+    try {
+        const genAI = new GoogleGenerativeAI(apiKey);
+        const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
+        await model.generateContent("Test");
+        return true;
+    } catch (error) {
+        console.error("API Key Verification Failed:", error);
+        return false;
+    }
+}
+
 // Create chat session with context
-async function createChatSession(conversationHistory = []) {
-    logger.debug('AI Service', 'Creating chat session', { historyLength: conversationHistory.length });
+async function createChatSession(conversationHistory = [], apiKey = null, studentProfile = null, subject = null) {
+    logger.debug('AI Service', 'Creating chat session', {
+        historyLength: conversationHistory.length,
+        hasCustomKey: !!apiKey,
+        hasProfile: !!studentProfile
+    });
+
+    const genAI = apiKey ? new GoogleGenerativeAI(apiKey) : defaultGenAI;
+
+    // Get personalized system prompt based on student profile
+    const systemPrompt = getSystemPrompt(studentProfile, subject);
 
     const model = genAI.getGenerativeModel({
         model: "gemini-1.5-flash",
-        systemInstruction: SYSTEM_PROMPT
+        systemInstruction: systemPrompt
     });
 
     const history = conversationHistory.map(msg => ({
@@ -82,28 +128,30 @@ async function createChatSession(conversationHistory = []) {
 }
 
 // Main function to send message to Shikshak AI
-export async function sendMessageToShikshak(userMessage, conversationHistory = [], image = null) {
+export async function sendMessageToShikshak(userMessage, conversationHistory = [], image = null, apiKey = null, studentProfile = null, subject = null) {
     logger.ai('sendMessageToShikshak called', {
         messageLength: userMessage?.length,
         historyLength: conversationHistory.length,
-        hasImage: !!image
+        hasImage: !!image,
+        hasCustomKey: !!apiKey,
+        hasProfile: !!studentProfile
     });
 
     try {
-        const apiKey = import.meta.env.VITE_GEMINI_API_KEY;
+        const effectiveKey = apiKey || import.meta.env.VITE_GEMINI_API_KEY;
 
-        if (!apiKey || apiKey === 'your_gemini_api_key_here') {
+        if (!effectiveKey || effectiveKey === 'your_gemini_api_key_here') {
             logger.warning('AI Service', 'Gemini API key not configured, using mock responses');
             const mockResponse = getMockResponse(userMessage, image);
             return mockResponse;
         }
 
         if (image) {
-            const response = await analyzeImageWithGemini(image, userMessage);
+            const response = await analyzeImageWithGemini(image, userMessage, apiKey);
             return response;
         }
 
-        const chat = await createChatSession(conversationHistory);
+        const chat = await createChatSession(conversationHistory, apiKey, studentProfile, subject);
         const result = await chat.sendMessage(userMessage);
         const response = await result.response;
         const responseText = response.text();
@@ -119,14 +167,17 @@ export async function sendMessageToShikshak(userMessage, conversationHistory = [
 }
 
 // Generate video explanation script using AI
-export async function generateVideoExplanation(topic, subject, studentClass) {
-    logger.ai('Generating video explanation', { topic, subject, class: studentClass });
+export async function generateVideoExplanation(topic, subject, studentClass, apiKey = null) {
+    logger.ai('Generating video explanation', { topic, subject, class: studentClass, hasCustomKey: !!apiKey });
 
     try {
-        if (!import.meta.env.VITE_GEMINI_API_KEY || import.meta.env.VITE_GEMINI_API_KEY === 'your_gemini_api_key_here') {
+        const effectiveKey = apiKey || import.meta.env.VITE_GEMINI_API_KEY;
+
+        if (!effectiveKey || effectiveKey === 'your_gemini_api_key_here') {
             return getMockVideoScript(topic, subject);
         }
 
+        const genAI = apiKey ? new GoogleGenerativeAI(apiKey) : defaultGenAI;
         const model = genAI.getGenerativeModel({
             model: "gemini-1.5-flash",
             systemInstruction: SYSTEM_PROMPT
@@ -243,10 +294,11 @@ export function startVoiceInput(onResult, onError) {
 }
 
 // Handle image analysis for homework help
-async function analyzeImageWithGemini(imageBase64, question = "") {
-    logger.ai('Analyzing image with Gemini Vision', { questionLength: question?.length });
+async function analyzeImageWithGemini(imageBase64, question = "", apiKey = null) {
+    logger.ai('Analyzing image with Gemini Vision', { questionLength: question?.length, hasCustomKey: !!apiKey });
 
     try {
+        const genAI = apiKey ? new GoogleGenerativeAI(apiKey) : defaultGenAI;
         const model = genAI.getGenerativeModel({
             model: "gemini-1.5-flash",
             systemInstruction: SYSTEM_PROMPT + "\n\nFor homework images: Identify the problem, guide the student with hints, don't give direct answers. Ask what they've tried so far."
@@ -352,14 +404,14 @@ Engagement Level: High (animations, real-life examples, interactive)`;
 }
 
 // Helper functions
-export async function getSubjectHelp(subject, topic, studentClass) {
+export async function getSubjectHelp(subject, topic, studentClass, apiKey = null) {
     const prompt = `I'm a Class ${studentClass} student. Can you explain ${topic} in ${subject} in a simple way with examples?`;
     logger.ai('Getting subject help', { subject, topic, class: studentClass });
-    return await sendMessageToShikshak(prompt, []);
+    return await sendMessageToShikshak(prompt, [], null, apiKey);
 }
 
-export async function getPracticeQuestion(subject, topic, difficulty = 'medium') {
+export async function getPracticeQuestion(subject, topic, difficulty = 'medium', apiKey = null) {
     const prompt = `Give me a ${difficulty} level practice question on ${topic} in ${subject}. After I answer, tell me if I'm right and explain why.`;
     logger.ai('Generating practice question', { subject, topic, difficulty });
-    return await sendMessageToShikshak(prompt, []);
+    return await sendMessageToShikshak(prompt, [], null, apiKey);
 }

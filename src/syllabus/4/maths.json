@@ -1,0 +1,205 @@
+{
+    "class": 4,
+    "board": "CBSE",
+    "academic_year": "2025-26",
+    "subject_code": "MATH",
+    "subject_name": "Mathematics",
+    "chapters": [
+        {
+            "number": 1,
+            "name": "Building with Bricks",
+            "theme": "Shapes and Patterns",
+            "key_topics": [
+                "Patterns with bricks",
+                "Faces, edges and corners of a brick",
+                "Drawing 3D shapes"
+            ],
+            "learning_outcomes": [
+                "Identifies patterns in surroundings.",
+                "Draws 3D shapes like cuboids."
+            ]
+        },
+        {
+            "number": 2,
+            "name": "Long and Short",
+            "theme": "Measurement",
+            "key_topics": [
+                "Measuring length in cm, m and km",
+                "Converting units of length",
+                "Estimating distances"
+            ],
+            "learning_outcomes": [
+                "Measures length using standard units.",
+                "Converts between meters and centimeters."
+            ]
+        },
+        {
+            "number": 3,
+            "name": "A Trip to Bhopal",
+            "theme": "Numbers and Operations",
+            "key_topics": [
+                "Large numbers",
+                "Estimation of time and distance",
+                "Word problems involving four operations"
+            ],
+            "learning_outcomes": [
+                "Solves daily life problems involving large numbers.",
+                "Estimates time and distance for travel."
+            ]
+        },
+        {
+            "number": 4,
+            "name": "Tick-Tick-Tick",
+            "theme": "Time",
+            "key_topics": [
+                "Reading clock time (12-hour and 24-hour)",
+                "Calculating time duration",
+                "Calendar reading"
+            ],
+            "learning_outcomes": [
+                "Reads time from a clock.",
+                "Calculates duration of events."
+            ]
+        },
+        {
+            "number": 5,
+            "name": "The Way The World Looks",
+            "theme": "Geometry",
+            "key_topics": [
+                "Top, front and side views of objects",
+                "Directions and mapping",
+                "3D objects and their 2D representations"
+            ],
+            "learning_outcomes": [
+                "Visualises objects from different perspectives.",
+                "Draws simple maps."
+            ]
+        },
+        {
+            "number": 6,
+            "name": "The Junk Seller",
+            "theme": "Money",
+            "key_topics": [
+                "Currency notes and coins",
+                "Profit and loss (basic)",
+                "Multiplication in money transactions"
+            ],
+            "learning_outcomes": [
+                "Calculates total cost and change.",
+                "Solves problems involving money."
+            ]
+        },
+        {
+            "number": 7,
+            "name": "Jugs and Mugs",
+            "theme": "Capacity",
+            "key_topics": [
+                "Measuring liquids in litres and millilitres",
+                "Conservation of volume",
+                "Word problems on capacity"
+            ],
+            "learning_outcomes": [
+                "Estimates and measures capacity.",
+                "Converts litres to millilitres."
+            ]
+        },
+        {
+            "number": 8,
+            "name": "Carts and Wheels",
+            "theme": "Circles",
+            "key_topics": [
+                "Circle, centre, radius and diameter",
+                "Drawing circles with compass",
+                "Designs using circles"
+            ],
+            "learning_outcomes": [
+                "Identifies parts of a circle.",
+                "Draws circles of given radius."
+            ]
+        },
+        {
+            "number": 9,
+            "name": "Halves and Quarters",
+            "theme": "Fractions",
+            "key_topics": [
+                "Concept of 1/2, 1/4, 3/4",
+                "Equivalent fractions (visual)",
+                "Sharing equally"
+            ],
+            "learning_outcomes": [
+                "Identifies halves and quarters of a whole.",
+                "Solves simple problems on sharing."
+            ]
+        },
+        {
+            "number": 10,
+            "name": "Play with Patterns",
+            "theme": "Patterns",
+            "key_topics": [
+                "Repeating and growing patterns",
+                "Number patterns",
+                "Coding and decoding messages"
+            ],
+            "learning_outcomes": [
+                "Extends patterns in shapes and numbers.",
+                "Creates secret codes using patterns."
+            ]
+        },
+        {
+            "number": 11,
+            "name": "Tables and Shares",
+            "theme": "Multiplication and Division",
+            "key_topics": [
+                "Multiplication tables",
+                "Division as equal sharing",
+                "Word problems"
+            ],
+            "learning_outcomes": [
+                "Uses multiplication tables for calculation.",
+                "Divides numbers by grouping."
+            ]
+        },
+        {
+            "number": 12,
+            "name": "How Heavy? How Light?",
+            "theme": "Weight",
+            "key_topics": [
+                "Weighing objects (kg and g)",
+                "Balance scales",
+                "Estimation of weight"
+            ],
+            "learning_outcomes": [
+                "Estimates weight of common objects.",
+                "Converts kilograms to grams."
+            ]
+        },
+        {
+            "number": 13,
+            "name": "Fields and Fences",
+            "theme": "Perimeter and Area",
+            "key_topics": [
+                "Length of boundary (Perimeter)",
+                "Area using squares",
+                "Fencing problems"
+            ],
+            "learning_outcomes": [
+                "Calculates perimeter of simple shapes.",
+                "Compares areas by counting squares."
+            ]
+        },
+        {
+            "number": 14,
+            "name": "Smart Charts",
+            "theme": "Data Handling",
+            "key_topics": [
+                "Pictographs and bar charts",
+                "Tally marks",
+                "Interpreting data"
+            ],
+            "learning_outcomes": [
+                "Represents data using charts.",
+                "Draws conclusions from data."
+            ]
+        }
+    ]
+}

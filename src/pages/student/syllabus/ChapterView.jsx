@@ -1,11 +1,54 @@
+import { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { Card } from '../../../components/ui/Card';
 import { Button } from '../../../components/ui/Button';
-import { ArrowLeft, FileText, Video, HelpCircle } from 'lucide-react';
+import { ArrowLeft, FileText, Video, HelpCircle, PlayCircle } from 'lucide-react';
+import { db } from '../../../lib/firebase';
+import { doc, getDoc } from 'firebase/firestore';
+import { useProfile } from '../../../contexts/ProfileContext';
+import toast from 'react-hot-toast';
 
 export default function ChapterView() {
     const { subjectId, chapterId } = useParams();
     const navigate = useNavigate();
+    const { profile } = useProfile();
+
+    const [chapter, setChapter] = useState(null);
+    const [loading, setLoading] = useState(true);
+
+    useEffect(() => {
+        const fetchChapter = async () => {
+            if (!profile?.class) return;
+
+            try {
+                setLoading(true);
+                const classNum = profile.class.replace(/\D/g, '');
+                const docId = `class${classNum}_${subjectId}`;
+                const syllabusRef = doc(db, 'syllabus', docId);
+                const syllabusSnap = await getDoc(syllabusRef);
+
+                if (syllabusSnap.exists()) {
+                    const data = syllabusSnap.data();
+                    const foundChapter = data.chapters.find(c => c.number.toString() === chapterId);
+
+                    if (foundChapter) {
+                        setChapter(foundChapter);
+                    } else {
+                        toast.error("Chapter not found");
+                    }
+                } else {
+                    toast.error("Syllabus not found");
+                }
+            } catch (error) {
+                console.error("Error fetching chapter:", error);
+                toast.error("Failed to load chapter details");
+            } finally {
+                setLoading(false);
+            }
+        };
+
+        fetchChapter();
+    }, [subjectId, chapterId, profile]);
 
     return (
         <div className="min-h-screen bg-background p-8 font-body">
@@ -14,7 +57,9 @@ export default function ChapterView() {
                     <ArrowLeft />
                 </Button>
                 <div>
-                    <h1 className="text-3xl text-primary font-heading">Chapter {chapterId}</h1>
+                    <h1 className="text-3xl text-primary font-heading">
+                        {loading ? 'Loading...' : `Chapter ${chapterId}: ${chapter?.name}`}
+                    </h1>
                     <p className="text-text-secondary capitalize">{subjectId}</p>
                 </div>
             </header>
@@ -40,20 +85,33 @@ export default function ChapterView() {
 
                     <section>
                         <h2 className="text-xl font-bold mb-4 flex items-center gap-2">
-                            <Video className="text-secondary" /> Video Explanations
+                            <Video className="text-secondary" /> Video Explanations & Topics
                         </h2>
                         <div className="grid gap-4">
-                            {[1, 2].map(i => (
-                                <Card key={i} className="hover:bg-gray-50 cursor-pointer">
-                                    <div className="flex items-center gap-4">
-                                        <div className="w-12 h-12 bg-gray-200 rounded-xl flex items-center justify-center">▶</div>
-                                        <div>
-                                            <h3 className="font-bold">Concept Part {i}</h3>
-                                            <p className="text-sm text-text-secondary">10:00 mins</p>
+                            {loading ? (
+                                <p>Loading topics...</p>
+                            ) : (
+                                chapter?.key_topics?.map((topic, index) => (
+                                    <Card
+                                        key={index}
+                                        className="hover:bg-gray-50 cursor-pointer transition-all hover:shadow-md"
+                                        onClick={() => navigate(`/learn/${subjectId}/${chapterId}/${index}`)}
+                                    >
+                                        <div className="flex items-center gap-4">
+                                            <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center text-primary">
+                                                <PlayCircle size={24} />
+                                            </div>
+                                            <div>
+                                                <h3 className="font-bold">{topic}</h3>
+                                                <p className="text-sm text-text-secondary">Interactive Video Lesson</p>
+                                            </div>
+                                            <div className="ml-auto">
+                                                <Button size="sm" variant="ghost">Start Learning</Button>
+                                            </div>
                                         </div>
-                                    </div>
-                                </Card>
-                            ))}
+                                    </Card>
+                                ))
+                            )}
                         </div>
                     </section>
                 </div>

@@ -1,0 +1,373 @@
+{
+    "grade": 7,
+    "board": "CBSE",
+    "subject": "English",
+    "subject_code": "ENG",
+    "language_of_instruction": "English",
+    "syllabus_version": "NCERT_2025_26_APPROX",
+    "ncert_core_books": [
+        {
+            "name": "Honeycomb",
+            "type": "main_reader"
+        },
+        {
+            "name": "An Alien Hand",
+            "type": "supplementary_reader"
+        }
+    ],
+    "skills_taxonomy": {
+        "READING_LITERAL": {
+            "code": "READING_LITERAL",
+            "description": "Locate explicitly stated information."
+        },
+        "READING_INFERENTIAL": {
+            "code": "READING_INFERENTIAL",
+            "description": "Infer motives, themes, conclusions."
+        },
+        "READING_CRITICAL": {
+            "code": "READING_CRITICAL",
+            "description": "Evaluate character actions, author choices."
+        },
+        "VOCABULARY_CONTEXT": {
+            "code": "VOCABULARY_CONTEXT",
+            "description": "Context-based word meaning, collocations."
+        },
+        "WRITING_PARAGRAPH": {
+            "code": "WRITING_PARAGRAPH",
+            "description": "Organised descriptive and narrative paragraphs."
+        },
+        "WRITING_FORMAL": {
+            "code": "WRITING_FORMAL",
+            "description": "Formal letters, emails, notices."
+        },
+        "GRAMMAR_CLAUSE": {
+            "code": "GRAMMAR_CLAUSE",
+            "description": "Clauses, conjunctions, simple-complex-compound."
+        },
+        "LISTENING_SPOKEN": {
+            "code": "LISTENING_SPOKEN",
+            "description": "Listen and respond to dialogues and speeches."
+        },
+        "SPEAKING_PRESENTATION": {
+            "code": "SPEAKING_PRESENTATION",
+            "description": "Short presentations, recitations, role-plays."
+        }
+    },
+    "default_assessment_blueprint": {
+        "mcq": 0.20,
+        "very_short_answer": 0.15,
+        "short_answer": 0.25,
+        "long_answer": 0.25,
+        "listening_speaking": 0.15
+    },
+    "chapters": [
+        {
+            "chapter_no": 1,
+            "book": "Honeycomb",
+            "unit_id": "ENG7_HONEY_U1",
+            "unit_title": "Three Questions / The Squirrel",
+            "components": [
+                {
+                    "type": "prose",
+                    "title": "Three Questions"
+                },
+                {
+                    "type": "poem",
+                    "title": "The Squirrel"
+                }
+            ],
+            "term": "T1",
+            "linked_skills": [
+                "READING_INFERENTIAL",
+                "READING_CRITICAL",
+                "VOCABULARY_CONTEXT",
+                "WRITING_PARAGRAPH"
+            ],
+            "themes": [
+                "wisdom",
+                "time_management",
+                "observation"
+            ]
+        },
+        {
+            "chapter_no": 2,
+            "book": "Honeycomb",
+            "unit_id": "ENG7_HONEY_U2",
+            "unit_title": "A Gift of Chappals / The Rebel",
+            "components": [
+                {
+                    "type": "prose",
+                    "title": "A Gift of Chappals"
+                },
+                {
+                    "type": "poem",
+                    "title": "The Rebel"
+                }
+            ],
+            "term": "T1",
+            "linked_skills": [
+                "READING_LITERAL",
+                "READING_INFERENTIAL",
+                "GRAMMAR_CLAUSE"
+            ],
+            "themes": [
+                "kindness",
+                "nonconformity"
+            ]
+        },
+        {
+            "chapter_no": 3,
+            "book": "Honeycomb",
+            "unit_id": "ENG7_HONEY_U3",
+            "unit_title": "Gopal and the Hilsa Fish / The Shed",
+            "components": [
+                {
+                    "type": "prose",
+                    "title": "Gopal and the Hilsa Fish"
+                },
+                {
+                    "type": "poem",
+                    "title": "The Shed"
+                }
+            ],
+            "term": "T1",
+            "linked_skills": [
+                "READING_INFERENTIAL",
+                "VOCABULARY_CONTEXT",
+                "SPEAKING_PRESENTATION"
+            ],
+            "themes": [
+                "wit",
+                "fear",
+                "rumours"
+            ]
+        },
+        {
+            "chapter_no": 4,
+            "book": "Honeycomb",
+            "unit_id": "ENG7_HONEY_U4",
+            "unit_title": "The Ashes That Made Trees Bloom / Chivvy",
+            "components": [
+                {
+                    "type": "prose",
+                    "title": "The Ashes That Made Trees Bloom"
+                },
+                {
+                    "type": "poem",
+                    "title": "Chivvy"
+                }
+            ],
+            "term": "T1",
+            "linked_skills": [
+                "READING_LITERAL",
+                "READING_CRITICAL",
+                "WRITING_PARAGRAPH"
+            ],
+            "themes": [
+                "kindness_reward",
+                "adult_guidance"
+            ]
+        },
+        {
+            "chapter_no": 5,
+            "book": "Honeycomb",
+            "unit_id": "ENG7_HONEY_U5",
+            "unit_title": "Quality / Trees",
+            "components": [
+                {
+                    "type": "prose",
+                    "title": "Quality"
+                },
+                {
+                    "type": "poem",
+                    "title": "Trees"
+                }
+            ],
+            "term": "T1",
+            "linked_skills": [
+                "READING_INFERENTIAL",
+                "READING_CRITICAL",
+                "VOCABULARY_CONTEXT"
+            ],
+            "themes": [
+                "craftsmanship",
+                "nature"
+            ]
+        },
+        {
+            "chapter_no": 6,
+            "book": "Honeycomb",
+            "unit_id": "ENG7_HONEY_U6",
+            "unit_title": "Expert Detectives / Mystery of the Talking Fan",
+            "components": [
+                {
+                    "type": "prose",
+                    "title": "Expert Detectives"
+                },
+                {
+                    "type": "poem",
+                    "title": "Mystery of the Talking Fan"
+                }
+            ],
+            "term": "T2",
+            "linked_skills": [
+                "READING_INFERENTIAL",
+                "GRAMMAR_CLAUSE",
+                "WRITING_PARAGRAPH"
+            ],
+            "themes": [
+                "curiosity",
+                "observation"
+            ]
+        },
+        {
+            "chapter_no": 7,
+            "book": "Honeycomb",
+            "unit_id": "ENG7_HONEY_U7",
+            "unit_title": "The Invention of Vita-Wonk / Dad and the Cat and the Tree",
+            "components": [
+                {
+                    "type": "prose",
+                    "title": "The Invention of Vita-Wonk"
+                },
+                {
+                    "type": "poem",
+                    "title": "Dad and the Cat and the Tree"
+                }
+            ],
+            "term": "T2",
+            "linked_skills": [
+                "READING_LITERAL",
+                "VOCABULARY_CONTEXT",
+                "WRITING_FORMAL"
+            ],
+            "themes": [
+                "imagination",
+                "humour"
+            ]
+        },
+        {
+            "chapter_no": 8,
+            "book": "Honeycomb",
+            "unit_id": "ENG7_HONEY_U8",
+            "unit_title": "Fire: Friend and Foe / Meadow Surprises",
+            "components": [
+                {
+                    "type": "prose",
+                    "title": "Fire: Friend and Foe"
+                },
+                {
+                    "type": "poem",
+                    "title": "Meadow Surprises"
+                }
+            ],
+            "term": "T2",
+            "linked_skills": [
+                "READING_LITERAL",
+                "READING_INFERENTIAL"
+            ],
+            "themes": [
+                "science_of_fire",
+                "nature_exploration"
+            ]
+        },
+        {
+            "chapter_no": 9,
+            "book": "Honeycomb",
+            "unit_id": "ENG7_HONEY_U9",
+            "unit_title": "A Bicycle in Good Repair / Garden Snake",
+            "components": [
+                {
+                    "type": "prose",
+                    "title": "A Bicycle in Good Repair"
+                },
+                {
+                    "type": "poem",
+                    "title": "Garden Snake"
+                }
+            ],
+            "term": "T2",
+            "linked_skills": [
+                "READING_LITERAL",
+                "LISTENING_SPOKEN"
+            ],
+            "themes": [
+                "mechanical_care",
+                "overcoming_fear"
+            ]
+        },
+        {
+            "chapter_no": 10,
+            "book": "Honeycomb",
+            "unit_id": "ENG7_HONEY_U10",
+            "unit_title": "The Story of Cricket",
+            "components": [
+                {
+                    "type": "prose",
+                    "title": "The Story of Cricket"
+                }
+            ],
+            "term": "T2",
+            "linked_skills": [
+                "READING_INFERENTIAL",
+                "WRITING_PARAGRAPH"
+            ],
+            "themes": [
+                "sports_history",
+                "colonial_legacy"
+            ]
+        }
+    ],
+    "supplementary_units": [
+        {
+            "book": "An Alien Hand",
+            "chapter_no": 1,
+            "title": "The Tiny Teacher"
+        },
+        {
+            "book": "An Alien Hand",
+            "chapter_no": 2,
+            "title": "Bringing up Kari"
+        },
+        {
+            "book": "An Alien Hand",
+            "chapter_no": 3,
+            "title": "The Desert"
+        },
+        {
+            "book": "An Alien Hand",
+            "chapter_no": 4,
+            "title": "The Cop and the Anthem"
+        },
+        {
+            "book": "An Alien Hand",
+            "chapter_no": 5,
+            "title": "Golu Grows a Nose"
+        },
+        {
+            "book": "An Alien Hand",
+            "chapter_no": 6,
+            "title": "I Want Something in a Cage"
+        },
+        {
+            "book": "An Alien Hand",
+            "chapter_no": 7,
+            "title": "Chandni"
+        },
+        {
+            "book": "An Alien Hand",
+            "chapter_no": 8,
+            "title": "The Bear Story"
+        },
+        {
+            "book": "An Alien Hand",
+            "chapter_no": 9,
+            "title": "A Tiger in the House"
+        },
+        {
+            "book": "An Alien Hand",
+            "chapter_no": 10,
+            "title": "An Alien Hand"
+        }
+    ]
+}

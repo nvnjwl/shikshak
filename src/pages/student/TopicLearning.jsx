@@ -14,13 +14,18 @@ import {
     startVoiceInput
 } from '../../services/ai';
 import logger from '../../utils/logger';
+import { db } from '../../lib/firebase';
+import { doc, getDoc, setDoc, updateDoc, arrayUnion } from 'firebase/firestore';
+import { useProfile } from '../../contexts/ProfileContext';
+import toast from 'react-hot-toast';
 
 export default function TopicLearning() {
     const { subjectId, chapterId, topicId } = useParams();
     const navigate = useNavigate();
+    const { profile } = useProfile();
 
     // State
-    const [loading, setLoading] = useState(false);
+    const [loading, setLoading] = useState(true);
     const [videoScript, setVideoScript] = useState(null);
     const [isSpeaking, setIsSpeaking] = useState(false);
     const [isListening, setIsListening] = useState(false);
@@ -28,33 +33,79 @@ export default function TopicLearning() {
     const [userInput, setUserInput] = useState('');
     const [activeMode, setActiveMode] = useState('video'); // 'video', 'voice', 'text'
     const [understood, setUnderstood] = useState(false);
+    const [topic, setTopic] = useState(null);
 
-    // Mock topic data (replace with actual data from syllabus)
-    const topic = {
-        id: topicId,
-        name: "Fractions - Addition",
-        subject: "Math",
-        class: "6",
-        description: "Learn how to add fractions with same and different denominators"
-    };
-
-    // Load video explanation on mount
+    // Load topic details and video explanation
     useEffect(() => {
-        loadVideoExplanation();
-    }, []);
+        const fetchTopicDetails = async () => {
+            if (!profile?.class) return;
 
-    const loadVideoExplanation = async () => {
-        setLoading(true);
-        logger.info('TopicLearning', 'Loading video explanation', { topic: topic.name });
+            try {
+                setLoading(true);
+                const classNum = profile.class.replace(/\D/g, '');
+                const docId = `class${classNum}_${subjectId}`;
+                const syllabusRef = doc(db, 'syllabus', docId);
+                const syllabusSnap = await getDoc(syllabusRef);
+
+                if (syllabusSnap.exists()) {
+                    const data = syllabusSnap.data();
+                    const chapter = data.chapters.find(c => c.number.toString() === chapterId);
+
+                    if (chapter) {
+                        // In the JSON structure, key_topics is an array of strings.
+                        // We need to find the topic string that matches or corresponds to topicId.
+                        // Since topicId might be an index or a slug, let's assume for now it's an index 
+                        // OR we try to match the string if topicId is a string.
+                        // Given the previous code used topicId directly, let's assume topicId is the index in the array for now
+                        // to keep it simple, or we can try to match the string.
+
+                        // Let's assume topicId is the index (0-based)
+                        const topicIndex = parseInt(topicId);
+                        const topicName = chapter.key_topics[topicIndex];
+
+                        if (topicName) {
+                            const topicData = {
+                                id: topicId,
+                                name: topicName,
+                                subject: data.subject_name,
+                                class: classNum,
+                                description: `Learn about ${topicName} in ${chapter.name}`
+                            };
+                            setTopic(topicData);
+
+                            // Load video after topic is set
+                            loadVideoExplanation(topicData);
+                        } else {
+                            toast.error("Topic not found");
+                        }
+                    } else {
+                        toast.error("Chapter not found");
+                    }
+                } else {
+                    toast.error("Syllabus not found");
+                }
+            } catch (error) {
+                console.error("Error fetching topic:", error);
+                toast.error("Failed to load topic details");
+            } finally {
+                setLoading(false);
+            }
+        };
+
+        fetchTopicDetails();
+    }, [subjectId, chapterId, topicId, profile]);
+
+    const loadVideoExplanation = async (topicData) => {
+        // setLoading(true); // Already handled in parent
+        logger.info('TopicLearning', 'Loading video explanation', { topic: topicData.name });
 
         try {
-            const script = await generateVideoExplanation(topic.name, topic.subject, topic.class);
+            const apiKey = profile?.useOwnApiKey ? profile.apiKey : null;
+            const script = await generateVideoExplanation(topicData.name, topicData.subject, topicData.class, apiKey);
             setVideoScript(script);
             logger.success('TopicLearning', 'Video script loaded');
         } catch (error) {
             logger.error('TopicLearning', 'Failed to load video', error);
-        } finally {
-            setLoading(false);
         }
     };
 
@@ -112,7 +163,8 @@ export default function TopicLearning() {
         logger.ai('Sending chat message', { message });
 
         try {
-            const response = await sendMessageToShikshak(message, chatMessages);
+            const apiKey = profile?.useOwnApiKey ? profile.apiKey : null;
+            const response = await sendMessageToShikshak(message, chatMessages, null, apiKey);
             const aiMsg = { role: 'ai', text: response };
             setChatMessages(prev => [...prev, aiMsg]);
             logger.success('TopicLearning', 'AI response received');
@@ -129,14 +181,40 @@ export default function TopicLearning() {
     };
 
     // Handle "I Understood" button
-    const handleUnderstood = () => {
-        setUnderstood(true);
-        logger.success('TopicLearning', 'Student marked as understood');
+    const handleUnderstood = async () => {
+        try {
+            setUnderstood(true);
+            logger.success('TopicLearning', 'Student marked as understood');
 
-        // Show practice questions or move to next topic
-        setTimeout(() => {
-            navigate(`/practice/${subjectId}/${chapterId}/${topicId}`);
-        }, 1500);
+            // Save progress to Firestore
+            if (profile?.uid) {
+                const progressRef = doc(db, 'users', profile.uid, 'progress', subjectId);
+
+                // Check if doc exists, if not set it, else update it
+                const docSnap = await getDoc(progressRef);
+
+                if (!docSnap.exists()) {
+                    await setDoc(progressRef, {
+                        completedTopics: [topicId], // Storing topic index/ID
+                        lastUpdated: new Date().toISOString()
+                    });
+                } else {
+                    await updateDoc(progressRef, {
+                        completedTopics: arrayUnion(topicId),
+                        lastUpdated: new Date().toISOString()
+                    });
+                }
+                toast.success("Progress saved! 🎉");
+            }
+
+            // Show practice questions or move to next topic
+            setTimeout(() => {
+                navigate(`/practice/${subjectId}/${chapterId}/${topicId}`);
+            }, 1500);
+        } catch (error) {
+            console.error("Error saving progress:", error);
+            toast.error("Failed to save progress");
+        }
     };
 
     return (
@@ -152,8 +230,8 @@ export default function TopicLearning() {
                         <span className="font-bold">Back</span>
                     </button>
                     <div className="text-center">
-                        <h1 className="text-xl font-heading font-bold text-primary">{topic.name}</h1>
-                        <p className="text-sm text-text-secondary">{topic.subject} - Class {topic.class}</p>
+                        <h1 className="text-xl font-heading font-bold text-primary">{topic?.name || 'Loading...'}</h1>
+                        <p className="text-sm text-text-secondary">{topic?.subject} - Class {topic?.class}</p>
                     </div>
                     <div className="w-20"></div> {/* Spacer for centering */}
                 </div>
@@ -170,8 +248,8 @@ export default function TopicLearning() {
                         <button
                             onClick={() => setActiveMode('video')}
                             className={`p-6 rounded-2xl border-2 transition-all ${activeMode === 'video'
-                                    ? 'border-primary bg-primary/10 shadow-lg scale-105'
-                                    : 'border-gray-200 hover:border-primary/50'
+                                ? 'border-primary bg-primary/10 shadow-lg scale-105'
+                                : 'border-gray-200 hover:border-primary/50'
                                 }`}
                         >
                             <div className="text-5xl mb-3">📺</div>
@@ -190,8 +268,8 @@ export default function TopicLearning() {
                         <button
                             onClick={() => setActiveMode('voice')}
                             className={`p-6 rounded-2xl border-2 transition-all ${activeMode === 'voice'
-                                    ? 'border-secondary bg-secondary/10 shadow-lg scale-105'
-                                    : 'border-gray-200 hover:border-secondary/50'
+                                ? 'border-secondary bg-secondary/10 shadow-lg scale-105'
+                                : 'border-gray-200 hover:border-secondary/50'
                                 }`}
                         >
                             <div className="text-5xl mb-3">🎤</div>
@@ -210,8 +288,8 @@ export default function TopicLearning() {
                         <button
                             onClick={() => setActiveMode('text')}
                             className={`p-6 rounded-2xl border-2 transition-all ${activeMode === 'text'
-                                    ? 'border-purple-500 bg-purple-50 shadow-lg scale-105'
-                                    : 'border-gray-200 hover:border-purple-300'
+                                ? 'border-purple-500 bg-purple-50 shadow-lg scale-105'
+                                : 'border-gray-200 hover:border-purple-300'
                                 }`}
                         >
                             <div className="text-5xl mb-3">💬</div>
@@ -301,8 +379,8 @@ export default function TopicLearning() {
                             <button
                                 onClick={handleVoiceInput}
                                 className={`w-48 h-48 rounded-full flex flex-col items-center justify-center transition-all ${isListening
-                                        ? 'bg-red-500 text-white animate-pulse scale-110'
-                                        : 'bg-secondary text-white hover:scale-105'
+                                    ? 'bg-red-500 text-white animate-pulse scale-110'
+                                    : 'bg-secondary text-white hover:scale-105'
                                     } shadow-2xl`}
                             >
                                 {isListening ? (
@@ -330,8 +408,8 @@ export default function TopicLearning() {
                                 >
                                     <div
                                         className={`max-w-[80%] p-4 rounded-2xl ${msg.role === 'user'
-                                                ? 'bg-primary text-white rounded-tr-none'
-                                                : 'bg-gray-100 rounded-tl-none'
+                                            ? 'bg-primary text-white rounded-tr-none'
+                                            : 'bg-gray-100 rounded-tl-none'
                                             }`}
                                     >
                                         <p className="text-lg">{msg.text}</p>
@@ -354,7 +432,7 @@ export default function TopicLearning() {
                             {chatMessages.length === 0 && (
                                 <div className="text-center py-12 text-text-secondary">
                                     <MessageCircle size={48} className="mx-auto mb-4 opacity-50" />
-                                    <p className="text-lg">Ask me anything about {topic.name}!</p>
+                                    <p className="text-lg">Ask me anything about {topic?.name}!</p>
                                     <p className="text-sm mt-2">I'm here to help you understand 😊</p>
                                 </div>
                             )}
@@ -366,8 +444,8 @@ export default function TopicLearning() {
                                 >
                                     <div
                                         className={`max-w-[80%] p-4 rounded-2xl ${msg.role === 'user'
-                                                ? 'bg-primary text-white rounded-tr-none'
-                                                : 'bg-gray-100 rounded-tl-none'
+                                            ? 'bg-primary text-white rounded-tr-none'
+                                            : 'bg-gray-100 rounded-tl-none'
                                             }`}
                                     >
                                         <p className="text-lg">{msg.text}</p>

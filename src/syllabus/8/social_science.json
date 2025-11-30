@@ -1,0 +1,156 @@
+{
+    "grade": 8,
+    "board": "CBSE",
+    "subject": "Social Science",
+    "subject_code": "SST",
+    "syllabus_version": "NCERT_2025_26_APPROX",
+    "sub_subjects": {
+        "History": {
+            "book": "Our Pasts – III",
+            "chapters": [
+                {
+                    "chapter_no": 1,
+                    "id": "HIS8_CH1",
+                    "title": "How, When and Where"
+                },
+                {
+                    "chapter_no": 2,
+                    "id": "HIS8_CH2",
+                    "title": "From Trade to Territory – The Company Establishes Power"
+                },
+                {
+                    "chapter_no": 3,
+                    "id": "HIS8_CH3",
+                    "title": "Ruling the Countryside"
+                },
+                {
+                    "chapter_no": 4,
+                    "id": "HIS8_CH4",
+                    "title": "Tribals, Dikus and the Vision of a Golden Age"
+                },
+                {
+                    "chapter_no": 5,
+                    "id": "HIS8_CH5",
+                    "title": "When People Rebel – 1857 and After"
+                },
+                {
+                    "chapter_no": 6,
+                    "id": "HIS8_CH6",
+                    "title": "Colonialism and the City"
+                },
+                {
+                    "chapter_no": 7,
+                    "id": "HIS8_CH7",
+                    "title": "Weavers, Iron Smelters and Factory Owners"
+                },
+                {
+                    "chapter_no": 8,
+                    "id": "HIS8_CH8",
+                    "title": "Civilising the “Native”, Educating the Nation"
+                },
+                {
+                    "chapter_no": 9,
+                    "id": "HIS8_CH9",
+                    "title": "Women, Caste and Reform"
+                },
+                {
+                    "chapter_no": 10,
+                    "id": "HIS8_CH10",
+                    "title": "The Changing World of Visual Arts"
+                }
+            ]
+        },
+        "Geography": {
+            "book": "Resources and Development",
+            "chapters": [
+                {
+                    "chapter_no": 1,
+                    "id": "GEO8_CH1",
+                    "title": "Resources"
+                },
+                {
+                    "chapter_no": 2,
+                    "id": "GEO8_CH2",
+                    "title": "Land, Soil, Water, Natural Vegetation and Wildlife Resources"
+                },
+                {
+                    "chapter_no": 3,
+                    "id": "GEO8_CH3",
+                    "title": "Agriculture"
+                },
+                {
+                    "chapter_no": 4,
+                    "id": "GEO8_CH4",
+                    "title": "Industries"
+                },
+                {
+                    "chapter_no": 5,
+                    "id": "GEO8_CH5",
+                    "title": "Human Resources"
+                }
+            ]
+        },
+        "Civics": {
+            "book": "Social and Political Life – III",
+            "chapters": [
+                {
+                    "chapter_no": 1,
+                    "id": "CIV8_CH1",
+                    "title": "The Indian Constitution"
+                },
+                {
+                    "chapter_no": 2,
+                    "id": "CIV8_CH2",
+                    "title": "Understanding Secularism"
+                },
+                {
+                    "chapter_no": 3,
+                    "id": "CIV8_CH3",
+                    "title": "Why Do We Need a Parliament?"
+                },
+                {
+                    "chapter_no": 4,
+                    "id": "CIV8_CH4",
+                    "title": "Understanding Laws"
+                },
+                {
+                    "chapter_no": 5,
+                    "id": "CIV8_CH5",
+                    "title": "Judiciary"
+                },
+                {
+                    "chapter_no": 6,
+                    "id": "CIV8_CH6",
+                    "title": "Understanding Our Criminal Justice System"
+                },
+                {
+                    "chapter_no": 7,
+                    "id": "CIV8_CH7",
+                    "title": "Understanding Marginalisation"
+                },
+                {
+                    "chapter_no": 8,
+                    "id": "CIV8_CH8",
+                    "title": "Confronting Marginalisation"
+                },
+                {
+                    "chapter_no": 9,
+                    "id": "CIV8_CH9",
+                    "title": "Public Facilities"
+                },
+                {
+                    "chapter_no": 10,
+                    "id": "CIV8_CH10",
+                    "title": "Law and Social Justice"
+                }
+            ]
+        }
+    },
+    "cross_cutting_skills": {
+        "MAP_SKILLS": "Political and thematic maps of India and the world.",
+        "TIMELINE_SKILLS": "Complex timelines, pre-colonial to post-independence.",
+        "SOURCE_ANALYSIS": "Interpret historical sources, images, cartoons and tables.",
+        "CIVIC_REASONING": "Apply constitutional values to real/imaginary scenarios.",
+        "CASE_BASED_Q": "Multi-source, competency-based questions across SST."
+    }
+}

@@ -1,0 +1,361 @@
+{
+    "grade": 8,
+    "board": "CBSE",
+    "subject": "English",
+    "subject_code": "ENG",
+    "language_of_instruction": "English",
+    "syllabus_version": "NCERT_2025_26_APPROX",
+    "ncert_core_books": [
+        {
+            "name": "Honeydew",
+            "type": "main_reader"
+        },
+        {
+            "name": "It So Happened",
+            "type": "supplementary_reader"
+        }
+    ],
+    "skills_taxonomy": {
+        "READING_LITERAL": {
+            "code": "READING_LITERAL",
+            "description": "Locate facts and details."
+        },
+        "READING_INFERENTIAL": {
+            "code": "READING_INFERENTIAL",
+            "description": "Draw inferences and conclusions."
+        },
+        "READING_CRITICAL": {
+            "code": "READING_CRITICAL",
+            "description": "Critically analyse themes, bias and point of view."
+        },
+        "VOCABULARY_CONTEXT": {
+            "code": "VOCABULARY_CONTEXT",
+            "description": "Advanced word use, figurative language."
+        },
+        "WRITING_NARRATIVE": {
+            "code": "WRITING_NARRATIVE",
+            "description": "Narrative, diary, biographical sketches."
+        },
+        "WRITING_DISCURSIVE": {
+            "code": "WRITING_DISCURSIVE",
+            "description": "Argumentative, opinion and analytical writing."
+        },
+        "GRAMMAR_COMPLEX": {
+            "code": "GRAMMAR_COMPLEX",
+            "description": "Clauses, active-passive, reported speech, modals."
+        },
+        "LISTENING_SPOKEN": {
+            "code": "LISTENING_SPOKEN",
+            "description": "Note-taking from audio, presentations."
+        },
+        "SPEAKING_EXTENDED": {
+            "code": "SPEAKING_EXTENDED",
+            "description": "Extended speech, debates, role-plays."
+        }
+    },
+    "default_assessment_blueprint": {
+        "mcq": 0.20,
+        "very_short_answer": 0.10,
+        "short_answer": 0.30,
+        "long_answer": 0.30,
+        "listening_speaking": 0.10
+    },
+    "chapters": [
+        {
+            "chapter_no": 1,
+            "book": "Honeydew",
+            "unit_id": "ENG8_HONEY_U1",
+            "unit_title": "The Best Christmas Present in the World / The Ant and the Cricket",
+            "components": [
+                {
+                    "type": "prose",
+                    "title": "The Best Christmas Present in the World"
+                },
+                {
+                    "type": "poem",
+                    "title": "The Ant and the Cricket"
+                }
+            ],
+            "term": "T1",
+            "linked_skills": [
+                "READING_INFERENTIAL",
+                "READING_CRITICAL",
+                "WRITING_NARRATIVE"
+            ],
+            "themes": [
+                "war_and_peace",
+                "responsibility"
+            ]
+        },
+        {
+            "chapter_no": 2,
+            "book": "Honeydew",
+            "unit_id": "ENG8_HONEY_U2",
+            "unit_title": "The Tsunami / Geography Lesson",
+            "components": [
+                {
+                    "type": "prose",
+                    "title": "The Tsunami"
+                },
+                {
+                    "type": "poem",
+                    "title": "Geography Lesson"
+                }
+            ],
+            "term": "T1",
+            "linked_skills": [
+                "READING_LITERAL",
+                "READING_INFERENTIAL",
+                "VOCABULARY_CONTEXT"
+            ],
+            "themes": [
+                "natural_disasters",
+                "human_settlements"
+            ]
+        },
+        {
+            "chapter_no": 3,
+            "book": "Honeydew",
+            "unit_id": "ENG8_HONEY_U3",
+            "unit_title": "Glimpses of the Past / Macavity: The Mystery Cat",
+            "components": [
+                {
+                    "type": "prose",
+                    "title": "Glimpses of the Past"
+                },
+                {
+                    "type": "poem",
+                    "title": "Macavity: The Mystery Cat"
+                }
+            ],
+            "term": "T1",
+            "linked_skills": [
+                "READING_INFERENTIAL",
+                "READING_CRITICAL"
+            ],
+            "themes": [
+                "freedom_struggle",
+                "characterisation"
+            ]
+        },
+        {
+            "chapter_no": 4,
+            "book": "Honeydew",
+            "unit_id": "ENG8_HONEY_U4",
+            "unit_title": "Bepin Choudhury’s Lapse of Memory / The Last Bargain",
+            "components": [
+                {
+                    "type": "prose",
+                    "title": "Bepin Choudhury’s Lapse of Memory"
+                },
+                {
+                    "type": "poem",
+                    "title": "The Last Bargain"
+                }
+            ],
+            "term": "T1",
+            "linked_skills": [
+                "READING_INFERENTIAL",
+                "WRITING_NARRATIVE"
+            ],
+            "themes": [
+                "memory",
+                "freedom_vs_money"
+            ]
+        },
+        {
+            "chapter_no": 5,
+            "book": "Honeydew",
+            "unit_id": "ENG8_HONEY_U5",
+            "unit_title": "The Summit Within / The School Boy",
+            "components": [
+                {
+                    "type": "prose",
+                    "title": "The Summit Within"
+                },
+                {
+                    "type": "poem",
+                    "title": "The School Boy"
+                }
+            ],
+            "term": "T1",
+            "linked_skills": [
+                "READING_CRITICAL",
+                "WRITING_DISCURSIVE"
+            ],
+            "themes": [
+                "self_conquest",
+                "education_system"
+            ]
+        },
+        {
+            "chapter_no": 6,
+            "book": "Honeydew",
+            "unit_id": "ENG8_HONEY_U6",
+            "unit_title": "This is Jody’s Fawn / The Duck and the Kangaroo",
+            "components": [
+                {
+                    "type": "prose",
+                    "title": "This is Jody’s Fawn"
+                },
+                {
+                    "type": "poem",
+                    "title": "The Duck and the Kangaroo"
+                }
+            ],
+            "term": "T2",
+            "linked_skills": [
+                "READING_LITERAL",
+                "READING_INFERENTIAL"
+            ],
+            "themes": [
+                "compassion",
+                "humorous_verse"
+            ]
+        },
+        {
+            "chapter_no": 7,
+            "book": "Honeydew",
+            "unit_id": "ENG8_HONEY_U7",
+            "unit_title": "A Visit to Cambridge / When I Set Out for Lyonnesse",
+            "components": [
+                {
+                    "type": "prose",
+                    "title": "A Visit to Cambridge"
+                },
+                {
+                    "type": "poem",
+                    "title": "When I Set Out for Lyonnesse"
+                }
+            ],
+            "term": "T2",
+            "linked_skills": [
+                "READING_CRITICAL",
+                "WRITING_NARRATIVE"
+            ],
+            "themes": [
+                "disability_and_dignity",
+                "mystery_of_experience"
+            ]
+        },
+        {
+            "chapter_no": 8,
+            "book": "Honeydew",
+            "unit_id": "ENG8_HONEY_U8",
+            "unit_title": "A Short Monsoon Diary / On the Grasshopper and Cricket",
+            "components": [
+                {
+                    "type": "prose",
+                    "title": "A Short Monsoon Diary"
+                },
+                {
+                    "type": "poem",
+                    "title": "On the Grasshopper and Cricket"
+                }
+            ],
+            "term": "T2",
+            "linked_skills": [
+                "READING_LITERAL",
+                "VOCABULARY_CONTEXT"
+            ],
+            "themes": [
+                "nature_diary",
+                "poetry_of_nature"
+            ]
+        },
+        {
+            "chapter_no": 9,
+            "book": "Honeydew",
+            "unit_id": "ENG8_HONEY_U9",
+            "unit_title": "The Great Stone Face – I",
+            "components": [
+                {
+                    "type": "prose",
+                    "title": "The Great Stone Face – I"
+                }
+            ],
+            "term": "T2",
+            "linked_skills": [
+                "READING_INFERENTIAL",
+                "READING_CRITICAL"
+            ],
+            "themes": [
+                "idealism",
+                "character"
+            ]
+        },
+        {
+            "chapter_no": 10,
+            "book": "Honeydew",
+            "unit_id": "ENG8_HONEY_U10",
+            "unit_title": "The Great Stone Face – II",
+            "components": [
+                {
+                    "type": "prose",
+                    "title": "The Great Stone Face – II"
+                }
+            ],
+            "term": "T2",
+            "linked_skills": [
+                "READING_CRITICAL",
+                "WRITING_DISCURSIVE"
+            ],
+            "themes": [
+                "true_greatness",
+                "expectation_vs_reality"
+            ]
+        }
+    ],
+    "supplementary_units": [
+        {
+            "book": "It So Happened",
+            "chapter_no": 1,
+            "title": "How the Camel Got His Hump"
+        },
+        {
+            "book": "It So Happened",
+            "chapter_no": 2,
+            "title": "Children at Work"
+        },
+        {
+            "book": "It So Happened",
+            "chapter_no": 3,
+            "title": "The Selfish Giant"
+        },
+        {
+            "book": "It So Happened",
+            "chapter_no": 4,
+            "title": "The Treasure Within"
+        },
+        {
+            "book": "It So Happened",
+            "chapter_no": 5,
+            "title": "Princess September"
+        },
+        {
+            "book": "It So Happened",
+            "chapter_no": 6,
+            "title": "The Fight"
+        },
+        {
+            "book": "It So Happened",
+            "chapter_no": 7,
+            "title": "The Open Window"
+        },
+        {
+            "book": "It So Happened",
+            "chapter_no": 8,
+            "title": "Jalebis"
+        },
+        {
+            "book": "It So Happened",
+            "chapter_no": 9,
+            "title": "The Comet – I"
+        },
+        {
+            "book": "It So Happened",
+            "chapter_no": 10,
+            "title": "The Comet – II"
+        }
+    ]
+}

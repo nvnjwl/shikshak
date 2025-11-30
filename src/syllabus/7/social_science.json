@@ -1,0 +1,180 @@
+{
+    "grade": 7,
+    "board": "CBSE",
+    "subject": "Social Science",
+    "subject_code": "SST",
+    "syllabus_version": "NCERT_2025_26_APPROX",
+    "sub_subjects": {
+        "History": {
+            "book": "Our Pasts – II",
+            "chapters": [
+                {
+                    "chapter_no": 1,
+                    "id": "HIS7_CH1",
+                    "title": "Tracing Changes through a Thousand Years"
+                },
+                {
+                    "chapter_no": 2,
+                    "id": "HIS7_CH2",
+                    "title": "New Kings and Kingdoms"
+                },
+                {
+                    "chapter_no": 3,
+                    "id": "HIS7_CH3",
+                    "title": "The Delhi Sultans"
+                },
+                {
+                    "chapter_no": 4,
+                    "id": "HIS7_CH4",
+                    "title": "The Mughal Empire"
+                },
+                {
+                    "chapter_no": 5,
+                    "id": "HIS7_CH5",
+                    "title": "Rulers and Buildings"
+                },
+                {
+                    "chapter_no": 6,
+                    "id": "HIS7_CH6",
+                    "title": "Towns, Traders and Craftspersons"
+                },
+                {
+                    "chapter_no": 7,
+                    "id": "HIS7_CH7",
+                    "title": "Tribes, Nomads and Settled Communities"
+                },
+                {
+                    "chapter_no": 8,
+                    "id": "HIS7_CH8",
+                    "title": "Devotional Paths to the Divine"
+                },
+                {
+                    "chapter_no": 9,
+                    "id": "HIS7_CH9",
+                    "title": "The Making of Regional Cultures"
+                },
+                {
+                    "chapter_no": 10,
+                    "id": "HIS7_CH10",
+                    "title": "Eighteenth-Century Political Formations"
+                }
+            ]
+        },
+        "Geography": {
+            "book": "Our Environment",
+            "chapters": [
+                {
+                    "chapter_no": 1,
+                    "id": "GEO7_CH1",
+                    "title": "Environment"
+                },
+                {
+                    "chapter_no": 2,
+                    "id": "GEO7_CH2",
+                    "title": "Inside Our Earth"
+                },
+                {
+                    "chapter_no": 3,
+                    "id": "GEO7_CH3",
+                    "title": "Our Changing Earth"
+                },
+                {
+                    "chapter_no": 4,
+                    "id": "GEO7_CH4",
+                    "title": "Air"
+                },
+                {
+                    "chapter_no": 5,
+                    "id": "GEO7_CH5",
+                    "title": "Water"
+                },
+                {
+                    "chapter_no": 6,
+                    "id": "GEO7_CH6",
+                    "title": "Natural Vegetation and Wildlife"
+                },
+                {
+                    "chapter_no": 7,
+                    "id": "GEO7_CH7",
+                    "title": "Human Environment – Settlement, Transport and Communication"
+                },
+                {
+                    "chapter_no": 8,
+                    "id": "GEO7_CH8",
+                    "title": "Human–Environment Interactions: The Tropical and the Subtropical Region"
+                },
+                {
+                    "chapter_no": 9,
+                    "id": "GEO7_CH9",
+                    "title": "Life in the Temperate Grasslands"
+                },
+                {
+                    "chapter_no": 10,
+                    "id": "GEO7_CH10",
+                    "title": "Life in the Deserts"
+                }
+            ]
+        },
+        "Civics": {
+            "book": "Social and Political Life – II",
+            "chapters": [
+                {
+                    "chapter_no": 1,
+                    "id": "CIV7_CH1",
+                    "title": "On Equality"
+                },
+                {
+                    "chapter_no": 2,
+                    "id": "CIV7_CH2",
+                    "title": "Role of the Government in Health"
+                },
+                {
+                    "chapter_no": 3,
+                    "id": "CIV7_CH3",
+                    "title": "How the State Government Works"
+                },
+                {
+                    "chapter_no": 4,
+                    "id": "CIV7_CH4",
+                    "title": "Growing up as Boys and Girls"
+                },
+                {
+                    "chapter_no": 5,
+                    "id": "CIV7_CH5",
+                    "title": "Women Change the World"
+                },
+                {
+                    "chapter_no": 6,
+                    "id": "CIV7_CH6",
+                    "title": "Understanding Media"
+                },
+                {
+                    "chapter_no": 7,
+                    "id": "CIV7_CH7",
+                    "title": "Understanding Advertising"
+                },
+                {
+                    "chapter_no": 8,
+                    "id": "CIV7_CH8",
+                    "title": "Markets Around Us"
+                },
+                {
+                    "chapter_no": 9,
+                    "id": "CIV7_CH9",
+                    "title": "A Shirt in the Market"
+                },
+                {
+                    "chapter_no": 10,
+                    "id": "CIV7_CH10",
+                    "title": "Struggles for Equality"
+                }
+            ]
+        }
+    },
+    "cross_cutting_skills": {
+        "MAP_SKILLS": "Use maps/atlases for environment and history topics.",
+        "TIMELINE_SKILLS": "Multi-century timelines and periodisation.",
+        "CITIZENSHIP_ANALYSIS": "Apply constitutional ideas to daily life situations.",
+        "CASE_STUDY_READING": "Read case studies and answer competency-based questions."
+    }
+}

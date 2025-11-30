@@ -1,0 +1,374 @@
+{
+    "grade": 6,
+    "board": "CBSE",
+    "subject": "English",
+    "subject_code": "ENG",
+    "language_of_instruction": "English",
+    "syllabus_version": "NCERT_2025_26_APPROX",
+    "ncert_core_books": [
+        {
+            "name": "Honeysuckle",
+            "type": "main_reader"
+        },
+        {
+            "name": "A Pact with the Sun",
+            "type": "supplementary_reader"
+        }
+    ],
+    "skills_taxonomy": {
+        "READING_LITERAL": {
+            "code": "READING_LITERAL",
+            "description": "Understand explicit information from prose and poetry."
+        },
+        "READING_INFERENTIAL": {
+            "code": "READING_INFERENTIAL",
+            "description": "Infer ideas, motives and cause-effect from the text."
+        },
+        "VOCABULARY_CONTEXT": {
+            "code": "VOCABULARY_CONTEXT",
+            "description": "Infer word meaning from context, synonyms, antonyms."
+        },
+        "GRAMMAR_SENTENCE": {
+            "code": "GRAMMAR_SENTENCE",
+            "description": "Identify and use correct sentence structure, tense, subject-verb agreement."
+        },
+        "WRITING_SHORT": {
+            "code": "WRITING_SHORT",
+            "description": "Write short paragraphs, messages, notices, informal emails."
+        },
+        "SPEAKING_RECITATION": {
+            "code": "SPEAKING_RECITATION",
+            "description": "Read aloud and recite poems with correct intonation and pause."
+        },
+        "SPEAKING_DIALOGUE": {
+            "code": "SPEAKING_DIALOGUE",
+            "description": "Participate in simple conversations, role-plays and dialogues."
+        },
+        "LISTENING_COMPREHENSION": {
+            "code": "LISTENING_COMPREHENSION",
+            "description": "Listen to short texts and answer oral/written questions."
+        }
+    },
+    "default_assessment_blueprint": {
+        "mcq": 0.25,
+        "very_short_answer": 0.15,
+        "short_answer": 0.30,
+        "long_answer": 0.20,
+        "listening_speaking": 0.10
+    },
+    "chapters": [
+        {
+            "chapter_no": 1,
+            "book": "Honeysuckle",
+            "unit_id": "ENG6_HONEY_U1",
+            "unit_title": "Who Did Patrick’s Homework? / A House, A Home",
+            "components": [
+                {
+                    "type": "prose",
+                    "title": "Who Did Patrick’s Homework?"
+                },
+                {
+                    "type": "poem",
+                    "title": "A House, A Home"
+                }
+            ],
+            "term": "T1",
+            "weightage_estimate": 0.10,
+            "linked_skills": [
+                "READING_LITERAL",
+                "READING_INFERENTIAL",
+                "VOCABULARY_CONTEXT",
+                "SPEAKING_RECITATION",
+                "WRITING_SHORT"
+            ],
+            "themes": [
+                "responsibility",
+                "home_and_family"
+            ]
+        },
+        {
+            "chapter_no": 2,
+            "book": "Honeysuckle",
+            "unit_id": "ENG6_HONEY_U2",
+            "unit_title": "How the Dog Found Himself a New Master! / The Kite",
+            "components": [
+                {
+                    "type": "prose",
+                    "title": "How the Dog Found Himself a New Master!"
+                },
+                {
+                    "type": "poem",
+                    "title": "The Kite"
+                }
+            ],
+            "term": "T1",
+            "weightage_estimate": 0.10,
+            "linked_skills": [
+                "READING_LITERAL",
+                "READING_INFERENTIAL",
+                "VOCABULARY_CONTEXT",
+                "SPEAKING_RECITATION"
+            ],
+            "themes": [
+                "loyalty",
+                "freedom",
+                "nature_imagery"
+            ]
+        },
+        {
+            "chapter_no": 3,
+            "book": "Honeysuckle",
+            "unit_id": "ENG6_HONEY_U3",
+            "unit_title": "Taro’s Reward / The Quarrel",
+            "components": [
+                {
+                    "type": "prose",
+                    "title": "Taro’s Reward"
+                },
+                {
+                    "type": "poem",
+                    "title": "The Quarrel"
+                }
+            ],
+            "term": "T1",
+            "linked_skills": [
+                "READING_LITERAL",
+                "READING_INFERENTIAL",
+                "GRAMMAR_SENTENCE",
+                "SPEAKING_DIALOGUE"
+            ],
+            "themes": [
+                "filial_duty",
+                "sibling_conflict"
+            ]
+        },
+        {
+            "chapter_no": 4,
+            "book": "Honeysuckle",
+            "unit_id": "ENG6_HONEY_U4",
+            "unit_title": "An Indian-American Woman in Space / Beauty",
+            "components": [
+                {
+                    "type": "prose",
+                    "title": "An Indian-American Woman in Space: Kalpana Chawla"
+                },
+                {
+                    "type": "poem",
+                    "title": "Beauty"
+                }
+            ],
+            "term": "T1",
+            "linked_skills": [
+                "READING_INFERENTIAL",
+                "VOCABULARY_CONTEXT",
+                "WRITING_SHORT"
+            ],
+            "themes": [
+                "space_exploration",
+                "inspiration",
+                "aesthetic_sense"
+            ]
+        },
+        {
+            "chapter_no": 5,
+            "book": "Honeysuckle",
+            "unit_id": "ENG6_HONEY_U5",
+            "unit_title": "A Different Kind of School / Where Do All the Teachers Go?",
+            "components": [
+                {
+                    "type": "prose",
+                    "title": "A Different Kind of School"
+                },
+                {
+                    "type": "poem",
+                    "title": "Where Do All the Teachers Go?"
+                }
+            ],
+            "term": "T1",
+            "linked_skills": [
+                "READING_LITERAL",
+                "READING_INFERENTIAL",
+                "LISTENING_COMPREHENSION",
+                "SPEAKING_DIALOGUE"
+            ],
+            "themes": [
+                "inclusive_education",
+                "respect_for_teachers"
+            ]
+        },
+        {
+            "chapter_no": 6,
+            "book": "Honeysuckle",
+            "unit_id": "ENG6_HONEY_U6",
+            "unit_title": "Who I Am / The Wonderful Words",
+            "components": [
+                {
+                    "type": "prose",
+                    "title": "Who I Am"
+                },
+                {
+                    "type": "poem",
+                    "title": "The Wonderful Words"
+                }
+            ],
+            "term": "T2",
+            "linked_skills": [
+                "READING_INFERENTIAL",
+                "VOCABULARY_CONTEXT",
+                "WRITING_SHORT"
+            ],
+            "themes": [
+                "self_identity",
+                "language_power"
+            ]
+        },
+        {
+            "chapter_no": 7,
+            "book": "Honeysuckle",
+            "unit_id": "ENG6_HONEY_U7",
+            "unit_title": "Fair Play / Vocation",
+            "components": [
+                {
+                    "type": "prose",
+                    "title": "Fair Play"
+                },
+                {
+                    "type": "poem",
+                    "title": "Vocation"
+                }
+            ],
+            "term": "T2",
+            "linked_skills": [
+                "READING_INFERENTIAL",
+                "SPEAKING_DIALOGUE",
+                "GRAMMAR_SENTENCE"
+            ],
+            "themes": [
+                "justice",
+                "duty",
+                "childhood_dreams"
+            ]
+        },
+        {
+            "chapter_no": 8,
+            "book": "Honeysuckle",
+            "unit_id": "ENG6_HONEY_U8",
+            "unit_title": "A Game of Chance / Whatif",
+            "components": [
+                {
+                    "type": "prose",
+                    "title": "A Game of Chance"
+                },
+                {
+                    "type": "poem",
+                    "title": "Whatif"
+                }
+            ],
+            "term": "T2",
+            "linked_skills": [
+                "READING_LITERAL",
+                "READING_INFERENTIAL",
+                "LISTENING_COMPREHENSION"
+            ],
+            "themes": [
+                "superstition",
+                "luck",
+                "worry_anxiety"
+            ]
+        },
+        {
+            "chapter_no": 9,
+            "book": "Honeysuckle",
+            "unit_id": "ENG6_HONEY_U9",
+            "unit_title": "Desert Animals",
+            "components": [
+                {
+                    "type": "prose",
+                    "title": "Desert Animals"
+                }
+            ],
+            "term": "T2",
+            "linked_skills": [
+                "READING_LITERAL",
+                "VOCABULARY_CONTEXT"
+            ],
+            "themes": [
+                "adaptation",
+                "habitats"
+            ]
+        },
+        {
+            "chapter_no": 10,
+            "book": "Honeysuckle",
+            "unit_id": "ENG6_HONEY_U10",
+            "unit_title": "The Banyan Tree",
+            "components": [
+                {
+                    "type": "prose",
+                    "title": "The Banyan Tree"
+                }
+            ],
+            "term": "T2",
+            "linked_skills": [
+                "READING_INFERENTIAL",
+                "SPEAKING_RECITATION"
+            ],
+            "themes": [
+                "nature",
+                "observation"
+            ]
+        }
+    ],
+    "supplementary_units": [
+        {
+            "book": "A Pact with the Sun",
+            "chapter_no": 1,
+            "title": "A Tale of Two Birds"
+        },
+        {
+            "book": "A Pact with the Sun",
+            "chapter_no": 2,
+            "title": "The Friendly Mongoose"
+        },
+        {
+            "book": "A Pact with the Sun",
+            "chapter_no": 3,
+            "title": "The Shepherd’s Treasure"
+        },
+        {
+            "book": "A Pact with the Sun",
+            "chapter_no": 4,
+            "title": "The Old-Clock Shop"
+        },
+        {
+            "book": "A Pact with the Sun",
+            "chapter_no": 5,
+            "title": "Tansen"
+        },
+        {
+            "book": "A Pact with the Sun",
+            "chapter_no": 6,
+            "title": "The Monkey and the Crocodile"
+        },
+        {
+            "book": "A Pact with the Sun",
+            "chapter_no": 7,
+            "title": "The Wonder Called Sleep"
+        },
+        {
+            "book": "A Pact with the Sun",
+            "chapter_no": 8,
+            "title": "A Pact with the Sun"
+        },
+        {
+            "book": "A Pact with the Sun",
+            "chapter_no": 9,
+            "title": "What Happened to the Reptiles?"
+        },
+        {
+            "book": "A Pact with the Sun",
+            "chapter_no": 10,
+            "title": "A Strange Wrestling Match"
+        }
+    ]
+}

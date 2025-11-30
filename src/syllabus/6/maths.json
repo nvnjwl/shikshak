@@ -1,0 +1,205 @@
+{
+    "class": 6,
+    "board": "CBSE",
+    "academic_year": "2025-26",
+    "subject_code": "MATH",
+    "subject_name": "Mathematics",
+    "chapters": [
+        {
+            "number": 1,
+            "name": "Knowing Our Numbers",
+            "theme": "Large numbers and place value",
+            "key_topics": [
+                "Indian and international place value system",
+                "Comparing and ordering large numbers",
+                "Estimation and rounding"
+            ],
+            "learning_outcomes": [
+                "Reads and writes numbers up to at least 9 digits.",
+                "Estimates sums and differences using rounding."
+            ]
+        },
+        {
+            "number": 2,
+            "name": "Whole Numbers",
+            "theme": "Whole numbers and their properties",
+            "key_topics": [
+                "Whole numbers on number line",
+                "Successor and predecessor",
+                "Properties: closure, commutativity, associativity, distributivity"
+            ],
+            "learning_outcomes": [
+                "Represents whole numbers on a number line.",
+                "Uses basic properties of operations to simplify calculations."
+            ]
+        },
+        {
+            "number": 3,
+            "name": "Playing with Numbers",
+            "theme": "Factors, multiples and primes",
+            "key_topics": [
+                "Prime, composite and co-prime numbers",
+                "HCF and LCM (by factorisation)",
+                "Divisibility tests"
+            ],
+            "learning_outcomes": [
+                "Finds HCF and LCM of small numbers.",
+                "Applies divisibility rules to test divisibility quickly."
+            ]
+        },
+        {
+            "number": 4,
+            "name": "Basic Geometrical Ideas",
+            "theme": "Foundational geometry vocabulary",
+            "key_topics": [
+                "Points, lines, line segments, rays",
+                "Intersections and parallel lines",
+                "Curves, polygons and circles (radius, diameter, chord)"
+            ],
+            "learning_outcomes": [
+                "Uses correct terms for basic geometrical objects.",
+                "Identifies elements of circles and polygons in figures."
+            ]
+        },
+        {
+            "number": 5,
+            "name": "Understanding Elementary Shapes",
+            "theme": "Types of angles and shapes",
+            "key_topics": [
+                "Measuring angles with protractor",
+                "Types of triangles and quadrilaterals",
+                "Right, acute, obtuse and reflex angles"
+            ],
+            "learning_outcomes": [
+                "Measures angles using a protractor to nearest degree.",
+                "Classifies triangles and quadrilaterals by sides and angles."
+            ]
+        },
+        {
+            "number": 6,
+            "name": "Integers",
+            "theme": "Integers and operations on them",
+            "key_topics": [
+                "Integers on number line",
+                "Ordering and comparing integers",
+                "Addition and subtraction of integers"
+            ],
+            "learning_outcomes": [
+                "Represents integers on number line.",
+                "Adds and subtracts integers using rules and diagrams."
+            ]
+        },
+        {
+            "number": 7,
+            "name": "Fractions",
+            "theme": "Fraction concepts and operations",
+            "key_topics": [
+                "Like and unlike fractions",
+                "Equivalent fractions and simplest form",
+                "Addition and subtraction of like fractions"
+            ],
+            "learning_outcomes": [
+                "Finds equivalent fractions and simplifies them.",
+                "Adds and subtracts fractions with same denominators."
+            ]
+        },
+        {
+            "number": 8,
+            "name": "Decimals",
+            "theme": "Decimal representation and operations",
+            "key_topics": [
+                "Place value of decimals",
+                "Comparing and ordering decimals",
+                "Addition and subtraction of decimals (money, length)"
+            ],
+            "learning_outcomes": [
+                "Reads and writes decimals to two or three places.",
+                "Adds and subtracts decimals in practical contexts."
+            ]
+        },
+        {
+            "number": 9,
+            "name": "Data Handling",
+            "theme": "Collecting and representing data",
+            "key_topics": [
+                "Tally marks and frequency tables",
+                "Bar graphs",
+                "Reading and interpreting data"
+            ],
+            "learning_outcomes": [
+                "Collects data and organises in a frequency table.",
+                "Interprets bar graphs and answers related questions."
+            ]
+        },
+        {
+            "number": 10,
+            "name": "Mensuration",
+            "theme": "Perimeter and area basics",
+            "key_topics": [
+                "Perimeter of rectangle and square",
+                "Area of rectangle and square",
+                "Converting units (cm, m, km)"
+            ],
+            "learning_outcomes": [
+                "Calculates perimeter and area of rectangles and squares.",
+                "Uses appropriate units for length and area."
+            ]
+        },
+        {
+            "number": 11,
+            "name": "Algebra",
+            "theme": "Introduction to variables and expressions",
+            "key_topics": [
+                "Variables and constants",
+                "Forming simple expressions",
+                "Evaluating expressions for given values"
+            ],
+            "learning_outcomes": [
+                "Represents patterns using simple algebraic expressions.",
+                "Substitutes values to evaluate expressions."
+            ]
+        },
+        {
+            "number": 12,
+            "name": "Ratio and Proportion",
+            "theme": "Comparing quantities",
+            "key_topics": [
+                "Ratio as comparison",
+                "Equivalent ratios",
+                "Proportion in simple situations"
+            ],
+            "learning_outcomes": [
+                "Expresses comparison of two quantities as ratio.",
+                "Identifies if two ratios form a proportion."
+            ]
+        },
+        {
+            "number": 13,
+            "name": "Symmetry",
+            "theme": "Lines of symmetry in 2D figures",
+            "key_topics": [
+                "Line(s) of symmetry in regular shapes",
+                "Symmetry in daily-life objects",
+                "Paper folding and mirror activities"
+            ],
+            "learning_outcomes": [
+                "Finds lines of symmetry of given figures.",
+                "Creates symmetrical designs using folding or drawing."
+            ]
+        },
+        {
+            "number": 14,
+            "name": "Practical Geometry",
+            "theme": "Basic constructions",
+            "key_topics": [
+                "Drawing line segments of given length",
+                "Constructing perpendiculars and circles",
+                "Using compass and ruler correctly"
+            ],
+            "learning_outcomes": [
+                "Constructs line segments and circles accurately.",
+                "Draws perpendiculars from a point on and outside a line."
+            ]
+        }
+    ]
+}

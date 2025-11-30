@@ -1,0 +1,166 @@
+{
+    "class": 6,
+    "board": "CBSE",
+    "academic_year": "2025-26",
+    "subject_code": "SCI",
+    "subject_name": "Science",
+    "chapters": [
+        {
+            "number": 1,
+            "name": "Components of Food",
+            "theme": "Food",
+            "key_topics": [
+                "Nutrients (carbohydrates, proteins, fats, vitamins, minerals)",
+                "Balanced diet",
+                "Deficiency diseases"
+            ],
+            "learning_outcomes": [
+                "Identifies major nutrients in food items.",
+                "Understands the importance of a balanced diet."
+            ]
+        },
+        {
+            "number": 2,
+            "name": "Sorting Materials into Groups",
+            "theme": "Materials",
+            "key_topics": [
+                "Properties of materials (appearance, hardness, solubility)",
+                "Transparent, translucent and opaque objects",
+                "Grouping materials based on properties"
+            ],
+            "learning_outcomes": [
+                "Classifies materials based on their properties.",
+                "Differentiates between soluble and insoluble substances."
+            ]
+        },
+        {
+            "number": 3,
+            "name": "Separation of Substances",
+            "theme": "Materials",
+            "key_topics": [
+                "Methods of separation: handpicking, threshing, winnowing, sieving",
+                "Sedimentation, decantation and filtration",
+                "Evaporation and condensation"
+            ],
+            "learning_outcomes": [
+                "Selects appropriate methods for separating mixtures.",
+                "Explains the process of obtaining salt from sea water."
+            ]
+        },
+        {
+            "number": 4,
+            "name": "Getting to Know Plants",
+            "theme": "The World of the Living",
+            "key_topics": [
+                "Herbs, shrubs and trees",
+                "Parts of a plant: stem, leaf, root, flower",
+                "Structure and function of flower parts"
+            ],
+            "learning_outcomes": [
+                "Identifies different types of plants.",
+                "Labels parts of a plant and explains their functions."
+            ]
+        },
+        {
+            "number": 5,
+            "name": "Body Movements",
+            "theme": "The World of the Living",
+            "key_topics": [
+                "Human body and its movements",
+                "Joints: ball and socket, pivotal, hinge, fixed",
+                "Gait of animals (earthworm, snail, cockroach, birds, fish, snakes)"
+            ],
+            "learning_outcomes": [
+                "Identifies different types of joints in the human body.",
+                "Describes how different animals move."
+            ]
+        },
+        {
+            "number": 6,
+            "name": "The Living Organisms — Characteristics and Habitats",
+            "theme": "The World of the Living",
+            "key_topics": [
+                "Organisms and surroundings",
+                "Habitat and adaptation",
+                "Characteristics of living things"
+            ],
+            "learning_outcomes": [
+                "Lists characteristics of living organisms.",
+                "Relates adaptations of animals to their habitats."
+            ]
+        },
+        {
+            "number": 7,
+            "name": "Motion and Measurement of Distances",
+            "theme": "Moving Things, People and Ideas",
+            "key_topics": [
+                "Story of transport",
+                "Measurement of length",
+                "Standard units of measurement",
+                "Types of motion (rectilinear, circular, periodic)"
+            ],
+            "learning_outcomes": [
+                "Measures length using standard units.",
+                "Differentiates between different types of motion."
+            ]
+        },
+        {
+            "number": 8,
+            "name": "Light, Shadows and Reflections",
+            "theme": "Natural Phenomena",
+            "key_topics": [
+                "Transparent, opaque and translucent objects",
+                "Formation of shadows",
+                "Pinhole camera",
+                "Mirrors and reflections"
+            ],
+            "learning_outcomes": [
+                "Explains how shadows are formed.",
+                "Distinguishes between shadow and image."
+            ]
+        },
+        {
+            "number": 9,
+            "name": "Electricity and Circuits",
+            "theme": "How Things Work",
+            "key_topics": [
+                "Electric cell and bulb",
+                "Electric circuits",
+                "Conductors and insulators"
+            ],
+            "learning_outcomes": [
+                "Constructs a simple electric circuit.",
+                "Classifies materials as conductors and insulators."
+            ]
+        },
+        {
+            "number": 10,
+            "name": "Fun with Magnets",
+            "theme": "How Things Work",
+            "key_topics": [
+                "Discovery of magnets",
+                "Magnetic and non-magnetic materials",
+                "Poles of a magnet",
+                "Finding directions"
+            ],
+            "learning_outcomes": [
+                "Identifies magnetic and non-magnetic materials.",
+                "Uses a magnet to find directions."
+            ]
+        },
+        {
+            "number": 11,
+            "name": "Air Around Us",
+            "theme": "Natural Resources",
+            "key_topics": [
+                "Composition of air",
+                "Availability of oxygen",
+                "Importance of air for life"
+            ],
+            "learning_outcomes": [
+                "Lists the components of air.",
+                "Explains the importance of air for living beings."
+            ]
+        }
+    ]
+}

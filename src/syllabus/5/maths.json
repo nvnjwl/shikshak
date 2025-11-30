@@ -1,0 +1,107 @@
+{
+    "class": 5,
+    "board": "CBSE",
+    "academic_year": "2025-26",
+    "subject_code": "ENG",
+    "subject_name": "English",
+    "books": [
+        {
+            "name": "Marigold",
+            "type": "textbook",
+            "units": [
+                {
+                    "number": 1,
+                    "name": "Poems and stories about everyday life",
+                    "theme": "Describing people, objects and surroundings",
+                    "skills_focus": [
+                        "Reading aloud with correct pauses",
+                        "Finding main idea of a short text",
+                        "Answering WH-questions (who, what, where, when, why)"
+                    ]
+                },
+                {
+                    "number": 2,
+                    "name": "Nature and imagination",
+                    "theme": "Seasons, animals, imagination",
+                    "skills_focus": [
+                        "Describing scenes using adjectives",
+                        "Using present tense to describe habits and facts",
+                        "Simple paragraph writing based on a picture"
+                    ]
+                },
+                {
+                    "number": 3,
+                    "name": "Stories with moral lessons",
+                    "theme": "Values, honesty, friendship",
+                    "skills_focus": [
+                        "Sequencing story events",
+                        "Retelling a story in own words",
+                        "Writing short moral at the end of a story"
+                    ]
+                },
+                {
+                    "number": 4,
+                    "name": "Travel and places",
+                    "theme": "Journeys and different places",
+                    "skills_focus": [
+                        "Reading short travel descriptions",
+                        "Using prepositions (in, on, under, behind, near)",
+                        "Describing route or simple map in words"
+                    ]
+                }
+            ]
+        }
+    ],
+    "language_components": [
+        {
+            "component": "Grammar",
+            "key_topics": [
+                "Nouns, pronouns, verbs, adjectives, adverbs",
+                "Simple present and simple past tense",
+                "Subject-verb agreement in simple sentences",
+                "Prepositions of place and time",
+                "Conjunctions: and, but, because, or"
+            ],
+            "learning_outcomes": [
+                "Uses basic parts of speech appropriately in context.",
+                "Writes grammatically correct simple and compound sentences."
+            ]
+        },
+        {
+            "component": "Vocabulary",
+            "key_topics": [
+                "Everyday school and home vocabulary",
+                "Words related to weather, food, animals, transport",
+                "Synonyms and antonyms at basic level"
+            ],
+            "learning_outcomes": [
+                "Understands and uses age-appropriate vocabulary in speech and writing.",
+                "Guesses word meanings from context and picture support."
+            ]
+        },
+        {
+            "component": "Writing",
+            "key_topics": [
+                "Short paragraph (6–8 sentences) on familiar topics",
+                "Informal messages and notes",
+                "Simple descriptions of people, places and objects"
+            ],
+            "learning_outcomes": [
+                "Writes short, coherent paragraphs with beginning, middle and end.",
+                "Uses punctuation (full stop, capital letters, question mark) correctly."
+            ]
+        },
+        {
+            "component": "Listening & Speaking",
+            "key_topics": [
+                "Listening to short stories and answering questions",
+                "Simple dialogues and role-plays",
+                "Reciting poems with rhythm and expression"
+            ],
+            "learning_outcomes": [
+                "Listens and responds appropriately to instructions and questions.",
+                "Participates in simple conversations using polite expressions."
+            ]
+        }
+    ]
+}

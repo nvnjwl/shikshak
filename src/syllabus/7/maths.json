@@ -1,0 +1,219 @@
+{
+    "class": 7,
+    "board": "CBSE",
+    "academic_year": "2025-26",
+    "subject_code": "MATH",
+    "subject_name": "Mathematics",
+    "chapters": [
+        {
+            "number": 1,
+            "name": "Integers",
+            "theme": "Operations with integers",
+            "key_topics": [
+                "Addition and subtraction of integers",
+                "Multiplication and division of integers",
+                "Properties of operations on integers"
+            ],
+            "learning_outcomes": [
+                "Performs all four operations on integers.",
+                "Uses properties to simplify integer calculations."
+            ]
+        },
+        {
+            "number": 2,
+            "name": "Fractions and Decimals",
+            "theme": "Operations with fractions and decimals",
+            "key_topics": [
+                "Equivalent fractions and comparison",
+                "Addition, subtraction, multiplication of fractions",
+                "Operations on decimals in daily contexts"
+            ],
+            "learning_outcomes": [
+                "Solves word problems involving fractions and decimals.",
+                "Converts between fractions and decimals where appropriate."
+            ]
+        },
+        {
+            "number": 3,
+            "name": "Data Handling",
+            "theme": "Organisation and analysis of data",
+            "key_topics": [
+                "Collection and tabulation of data",
+                "Bar graphs and double bar graphs",
+                "Mean, median and mode (basic)"
+            ],
+            "learning_outcomes": [
+                "Organises data and represents it graphically.",
+                "Computes simple measures of central tendency."
+            ]
+        },
+        {
+            "number": 4,
+            "name": "Simple Equations",
+            "theme": "Linear equations in one variable",
+            "key_topics": [
+                "Forming equations from statements",
+                "Solving equations using inverse operations",
+                "Applications in word problems"
+            ],
+            "learning_outcomes": [
+                "Translates verbal statements to simple equations.",
+                "Solves one-variable linear equations step by step."
+            ]
+        },
+        {
+            "number": 5,
+            "name": "Lines and Angles",
+            "theme": "Relationships between lines and angles",
+            "key_topics": [
+                "Complementary and supplementary angles",
+                "Adjacent, vertical opposite angles",
+                "Angles formed by intersecting and parallel lines"
+            ],
+            "learning_outcomes": [
+                "Identifies angle relationships in given figures.",
+                "Uses angle properties to find unknown angles."
+            ]
+        },
+        {
+            "number": 6,
+            "name": "The Triangle and its Properties",
+            "theme": "Properties of triangles",
+            "key_topics": [
+                "Median and altitude",
+                "Angle sum property of triangle",
+                "Right triangles and Pythagorean triplets (intro)"
+            ],
+            "learning_outcomes": [
+                "Uses angle sum property to find missing angles.",
+                "Identifies medians and altitudes in triangles."
+            ]
+        },
+        {
+            "number": 7,
+            "name": "Congruence of Triangles",
+            "theme": "Triangle congruence and applications",
+            "key_topics": [
+                "Concept of congruence",
+                "SSS, SAS, ASA criteria (intuitive)",
+                "Simple constructions using congruence ideas"
+            ],
+            "learning_outcomes": [
+                "Checks congruence of triangles using side and angle data.",
+                "Applies congruence in simple reasoning problems."
+            ]
+        },
+        {
+            "number": 8,
+            "name": "Comparing Quantities",
+            "theme": "Percentages, profit-loss and simple interest",
+            "key_topics": [
+                "Percentage and its conversion to fraction/decimal",
+                "Profit, loss and discount",
+                "Simple interest formula"
+            ],
+            "learning_outcomes": [
+                "Converts between ratios, fractions and percentages.",
+                "Solves problems on profit, loss and simple interest."
+            ]
+        },
+        {
+            "number": 9,
+            "name": "Rational Numbers",
+            "theme": "Rational numbers and their representation",
+            "key_topics": [
+                "Positive and negative rational numbers",
+                "Representation on number line",
+                "Standard form and comparison"
+            ],
+            "learning_outcomes": [
+                "Represents rational numbers on the number line.",
+                "Compares and orders rational numbers."
+            ]
+        },
+        {
+            "number": 10,
+            "name": "Practical Geometry",
+            "theme": "Constructions with ruler and compass",
+            "key_topics": [
+                "Constructing triangles with given conditions",
+                "Drawing parallel lines",
+                "Simple construction-based problems"
+            ],
+            "learning_outcomes": [
+                "Constructs triangles using SSS, SAS, ASA information.",
+                "Uses constructions to solve simple geometry tasks."
+            ]
+        },
+        {
+            "number": 11,
+            "name": "Perimeter and Area",
+            "theme": "2D measurement of standard shapes",
+            "key_topics": [
+                "Perimeter and area of rectangles and triangles",
+                "Area of parallelogram (intro)",
+                "Application problems"
+            ],
+            "learning_outcomes": [
+                "Computes perimeter and area of standard figures.",
+                "Solves daily-life problems involving perimeter and area."
+            ]
+        },
+        {
+            "number": 12,
+            "name": "Algebraic Expressions",
+            "theme": "Expressions and basic operations",
+            "key_topics": [
+                "Terms, coefficients and like/unlike terms",
+                "Addition and subtraction of expressions",
+                "Value of expression for given variable"
+            ],
+            "learning_outcomes": [
+                "Identifies parts of an algebraic expression.",
+                "Adds and subtracts simple algebraic expressions."
+            ]
+        },
+        {
+            "number": 13,
+            "name": "Exponents and Powers",
+            "theme": "Exponential notation and laws",
+            "key_topics": [
+                "Exponential form of numbers",
+                "Laws of exponents (product, quotient, power of power)",
+                "Standard form (introductory)"
+            ],
+            "learning_outcomes": [
+                "Writes repeated multiplication in exponential form.",
+                "Applies basic laws of exponents to simplify expressions."
+            ]
+        },
+        {
+            "number": 14,
+            "name": "Symmetry",
+            "theme": "Rotational and line symmetry",
+            "key_topics": [
+                "Lines of symmetry in regular polygons",
+                "Rotational symmetry and order",
+                "Symmetric patterns in art and design"
+            ],
+            "learning_outcomes": [
+                "Finds line and rotational symmetries in given figures.",
+                "Creates designs showing specified symmetries."
+            ]
+        },
+        {
+            "number": 15,
+            "name": "Visualising Solid Shapes",
+            "theme": "3D shapes and their views",
+            "key_topics": [
+                "Faces, edges and vertices of 3D objects",
+                "Nets of solids",
+                "Top, front and side views"
+            ],
+            "learning_outcomes": [
+                "Identifies common 3D shapes and their nets.",
+                "Matches solids to their different projected views."
+            ]
+        }
+    ]
+}

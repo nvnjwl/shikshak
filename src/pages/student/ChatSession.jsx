@@ -5,8 +5,11 @@ import { useNavigate } from 'react-router-dom';
 import { sendMessageToShikshak } from '../../services/ai';
 import { clsx } from 'clsx';
 
+import { useProfile } from '../../contexts/ProfileContext';
+
 export default function ChatSession() {
     const navigate = useNavigate();
+    const { profile } = useProfile();
     const [messages, setMessages] = useState([
         { role: 'ai', text: "Namaste! I'm Shikshak. What are we studying today?" }
     ]);
@@ -46,7 +49,9 @@ export default function ChatSession() {
         setLoading(true);
 
         try {
-            const responseText = await sendMessageToShikshak(input, messages, image);
+            // Pass the user's API key if they have one configured
+            const apiKey = profile?.useOwnApiKey ? profile.apiKey : null;
+            const responseText = await sendMessageToShikshak(input, messages, image, apiKey);
             const aiMsg = { role: 'ai', text: responseText };
             setMessages(prev => [...prev, aiMsg]);
         } catch (error) {

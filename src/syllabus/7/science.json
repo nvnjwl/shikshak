@@ -1,0 +1,261 @@
+{
+    "class": 7,
+    "board": "CBSE",
+    "academic_year": "2025-26",
+    "subject_code": "SCI",
+    "subject_name": "Science",
+    "chapters": [
+        {
+            "number": 1,
+            "name": "Nutrition in Plants",
+            "theme": "Modes of nutrition and photosynthesis",
+            "key_topics": [
+                "Autotrophic and heterotrophic nutrition",
+                "Photosynthesis process (basic equation, chlorophyll)",
+                "Parasitic, saprophytic and insectivorous plants"
+            ],
+            "learning_outcomes": [
+                "Explains photosynthesis in simple terms.",
+                "Differentiates between various modes of plant nutrition."
+            ]
+        },
+        {
+            "number": 2,
+            "name": "Nutrition in Animals",
+            "theme": "Digestive systems and nutrition",
+            "key_topics": [
+                "Different feeding habits",
+                "Human digestive system organs and functions",
+                "Digestion in simple organisms (Amoeba)"
+            ],
+            "learning_outcomes": [
+                "Labels human digestive system and explains main functions.",
+                "Describes digestion in at least one non-human organism."
+            ]
+        },
+        {
+            "number": 3,
+            "name": "Fibre to Fabric",
+            "theme": "Animal fibres and processing",
+            "key_topics": [
+                "Wool: animals, shearing, cleaning and spinning",
+                "Silk: life cycle of silkworm",
+                "Health and safety in fibre production"
+            ],
+            "learning_outcomes": [
+                "Describes steps of wool and silk production.",
+                "Appreciates concerns of workers involved in fibre industries."
+            ]
+        },
+        {
+            "number": 4,
+            "name": "Heat",
+            "theme": "Temperature and transfer of heat",
+            "key_topics": [
+                "Hot and cold; measuring temperature",
+                "Conduction, convection, radiation (basic)",
+                "Clothing and heat transfer"
+            ],
+            "learning_outcomes": [
+                "Uses clinical and laboratory thermometers correctly.",
+                "Explains everyday examples of conduction, convection and radiation."
+            ]
+        },
+        {
+            "number": 5,
+            "name": "Acids, Bases and Salts",
+            "theme": "Types of substances and indicators",
+            "key_topics": [
+                "Acidic and basic substances around us",
+                "Natural and synthetic indicators (litmus, turmeric)",
+                "Neutralisation in daily life"
+            ],
+            "learning_outcomes": [
+                "Identifies household substances as acidic or basic using indicators.",
+                "Explains simple neutralisation applications (indigestion, soil treatment)."
+            ]
+        },
+        {
+            "number": 6,
+            "name": "Physical and Chemical Changes",
+            "theme": "Types of changes in materials",
+            "key_topics": [
+                "Characteristics of physical changes",
+                "Characteristics of chemical changes",
+                "Rusting and crystallisation"
+            ],
+            "learning_outcomes": [
+                "Classifies observed changes as physical or chemical.",
+                "Describes conditions that speed up rusting."
+            ]
+        },
+        {
+            "number": 7,
+            "name": "Weather, Climate and Adaptations of Animals to Climate",
+            "theme": "Weather vs climate and adaptations",
+            "key_topics": [
+                "Elements of weather",
+                "Climate of major regions",
+                "Adaptations of animals to polar and tropical climates"
+            ],
+            "learning_outcomes": [
+                "Differentiates between weather and climate.",
+                "Relates animal adaptations to specific climates."
+            ]
+        },
+        {
+            "number": 8,
+            "name": "Winds, Storms and Cyclones",
+            "theme": "Air movement and severe weather",
+            "key_topics": [
+                "Air pressure and wind formation",
+                "Thunderstorms and cyclones basics",
+                "Safety during storms and cyclones"
+            ],
+            "learning_outcomes": [
+                "Explains relation between air pressure and wind.",
+                "Lists safety measures during cyclones and heavy storms."
+            ]
+        },
+        {
+            "number": 9,
+            "name": "Soil",
+            "theme": "Soil formation, types and conservation",
+            "key_topics": [
+                "Soil profile and horizons",
+                "Soil types and properties",
+                "Soil fertility and conservation"
+            ],
+            "learning_outcomes": [
+                "Draws a labelled diagram of soil profile.",
+                "Explains reasons and remedies for soil erosion."
+            ]
+        },
+        {
+            "number": 10,
+            "name": "Respiration in Organisms",
+            "theme": "Respiration and breathing",
+            "key_topics": [
+                "Aerobic and anaerobic respiration (intro)",
+                "Respiration in humans and animals",
+                "Breathing mechanism and rate"
+            ],
+            "learning_outcomes": [
+                "Differentiates between breathing and respiration.",
+                "Describes human respiratory system in brief."
+            ]
+        },
+        {
+            "number": 11,
+            "name": "Transportation in Animals and Plants",
+            "theme": "Transport systems in living organisms",
+            "key_topics": [
+                "Blood, blood vessels and heart",
+                "Transport of water and minerals in plants",
+                "Excretion in animals and plants (basic)"
+            ],
+            "learning_outcomes": [
+                "Identifies main components of circulatory system.",
+                "Explains role of xylem and phloem in plants."
+            ]
+        },
+        {
+            "number": 12,
+            "name": "Reproduction in Plants",
+            "theme": "Plant reproduction",
+            "key_topics": [
+                "Asexual reproduction (cuttings, layering, budding)",
+                "Sexual reproduction and pollination",
+                "Seed formation and dispersal"
+            ],
+            "learning_outcomes": [
+                "Describes at least two methods of asexual reproduction in plants.",
+                "Explains pollination and seed formation in simple terms."
+            ]
+        },
+        {
+            "number": 13,
+            "name": "Motion and Time",
+            "theme": "Describing motion and measuring time",
+            "key_topics": [
+                "Types of motion",
+                "Speed and its calculation (basic formula)",
+                "Simple time measuring devices"
+            ],
+            "learning_outcomes": [
+                "Calculates speed for uniform motion using distance and time.",
+                "Differentiates between uniform and non-uniform motion."
+            ]
+        },
+        {
+            "number": 14,
+            "name": "Electric Current and its Effects",
+            "theme": "Electric circuits and magnetic effects",
+            "key_topics": [
+                "Heating effect of electric current",
+                "Magnetic effect of electric current",
+                "Electric fuses and safety"
+            ],
+            "learning_outcomes": [
+                "Explains uses of heating effect of current (bulb, heater).",
+                "Describes basic idea of electromagnet."
+            ]
+        },
+        {
+            "number": 15,
+            "name": "Light",
+            "theme": "Reflection and images",
+            "key_topics": [
+                "Light travels in straight line",
+                "Plane mirrors and images",
+                "Spherical mirrors (introductory) and lenses (basic)"
+            ],
+            "learning_outcomes": [
+                "Draws ray diagrams for image in plane mirror.",
+                "Explains everyday phenomena involving reflection."
+            ]
+        },
+        {
+            "number": 16,
+            "name": "Water: A Precious Resource",
+            "theme": "Water scarcity and sustainable use",
+            "key_topics": [
+                "Distribution of water on Earth",
+                "Groundwater and its depletion",
+                "Rainwater harvesting and conservation"
+            ],
+            "learning_outcomes": [
+                "Discusses causes of water scarcity in local context.",
+                "Suggests measures to conserve water at community level."
+            ]
+        },
+        {
+            "number": 17,
+            "name": "Forests: Our Lifeline",
+            "theme": "Forest ecosystem",
+            "key_topics": [
+                "Layers of forest and biodiversity",
+                "Interdependence of plants, animals and microbes",
+                "Conservation and deforestation"
+            ],
+            "learning_outcomes": [
+                "Explains forest as a system of many interdependent parts.",
+                "Recognises impact of deforestation on environment."
+            ]
+        },
+        {
+            "number": 18,
+            "name": "Wastewater Story",
+            "theme": "Sewage and water treatment",
+            "key_topics": [
+                "Composition of sewage",
+                "Sewage treatment plant stages",
+                "Sanitation and hygiene"
+            ],
+            "learning_outcomes": [
+                "Describes basic steps in wastewater treatment.",
+                "Relates individual actions to sanitation and health."
+            ]
+        }
+    ]
+}

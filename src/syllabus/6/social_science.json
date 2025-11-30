@@ -1,0 +1,170 @@
+{
+    "grade": 6,
+    "board": "CBSE",
+    "subject": "Social Science",
+    "subject_code": "SST",
+    "syllabus_version": "NCERT_2025_26_APPROX",
+    "sub_subjects": {
+        "History": {
+            "book": "Our Pasts – I",
+            "chapters": [
+                {
+                    "chapter_no": 1,
+                    "id": "HIS6_CH1",
+                    "title": "What, Where, How and When?"
+                },
+                {
+                    "chapter_no": 2,
+                    "id": "HIS6_CH2",
+                    "title": "From Hunting–Gathering to Growing Food"
+                },
+                {
+                    "chapter_no": 3,
+                    "id": "HIS6_CH3",
+                    "title": "In the Earliest Cities"
+                },
+                {
+                    "chapter_no": 4,
+                    "id": "HIS6_CH4",
+                    "title": "What Books and Burials Tell Us"
+                },
+                {
+                    "chapter_no": 5,
+                    "id": "HIS6_CH5",
+                    "title": "Kingdoms, Kings and an Early Republic"
+                },
+                {
+                    "chapter_no": 6,
+                    "id": "HIS6_CH6",
+                    "title": "New Questions and Ideas"
+                },
+                {
+                    "chapter_no": 7,
+                    "id": "HIS6_CH7",
+                    "title": "Ashoka, the Emperor Who Gave up War"
+                },
+                {
+                    "chapter_no": 8,
+                    "id": "HIS6_CH8",
+                    "title": "Vital Villages, Thriving Towns"
+                },
+                {
+                    "chapter_no": 9,
+                    "id": "HIS6_CH9",
+                    "title": "Traders, Kings and Pilgrims"
+                },
+                {
+                    "chapter_no": 10,
+                    "id": "HIS6_CH10",
+                    "title": "New Empires and Kingdoms"
+                },
+                {
+                    "chapter_no": 11,
+                    "id": "HIS6_CH11",
+                    "title": "Buildings, Paintings and Books"
+                }
+            ]
+        },
+        "Geography": {
+            "book": "The Earth: Our Habitat",
+            "chapters": [
+                {
+                    "chapter_no": 1,
+                    "id": "GEO6_CH1",
+                    "title": "The Earth in the Solar System"
+                },
+                {
+                    "chapter_no": 2,
+                    "id": "GEO6_CH2",
+                    "title": "Globe: Latitudes and Longitudes"
+                },
+                {
+                    "chapter_no": 3,
+                    "id": "GEO6_CH3",
+                    "title": "Motions of the Earth"
+                },
+                {
+                    "chapter_no": 4,
+                    "id": "GEO6_CH4",
+                    "title": "Maps"
+                },
+                {
+                    "chapter_no": 5,
+                    "id": "GEO6_CH5",
+                    "title": "Major Domains of the Earth"
+                },
+                {
+                    "chapter_no": 6,
+                    "id": "GEO6_CH6",
+                    "title": "Major Landforms of the Earth"
+                },
+                {
+                    "chapter_no": 7,
+                    "id": "GEO6_CH7",
+                    "title": "Our Country – India"
+                },
+                {
+                    "chapter_no": 8,
+                    "id": "GEO6_CH8",
+                    "title": "India: Climate, Vegetation and Wildlife"
+                }
+            ]
+        },
+        "Civics": {
+            "book": "Social and Political Life – I",
+            "chapters": [
+                {
+                    "chapter_no": 1,
+                    "id": "CIV6_CH1",
+                    "title": "Understanding Diversity"
+                },
+                {
+                    "chapter_no": 2,
+                    "id": "CIV6_CH2",
+                    "title": "Diversity and Discrimination"
+                },
+                {
+                    "chapter_no": 3,
+                    "id": "CIV6_CH3",
+                    "title": "What is Government?"
+                },
+                {
+                    "chapter_no": 4,
+                    "id": "CIV6_CH4",
+                    "title": "Key Elements of a Democratic Government"
+                },
+                {
+                    "chapter_no": 5,
+                    "id": "CIV6_CH5",
+                    "title": "Panchayati Raj"
+                },
+                {
+                    "chapter_no": 6,
+                    "id": "CIV6_CH6",
+                    "title": "Rural Administration"
+                },
+                {
+                    "chapter_no": 7,
+                    "id": "CIV6_CH7",
+                    "title": "Urban Administration"
+                },
+                {
+                    "chapter_no": 8,
+                    "id": "CIV6_CH8",
+                    "title": "Rural Livelihoods"
+                },
+                {
+                    "chapter_no": 9,
+                    "id": "CIV6_CH9",
+                    "title": "Urban Livelihoods"
+                }
+            ]
+        }
+    },
+    "cross_cutting_skills": {
+        "MAP_SKILLS": "Locate, read and interpret maps and globes.",
+        "TIMELINE_SKILLS": "Read and create simple historical timelines.",
+        "DATA_INTERPRETATION": "Interpret simple tables, charts and graphs.",
+        "CITIZENSHIP_SKILLS": "Relate textbook civics to real-life examples."
+    }
+}

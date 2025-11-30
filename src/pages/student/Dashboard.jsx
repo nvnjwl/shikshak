@@ -1,267 +1,332 @@
-import { Button } from '../../components/ui/Button';
-import { Card } from '../../components/ui/Card';
-import { BookOpen, Star, MessageCircle, Calendar, Clock, Trophy, ChevronRight, Zap, User } from 'lucide-react';
-import { useNavigate, Link } from 'react-router-dom';
+import { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
+import { motion } from 'framer-motion';
+import { BookOpen, Settings, LogOut, GraduationCap, Calculator, FlaskConical, Languages, Globe, Zap } from 'lucide-react';
 import { useAuth } from '../../contexts/AuthContext';
 import { useProfile } from '../../contexts/ProfileContext';
 import { useSubscription } from '../../contexts/SubscriptionContext';
-import { motion } from 'framer-motion';
-import { useState } from 'react';
+import { db } from '../../lib/firebase';
+import { collection, query, where, getDocs, doc, getDoc } from 'firebase/firestore';
+import { Card } from '../../components/ui/Card';
+import AICompanion from '../../components/dashboard/AICompanion';
+import ClassSwitcher from '../../components/dashboard/ClassSwitcher';
 import toast from 'react-hot-toast';
+
+// Helper to get BIGGER icons for kids!
+const getSubjectIcon = (name) => {
+    const n = name.toLowerCase();
+    if (n.includes('math')) return <Calculator size={48} />;
+    if (n.includes('science')) return <FlaskConical size={48} />;
+    if (n.includes('english') || n.includes('hindi')) return <Languages size={48} />;
+    if (n.includes('social') || n.includes('history') || n.includes('evs')) return <Globe size={48} />;
+    return <BookOpen size={48} />;
+};
+
+// Helper to get fun progress emoji based on completion
+const getProgressEmoji = (progress) => {
+    if (progress === 0) return { emoji: '🌱', text: 'Just started!' };
+    if (progress < 25) return { emoji: '🌱', text: 'Just started!' };
+    if (progress < 50) return { emoji: '🚀', text: 'Getting there!' };
+    if (progress < 75) return { emoji: '⭐', text: "You're a star!" };
+    if (progress < 100) return { emoji: '🏆', text: 'Almost a champion!' };
+    return { emoji: '👑', text: 'You did it!' };
+};
+
+// Helper to get fun subject descriptions
+const getSubjectDescription = (name, totalTopics) => {
+    const n = name.toLowerCase();
+    if (n.includes('math')) return `🎯 ${totalTopics} Cool Tricks to Learn!`;
+    if (n.includes('science')) return `🔬 ${totalTopics} Amazing Experiments!`;
+    if (n.includes('english')) return `📖 ${totalTopics} Fun Stories!`;
+    if (n.includes('hindi')) return `✨ ${totalTopics} Awesome Lessons!`;
+    if (n.includes('social') || n.includes('evs')) return `🌍 ${totalTopics} Cool Facts!`;
+    return `📚 ${totalTopics} Topics to Explore!`;
+};
+
+// Helper to get color theme for subject
+const getSubjectTheme = (index) => {
+    const themes = [
+        { bg: 'bg-blue-50', text: 'text-blue-600', border: 'border-blue-100', iconBg: 'bg-blue-100', progressBg: 'bg-blue-500' },
+        { bg: 'bg-green-50', text: 'text-green-600', border: 'border-green-100', iconBg: 'bg-green-100', progressBg: 'bg-green-500' },
+        { bg: 'bg-purple-50', text: 'text-purple-600', border: 'border-purple-100', iconBg: 'bg-purple-100', progressBg: 'bg-purple-500' },
+        { bg: 'bg-orange-50', text: 'text-orange-600', border: 'border-orange-100', iconBg: 'bg-orange-100', progressBg: 'bg-orange-500' },
+        { bg: 'bg-pink-50', text: 'text-pink-600', border: 'border-pink-100', iconBg: 'bg-pink-100', progressBg: 'bg-pink-500' },
+        { bg: 'bg-teal-50', text: 'text-teal-600', border: 'border-teal-100', iconBg: 'bg-teal-100', progressBg: 'bg-teal-500' }
+    ];
+    return themes[index % themes.length];
+};
 
 export default function Dashboard() {
     const navigate = useNavigate();
-    const { logout } = useAuth();
-    const { profile, promoteToAdmin } = useProfile();
+    const { logout, currentUser } = useAuth();
+    const { profile } = useProfile();
     const { subscription } = useSubscription();
-    const [streak, setStreak] = useState(5);
+    const [showClassSwitcher, setShowClassSwitcher] = useState(false);
+    const [subjects, setSubjects] = useState([]);
+    const [loading, setLoading] = useState(true);
 
-    // Mock Daily Plan
-    const dailyPlan = [
-        {
-            id: 1,
-            time: "Morning (9:00 AM)",
-            subject: "Math",
-            topic: "Fractions - Addition",
-            duration: "30 mins",
-            status: "completed",
-            icon: "📐"
-        },
-        {
-            id: 2,
-            time: "Afternoon (2:00 PM)",
-            subject: "Science",
-            topic: "Photosynthesis",
-            duration: "25 mins",
-            status: "in-progress",
-            icon: "🔬"
-        },
-        {
-            id: 3,
-            time: "Evening (5:00 PM)",
-            subject: "English",
-            topic: "Grammar - Verbs",
-            duration: "20 mins",
-            status: "pending",
-            icon: "📚"
-        },
-    ];
+    useEffect(() => {
+        const fetchDashboardData = async () => {
+            if (!profile?.class || !currentUser) return;
 
-    const subjects = [
-        { name: "Math", progress: 65, color: "bg-blue-500", icon: "📐" },
-        { name: "Science", progress: 45, color: "bg-green-500", icon: "🔬" },
-        { name: "English", progress: 80, color: "bg-purple-500", icon: "📚" },
-        { name: "Social Science", progress: 30, color: "bg-orange-500", icon: "🌍" },
-    ];
+            try {
+                setLoading(true);
+                const classId = profile.class.replace(/\D/g, '');
+
+                // Fetch Syllabus
+                const syllabusQuery = query(
+                    collection(db, 'syllabus'),
+                    where('classId', '==', classId)
+                );
+                const syllabusSnapshot = await getDocs(syllabusQuery);
+
+                const subjectsData = [];
+                for (const docSnapshot of syllabusSnapshot.docs) {
+                    const data = docSnapshot.data();
+                    const subjectId = data.subjectId;
+
+                    // Fetch Progress
+                    const progressRef = doc(db, 'users', currentUser.uid, 'progress', subjectId);
+                    const progressSnap = await getDoc(progressRef);
+                    const progressData = progressSnap.exists() ? progressSnap.data() : { completedTopics: [] };
+
+                    // Calculate Progress
+                    let totalTopics = 0;
+                    data.chapters?.forEach(chapter => {
+                        totalTopics += chapter.key_topics?.length || 0;
+                    });
+
+                    const completedCount = progressData.completedTopics?.length || 0;
+                    const progressPercent = totalTopics > 0 ? Math.round((completedCount / totalTopics) * 100) : 0;
+
+                    subjectsData.push({
+                        id: subjectId,
+                        name: data.subject_name,
+                        progress: progressPercent,
+                        totalTopics,
+                        completedCount
+                    });
+                }
+
+                setSubjects(subjectsData);
+            } catch (error) {
+                console.error("Error fetching dashboard data:", error);
+                toast.error("Oops! Let's try again 🔄");
+            } finally {
+                setLoading(false);
+            }
+        };
+
+        fetchDashboardData();
+    }, [profile, currentUser]);
 
     const handleLogout = async () => {
         try {
             await logout();
-            toast.success('Logged out successfully!');
             navigate('/login');
         } catch (error) {
-            console.error('Failed to log out', error);
-            toast.error('Failed to logout. Please try again.');
+            toast.error('Failed to logout');
         }
     };
 
     return (
-        <div className="min-h-screen bg-background font-body pb-20 md:pb-0">
-            {/* Header */}
-            <header className="bg-white border-b border-gray-200 sticky top-0 z-30">
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+        <div className="min-h-screen bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50 font-body pb-20">
+            {/* Top Navigation Bar */}
+            <nav className="sticky top-0 z-30 bg-white/90 backdrop-blur-md border-b border-gray-100 px-4 py-3 shadow-sm">
+                <div className="max-w-6xl mx-auto flex items-center justify-between">
                     <div className="flex items-center gap-2">
-                        <h1 className="text-2xl font-heading font-bold text-primary">Shikshak</h1>
-                    </div>
-                    <div className="flex items-center gap-4">
-                        <div className="hidden md:flex items-center gap-2 px-3 py-1.5 bg-yellow-50 text-yellow-700 rounded-full text-sm font-medium">
-                            <Zap size={16} />
-                            <span>{subscription?.plan || 'Free Plan'}</span>
+                        <div className="w-10 h-10 bg-gradient-to-br from-primary to-secondary rounded-xl flex items-center justify-center text-white font-bold text-lg shadow-md">
+                            S
                         </div>
+                        <span className="font-heading font-bold text-xl text-primary hidden md:block">Shikshak</span>
+                    </div>
+
+                    <div className="flex items-center gap-3">
                         <button
-                            onClick={async () => {
-                                await promoteToAdmin();
-                                alert('You are now an admin!');
-                            }}
-                            className="text-xs bg-gray-800 text-white px-2 py-1 rounded"
+                            onClick={() => setShowClassSwitcher(true)}
+                            className="flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-blue-50 to-purple-50 hover:from-blue-100 hover:to-purple-100 rounded-full text-sm font-bold transition-all border-2 border-blue-100 hover:border-primary shadow-sm"
                         >
-                            Dev: Become Admin
+                            <GraduationCap size={18} className="text-primary" />
+                            <span>Class {profile?.class || '...'}</span>
                         </button>
-                        <button
-                            onClick={() => navigate('/settings')}
-                            className="p-2 text-text-secondary hover:bg-gray-100 rounded-full transition-colors"
-                            title="Settings"
-                        >
-                            <User size={20} />
+
+                        <div className="h-6 w-px bg-gray-200 mx-1"></div>
+
+                        <button onClick={() => navigate('/settings')} className="p-2.5 text-gray-500 hover:bg-gray-100 rounded-full transition-colors">
+                            <Settings size={22} />
+                        </button>
+                        <button onClick={handleLogout} className="p-2.5 text-gray-500 hover:bg-red-50 hover:text-red-500 rounded-full transition-colors">
+                            <LogOut size={22} />
                         </button>
                     </div>
                 </div>
-            </header>
+            </nav>
 
-            <div className="max-w-7xl mx-auto p-6 md:p-8 space-y-8">
-                {/* Welcome Section */}
+            {showClassSwitcher && <ClassSwitcher onClose={() => setShowClassSwitcher(false)} />}
+
+            <main className="max-w-6xl mx-auto px-4 py-8 md:py-12">
+                {/* 1. AI Companion Hero */}
+                <AICompanion userName={profile?.name?.split(' ')[0] || 'Student'} />
+
+                {/* 2. Subject Grid */}
                 <motion.div
-                    className="flex justify-between items-center"
-                    initial={{ opacity: 0, y: -20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                >
-                    <div>
-                        <h1 className="text-3xl md:text-4xl text-primary font-heading">Hi, {profile?.name?.split(' ')[0] || 'Student'}! 👋</h1>
-                        <p className="text-xl text-text-secondary">Ready to learn something new?</p>
-                    </div>
-                    <div className="flex items-center gap-4">
-                        <div className="text-right hidden md:block">
-                            <div className="text-sm text-text-secondary">Study Streak</div>
-                            <div className="text-2xl font-bold text-primary">{streak} Days 🔥</div>
-                        </div>
-                        <Button variant="ghost" onClick={handleLogout}>Logout</Button>
-                    </div>
-                </motion.div>
-
-                {/* Today's Plan */}
-                <motion.section
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
-                    transition={{ delay: 0.1 }}
+                    transition={{ delay: 0.2 }}
+                    className="mb-12"
                 >
-                    <div className="flex justify-between items-center mb-4">
-                        <h2 className="text-2xl font-heading font-bold flex items-center gap-2">
-                            <Calendar className="text-primary" /> Today's Plan
+                    <div className="flex items-center justify-between mb-6">
+                        <h2 className="text-3xl font-heading font-bold text-gray-900 flex items-center gap-2">
+                            📚 Your Subjects
                         </h2>
-                        <span className="text-sm text-text-secondary">Monday, Nov 24</span>
+                        <button
+                            onClick={() => navigate('/syllabus')}
+                            className="text-primary font-bold text-sm hover:underline px-4 py-2 hover:bg-primary/5 rounded-full transition-colors"
+                        >
+                            See All Subjects 👀
+                        </button>
                     </div>
 
-                    <div className="space-y-4">
-                        {dailyPlan.map((activity, index) => (
-                            <motion.div
-                                key={activity.id}
-                                initial={{ opacity: 0, x: -20 }}
-                                animate={{ opacity: 1, x: 0 }}
-                                transition={{ delay: 0.2 + index * 0.1 }}
-                            >
-                                <Card className={`p-4 hover:shadow-lg transition-all cursor-pointer ${activity.status === 'completed' ? 'bg-green-50 border-green-200' :
-                                    activity.status === 'in-progress' ? 'bg-primary/5 border-primary/20' : ''
-                                    }`}>
-                                    <div className="flex items-center justify-between">
-                                        <div className="flex items-center gap-4">
-                                            <div className="text-4xl">{activity.icon}</div>
-                                            <div>
-                                                <div className="flex items-center gap-2">
-                                                    <h3 className="font-bold text-lg">{activity.subject}</h3>
-                                                    {activity.status === 'completed' && (
-                                                        <span className="text-green-600 text-sm">✓ Completed</span>
-                                                    )}
-                                                    {activity.status === 'in-progress' && (
-                                                        <span className="text-primary text-sm animate-pulse">● In Progress</span>
-                                                    )}
+                    {loading ? (
+                        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+                            {[1, 2, 3, 4].map(i => (
+                                <div key={i} className="h-64 bg-white/50 rounded-3xl animate-pulse shadow-lg"></div>
+                            ))}
+                        </div>
+                    ) : subjects.length === 0 ? (
+                        <Card className="p-12 text-center border-2 border-dashed border-gray-200">
+                            <div className="text-6xl mb-4">🌟</div>
+                            <h3 className="text-2xl font-bold text-gray-900 mb-2">Your Learning Journey Starts Here!</h3>
+                            <p className="text-gray-600 mb-4">Pick any subject below to begin your adventure!</p>
+                            <p className="text-sm text-gray-500">💡 Tip: Start with your favorite subject!</p>
+                        </Card>
+                    ) : (
+                        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+                            {subjects.map((sub, index) => {
+                                const theme = getSubjectTheme(index);
+                                const progressInfo = getProgressEmoji(sub.progress);
+
+                                return (
+                                    <motion.div
+                                        key={sub.id}
+                                        whileHover={{ y: -8, scale: 1.02 }}
+                                        whileTap={{ scale: 0.98 }}
+                                        transition={{ type: "spring", stiffness: 300 }}
+                                    >
+                                        <Card
+                                            className={`h-full cursor-pointer border-2 ${theme.border} hover:shadow-2xl transition-all duration-300 overflow-hidden relative group bg-white`}
+                                            onClick={() => navigate(`/syllabus/${sub.id}`)}
+                                        >
+                                            <div className={`absolute top-0 right-0 w-32 h-32 ${theme.bg} rounded-bl-full opacity-50 group-hover:opacity-70 transition-opacity`} />
+
+                                            <div className="p-6 flex flex-col h-full relative z-10">
+                                                <div className={`w-20 h-20 rounded-2xl ${theme.iconBg} ${theme.text} flex items-center justify-center mb-4 shadow-md group-hover:scale-110 transition-transform`}>
+                                                    {getSubjectIcon(sub.name)}
                                                 </div>
-                                                <p className="text-text-secondary">{activity.topic}</p>
-                                                <div className="flex items-center gap-4 mt-1 text-sm text-text-secondary">
-                                                    <span className="flex items-center gap-1">
-                                                        <Clock size={14} /> {activity.duration}
-                                                    </span>
-                                                    <span>{activity.time}</span>
+
+                                                <h3 className="text-xl font-bold text-gray-900 mb-2">{sub.name}</h3>
+                                                <p className="text-sm text-text-secondary mb-4 font-medium">{getSubjectDescription(sub.name, sub.totalTopics)}</p>
+
+                                                <div className="mt-auto space-y-3">
+                                                    <div className="flex items-center gap-2 text-sm font-bold">
+                                                        <span className="text-3xl">{progressInfo.emoji}</span>
+                                                        <span className={theme.text}>{progressInfo.text}</span>
+                                                    </div>
+                                                    <div className="w-full bg-gray-100 rounded-full h-3 overflow-hidden shadow-inner">
+                                                        <motion.div
+                                                            initial={{ width: 0 }}
+                                                            animate={{ width: `${sub.progress}%` }}
+                                                            transition={{ duration: 1, ease: "easeOut", delay: index * 0.1 }}
+                                                            className={`h-full rounded-full ${theme.progressBg}`}
+                                                        />
+                                                    </div>
+                                                    <div className="text-right text-sm font-bold text-gray-600">
+                                                        {sub.progress}% Complete
+                                                    </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                        <Button
-                                            variant={activity.status === 'completed' ? 'ghost' : 'primary'}
-                                            disabled={activity.status === 'completed'}
-                                            onClick={() => navigate('/study-session')}
-                                        >
-                                            {activity.status === 'completed' ? 'Review' : 'Start'}
-                                        </Button>
-                                    </div>
-                                </Card>
-                            </motion.div>
-                        ))}
-                    </div>
-                </motion.section>
+                                        </Card>
+                                    </motion.div>
+                                );
+                            })}
+                        </div>
+                    )}
+                </motion.div>
 
-                {/* Subject Progress */}
-                <motion.section
+                {/* 3. Bottom Cards - Adventure & Superpowers */}
+                <motion.div
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: 0.4 }}
+                    className="grid md:grid-cols-2 gap-6"
                 >
-                    <h2 className="text-2xl font-heading font-bold mb-4 flex items-center gap-2">
-                        <Trophy className="text-secondary" /> Your Progress
-                    </h2>
-                    <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
-                        {subjects.map((subject, index) => (
-                            <motion.div
-                                key={subject.name}
-                                whileHover={{ scale: 1.05 }}
-                                transition={{ type: "spring", stiffness: 300 }}
-                            >
-                                <Card className="p-4 cursor-pointer hover:shadow-lg transition-shadow">
-                                    <div className="flex items-center gap-3 mb-3">
-                                        <span className="text-2xl">{subject.icon}</span>
-                                        <h3 className="font-bold">{subject.name}</h3>
-                                    </div>
-                                    <div className="w-full bg-gray-100 rounded-full h-3 mb-2">
-                                        <motion.div
-                                            className={`${subject.color} h-3 rounded-full`}
-                                            initial={{ width: 0 }}
-                                            animate={{ width: `${subject.progress}%` }}
-                                            transition={{ delay: 0.5 + index * 0.1, duration: 0.8 }}
-                                        />
-                                    </div>
-                                    <p className="text-xs text-text-secondary text-right">{subject.progress}% Complete</p>
-                                </Card>
-                            </motion.div>
-                        ))}
-                    </div>
-                </motion.section>
+                    {/* Continue Your Adventure Card */}
+                    <Card className="p-8 bg-gradient-to-br from-indigo-600 to-purple-600 text-white border-none shadow-2xl relative overflow-hidden group cursor-pointer hover:scale-105 transition-transform" onClick={() => navigate('/history')}>
+                        <div className="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full -translate-y-1/2 translate-x-1/2 blur-3xl group-hover:bg-white/20 transition-colors" />
 
-                {/* Quick Actions */}
-                <motion.section
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ delay: 0.6 }}
-                >
-                    <div className="grid md:grid-cols-3 gap-6">
-                        <Card className="p-6 hover:scale-105 transition-transform cursor-pointer" onClick={() => navigate('/syllabus')}>
-                            <div className="flex items-center gap-4 mb-4">
-                                <div className="p-3 bg-primary/20 rounded-xl text-primary">
-                                    <BookOpen size={32} />
+                        <div className="relative z-10">
+                            <div className="flex items-center gap-3 mb-4">
+                                <div className="p-3 bg-white/20 rounded-xl backdrop-blur-sm">
+                                    <span className="text-4xl">🎮</span>
                                 </div>
-                                <h2 className="text-xl font-bold">Browse Syllabus</h2>
+                                <h3 className="font-bold text-2xl">Continue Your Adventure!</h3>
                             </div>
-                            <p className="text-text-secondary mb-4">Explore all subjects and chapters</p>
-                            <div className="flex items-center text-primary font-bold">
-                                View All <ChevronRight size={20} />
-                            </div>
-                        </Card>
 
-                        <Card className="p-6 hover:scale-105 transition-transform cursor-pointer" onClick={() => navigate('/chat')}>
-                            <div className="flex items-center gap-4 mb-4">
-                                <div className="p-3 bg-secondary/20 rounded-xl text-secondary">
-                                    <MessageCircle size={32} />
-                                </div>
-                                <h2 className="text-xl font-bold">Ask Shikshak</h2>
-                            </div>
-                            <p className="text-text-secondary mb-4">Get instant help with any doubt</p>
-                            <div className="flex items-center text-secondary font-bold">
-                                Start Chat <ChevronRight size={20} />
-                            </div>
-                        </Card>
+                            <p className="text-white/90 mb-2 text-base font-medium">
+                                Yesterday you were exploring:
+                            </p>
+                            <p className="text-white font-bold text-xl mb-6">
+                                🔢 Fractions - The Pizza Slice Mystery!
+                            </p>
 
-                        <Card className="p-6 hover:scale-105 transition-transform cursor-pointer" onClick={() => navigate('/history')}>
-                            <div className="flex items-center gap-4 mb-4">
-                                <div className="p-3 bg-purple-100 rounded-xl text-purple-600">
-                                    <Star size={32} />
+                            <button className="bg-white text-purple-600 px-8 py-4 rounded-full font-bold text-lg hover:bg-yellow-300 hover:scale-110 transition-all shadow-lg flex items-center gap-2">
+                                Let's Go! 🚀
+                            </button>
+                        </div>
+                    </Card>
+
+                    {/* Your Superpowers Card */}
+                    <Card className="p-8 border-2 border-yellow-200 bg-gradient-to-br from-yellow-50 to-orange-50 shadow-2xl cursor-pointer hover:shadow-3xl hover:scale-105 transition-all" onClick={() => navigate('/profile')}>
+                        <div className="flex items-center justify-between mb-6">
+                            <h3 className="font-bold text-2xl text-gray-900 flex items-center gap-2">
+                                🏆 Your Superpowers!
+                            </h3>
+                        </div>
+
+                        <div className="space-y-4">
+                            {/* Streak */}
+                            <div className="p-5 bg-white rounded-2xl shadow-md hover:shadow-lg transition-shadow">
+                                <div className="flex items-center justify-between mb-3">
+                                    <span className="text-base font-bold text-gray-700">⭐ Learning Streak</span>
+                                    <span className="text-3xl font-bold text-orange-600 flex items-center gap-1">
+                                        5 Days 🔥
+                                    </span>
                                 </div>
-                                <h2 className="text-xl font-bold">My Journey</h2>
+                                <div className="w-full bg-gray-100 rounded-full h-2.5 overflow-hidden shadow-inner">
+                                    <motion.div
+                                        initial={{ width: 0 }}
+                                        animate={{ width: '71%' }}
+                                        transition={{ duration: 1, delay: 0.5 }}
+                                        className="h-full bg-gradient-to-r from-orange-400 to-red-500 rounded-full"
+                                    />
+                                </div>
+                                <p className="text-sm text-gray-600 mt-2 font-medium">2 more days to unlock a surprise! 🎁</p>
                             </div>
-                            <p className="text-text-secondary mb-4">View your learning history</p>
-                            <div className="flex items-center text-purple-600 font-bold">
-                                See Progress <ChevronRight size={20} />
+
+                            {/* Topics Mastered */}
+                            <div className="p-5 bg-white rounded-2xl shadow-md hover:shadow-lg transition-shadow">
+                                <div className="flex items-center justify-between mb-2">
+                                    <span className="text-base font-bold text-gray-700">🎯 Topics Mastered</span>
+                                    <span className="text-3xl font-bold text-blue-600">
+                                        {subjects.reduce((sum, sub) => sum + sub.completedCount, 0)}
+                                    </span>
+                                </div>
+                                <p className="text-sm text-gray-600 font-medium">Master 3 more to become a Math Wizard! 🧙‍♂️</p>
                             </div>
-                        </Card>
-                    </div>
-                </motion.section>
-            </div>
+                        </div>
+                    </Card>
+                </motion.div>
+            </main>
         </div>
     );
 }
