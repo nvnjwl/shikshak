@@ -62,7 +62,7 @@ export default function SubjectView() {
     }
 
     return (
-        <div className="min-h-screen bg-background p-8 font-body">
+        <div className="p-8 font-body">
             <header className="mb-8">
                 <Button
                     variant="ghost"

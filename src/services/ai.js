@@ -82,7 +82,7 @@ Make it engaging and visual-first!`;
 export async function verifyGeminiKey(apiKey) {
     try {
         const genAI = new GoogleGenerativeAI(apiKey);
-        const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
+        const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash-001" });
         await model.generateContent("Test");
         return true;
     } catch (error) {
@@ -105,7 +105,7 @@ async function createChatSession(conversationHistory = [], apiKey = null, studen
     const systemPrompt = getSystemPrompt(studentProfile, subject);
 
     const model = genAI.getGenerativeModel({
-        model: "gemini-1.5-flash",
+        model: "gemini-1.5-flash-001",
         systemInstruction: systemPrompt
     });
 
@@ -179,8 +179,8 @@ export async function generateVideoExplanation(topic, subject, studentClass, api
 
         const genAI = apiKey ? new GoogleGenerativeAI(apiKey) : defaultGenAI;
         const model = genAI.getGenerativeModel({
-            model: "gemini-1.5-flash",
-            systemInstruction: SYSTEM_PROMPT
+            model: "gemini-1.5-flash-001",
+            systemInstruction: LEGACY_SYSTEM_PROMPT
         });
 
         const prompt = VIDEO_EXPLANATION_PROMPT.replace('{class}', studentClass) +
@@ -300,8 +300,8 @@ async function analyzeImageWithGemini(imageBase64, question = "", apiKey = null)
     try {
         const genAI = apiKey ? new GoogleGenerativeAI(apiKey) : defaultGenAI;
         const model = genAI.getGenerativeModel({
-            model: "gemini-1.5-flash",
-            systemInstruction: SYSTEM_PROMPT + "\n\nFor homework images: Identify the problem, guide the student with hints, don't give direct answers. Ask what they've tried so far."
+            model: "gemini-1.5-flash-001",
+            systemInstruction: LEGACY_SYSTEM_PROMPT + "\n\nFor homework images: Identify the problem, guide the student with hints, don't give direct answers. Ask what they've tried so far."
         });
 
         const base64Data = imageBase64.replace(/^data:image\/\w+;base64,/, '');

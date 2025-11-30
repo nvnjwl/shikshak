@@ -99,9 +99,14 @@ export default function Dashboard() {
                     const completedCount = progressData.completedTopics?.length || 0;
                     const progressPercent = totalTopics > 0 ? Math.round((completedCount / totalTopics) * 100) : 0;
 
+                    // Ensure subject name is always present
+                    const subjectName = data.subject_name || data.subjectName || subjectId || 'Unknown Subject';
+
+                    console.log('Subject data:', { subjectId, subjectName, rawData: data });
+
                     subjectsData.push({
                         id: subjectId,
-                        name: data.subject_name,
+                        name: subjectName,
                         progress: progressPercent,
                         totalTopics,
                         completedCount
@@ -224,7 +229,7 @@ export default function Dashboard() {
                                                     {getSubjectIcon(sub.name)}
                                                 </div>
 
-                                                <h3 className="text-xl font-bold text-gray-900 mb-2">{sub.name}</h3>
+                                                <h3 className="text-2xl font-bold text-gray-900 mb-2">{sub.name || 'Subject'}</h3>
                                                 <p className="text-sm text-text-secondary mb-4 font-medium">{getSubjectDescription(sub.name, sub.totalTopics)}</p>
 
                                                 <div className="mt-auto space-y-3">

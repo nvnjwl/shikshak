@@ -41,6 +41,8 @@ import ChangeAdminPassword from './pages/admin/ChangeAdminPassword';
 import SupportTicketList from './pages/admin/support/SupportTicketList';
 import SupportTicketDetail from './pages/admin/support/SupportTicketDetail';
 import AdminManagement from './pages/admin/settings/AdminManagement';
+import StudentLayout from './components/layouts/StudentLayout';
+import ErrorBoundary from './components/ErrorBoundary';
 
 
 function PrivateRoute({ children }) {
@@ -74,18 +76,62 @@ function App() {
                 <ProfileSetup />
                 // </PrivateRoute>
               } />
-              <Route path="/app" element={
-                // <PrivateRoute> 
-                <Dashboard />
-                // </PrivateRoute>
-              } />
-              <Route path="/settings" element={<Settings />} />
-              <Route path="/syllabus" element={<SyllabusHome />} />
-              <Route path="/syllabus/:subjectId" element={<SubjectView />} />
-              <Route path="/syllabus/:subjectId/:chapterId" element={<ChapterView />} />
-              <Route path="/history" element={<History />} />
-              <Route path="/learn/:subjectId/:chapterId/:topicId" element={<TopicLearning />} />
-              <Route path="/practice/:subjectId/:chapterId/:topicId" element={<PracticeQuestions />} />
+
+              {/* Student Routes with Layout and Error Boundary */}
+              <Route element={<StudentLayout />}>
+                <Route path="/app" element={
+                  <ErrorBoundary>
+                    <Dashboard />
+                  </ErrorBoundary>
+                } />
+                <Route path="/settings" element={
+                  <ErrorBoundary>
+                    <Settings />
+                  </ErrorBoundary>
+                } />
+                <Route path="/syllabus" element={
+                  <ErrorBoundary>
+                    <SyllabusHome />
+                  </ErrorBoundary>
+                } />
+                <Route path="/syllabus/:subjectId" element={
+                  <ErrorBoundary>
+                    <SubjectView />
+                  </ErrorBoundary>
+                } />
+                <Route path="/syllabus/:subjectId/:chapterId" element={
+                  <ErrorBoundary>
+                    <ChapterView />
+                  </ErrorBoundary>
+                } />
+                <Route path="/history" element={
+                  <ErrorBoundary>
+                    <History />
+                  </ErrorBoundary>
+                } />
+                <Route path="/learn/:subjectId/:chapterId/:topicId" element={
+                  <ErrorBoundary>
+                    <TopicLearning />
+                  </ErrorBoundary>
+                } />
+                <Route path="/practice/:subjectId/:chapterId/:topicId" element={
+                  <ErrorBoundary>
+                    <PracticeQuestions />
+                  </ErrorBoundary>
+                } />
+                <Route path="/study-session" element={
+                  <ErrorBoundary>
+                    <StudySession />
+                  </ErrorBoundary>
+                } />
+                <Route path="/chat" element={
+                  <ErrorBoundary>
+                    <ChatSession />
+                  </ErrorBoundary>
+                } />
+              </Route>
+
+              <Route path="/pricing" element={<Pricing />} />
               <Route path="/pricing" element={<Pricing />} />
               <Route path="/checkout" element={<Checkout />} />
               <Route path="/payment/success" element={<PaymentSuccess />} />
@@ -143,12 +189,7 @@ function App() {
                   <AdminManagement />
                 </AdminRoute>
               } />
-              <Route path="/study-session" element={<StudySession />} />
-              <Route path="/chat" element={
-                // <PrivateRoute>
-                <ChatSession />
-                // </PrivateRoute>
-              } />
+
             </Routes>
           </Router>
         </ProfileProvider>

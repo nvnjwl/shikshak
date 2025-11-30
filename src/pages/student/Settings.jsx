@@ -5,8 +5,9 @@ import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../../contexts/AuthContext';
 import { useProfile } from '../../contexts/ProfileContext';
 import { useSubscription } from '../../contexts/SubscriptionContext';
-import { User, BookOpen, LogOut, Crown, ArrowLeft, Check, Save, X } from 'lucide-react';
+import { User, BookOpen, LogOut, Crown, ArrowLeft, Check, Save, X, Mail } from 'lucide-react';
 import toast from 'react-hot-toast';
+import { sendTestEmail } from '../../services/email';
 
 export default function Settings() {
     const navigate = useNavigate();
@@ -40,8 +41,46 @@ export default function Settings() {
             setUseOwnApiKey(profile.useOwnApiKey || false);
             setApiKey(profile.apiKey || '');
             setApiKeyStatus(profile.apiKeyStatus || null);
+            setEmailNotifications(profile.emailNotifications ?? true);
         }
     }, [profile]);
+
+    // Notification State
+    const [emailNotifications, setEmailNotifications] = useState(true);
+    const [sendingTestEmail, setSendingTestEmail] = useState(false);
+
+    const handleToggleNotifications = async (enabled) => {
+        setEmailNotifications(enabled);
+        try {
+            await updateProfile({ emailNotifications: enabled });
+            toast.success(enabled ? 'Email notifications enabled' : 'Email notifications disabled');
+        } catch (error) {
+            console.error('Error updating notification settings:', error);
+            toast.error('Failed to update settings');
+        }
+    };
+
+    const handleSendTestEmail = async () => {
+        if (!currentUser?.email) {
+            toast.error('No email address found');
+            return;
+        }
+
+        setSendingTestEmail(true);
+        try {
+            const result = await sendTestEmail(currentUser);
+            if (result.success) {
+                toast.success('Test email sent! Check your inbox 📧');
+            } else {
+                toast.error('Failed to send email. Check API keys.');
+            }
+        } catch (error) {
+            console.error('Error sending test email:', error);
+            toast.error('Failed to send test email');
+        } finally {
+            setSendingTestEmail(false);
+        }
+    };
 
     const handleSaveProfile = async () => {
         if (!name.trim()) {
@@ -451,6 +490,48 @@ export default function Settings() {
                                 <p>Don't have a key? <a href="https://aistudio.google.com/app/apikey" target="_blank" rel="noopener noreferrer" className="text-purple-600 hover:underline">Get one from Google AI Studio</a> (it's free!)</p>
                                 <p className="mt-1">Your key is stored securely on your device and never shared.</p>
                             </div>
+                        </div>
+                    )}
+                </div>
+
+                {/* Notifications Section */}
+                <div className="flex items-center gap-3 mb-4">
+                    <div className="p-3 bg-blue-100 rounded-full">
+                        <Mail className="text-blue-600" size={24} />
+                    </div>
+                    <div>
+                        <h2 className="text-xl font-heading font-bold">Notifications</h2>
+                        <p className="text-sm text-text-secondary">Manage how we contact you</p>
+                    </div>
+                </div>
+
+                <div className="space-y-4 mb-8">
+                    <div className="flex items-center justify-between p-4 bg-gray-50 rounded-lg">
+                        <div>
+                            <h3 className="font-bold text-gray-900">Email Notifications</h3>
+                            <p className="text-sm text-text-secondary">Receive important updates and progress reports</p>
+                        </div>
+                        <label className="relative inline-flex items-center cursor-pointer">
+                            <input
+                                type="checkbox"
+                                className="sr-only peer"
+                                checked={emailNotifications}
+                                onChange={(e) => handleToggleNotifications(e.target.checked)}
+                            />
+                            <div className="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-blue-600"></div>
+                        </label>
+                    </div>
+
+                    {emailNotifications && (
+                        <div className="flex justify-end">
+                            <Button
+                                variant="outline"
+                                onClick={handleSendTestEmail}
+                                disabled={sendingTestEmail}
+                                className="text-sm"
+                            >
+                                {sendingTestEmail ? 'Sending...' : 'Send Test Email'}
+                            </Button>
                         </div>
                     )}
                 </div>

@@ -51,7 +51,7 @@ export default function ChapterView() {
     }, [subjectId, chapterId, profile]);
 
     return (
-        <div className="min-h-screen bg-background p-8 font-body">
+        <div className="p-8 font-body">
             <header className="flex items-center gap-4 mb-8">
                 <Button variant="ghost" onClick={() => navigate(`/syllabus/${subjectId}`)} className="px-2">
                     <ArrowLeft />

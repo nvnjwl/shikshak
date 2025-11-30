@@ -7,9 +7,12 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "seed:syllabus": "node scripts/seedSyllabus.js",
+    "check:syllabus": "node scripts/checkSyllabus.js"
   },
   "dependencies": {
+    "@emailjs/browser": "^4.4.1",
     "@google/generative-ai": "^0.24.1",
     "canvas-confetti": "^1.9.4",
     "clsx": "^2.1.1",

@@ -1,34 +1,13 @@
 import { useState, useEffect } from 'react';
 import { Card } from '../../../components/ui/Card';
 import { useNavigate } from 'react-router-dom';
-import { Calculator, FlaskConical, Languages, Globe, BookOpen, Sparkles, ArrowRight, Star } from 'lucide-react';
+import { Sparkles, ArrowRight, Star, BookOpen } from 'lucide-react';
 import { useProfile } from '../../../contexts/ProfileContext';
 import { collection, getDocs, query, where } from 'firebase/firestore';
 import { db } from '../../../lib/firebase';
 import logger from '../../../utils/logger';
 import { motion } from 'framer-motion';
-
-// Map icons to subject names (simple heuristic)
-const getIconForSubject = (name) => {
-    const n = name.toLowerCase();
-    if (n.includes('math')) return Calculator;
-    if (n.includes('science')) return FlaskConical;
-    if (n.includes('english') || n.includes('hindi')) return Languages;
-    if (n.includes('social') || n.includes('history') || n.includes('geo')) return Globe;
-    return BookOpen;
-};
-
-const getThemeForSubject = (index) => {
-    const themes = [
-        { bg: 'bg-blue-50', text: 'text-blue-600', border: 'border-blue-100', iconBg: 'bg-blue-100' },
-        { bg: 'bg-green-50', text: 'text-green-600', border: 'border-green-100', iconBg: 'bg-green-100' },
-        { bg: 'bg-purple-50', text: 'text-purple-600', border: 'border-purple-100', iconBg: 'bg-purple-100' },
-        { bg: 'bg-orange-50', text: 'text-orange-600', border: 'border-orange-100', iconBg: 'bg-orange-100' },
-        { bg: 'bg-pink-50', text: 'text-pink-600', border: 'border-pink-100', iconBg: 'bg-pink-100' },
-        { bg: 'bg-teal-50', text: 'text-teal-600', border: 'border-teal-100', iconBg: 'bg-teal-100' }
-    ];
-    return themes[index % themes.length];
-};
+import { getSubjectIcon, getSubjectTheme } from '../../../utils/subjectUtils';
 
 export default function SyllabusHome() {
     const navigate = useNavigate();
@@ -57,8 +36,8 @@ export default function SyllabusHome() {
                 return {
                     id: docData.subjectId,
                     name: docData.subject_name,
-                    icon: getIconForSubject(docData.subject_name),
-                    theme: getThemeForSubject(index),
+                    icon: getSubjectIcon(docData.subject_name),
+                    theme: getSubjectTheme(index),
                     progress: 0, // TODO: Calculate real progress
                     chaptersCount: docData.chapters?.length || 0,
                     topicsCount: docData.chapters?.reduce((acc, c) => acc + (c.key_topics?.length || 0), 0) || 0
@@ -75,7 +54,7 @@ export default function SyllabusHome() {
 
     if (loading) {
         return (
-            <div className="min-h-screen flex items-center justify-center bg-background">
+            <div className="flex items-center justify-center h-96">
                 <div className="text-center">
                     <div className="w-16 h-16 border-4 border-primary border-t-transparent rounded-full animate-spin mx-auto mb-4"></div>
                     <p className="text-text-secondary">Loading your learning path...</p>
@@ -85,7 +64,7 @@ export default function SyllabusHome() {
     }
 
     return (
-        <div className="min-h-screen bg-background font-body pb-20 md:pb-0">
+        <div className="font-body pb-20 md:pb-0">
             {/* Hero Section */}
             <div className="bg-primary/5 border-b border-primary/10">
                 <div className="max-w-7xl mx-auto px-6 py-12 md:py-16">
