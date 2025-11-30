@@ -10,252 +10,995 @@
             "name": "Nutrition in Plants",
             "theme": "Modes of nutrition and photosynthesis",
             "key_topics": [
-                "Autotrophic and heterotrophic nutrition",
-                "Photosynthesis process (basic equation, chlorophyll)",
-                "Parasitic, saprophytic and insectivorous plants"
+                {
+                    "name": "Autotrophic and heterotrophic nutrition",
+                    "difficulty": "medium",
+                    "estimated_minutes": 160,
+                    "bloom_level": "understand",
+                    "description": "Understanding and applying concepts related to autotrophic and heterotrophic nutrition"
+                },
+                {
+                    "name": "Photosynthesis process (basic equation, chlorophyll)",
+                    "difficulty": "easy",
+                    "estimated_minutes": 160,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to photosynthesis process (basic equation, chlorophyll)"
+                },
+                {
+                    "name": "Parasitic, saprophytic and insectivorous plants",
+                    "difficulty": "hard",
+                    "estimated_minutes": 160,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to parasitic, saprophytic and insectivorous plants"
+                }
             ],
             "learning_outcomes": [
-                "Explains photosynthesis in simple terms.",
-                "Differentiates between various modes of plant nutrition."
-            ]
+                {
+                    "outcome": "Explains photosynthesis in simple terms.",
+                    "bloom_level": "apply",
+                    "assessment_type": "practice_problems"
+                },
+                {
+                    "outcome": "Differentiates between various modes of plant nutrition.",
+                    "bloom_level": "analyze",
+                    "assessment_type": "practice_problems"
+                }
+            ],
+            "difficulty": "easy",
+            "estimated_hours": 8,
+            "prerequisites": [],
+            "resources": {
+                "video_topics": [
+                    "Nutrition in Plants"
+                ],
+                "practice_sets": [
+                    "Nutrition in Plants - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         },
         {
             "number": 2,
             "name": "Nutrition in Animals",
             "theme": "Digestive systems and nutrition",
             "key_topics": [
-                "Different feeding habits",
-                "Human digestive system organs and functions",
-                "Digestion in simple organisms (Amoeba)"
+                {
+                    "name": "Different feeding habits",
+                    "difficulty": "medium",
+                    "estimated_minutes": 160,
+                    "bloom_level": "understand",
+                    "description": "Understanding and applying concepts related to different feeding habits"
+                },
+                {
+                    "name": "Human digestive system organs and functions",
+                    "difficulty": "medium",
+                    "estimated_minutes": 160,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to human digestive system organs and functions"
+                },
+                {
+                    "name": "Digestion in simple organisms (Amoeba)",
+                    "difficulty": "easy",
+                    "estimated_minutes": 160,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to digestion in simple organisms (amoeba)"
+                }
             ],
             "learning_outcomes": [
-                "Labels human digestive system and explains main functions.",
-                "Describes digestion in at least one non-human organism."
-            ]
+                {
+                    "outcome": "Labels human digestive system and explains main functions.",
+                    "bloom_level": "apply",
+                    "assessment_type": "practice_problems"
+                },
+                {
+                    "outcome": "Describes digestion in at least one non-human organism.",
+                    "bloom_level": "analyze",
+                    "assessment_type": "practice_problems"
+                }
+            ],
+            "difficulty": "easy",
+            "estimated_hours": 8,
+            "prerequisites": [],
+            "resources": {
+                "video_topics": [
+                    "Nutrition in Animals"
+                ],
+                "practice_sets": [
+                    "Nutrition in Animals - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         },
         {
             "number": 3,
             "name": "Fibre to Fabric",
             "theme": "Animal fibres and processing",
             "key_topics": [
-                "Wool: animals, shearing, cleaning and spinning",
-                "Silk: life cycle of silkworm",
-                "Health and safety in fibre production"
+                {
+                    "name": "Wool: animals, shearing, cleaning and spinning",
+                    "difficulty": "medium",
+                    "estimated_minutes": 160,
+                    "bloom_level": "understand",
+                    "description": "Understanding and applying concepts related to wool: animals, shearing, cleaning and spinning"
+                },
+                {
+                    "name": "Silk: life cycle of silkworm",
+                    "difficulty": "medium",
+                    "estimated_minutes": 160,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to silk: life cycle of silkworm"
+                },
+                {
+                    "name": "Health and safety in fibre production",
+                    "difficulty": "hard",
+                    "estimated_minutes": 160,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to health and safety in fibre production"
+                }
             ],
             "learning_outcomes": [
-                "Describes steps of wool and silk production.",
-                "Appreciates concerns of workers involved in fibre industries."
-            ]
+                {
+                    "outcome": "Describes steps of wool and silk production.",
+                    "bloom_level": "apply",
+                    "assessment_type": "practice_problems"
+                },
+                {
+                    "outcome": "Appreciates concerns of workers involved in fibre industries.",
+                    "bloom_level": "analyze",
+                    "assessment_type": "practice_problems"
+                }
+            ],
+            "difficulty": "easy",
+            "estimated_hours": 8,
+            "prerequisites": [],
+            "resources": {
+                "video_topics": [
+                    "Fibre to Fabric"
+                ],
+                "practice_sets": [
+                    "Fibre to Fabric - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         },
         {
             "number": 4,
             "name": "Heat",
             "theme": "Temperature and transfer of heat",
             "key_topics": [
-                "Hot and cold; measuring temperature",
-                "Conduction, convection, radiation (basic)",
-                "Clothing and heat transfer"
+                {
+                    "name": "Hot and cold; measuring temperature",
+                    "difficulty": "medium",
+                    "estimated_minutes": 160,
+                    "bloom_level": "understand",
+                    "description": "Understanding and applying concepts related to hot and cold; measuring temperature"
+                },
+                {
+                    "name": "Conduction, convection, radiation (basic)",
+                    "difficulty": "easy",
+                    "estimated_minutes": 160,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to conduction, convection, radiation (basic)"
+                },
+                {
+                    "name": "Clothing and heat transfer",
+                    "difficulty": "hard",
+                    "estimated_minutes": 160,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to clothing and heat transfer"
+                }
             ],
             "learning_outcomes": [
-                "Uses clinical and laboratory thermometers correctly.",
-                "Explains everyday examples of conduction, convection and radiation."
-            ]
+                {
+                    "outcome": "Uses clinical and laboratory thermometers correctly.",
+                    "bloom_level": "apply",
+                    "assessment_type": "practice_problems"
+                },
+                {
+                    "outcome": "Explains everyday examples of conduction, convection and radiation.",
+                    "bloom_level": "analyze",
+                    "assessment_type": "practice_problems"
+                }
+            ],
+            "difficulty": "easy",
+            "estimated_hours": 8,
+            "prerequisites": [],
+            "resources": {
+                "video_topics": [
+                    "Heat"
+                ],
+                "practice_sets": [
+                    "Heat - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         },
         {
             "number": 5,
             "name": "Acids, Bases and Salts",
             "theme": "Types of substances and indicators",
             "key_topics": [
-                "Acidic and basic substances around us",
-                "Natural and synthetic indicators (litmus, turmeric)",
-                "Neutralisation in daily life"
+                {
+                    "name": "Acidic and basic substances around us",
+                    "difficulty": "easy",
+                    "estimated_minutes": 160,
+                    "bloom_level": "understand",
+                    "description": "Understanding and applying concepts related to acidic and basic substances around us"
+                },
+                {
+                    "name": "Natural and synthetic indicators (litmus, turmeric)",
+                    "difficulty": "medium",
+                    "estimated_minutes": 160,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to natural and synthetic indicators (litmus, turmeric)"
+                },
+                {
+                    "name": "Neutralisation in daily life",
+                    "difficulty": "hard",
+                    "estimated_minutes": 160,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to neutralisation in daily life"
+                }
             ],
             "learning_outcomes": [
-                "Identifies household substances as acidic or basic using indicators.",
-                "Explains simple neutralisation applications (indigestion, soil treatment)."
-            ]
+                {
+                    "outcome": "Identifies household substances as acidic or basic using indicators.",
+                    "bloom_level": "apply",
+                    "assessment_type": "practice_problems"
+                },
+                {
+                    "outcome": "Explains simple neutralisation applications (indigestion, soil treatment).",
+                    "bloom_level": "analyze",
+                    "assessment_type": "practice_problems"
+                }
+            ],
+            "difficulty": "easy",
+            "estimated_hours": 8,
+            "prerequisites": [],
+            "resources": {
+                "video_topics": [
+                    "Acids, Bases and Salts"
+                ],
+                "practice_sets": [
+                    "Acids, Bases and Salts - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         },
         {
             "number": 6,
             "name": "Physical and Chemical Changes",
             "theme": "Types of changes in materials",
             "key_topics": [
-                "Characteristics of physical changes",
-                "Characteristics of chemical changes",
-                "Rusting and crystallisation"
+                {
+                    "name": "Characteristics of physical changes",
+                    "difficulty": "medium",
+                    "estimated_minutes": 160,
+                    "bloom_level": "understand",
+                    "description": "Understanding and applying concepts related to characteristics of physical changes"
+                },
+                {
+                    "name": "Characteristics of chemical changes",
+                    "difficulty": "medium",
+                    "estimated_minutes": 160,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to characteristics of chemical changes"
+                },
+                {
+                    "name": "Rusting and crystallisation",
+                    "difficulty": "hard",
+                    "estimated_minutes": 160,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to rusting and crystallisation"
+                }
             ],
             "learning_outcomes": [
-                "Classifies observed changes as physical or chemical.",
-                "Describes conditions that speed up rusting."
-            ]
+                {
+                    "outcome": "Classifies observed changes as physical or chemical.",
+                    "bloom_level": "apply",
+                    "assessment_type": "practice_problems"
+                },
+                {
+                    "outcome": "Describes conditions that speed up rusting.",
+                    "bloom_level": "analyze",
+                    "assessment_type": "practice_problems"
+                }
+            ],
+            "difficulty": "medium",
+            "estimated_hours": 8,
+            "prerequisites": [],
+            "resources": {
+                "video_topics": [
+                    "Physical and Chemical Changes"
+                ],
+                "practice_sets": [
+                    "Physical and Chemical Changes - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         },
         {
             "number": 7,
             "name": "Weather, Climate and Adaptations of Animals to Climate",
             "theme": "Weather vs climate and adaptations",
             "key_topics": [
-                "Elements of weather",
-                "Climate of major regions",
-                "Adaptations of animals to polar and tropical climates"
+                {
+                    "name": "Elements of weather",
+                    "difficulty": "medium",
+                    "estimated_minutes": 160,
+                    "bloom_level": "understand",
+                    "description": "Understanding and applying concepts related to elements of weather"
+                },
+                {
+                    "name": "Climate of major regions",
+                    "difficulty": "medium",
+                    "estimated_minutes": 160,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to climate of major regions"
+                },
+                {
+                    "name": "Adaptations of animals to polar and tropical climates",
+                    "difficulty": "hard",
+                    "estimated_minutes": 160,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to adaptations of animals to polar and tropical climates"
+                }
             ],
             "learning_outcomes": [
-                "Differentiates between weather and climate.",
-                "Relates animal adaptations to specific climates."
-            ]
+                {
+                    "outcome": "Differentiates between weather and climate.",
+                    "bloom_level": "apply",
+                    "assessment_type": "practice_problems"
+                },
+                {
+                    "outcome": "Relates animal adaptations to specific climates.",
+                    "bloom_level": "analyze",
+                    "assessment_type": "practice_problems"
+                }
+            ],
+            "difficulty": "medium",
+            "estimated_hours": 8,
+            "prerequisites": [],
+            "resources": {
+                "video_topics": [
+                    "Weather, Climate and Adaptations of Animals to Climate"
+                ],
+                "practice_sets": [
+                    "Weather, Climate and Adaptations of Animals to Climate - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         },
         {
             "number": 8,
             "name": "Winds, Storms and Cyclones",
             "theme": "Air movement and severe weather",
             "key_topics": [
-                "Air pressure and wind formation",
-                "Thunderstorms and cyclones basics",
-                "Safety during storms and cyclones"
+                {
+                    "name": "Air pressure and wind formation",
+                    "difficulty": "medium",
+                    "estimated_minutes": 160,
+                    "bloom_level": "understand",
+                    "description": "Understanding and applying concepts related to air pressure and wind formation"
+                },
+                {
+                    "name": "Thunderstorms and cyclones basics",
+                    "difficulty": "easy",
+                    "estimated_minutes": 160,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to thunderstorms and cyclones basics"
+                },
+                {
+                    "name": "Safety during storms and cyclones",
+                    "difficulty": "hard",
+                    "estimated_minutes": 160,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to safety during storms and cyclones"
+                }
             ],
             "learning_outcomes": [
-                "Explains relation between air pressure and wind.",
-                "Lists safety measures during cyclones and heavy storms."
-            ]
+                {
+                    "outcome": "Explains relation between air pressure and wind.",
+                    "bloom_level": "apply",
+                    "assessment_type": "practice_problems"
+                },
+                {
+                    "outcome": "Lists safety measures during cyclones and heavy storms.",
+                    "bloom_level": "analyze",
+                    "assessment_type": "practice_problems"
+                }
+            ],
+            "difficulty": "medium",
+            "estimated_hours": 8,
+            "prerequisites": [],
+            "resources": {
+                "video_topics": [
+                    "Winds, Storms and Cyclones"
+                ],
+                "practice_sets": [
+                    "Winds, Storms and Cyclones - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         },
         {
             "number": 9,
             "name": "Soil",
             "theme": "Soil formation, types and conservation",
             "key_topics": [
-                "Soil profile and horizons",
-                "Soil types and properties",
-                "Soil fertility and conservation"
+                {
+                    "name": "Soil profile and horizons",
+                    "difficulty": "medium",
+                    "estimated_minutes": 160,
+                    "bloom_level": "understand",
+                    "description": "Understanding and applying concepts related to soil profile and horizons"
+                },
+                {
+                    "name": "Soil types and properties",
+                    "difficulty": "medium",
+                    "estimated_minutes": 160,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to soil types and properties"
+                },
+                {
+                    "name": "Soil fertility and conservation",
+                    "difficulty": "hard",
+                    "estimated_minutes": 160,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to soil fertility and conservation"
+                }
             ],
             "learning_outcomes": [
-                "Draws a labelled diagram of soil profile.",
-                "Explains reasons and remedies for soil erosion."
-            ]
+                {
+                    "outcome": "Draws a labelled diagram of soil profile.",
+                    "bloom_level": "apply",
+                    "assessment_type": "practice_problems"
+                },
+                {
+                    "outcome": "Explains reasons and remedies for soil erosion.",
+                    "bloom_level": "analyze",
+                    "assessment_type": "practice_problems"
+                }
+            ],
+            "difficulty": "medium",
+            "estimated_hours": 8,
+            "prerequisites": [],
+            "resources": {
+                "video_topics": [
+                    "Soil"
+                ],
+                "practice_sets": [
+                    "Soil - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         },
         {
             "number": 10,
             "name": "Respiration in Organisms",
             "theme": "Respiration and breathing",
             "key_topics": [
-                "Aerobic and anaerobic respiration (intro)",
-                "Respiration in humans and animals",
-                "Breathing mechanism and rate"
+                {
+                    "name": "Aerobic and anaerobic respiration (intro)",
+                    "difficulty": "medium",
+                    "estimated_minutes": 160,
+                    "bloom_level": "understand",
+                    "description": "Understanding and applying concepts related to aerobic and anaerobic respiration (intro)"
+                },
+                {
+                    "name": "Respiration in humans and animals",
+                    "difficulty": "medium",
+                    "estimated_minutes": 160,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to respiration in humans and animals"
+                },
+                {
+                    "name": "Breathing mechanism and rate",
+                    "difficulty": "hard",
+                    "estimated_minutes": 160,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to breathing mechanism and rate"
+                }
             ],
             "learning_outcomes": [
-                "Differentiates between breathing and respiration.",
-                "Describes human respiratory system in brief."
-            ]
+                {
+                    "outcome": "Differentiates between breathing and respiration.",
+                    "bloom_level": "apply",
+                    "assessment_type": "practice_problems"
+                },
+                {
+                    "outcome": "Describes human respiratory system in brief.",
+                    "bloom_level": "analyze",
+                    "assessment_type": "practice_problems"
+                }
+            ],
+            "difficulty": "medium",
+            "estimated_hours": 8,
+            "prerequisites": [],
+            "resources": {
+                "video_topics": [
+                    "Respiration in Organisms"
+                ],
+                "practice_sets": [
+                    "Respiration in Organisms - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         },
         {
             "number": 11,
             "name": "Transportation in Animals and Plants",
             "theme": "Transport systems in living organisms",
             "key_topics": [
-                "Blood, blood vessels and heart",
-                "Transport of water and minerals in plants",
-                "Excretion in animals and plants (basic)"
+                {
+                    "name": "Blood, blood vessels and heart",
+                    "difficulty": "medium",
+                    "estimated_minutes": 160,
+                    "bloom_level": "understand",
+                    "description": "Understanding and applying concepts related to blood, blood vessels and heart"
+                },
+                {
+                    "name": "Transport of water and minerals in plants",
+                    "difficulty": "medium",
+                    "estimated_minutes": 160,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to transport of water and minerals in plants"
+                },
+                {
+                    "name": "Excretion in animals and plants (basic)",
+                    "difficulty": "easy",
+                    "estimated_minutes": 160,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to excretion in animals and plants (basic)"
+                }
             ],
             "learning_outcomes": [
-                "Identifies main components of circulatory system.",
-                "Explains role of xylem and phloem in plants."
-            ]
+                {
+                    "outcome": "Identifies main components of circulatory system.",
+                    "bloom_level": "apply",
+                    "assessment_type": "practice_problems"
+                },
+                {
+                    "outcome": "Explains role of xylem and phloem in plants.",
+                    "bloom_level": "analyze",
+                    "assessment_type": "practice_problems"
+                }
+            ],
+            "difficulty": "medium",
+            "estimated_hours": 8,
+            "prerequisites": [],
+            "resources": {
+                "video_topics": [
+                    "Transportation in Animals and Plants"
+                ],
+                "practice_sets": [
+                    "Transportation in Animals and Plants - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         },
         {
             "number": 12,
             "name": "Reproduction in Plants",
             "theme": "Plant reproduction",
             "key_topics": [
-                "Asexual reproduction (cuttings, layering, budding)",
-                "Sexual reproduction and pollination",
-                "Seed formation and dispersal"
+                {
+                    "name": "Asexual reproduction (cuttings, layering, budding)",
+                    "difficulty": "medium",
+                    "estimated_minutes": 160,
+                    "bloom_level": "understand",
+                    "description": "Understanding and applying concepts related to asexual reproduction (cuttings, layering, budding)"
+                },
+                {
+                    "name": "Sexual reproduction and pollination",
+                    "difficulty": "medium",
+                    "estimated_minutes": 160,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to sexual reproduction and pollination"
+                },
+                {
+                    "name": "Seed formation and dispersal",
+                    "difficulty": "hard",
+                    "estimated_minutes": 160,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to seed formation and dispersal"
+                }
             ],
             "learning_outcomes": [
-                "Describes at least two methods of asexual reproduction in plants.",
-                "Explains pollination and seed formation in simple terms."
-            ]
+                {
+                    "outcome": "Describes at least two methods of asexual reproduction in plants.",
+                    "bloom_level": "apply",
+                    "assessment_type": "practice_problems"
+                },
+                {
+                    "outcome": "Explains pollination and seed formation in simple terms.",
+                    "bloom_level": "analyze",
+                    "assessment_type": "practice_problems"
+                }
+            ],
+            "difficulty": "medium",
+            "estimated_hours": 8,
+            "prerequisites": [],
+            "resources": {
+                "video_topics": [
+                    "Reproduction in Plants"
+                ],
+                "practice_sets": [
+                    "Reproduction in Plants - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         },
         {
             "number": 13,
             "name": "Motion and Time",
             "theme": "Describing motion and measuring time",
             "key_topics": [
-                "Types of motion",
-                "Speed and its calculation (basic formula)",
-                "Simple time measuring devices"
+                {
+                    "name": "Types of motion",
+                    "difficulty": "medium",
+                    "estimated_minutes": 160,
+                    "bloom_level": "understand",
+                    "description": "Understanding and applying concepts related to types of motion"
+                },
+                {
+                    "name": "Speed and its calculation (basic formula)",
+                    "difficulty": "easy",
+                    "estimated_minutes": 160,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to speed and its calculation (basic formula)"
+                },
+                {
+                    "name": "Simple time measuring devices",
+                    "difficulty": "easy",
+                    "estimated_minutes": 160,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to simple time measuring devices"
+                }
             ],
             "learning_outcomes": [
-                "Calculates speed for uniform motion using distance and time.",
-                "Differentiates between uniform and non-uniform motion."
-            ]
+                {
+                    "outcome": "Calculates speed for uniform motion using distance and time.",
+                    "bloom_level": "apply",
+                    "assessment_type": "practice_problems"
+                },
+                {
+                    "outcome": "Differentiates between uniform and non-uniform motion.",
+                    "bloom_level": "analyze",
+                    "assessment_type": "practice_problems"
+                }
+            ],
+            "difficulty": "hard",
+            "estimated_hours": 8,
+            "prerequisites": [],
+            "resources": {
+                "video_topics": [
+                    "Motion and Time"
+                ],
+                "practice_sets": [
+                    "Motion and Time - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         },
         {
             "number": 14,
             "name": "Electric Current and its Effects",
             "theme": "Electric circuits and magnetic effects",
             "key_topics": [
-                "Heating effect of electric current",
-                "Magnetic effect of electric current",
-                "Electric fuses and safety"
+                {
+                    "name": "Heating effect of electric current",
+                    "difficulty": "medium",
+                    "estimated_minutes": 160,
+                    "bloom_level": "understand",
+                    "description": "Understanding and applying concepts related to heating effect of electric current"
+                },
+                {
+                    "name": "Magnetic effect of electric current",
+                    "difficulty": "medium",
+                    "estimated_minutes": 160,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to magnetic effect of electric current"
+                },
+                {
+                    "name": "Electric fuses and safety",
+                    "difficulty": "hard",
+                    "estimated_minutes": 160,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to electric fuses and safety"
+                }
             ],
             "learning_outcomes": [
-                "Explains uses of heating effect of current (bulb, heater).",
-                "Describes basic idea of electromagnet."
-            ]
+                {
+                    "outcome": "Explains uses of heating effect of current (bulb, heater).",
+                    "bloom_level": "apply",
+                    "assessment_type": "practice_problems"
+                },
+                {
+                    "outcome": "Describes basic idea of electromagnet.",
+                    "bloom_level": "analyze",
+                    "assessment_type": "practice_problems"
+                }
+            ],
+            "difficulty": "hard",
+            "estimated_hours": 8,
+            "prerequisites": [],
+            "resources": {
+                "video_topics": [
+                    "Electric Current and its Effects"
+                ],
+                "practice_sets": [
+                    "Electric Current and its Effects - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         },
         {
             "number": 15,
             "name": "Light",
             "theme": "Reflection and images",
             "key_topics": [
-                "Light travels in straight line",
-                "Plane mirrors and images",
-                "Spherical mirrors (introductory) and lenses (basic)"
+                {
+                    "name": "Light travels in straight line",
+                    "difficulty": "medium",
+                    "estimated_minutes": 160,
+                    "bloom_level": "understand",
+                    "description": "Understanding and applying concepts related to light travels in straight line"
+                },
+                {
+                    "name": "Plane mirrors and images",
+                    "difficulty": "medium",
+                    "estimated_minutes": 160,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to plane mirrors and images"
+                },
+                {
+                    "name": "Spherical mirrors (introductory) and lenses (basic)",
+                    "difficulty": "easy",
+                    "estimated_minutes": 160,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to spherical mirrors (introductory) and lenses (basic)"
+                }
             ],
             "learning_outcomes": [
-                "Draws ray diagrams for image in plane mirror.",
-                "Explains everyday phenomena involving reflection."
-            ]
+                {
+                    "outcome": "Draws ray diagrams for image in plane mirror.",
+                    "bloom_level": "apply",
+                    "assessment_type": "practice_problems"
+                },
+                {
+                    "outcome": "Explains everyday phenomena involving reflection.",
+                    "bloom_level": "analyze",
+                    "assessment_type": "practice_problems"
+                }
+            ],
+            "difficulty": "hard",
+            "estimated_hours": 8,
+            "prerequisites": [],
+            "resources": {
+                "video_topics": [
+                    "Light"
+                ],
+                "practice_sets": [
+                    "Light - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         },
         {
             "number": 16,
             "name": "Water: A Precious Resource",
             "theme": "Water scarcity and sustainable use",
             "key_topics": [
-                "Distribution of water on Earth",
-                "Groundwater and its depletion",
-                "Rainwater harvesting and conservation"
+                {
+                    "name": "Distribution of water on Earth",
+                    "difficulty": "medium",
+                    "estimated_minutes": 160,
+                    "bloom_level": "understand",
+                    "description": "Understanding and applying concepts related to distribution of water on earth"
+                },
+                {
+                    "name": "Groundwater and its depletion",
+                    "difficulty": "medium",
+                    "estimated_minutes": 160,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to groundwater and its depletion"
+                },
+                {
+                    "name": "Rainwater harvesting and conservation",
+                    "difficulty": "hard",
+                    "estimated_minutes": 160,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to rainwater harvesting and conservation"
+                }
             ],
             "learning_outcomes": [
-                "Discusses causes of water scarcity in local context.",
-                "Suggests measures to conserve water at community level."
-            ]
+                {
+                    "outcome": "Discusses causes of water scarcity in local context.",
+                    "bloom_level": "apply",
+                    "assessment_type": "practice_problems"
+                },
+                {
+                    "outcome": "Suggests measures to conserve water at community level.",
+                    "bloom_level": "analyze",
+                    "assessment_type": "practice_problems"
+                }
+            ],
+            "difficulty": "hard",
+            "estimated_hours": 8,
+            "prerequisites": [],
+            "resources": {
+                "video_topics": [
+                    "Water: A Precious Resource"
+                ],
+                "practice_sets": [
+                    "Water: A Precious Resource - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         },
         {
             "number": 17,
             "name": "Forests: Our Lifeline",
             "theme": "Forest ecosystem",
             "key_topics": [
-                "Layers of forest and biodiversity",
-                "Interdependence of plants, animals and microbes",
-                "Conservation and deforestation"
+                {
+                    "name": "Layers of forest and biodiversity",
+                    "difficulty": "medium",
+                    "estimated_minutes": 160,
+                    "bloom_level": "understand",
+                    "description": "Understanding and applying concepts related to layers of forest and biodiversity"
+                },
+                {
+                    "name": "Interdependence of plants, animals and microbes",
+                    "difficulty": "medium",
+                    "estimated_minutes": 160,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to interdependence of plants, animals and microbes"
+                },
+                {
+                    "name": "Conservation and deforestation",
+                    "difficulty": "hard",
+                    "estimated_minutes": 160,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to conservation and deforestation"
+                }
             ],
             "learning_outcomes": [
-                "Explains forest as a system of many interdependent parts.",
-                "Recognises impact of deforestation on environment."
-            ]
+                {
+                    "outcome": "Explains forest as a system of many interdependent parts.",
+                    "bloom_level": "apply",
+                    "assessment_type": "practice_problems"
+                },
+                {
+                    "outcome": "Recognises impact of deforestation on environment.",
+                    "bloom_level": "analyze",
+                    "assessment_type": "practice_problems"
+                }
+            ],
+            "difficulty": "hard",
+            "estimated_hours": 8,
+            "prerequisites": [],
+            "resources": {
+                "video_topics": [
+                    "Forests: Our Lifeline"
+                ],
+                "practice_sets": [
+                    "Forests: Our Lifeline - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         },
         {
             "number": 18,
             "name": "Wastewater Story",
             "theme": "Sewage and water treatment",
             "key_topics": [
-                "Composition of sewage",
-                "Sewage treatment plant stages",
-                "Sanitation and hygiene"
+                {
+                    "name": "Composition of sewage",
+                    "difficulty": "medium",
+                    "estimated_minutes": 160,
+                    "bloom_level": "understand",
+                    "description": "Understanding and applying concepts related to composition of sewage"
+                },
+                {
+                    "name": "Sewage treatment plant stages",
+                    "difficulty": "medium",
+                    "estimated_minutes": 160,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to sewage treatment plant stages"
+                },
+                {
+                    "name": "Sanitation and hygiene",
+                    "difficulty": "hard",
+                    "estimated_minutes": 160,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to sanitation and hygiene"
+                }
             ],
             "learning_outcomes": [
-                "Describes basic steps in wastewater treatment.",
-                "Relates individual actions to sanitation and health."
-            ]
+                {
+                    "outcome": "Describes basic steps in wastewater treatment.",
+                    "bloom_level": "apply",
+                    "assessment_type": "practice_problems"
+                },
+                {
+                    "outcome": "Relates individual actions to sanitation and health.",
+                    "bloom_level": "analyze",
+                    "assessment_type": "practice_problems"
+                }
+            ],
+            "difficulty": "hard",
+            "estimated_hours": 8,
+            "prerequisites": [],
+            "resources": {
+                "video_topics": [
+                    "Wastewater Story"
+                ],
+                "practice_sets": [
+                    "Wastewater Story - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         }
-    ]
+    ],
+    "subject_icon": "flask",
+    "subject_color": "green",
+    "total_chapters": 18,
+    "total_hours": 150,
+    "description": "CBSE Class 7 Science curriculum aligned with NEP 2020 and CBSE guidelines."
 }

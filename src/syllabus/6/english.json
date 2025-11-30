@@ -52,9 +52,9 @@
     "default_assessment_blueprint": {
         "mcq": 0.25,
         "very_short_answer": 0.15,
-        "short_answer": 0.30,
-        "long_answer": 0.20,
-        "listening_speaking": 0.10
+        "short_answer": 0.3,
+        "long_answer": 0.2,
+        "listening_speaking": 0.1
     },
     "chapters": [
         {
@@ -73,7 +73,7 @@
                 }
             ],
             "term": "T1",
-            "weightage_estimate": 0.10,
+            "weightage_estimate": 0.1,
             "linked_skills": [
                 "READING_LITERAL",
                 "READING_INFERENTIAL",
@@ -84,7 +84,24 @@
             "themes": [
                 "responsibility",
                 "home_and_family"
-            ]
+            ],
+            "difficulty": "easy",
+            "estimated_hours": 15,
+            "prerequisites": [],
+            "key_topics": [],
+            "learning_outcomes": [],
+            "resources": {
+                "video_topics": [
+                    null
+                ],
+                "practice_sets": [
+                    "undefined - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         },
         {
             "chapter_no": 2,
@@ -102,7 +119,7 @@
                 }
             ],
             "term": "T1",
-            "weightage_estimate": 0.10,
+            "weightage_estimate": 0.1,
             "linked_skills": [
                 "READING_LITERAL",
                 "READING_INFERENTIAL",
@@ -113,7 +130,24 @@
                 "loyalty",
                 "freedom",
                 "nature_imagery"
-            ]
+            ],
+            "difficulty": "easy",
+            "estimated_hours": 15,
+            "prerequisites": [],
+            "key_topics": [],
+            "learning_outcomes": [],
+            "resources": {
+                "video_topics": [
+                    null
+                ],
+                "practice_sets": [
+                    "undefined - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         },
         {
             "chapter_no": 3,
@@ -140,7 +174,24 @@
             "themes": [
                 "filial_duty",
                 "sibling_conflict"
-            ]
+            ],
+            "difficulty": "easy",
+            "estimated_hours": 15,
+            "prerequisites": [],
+            "key_topics": [],
+            "learning_outcomes": [],
+            "resources": {
+                "video_topics": [
+                    null
+                ],
+                "practice_sets": [
+                    "undefined - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         },
         {
             "chapter_no": 4,
@@ -167,7 +218,24 @@
                 "space_exploration",
                 "inspiration",
                 "aesthetic_sense"
-            ]
+            ],
+            "difficulty": "medium",
+            "estimated_hours": 15,
+            "prerequisites": [],
+            "key_topics": [],
+            "learning_outcomes": [],
+            "resources": {
+                "video_topics": [
+                    null
+                ],
+                "practice_sets": [
+                    "undefined - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         },
         {
             "chapter_no": 5,
@@ -194,7 +262,24 @@
             "themes": [
                 "inclusive_education",
                 "respect_for_teachers"
-            ]
+            ],
+            "difficulty": "medium",
+            "estimated_hours": 15,
+            "prerequisites": [],
+            "key_topics": [],
+            "learning_outcomes": [],
+            "resources": {
+                "video_topics": [
+                    null
+                ],
+                "practice_sets": [
+                    "undefined - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         },
         {
             "chapter_no": 6,
@@ -220,7 +305,24 @@
             "themes": [
                 "self_identity",
                 "language_power"
-            ]
+            ],
+            "difficulty": "medium",
+            "estimated_hours": 15,
+            "prerequisites": [],
+            "key_topics": [],
+            "learning_outcomes": [],
+            "resources": {
+                "video_topics": [
+                    null
+                ],
+                "practice_sets": [
+                    "undefined - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         },
         {
             "chapter_no": 7,
@@ -247,7 +349,24 @@
                 "justice",
                 "duty",
                 "childhood_dreams"
-            ]
+            ],
+            "difficulty": "medium",
+            "estimated_hours": 15,
+            "prerequisites": [],
+            "key_topics": [],
+            "learning_outcomes": [],
+            "resources": {
+                "video_topics": [
+                    null
+                ],
+                "practice_sets": [
+                    "undefined - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         },
         {
             "chapter_no": 8,
@@ -274,7 +393,24 @@
                 "superstition",
                 "luck",
                 "worry_anxiety"
-            ]
+            ],
+            "difficulty": "hard",
+            "estimated_hours": 15,
+            "prerequisites": [],
+            "key_topics": [],
+            "learning_outcomes": [],
+            "resources": {
+                "video_topics": [
+                    null
+                ],
+                "practice_sets": [
+                    "undefined - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         },
         {
             "chapter_no": 9,
@@ -295,7 +431,24 @@
             "themes": [
                 "adaptation",
                 "habitats"
-            ]
+            ],
+            "difficulty": "hard",
+            "estimated_hours": 15,
+            "prerequisites": [],
+            "key_topics": [],
+            "learning_outcomes": [],
+            "resources": {
+                "video_topics": [
+                    null
+                ],
+                "practice_sets": [
+                    "undefined - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         },
         {
             "chapter_no": 10,
@@ -316,7 +469,24 @@
             "themes": [
                 "nature",
                 "observation"
-            ]
+            ],
+            "difficulty": "hard",
+            "estimated_hours": 15,
+            "prerequisites": [],
+            "key_topics": [],
+            "learning_outcomes": [],
+            "resources": {
+                "video_topics": [
+                    null
+                ],
+                "practice_sets": [
+                    "undefined - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         }
     ],
     "supplementary_units": [
@@ -370,5 +540,10 @@
             "chapter_no": 10,
             "title": "A Strange Wrestling Match"
         }
-    ]
+    ],
+    "subject_icon": "book",
+    "subject_color": "purple",
+    "total_chapters": 10,
+    "total_hours": 150,
+    "description": "CBSE Class undefined undefined curriculum aligned with NEP 2020 and CBSE guidelines."
 }

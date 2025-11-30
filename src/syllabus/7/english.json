@@ -54,7 +54,7 @@
         }
     },
     "default_assessment_blueprint": {
-        "mcq": 0.20,
+        "mcq": 0.2,
         "very_short_answer": 0.15,
         "short_answer": 0.25,
         "long_answer": 0.25,
@@ -87,7 +87,24 @@
                 "wisdom",
                 "time_management",
                 "observation"
-            ]
+            ],
+            "difficulty": "easy",
+            "estimated_hours": 15,
+            "prerequisites": [],
+            "key_topics": [],
+            "learning_outcomes": [],
+            "resources": {
+                "video_topics": [
+                    null
+                ],
+                "practice_sets": [
+                    "undefined - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         },
         {
             "chapter_no": 2,
@@ -113,7 +130,24 @@
             "themes": [
                 "kindness",
                 "nonconformity"
-            ]
+            ],
+            "difficulty": "easy",
+            "estimated_hours": 15,
+            "prerequisites": [],
+            "key_topics": [],
+            "learning_outcomes": [],
+            "resources": {
+                "video_topics": [
+                    null
+                ],
+                "practice_sets": [
+                    "undefined - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         },
         {
             "chapter_no": 3,
@@ -140,7 +174,24 @@
                 "wit",
                 "fear",
                 "rumours"
-            ]
+            ],
+            "difficulty": "easy",
+            "estimated_hours": 15,
+            "prerequisites": [],
+            "key_topics": [],
+            "learning_outcomes": [],
+            "resources": {
+                "video_topics": [
+                    null
+                ],
+                "practice_sets": [
+                    "undefined - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         },
         {
             "chapter_no": 4,
@@ -166,7 +217,24 @@
             "themes": [
                 "kindness_reward",
                 "adult_guidance"
-            ]
+            ],
+            "difficulty": "medium",
+            "estimated_hours": 15,
+            "prerequisites": [],
+            "key_topics": [],
+            "learning_outcomes": [],
+            "resources": {
+                "video_topics": [
+                    null
+                ],
+                "practice_sets": [
+                    "undefined - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         },
         {
             "chapter_no": 5,
@@ -192,7 +260,24 @@
             "themes": [
                 "craftsmanship",
                 "nature"
-            ]
+            ],
+            "difficulty": "medium",
+            "estimated_hours": 15,
+            "prerequisites": [],
+            "key_topics": [],
+            "learning_outcomes": [],
+            "resources": {
+                "video_topics": [
+                    null
+                ],
+                "practice_sets": [
+                    "undefined - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         },
         {
             "chapter_no": 6,
@@ -218,7 +303,24 @@
             "themes": [
                 "curiosity",
                 "observation"
-            ]
+            ],
+            "difficulty": "medium",
+            "estimated_hours": 15,
+            "prerequisites": [],
+            "key_topics": [],
+            "learning_outcomes": [],
+            "resources": {
+                "video_topics": [
+                    null
+                ],
+                "practice_sets": [
+                    "undefined - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         },
         {
             "chapter_no": 7,
@@ -244,7 +346,24 @@
             "themes": [
                 "imagination",
                 "humour"
-            ]
+            ],
+            "difficulty": "medium",
+            "estimated_hours": 15,
+            "prerequisites": [],
+            "key_topics": [],
+            "learning_outcomes": [],
+            "resources": {
+                "video_topics": [
+                    null
+                ],
+                "practice_sets": [
+                    "undefined - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         },
         {
             "chapter_no": 8,
@@ -269,7 +388,24 @@
             "themes": [
                 "science_of_fire",
                 "nature_exploration"
-            ]
+            ],
+            "difficulty": "hard",
+            "estimated_hours": 15,
+            "prerequisites": [],
+            "key_topics": [],
+            "learning_outcomes": [],
+            "resources": {
+                "video_topics": [
+                    null
+                ],
+                "practice_sets": [
+                    "undefined - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         },
         {
             "chapter_no": 9,
@@ -294,7 +430,24 @@
             "themes": [
                 "mechanical_care",
                 "overcoming_fear"
-            ]
+            ],
+            "difficulty": "hard",
+            "estimated_hours": 15,
+            "prerequisites": [],
+            "key_topics": [],
+            "learning_outcomes": [],
+            "resources": {
+                "video_topics": [
+                    null
+                ],
+                "practice_sets": [
+                    "undefined - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         },
         {
             "chapter_no": 10,
@@ -315,7 +468,24 @@
             "themes": [
                 "sports_history",
                 "colonial_legacy"
-            ]
+            ],
+            "difficulty": "hard",
+            "estimated_hours": 15,
+            "prerequisites": [],
+            "key_topics": [],
+            "learning_outcomes": [],
+            "resources": {
+                "video_topics": [
+                    null
+                ],
+                "practice_sets": [
+                    "undefined - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         }
     ],
     "supplementary_units": [
@@ -369,5 +539,10 @@
             "chapter_no": 10,
             "title": "An Alien Hand"
         }
-    ]
+    ],
+    "subject_icon": "book",
+    "subject_color": "purple",
+    "total_chapters": 10,
+    "total_hours": 150,
+    "description": "CBSE Class undefined undefined curriculum aligned with NEP 2020 and CBSE guidelines."
 }

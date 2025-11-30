@@ -10,252 +10,995 @@
             "name": "Crop Production and Management",
             "theme": "Agricultural practices",
             "key_topics": [
-                "Basic practices of crop production",
-                "Soil preparation, sowing, manuring and irrigation",
-                "Harvesting, storage and protection from pests"
+                {
+                    "name": "Basic practices of crop production",
+                    "difficulty": "easy",
+                    "estimated_minutes": 160,
+                    "bloom_level": "understand",
+                    "description": "Understanding and applying concepts related to basic practices of crop production"
+                },
+                {
+                    "name": "Soil preparation, sowing, manuring and irrigation",
+                    "difficulty": "medium",
+                    "estimated_minutes": 160,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to soil preparation, sowing, manuring and irrigation"
+                },
+                {
+                    "name": "Harvesting, storage and protection from pests",
+                    "difficulty": "hard",
+                    "estimated_minutes": 160,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to harvesting, storage and protection from pests"
+                }
             ],
             "learning_outcomes": [
-                "Lists major steps of crop production in sequence.",
-                "Explains need for manure, fertilisers and proper irrigation."
-            ]
+                {
+                    "outcome": "Lists major steps of crop production in sequence.",
+                    "bloom_level": "apply",
+                    "assessment_type": "practice_problems"
+                },
+                {
+                    "outcome": "Explains need for manure, fertilisers and proper irrigation.",
+                    "bloom_level": "analyze",
+                    "assessment_type": "practice_problems"
+                }
+            ],
+            "difficulty": "easy",
+            "estimated_hours": 8,
+            "prerequisites": [],
+            "resources": {
+                "video_topics": [
+                    "Crop Production and Management"
+                ],
+                "practice_sets": [
+                    "Crop Production and Management - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         },
         {
             "number": 2,
             "name": "Microorganisms: Friend and Foe",
             "theme": "Beneficial and harmful microbes",
             "key_topics": [
-                "Types of microorganisms (bacteria, fungi, protozoa, viruses)",
-                "Use in food, medicine and industry",
-                "Diseases and food spoilage caused by microbes"
+                {
+                    "name": "Types of microorganisms (bacteria, fungi, protozoa, viruses)",
+                    "difficulty": "medium",
+                    "estimated_minutes": 160,
+                    "bloom_level": "understand",
+                    "description": "Understanding and applying concepts related to types of microorganisms (bacteria, fungi, protozoa, viruses)"
+                },
+                {
+                    "name": "Use in food, medicine and industry",
+                    "difficulty": "medium",
+                    "estimated_minutes": 160,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to use in food, medicine and industry"
+                },
+                {
+                    "name": "Diseases and food spoilage caused by microbes",
+                    "difficulty": "hard",
+                    "estimated_minutes": 160,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to diseases and food spoilage caused by microbes"
+                }
             ],
             "learning_outcomes": [
-                "Classifies microorganisms with examples.",
-                "Explains both helpful and harmful roles of microbes."
-            ]
+                {
+                    "outcome": "Classifies microorganisms with examples.",
+                    "bloom_level": "apply",
+                    "assessment_type": "practice_problems"
+                },
+                {
+                    "outcome": "Explains both helpful and harmful roles of microbes.",
+                    "bloom_level": "analyze",
+                    "assessment_type": "practice_problems"
+                }
+            ],
+            "difficulty": "easy",
+            "estimated_hours": 8,
+            "prerequisites": [],
+            "resources": {
+                "video_topics": [
+                    "Microorganisms: Friend and Foe"
+                ],
+                "practice_sets": [
+                    "Microorganisms: Friend and Foe - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         },
         {
             "number": 3,
             "name": "Synthetic Fibres and Plastics",
             "theme": "Man-made materials and environment",
             "key_topics": [
-                "Types of synthetic fibres (rayon, nylon, polyester, acrylic)",
-                "Properties and uses of plastics",
-                "Environmental issues of plastic waste"
+                {
+                    "name": "Types of synthetic fibres (rayon, nylon, polyester, acrylic)",
+                    "difficulty": "medium",
+                    "estimated_minutes": 160,
+                    "bloom_level": "understand",
+                    "description": "Understanding and applying concepts related to types of synthetic fibres (rayon, nylon, polyester, acrylic)"
+                },
+                {
+                    "name": "Properties and uses of plastics",
+                    "difficulty": "medium",
+                    "estimated_minutes": 160,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to properties and uses of plastics"
+                },
+                {
+                    "name": "Environmental issues of plastic waste",
+                    "difficulty": "hard",
+                    "estimated_minutes": 160,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to environmental issues of plastic waste"
+                }
             ],
             "learning_outcomes": [
-                "Differentiates between natural and synthetic fibres.",
-                "Discusses advantages and environmental problems of plastics."
-            ]
+                {
+                    "outcome": "Differentiates between natural and synthetic fibres.",
+                    "bloom_level": "apply",
+                    "assessment_type": "practice_problems"
+                },
+                {
+                    "outcome": "Discusses advantages and environmental problems of plastics.",
+                    "bloom_level": "analyze",
+                    "assessment_type": "practice_problems"
+                }
+            ],
+            "difficulty": "easy",
+            "estimated_hours": 8,
+            "prerequisites": [],
+            "resources": {
+                "video_topics": [
+                    "Synthetic Fibres and Plastics"
+                ],
+                "practice_sets": [
+                    "Synthetic Fibres and Plastics - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         },
         {
             "number": 4,
             "name": "Materials: Metals and Non-metals",
             "theme": "Properties and uses of metals and non-metals",
             "key_topics": [
-                "Physical properties (lustre, malleability, ductility, conductivity)",
-                "Chemical properties (reaction with air, water, acids)",
-                "Everyday uses based on properties"
+                {
+                    "name": "Physical properties (lustre, malleability, ductility, conductivity)",
+                    "difficulty": "medium",
+                    "estimated_minutes": 160,
+                    "bloom_level": "understand",
+                    "description": "Understanding and applying concepts related to physical properties (lustre, malleability, ductility, conductivity)"
+                },
+                {
+                    "name": "Chemical properties (reaction with air, water, acids)",
+                    "difficulty": "medium",
+                    "estimated_minutes": 160,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to chemical properties (reaction with air, water, acids)"
+                },
+                {
+                    "name": "Everyday uses based on properties",
+                    "difficulty": "medium",
+                    "estimated_minutes": 160,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to everyday uses based on properties"
+                }
             ],
             "learning_outcomes": [
-                "Compares metals and non-metals using experiments.",
-                "Matches material properties with suitable uses."
-            ]
+                {
+                    "outcome": "Compares metals and non-metals using experiments.",
+                    "bloom_level": "apply",
+                    "assessment_type": "practice_problems"
+                },
+                {
+                    "outcome": "Matches material properties with suitable uses.",
+                    "bloom_level": "analyze",
+                    "assessment_type": "practice_problems"
+                }
+            ],
+            "difficulty": "easy",
+            "estimated_hours": 8,
+            "prerequisites": [],
+            "resources": {
+                "video_topics": [
+                    "Materials: Metals and Non-metals"
+                ],
+                "practice_sets": [
+                    "Materials: Metals and Non-metals - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         },
         {
             "number": 5,
             "name": "Coal and Petroleum",
             "theme": "Fossil fuels and their impact",
             "key_topics": [
-                "Formation of coal and petroleum",
-                "Refining and products of petroleum",
-                "Conservation and environmental effects"
+                {
+                    "name": "Formation of coal and petroleum",
+                    "difficulty": "medium",
+                    "estimated_minutes": 160,
+                    "bloom_level": "understand",
+                    "description": "Understanding and applying concepts related to formation of coal and petroleum"
+                },
+                {
+                    "name": "Refining and products of petroleum",
+                    "difficulty": "medium",
+                    "estimated_minutes": 160,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to refining and products of petroleum"
+                },
+                {
+                    "name": "Conservation and environmental effects",
+                    "difficulty": "hard",
+                    "estimated_minutes": 160,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to conservation and environmental effects"
+                }
             ],
             "learning_outcomes": [
-                "Explains why coal and petroleum are exhaustible resources.",
-                "Lists steps to reduce dependence on fossil fuels."
-            ]
+                {
+                    "outcome": "Explains why coal and petroleum are exhaustible resources.",
+                    "bloom_level": "apply",
+                    "assessment_type": "practice_problems"
+                },
+                {
+                    "outcome": "Lists steps to reduce dependence on fossil fuels.",
+                    "bloom_level": "analyze",
+                    "assessment_type": "practice_problems"
+                }
+            ],
+            "difficulty": "easy",
+            "estimated_hours": 8,
+            "prerequisites": [],
+            "resources": {
+                "video_topics": [
+                    "Coal and Petroleum"
+                ],
+                "practice_sets": [
+                    "Coal and Petroleum - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         },
         {
             "number": 6,
             "name": "Combustion and Flame",
             "theme": "Burning of fuels and safety",
             "key_topics": [
-                "Conditions necessary for combustion",
-                "Structure of flame",
-                "Good and bad fuels; fuel efficiency"
+                {
+                    "name": "Conditions necessary for combustion",
+                    "difficulty": "medium",
+                    "estimated_minutes": 160,
+                    "bloom_level": "understand",
+                    "description": "Understanding and applying concepts related to conditions necessary for combustion"
+                },
+                {
+                    "name": "Structure of flame",
+                    "difficulty": "medium",
+                    "estimated_minutes": 160,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to structure of flame"
+                },
+                {
+                    "name": "Good and bad fuels; fuel efficiency",
+                    "difficulty": "hard",
+                    "estimated_minutes": 160,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to good and bad fuels; fuel efficiency"
+                }
             ],
             "learning_outcomes": [
-                "Identifies zones of a candle flame and their properties.",
-                "Discusses safe handling of fuels and fire."
-            ]
+                {
+                    "outcome": "Identifies zones of a candle flame and their properties.",
+                    "bloom_level": "apply",
+                    "assessment_type": "practice_problems"
+                },
+                {
+                    "outcome": "Discusses safe handling of fuels and fire.",
+                    "bloom_level": "analyze",
+                    "assessment_type": "practice_problems"
+                }
+            ],
+            "difficulty": "medium",
+            "estimated_hours": 8,
+            "prerequisites": [],
+            "resources": {
+                "video_topics": [
+                    "Combustion and Flame"
+                ],
+                "practice_sets": [
+                    "Combustion and Flame - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         },
         {
             "number": 7,
             "name": "Conservation of Plants and Animals",
             "theme": "Biodiversity and conservation measures",
             "key_topics": [
-                "Deforestation and its causes",
-                "Protected areas (wildlife sanctuaries, national parks, biosphere reserves)",
-                "Red Data Book and endemic species"
+                {
+                    "name": "Deforestation and its causes",
+                    "difficulty": "medium",
+                    "estimated_minutes": 160,
+                    "bloom_level": "understand",
+                    "description": "Understanding and applying concepts related to deforestation and its causes"
+                },
+                {
+                    "name": "Protected areas (wildlife sanctuaries, national parks, biosphere reserves)",
+                    "difficulty": "medium",
+                    "estimated_minutes": 160,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to protected areas (wildlife sanctuaries, national parks, biosphere reserves)"
+                },
+                {
+                    "name": "Red Data Book and endemic species",
+                    "difficulty": "hard",
+                    "estimated_minutes": 160,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to red data book and endemic species"
+                }
             ],
             "learning_outcomes": [
-                "Explains effects of deforestation on environment.",
-                "Describes role of protected areas in conservation."
-            ]
+                {
+                    "outcome": "Explains effects of deforestation on environment.",
+                    "bloom_level": "apply",
+                    "assessment_type": "practice_problems"
+                },
+                {
+                    "outcome": "Describes role of protected areas in conservation.",
+                    "bloom_level": "analyze",
+                    "assessment_type": "practice_problems"
+                }
+            ],
+            "difficulty": "medium",
+            "estimated_hours": 8,
+            "prerequisites": [],
+            "resources": {
+                "video_topics": [
+                    "Conservation of Plants and Animals"
+                ],
+                "practice_sets": [
+                    "Conservation of Plants and Animals - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         },
         {
             "number": 8,
             "name": "Cell – Structure and Functions",
             "theme": "Fundamental unit of life",
             "key_topics": [
-                "Discovery of cell and cell theory (intuitive)",
-                "Cell organelles (nucleus, cytoplasm, cell membrane)",
-                "Differences between plant and animal cells"
+                {
+                    "name": "Discovery of cell and cell theory (intuitive)",
+                    "difficulty": "medium",
+                    "estimated_minutes": 160,
+                    "bloom_level": "understand",
+                    "description": "Understanding and applying concepts related to discovery of cell and cell theory (intuitive)"
+                },
+                {
+                    "name": "Cell organelles (nucleus, cytoplasm, cell membrane)",
+                    "difficulty": "medium",
+                    "estimated_minutes": 160,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to cell organelles (nucleus, cytoplasm, cell membrane)"
+                },
+                {
+                    "name": "Differences between plant and animal cells",
+                    "difficulty": "hard",
+                    "estimated_minutes": 160,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to differences between plant and animal cells"
+                }
             ],
             "learning_outcomes": [
-                "Identifies major cell parts in diagrams.",
-                "Differentiates between typical plant and animal cells."
-            ]
+                {
+                    "outcome": "Identifies major cell parts in diagrams.",
+                    "bloom_level": "apply",
+                    "assessment_type": "practice_problems"
+                },
+                {
+                    "outcome": "Differentiates between typical plant and animal cells.",
+                    "bloom_level": "analyze",
+                    "assessment_type": "practice_problems"
+                }
+            ],
+            "difficulty": "medium",
+            "estimated_hours": 8,
+            "prerequisites": [],
+            "resources": {
+                "video_topics": [
+                    "Cell – Structure and Functions"
+                ],
+                "practice_sets": [
+                    "Cell – Structure and Functions - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         },
         {
             "number": 9,
             "name": "Reproduction in Animals",
             "theme": "Reproductive processes",
             "key_topics": [
-                "Sexual reproduction: male and female reproductive systems",
-                "Fertilisation and development",
-                "Viviparous and oviparous animals"
+                {
+                    "name": "Sexual reproduction: male and female reproductive systems",
+                    "difficulty": "medium",
+                    "estimated_minutes": 160,
+                    "bloom_level": "understand",
+                    "description": "Understanding and applying concepts related to sexual reproduction: male and female reproductive systems"
+                },
+                {
+                    "name": "Fertilisation and development",
+                    "difficulty": "medium",
+                    "estimated_minutes": 160,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to fertilisation and development"
+                },
+                {
+                    "name": "Viviparous and oviparous animals",
+                    "difficulty": "hard",
+                    "estimated_minutes": 160,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to viviparous and oviparous animals"
+                }
             ],
             "learning_outcomes": [
-                "Explains basic steps of sexual reproduction in humans (age-appropriate).",
-                "Classifies animals based on mode of birth."
-            ]
+                {
+                    "outcome": "Explains basic steps of sexual reproduction in humans (age-appropriate).",
+                    "bloom_level": "apply",
+                    "assessment_type": "practice_problems"
+                },
+                {
+                    "outcome": "Classifies animals based on mode of birth.",
+                    "bloom_level": "analyze",
+                    "assessment_type": "practice_problems"
+                }
+            ],
+            "difficulty": "medium",
+            "estimated_hours": 8,
+            "prerequisites": [],
+            "resources": {
+                "video_topics": [
+                    "Reproduction in Animals"
+                ],
+                "practice_sets": [
+                    "Reproduction in Animals - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         },
         {
             "number": 10,
             "name": "Reaching the Age of Adolescence",
             "theme": "Adolescence and puberty",
             "key_topics": [
-                "Physical and emotional changes",
-                "Endocrine glands and hormones (intro)",
-                "Health, hygiene and balanced diet during adolescence"
+                {
+                    "name": "Physical and emotional changes",
+                    "difficulty": "medium",
+                    "estimated_minutes": 160,
+                    "bloom_level": "understand",
+                    "description": "Understanding and applying concepts related to physical and emotional changes"
+                },
+                {
+                    "name": "Endocrine glands and hormones (intro)",
+                    "difficulty": "medium",
+                    "estimated_minutes": 160,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to endocrine glands and hormones (intro)"
+                },
+                {
+                    "name": "Health, hygiene and balanced diet during adolescence",
+                    "difficulty": "hard",
+                    "estimated_minutes": 160,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to health, hygiene and balanced diet during adolescence"
+                }
             ],
             "learning_outcomes": [
-                "Recognises physical and emotional changes at puberty as natural.",
-                "Lists healthy habits important during adolescence."
-            ]
+                {
+                    "outcome": "Recognises physical and emotional changes at puberty as natural.",
+                    "bloom_level": "apply",
+                    "assessment_type": "practice_problems"
+                },
+                {
+                    "outcome": "Lists healthy habits important during adolescence.",
+                    "bloom_level": "analyze",
+                    "assessment_type": "practice_problems"
+                }
+            ],
+            "difficulty": "medium",
+            "estimated_hours": 8,
+            "prerequisites": [],
+            "resources": {
+                "video_topics": [
+                    "Reaching the Age of Adolescence"
+                ],
+                "practice_sets": [
+                    "Reaching the Age of Adolescence - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         },
         {
             "number": 11,
             "name": "Force and Pressure",
             "theme": "Effects and types of forces",
             "key_topics": [
-                "Contact and non-contact forces",
-                "Pressure and its dependence on area",
-                "Pressure in fluids (basic)"
+                {
+                    "name": "Contact and non-contact forces",
+                    "difficulty": "medium",
+                    "estimated_minutes": 160,
+                    "bloom_level": "understand",
+                    "description": "Understanding and applying concepts related to contact and non-contact forces"
+                },
+                {
+                    "name": "Pressure and its dependence on area",
+                    "difficulty": "medium",
+                    "estimated_minutes": 160,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to pressure and its dependence on area"
+                },
+                {
+                    "name": "Pressure in fluids (basic)",
+                    "difficulty": "easy",
+                    "estimated_minutes": 160,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to pressure in fluids (basic)"
+                }
             ],
             "learning_outcomes": [
-                "Gives examples of different types of forces.",
-                "Explains everyday situations using concept of pressure."
-            ]
+                {
+                    "outcome": "Gives examples of different types of forces.",
+                    "bloom_level": "apply",
+                    "assessment_type": "practice_problems"
+                },
+                {
+                    "outcome": "Explains everyday situations using concept of pressure.",
+                    "bloom_level": "analyze",
+                    "assessment_type": "practice_problems"
+                }
+            ],
+            "difficulty": "medium",
+            "estimated_hours": 8,
+            "prerequisites": [],
+            "resources": {
+                "video_topics": [
+                    "Force and Pressure"
+                ],
+                "practice_sets": [
+                    "Force and Pressure - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         },
         {
             "number": 12,
             "name": "Friction",
             "theme": "Friction as a force and its effects",
             "key_topics": [
-                "Factors affecting friction",
-                "Static, sliding and rolling friction",
-                "Advantages and disadvantages of friction"
+                {
+                    "name": "Factors affecting friction",
+                    "difficulty": "medium",
+                    "estimated_minutes": 160,
+                    "bloom_level": "understand",
+                    "description": "Understanding and applying concepts related to factors affecting friction"
+                },
+                {
+                    "name": "Static, sliding and rolling friction",
+                    "difficulty": "medium",
+                    "estimated_minutes": 160,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to static, sliding and rolling friction"
+                },
+                {
+                    "name": "Advantages and disadvantages of friction",
+                    "difficulty": "hard",
+                    "estimated_minutes": 160,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to advantages and disadvantages of friction"
+                }
             ],
             "learning_outcomes": [
-                "Identifies situations where friction is useful or undesirable.",
-                "Suggests ways to increase or reduce friction as needed."
-            ]
+                {
+                    "outcome": "Identifies situations where friction is useful or undesirable.",
+                    "bloom_level": "apply",
+                    "assessment_type": "practice_problems"
+                },
+                {
+                    "outcome": "Suggests ways to increase or reduce friction as needed.",
+                    "bloom_level": "analyze",
+                    "assessment_type": "practice_problems"
+                }
+            ],
+            "difficulty": "medium",
+            "estimated_hours": 8,
+            "prerequisites": [],
+            "resources": {
+                "video_topics": [
+                    "Friction"
+                ],
+                "practice_sets": [
+                    "Friction - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         },
         {
             "number": 13,
             "name": "Sound",
             "theme": "Production and propagation of sound",
             "key_topics": [
-                "Vibration as source of sound",
-                "Propagation of sound through different media",
-                "Amplitude, frequency and loudness (qualitative)"
+                {
+                    "name": "Vibration as source of sound",
+                    "difficulty": "medium",
+                    "estimated_minutes": 160,
+                    "bloom_level": "understand",
+                    "description": "Understanding and applying concepts related to vibration as source of sound"
+                },
+                {
+                    "name": "Propagation of sound through different media",
+                    "difficulty": "medium",
+                    "estimated_minutes": 160,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to propagation of sound through different media"
+                },
+                {
+                    "name": "Amplitude, frequency and loudness (qualitative)",
+                    "difficulty": "hard",
+                    "estimated_minutes": 160,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to amplitude, frequency and loudness (qualitative)"
+                }
             ],
             "learning_outcomes": [
-                "Explains how sound is produced in common instruments.",
-                "Relates pitch and loudness to characteristics of vibration."
-            ]
+                {
+                    "outcome": "Explains how sound is produced in common instruments.",
+                    "bloom_level": "apply",
+                    "assessment_type": "practice_problems"
+                },
+                {
+                    "outcome": "Relates pitch and loudness to characteristics of vibration.",
+                    "bloom_level": "analyze",
+                    "assessment_type": "practice_problems"
+                }
+            ],
+            "difficulty": "hard",
+            "estimated_hours": 8,
+            "prerequisites": [],
+            "resources": {
+                "video_topics": [
+                    "Sound"
+                ],
+                "practice_sets": [
+                    "Sound - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         },
         {
             "number": 14,
             "name": "Chemical Effects of Electric Current",
             "theme": "Electrolysis and electroplating (intro)",
             "key_topics": [
-                "Conducting liquids",
-                "Electrolytic decomposition effects",
-                "Electroplating and its applications"
+                {
+                    "name": "Conducting liquids",
+                    "difficulty": "medium",
+                    "estimated_minutes": 160,
+                    "bloom_level": "understand",
+                    "description": "Understanding and applying concepts related to conducting liquids"
+                },
+                {
+                    "name": "Electrolytic decomposition effects",
+                    "difficulty": "medium",
+                    "estimated_minutes": 160,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to electrolytic decomposition effects"
+                },
+                {
+                    "name": "Electroplating and its applications",
+                    "difficulty": "hard",
+                    "estimated_minutes": 160,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to electroplating and its applications"
+                }
             ],
             "learning_outcomes": [
-                "Differentiates between conductors and non-conductors among liquids.",
-                "Describes simple applications of electroplating."
-            ]
+                {
+                    "outcome": "Differentiates between conductors and non-conductors among liquids.",
+                    "bloom_level": "apply",
+                    "assessment_type": "practice_problems"
+                },
+                {
+                    "outcome": "Describes simple applications of electroplating.",
+                    "bloom_level": "analyze",
+                    "assessment_type": "practice_problems"
+                }
+            ],
+            "difficulty": "hard",
+            "estimated_hours": 8,
+            "prerequisites": [],
+            "resources": {
+                "video_topics": [
+                    "Chemical Effects of Electric Current"
+                ],
+                "practice_sets": [
+                    "Chemical Effects of Electric Current - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         },
         {
             "number": 15,
             "name": "Some Natural Phenomena",
             "theme": "Lightning and earthquakes",
             "key_topics": [
-                "Electric charges and lightning formation (conceptual)",
-                "Lightning safety",
-                "Earthquakes and preparedness"
+                {
+                    "name": "Electric charges and lightning formation (conceptual)",
+                    "difficulty": "medium",
+                    "estimated_minutes": 160,
+                    "bloom_level": "understand",
+                    "description": "Understanding and applying concepts related to electric charges and lightning formation (conceptual)"
+                },
+                {
+                    "name": "Lightning safety",
+                    "difficulty": "medium",
+                    "estimated_minutes": 160,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to lightning safety"
+                },
+                {
+                    "name": "Earthquakes and preparedness",
+                    "difficulty": "hard",
+                    "estimated_minutes": 160,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to earthquakes and preparedness"
+                }
             ],
             "learning_outcomes": [
-                "Explains lightning as a large electric discharge.",
-                "Lists safety measures during lightning and earthquakes."
-            ]
+                {
+                    "outcome": "Explains lightning as a large electric discharge.",
+                    "bloom_level": "apply",
+                    "assessment_type": "practice_problems"
+                },
+                {
+                    "outcome": "Lists safety measures during lightning and earthquakes.",
+                    "bloom_level": "analyze",
+                    "assessment_type": "practice_problems"
+                }
+            ],
+            "difficulty": "hard",
+            "estimated_hours": 8,
+            "prerequisites": [],
+            "resources": {
+                "video_topics": [
+                    "Some Natural Phenomena"
+                ],
+                "practice_sets": [
+                    "Some Natural Phenomena - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         },
         {
             "number": 16,
             "name": "Light",
             "theme": "Reflection, refraction basics and human eye (intro)",
             "key_topics": [
-                "Regular and diffused reflection",
-                "Multiple reflections",
-                "Structure of human eye (basic)"
+                {
+                    "name": "Regular and diffused reflection",
+                    "difficulty": "medium",
+                    "estimated_minutes": 160,
+                    "bloom_level": "understand",
+                    "description": "Understanding and applying concepts related to regular and diffused reflection"
+                },
+                {
+                    "name": "Multiple reflections",
+                    "difficulty": "medium",
+                    "estimated_minutes": 160,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to multiple reflections"
+                },
+                {
+                    "name": "Structure of human eye (basic)",
+                    "difficulty": "easy",
+                    "estimated_minutes": 160,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to structure of human eye (basic)"
+                }
             ],
             "learning_outcomes": [
-                "Describes reflection from smooth and rough surfaces.",
-                "Explains simple use of mirrors in daily life and devices."
-            ]
+                {
+                    "outcome": "Describes reflection from smooth and rough surfaces.",
+                    "bloom_level": "apply",
+                    "assessment_type": "practice_problems"
+                },
+                {
+                    "outcome": "Explains simple use of mirrors in daily life and devices.",
+                    "bloom_level": "analyze",
+                    "assessment_type": "practice_problems"
+                }
+            ],
+            "difficulty": "hard",
+            "estimated_hours": 8,
+            "prerequisites": [],
+            "resources": {
+                "video_topics": [
+                    "Light"
+                ],
+                "practice_sets": [
+                    "Light - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         },
         {
             "number": 17,
             "name": "Stars and the Solar System",
             "theme": "Astronomy basics",
             "key_topics": [
-                "Planets, stars and constellations",
-                "Phases of the Moon",
-                "Solar system structure"
+                {
+                    "name": "Planets, stars and constellations",
+                    "difficulty": "medium",
+                    "estimated_minutes": 160,
+                    "bloom_level": "understand",
+                    "description": "Understanding and applying concepts related to planets, stars and constellations"
+                },
+                {
+                    "name": "Phases of the Moon",
+                    "difficulty": "medium",
+                    "estimated_minutes": 160,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to phases of the moon"
+                },
+                {
+                    "name": "Solar system structure",
+                    "difficulty": "hard",
+                    "estimated_minutes": 160,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to solar system structure"
+                }
             ],
             "learning_outcomes": [
-                "Names planets in order from the Sun.",
-                "Explains cause of lunar phases qualitatively."
-            ]
+                {
+                    "outcome": "Names planets in order from the Sun.",
+                    "bloom_level": "apply",
+                    "assessment_type": "practice_problems"
+                },
+                {
+                    "outcome": "Explains cause of lunar phases qualitatively.",
+                    "bloom_level": "analyze",
+                    "assessment_type": "practice_problems"
+                }
+            ],
+            "difficulty": "hard",
+            "estimated_hours": 8,
+            "prerequisites": [],
+            "resources": {
+                "video_topics": [
+                    "Stars and the Solar System"
+                ],
+                "practice_sets": [
+                    "Stars and the Solar System - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         },
         {
             "number": 18,
             "name": "Pollution of Air and Water",
             "theme": "Environmental pollution and control",
             "key_topics": [
-                "Sources of air and water pollution",
-                "Effects on health and environment",
-                "Prevention and control measures"
+                {
+                    "name": "Sources of air and water pollution",
+                    "difficulty": "medium",
+                    "estimated_minutes": 160,
+                    "bloom_level": "understand",
+                    "description": "Understanding and applying concepts related to sources of air and water pollution"
+                },
+                {
+                    "name": "Effects on health and environment",
+                    "difficulty": "medium",
+                    "estimated_minutes": 160,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to effects on health and environment"
+                },
+                {
+                    "name": "Prevention and control measures",
+                    "difficulty": "hard",
+                    "estimated_minutes": 160,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to prevention and control measures"
+                }
             ],
             "learning_outcomes": [
-                "Identifies major pollutants and their sources.",
-                "Suggests individual and community actions to reduce pollution."
-            ]
+                {
+                    "outcome": "Identifies major pollutants and their sources.",
+                    "bloom_level": "apply",
+                    "assessment_type": "practice_problems"
+                },
+                {
+                    "outcome": "Suggests individual and community actions to reduce pollution.",
+                    "bloom_level": "analyze",
+                    "assessment_type": "practice_problems"
+                }
+            ],
+            "difficulty": "hard",
+            "estimated_hours": 8,
+            "prerequisites": [],
+            "resources": {
+                "video_topics": [
+                    "Pollution of Air and Water"
+                ],
+                "practice_sets": [
+                    "Pollution of Air and Water - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         }
-    ]
+    ],
+    "subject_icon": "flask",
+    "subject_color": "green",
+    "total_chapters": 18,
+    "total_hours": 150,
+    "description": "CBSE Class 8 Science curriculum aligned with NEP 2020 and CBSE guidelines."
 }

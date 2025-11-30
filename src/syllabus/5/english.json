@@ -103,5 +103,11 @@
                 "Participates in simple conversations using polite expressions."
             ]
         }
-    ]
+    ],
+    "subject_icon": "book",
+    "subject_color": "purple",
+    "total_chapters": 0,
+    "total_hours": 150,
+    "description": "CBSE Class 5 English curriculum aligned with NEP 2020 and CBSE guidelines.",
+    "chapters": []
 }

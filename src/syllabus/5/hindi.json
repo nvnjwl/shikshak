@@ -55,5 +55,11 @@
                 "पढ़ते समय गति, ठहराव और स्वर पर ध्यान देता/देती है।"
             ]
         }
-    ]
+    ],
+    "subject_icon": "language",
+    "subject_color": "orange",
+    "total_chapters": 0,
+    "total_hours": 120,
+    "description": "CBSE Class 5 Hindi curriculum aligned with NEP 2020 and CBSE guidelines.",
+    "chapters": []
 }

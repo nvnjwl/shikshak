@@ -166,5 +166,11 @@
         "TIMELINE_SKILLS": "Read and create simple historical timelines.",
         "DATA_INTERPRETATION": "Interpret simple tables, charts and graphs.",
         "CITIZENSHIP_SKILLS": "Relate textbook civics to real-life examples."
-    }
+    },
+    "subject_icon": "globe",
+    "subject_color": "teal",
+    "total_chapters": 0,
+    "total_hours": 140,
+    "description": "CBSE Class undefined undefined curriculum aligned with NEP 2020 and CBSE guidelines.",
+    "chapters": []
 }

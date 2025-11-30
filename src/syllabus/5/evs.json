@@ -10,309 +10,1222 @@
             "name": "Super Senses",
             "theme": "Animals",
             "key_topics": [
-                "Senses of animals (Ants, Dogs, Eagles)",
-                "Sleeping and waking patterns",
-                "Endangered animals"
+                {
+                    "name": "Senses of animals (Ants, Dogs, Eagles)",
+                    "difficulty": "medium",
+                    "estimated_minutes": 100,
+                    "bloom_level": "understand",
+                    "description": "Understanding and applying concepts related to senses of animals (ants, dogs, eagles)"
+                },
+                {
+                    "name": "Sleeping and waking patterns",
+                    "difficulty": "medium",
+                    "estimated_minutes": 100,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to sleeping and waking patterns"
+                },
+                {
+                    "name": "Endangered animals",
+                    "difficulty": "hard",
+                    "estimated_minutes": 100,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to endangered animals"
+                }
             ],
             "learning_outcomes": [
-                "Appreciates the super senses of animals.",
-                "Understands the need to protect animals."
-            ]
+                {
+                    "outcome": "Appreciates the super senses of animals.",
+                    "bloom_level": "apply",
+                    "assessment_type": "practice_problems"
+                },
+                {
+                    "outcome": "Understands the need to protect animals.",
+                    "bloom_level": "analyze",
+                    "assessment_type": "practice_problems"
+                }
+            ],
+            "difficulty": "easy",
+            "estimated_hours": 5,
+            "prerequisites": [],
+            "resources": {
+                "video_topics": [
+                    "Super Senses"
+                ],
+                "practice_sets": [
+                    "Super Senses - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         },
         {
             "number": 2,
             "name": "A Snake Charmer's Story",
             "theme": "Animals",
             "key_topics": [
-                "Snakes and snake charmers (Kalbeliyas)",
-                "Poisonous snakes of India",
-                "Animal rights"
+                {
+                    "name": "Snakes and snake charmers (Kalbeliyas)",
+                    "difficulty": "medium",
+                    "estimated_minutes": 100,
+                    "bloom_level": "understand",
+                    "description": "Understanding and applying concepts related to snakes and snake charmers (kalbeliyas)"
+                },
+                {
+                    "name": "Poisonous snakes of India",
+                    "difficulty": "medium",
+                    "estimated_minutes": 100,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to poisonous snakes of india"
+                },
+                {
+                    "name": "Animal rights",
+                    "difficulty": "hard",
+                    "estimated_minutes": 100,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to animal rights"
+                }
             ],
             "learning_outcomes": [
-                "Identifies poisonous snakes.",
-                "Discusses cruelty towards animals."
-            ]
+                {
+                    "outcome": "Identifies poisonous snakes.",
+                    "bloom_level": "apply",
+                    "assessment_type": "practice_problems"
+                },
+                {
+                    "outcome": "Discusses cruelty towards animals.",
+                    "bloom_level": "analyze",
+                    "assessment_type": "practice_problems"
+                }
+            ],
+            "difficulty": "easy",
+            "estimated_hours": 5,
+            "prerequisites": [],
+            "resources": {
+                "video_topics": [
+                    "A Snake Charmer's Story"
+                ],
+                "practice_sets": [
+                    "A Snake Charmer's Story - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         },
         {
             "number": 3,
             "name": "From Tasting to Digesting",
             "theme": "Food",
             "key_topics": [
-                "Taste buds",
-                "Digestion process",
-                "Glucose drip",
-                "Balanced diet"
+                {
+                    "name": "Taste buds",
+                    "difficulty": "easy",
+                    "estimated_minutes": 75,
+                    "bloom_level": "understand",
+                    "description": "Understanding and applying concepts related to taste buds"
+                },
+                {
+                    "name": "Digestion process",
+                    "difficulty": "medium",
+                    "estimated_minutes": 75,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to digestion process"
+                },
+                {
+                    "name": "Glucose drip",
+                    "difficulty": "hard",
+                    "estimated_minutes": 75,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to glucose drip"
+                },
+                {
+                    "name": "Balanced diet",
+                    "difficulty": "hard",
+                    "estimated_minutes": 75,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to balanced diet"
+                }
             ],
             "learning_outcomes": [
-                "Explains the journey of food in body.",
-                "Understands importance of proper food."
-            ]
+                {
+                    "outcome": "Explains the journey of food in body.",
+                    "bloom_level": "apply",
+                    "assessment_type": "practice_problems"
+                },
+                {
+                    "outcome": "Understands importance of proper food.",
+                    "bloom_level": "analyze",
+                    "assessment_type": "practice_problems"
+                }
+            ],
+            "difficulty": "easy",
+            "estimated_hours": 5,
+            "prerequisites": [],
+            "resources": {
+                "video_topics": [
+                    "From Tasting to Digesting"
+                ],
+                "practice_sets": [
+                    "From Tasting to Digesting - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         },
         {
             "number": 4,
             "name": "Mangoes Round the Year",
             "theme": "Food",
             "key_topics": [
-                "Food spoilage vs wastage",
-                "Preservation methods (Pickling, Drying)",
-                "Mamidi Tandra (Aam Papad)"
+                {
+                    "name": "Food spoilage vs wastage",
+                    "difficulty": "medium",
+                    "estimated_minutes": 100,
+                    "bloom_level": "understand",
+                    "description": "Understanding and applying concepts related to food spoilage vs wastage"
+                },
+                {
+                    "name": "Preservation methods (Pickling, Drying)",
+                    "difficulty": "medium",
+                    "estimated_minutes": 100,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to preservation methods (pickling, drying)"
+                },
+                {
+                    "name": "Mamidi Tandra (Aam Papad)",
+                    "difficulty": "hard",
+                    "estimated_minutes": 100,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to mamidi tandra (aam papad)"
+                }
             ],
             "learning_outcomes": [
-                "Lists methods of food preservation.",
-                "Makes simple preserved food items."
-            ]
+                {
+                    "outcome": "Lists methods of food preservation.",
+                    "bloom_level": "apply",
+                    "assessment_type": "practice_problems"
+                },
+                {
+                    "outcome": "Makes simple preserved food items.",
+                    "bloom_level": "analyze",
+                    "assessment_type": "practice_problems"
+                }
+            ],
+            "difficulty": "easy",
+            "estimated_hours": 5,
+            "prerequisites": [],
+            "resources": {
+                "video_topics": [
+                    "Mangoes Round the Year"
+                ],
+                "practice_sets": [
+                    "Mangoes Round the Year - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         },
         {
             "number": 5,
             "name": "Seeds and Seeds",
             "theme": "Plants",
             "key_topics": [
-                "Germination",
-                "Dispersal of seeds",
-                "Pitcher plant"
+                {
+                    "name": "Germination",
+                    "difficulty": "medium",
+                    "estimated_minutes": 100,
+                    "bloom_level": "understand",
+                    "description": "Understanding and applying concepts related to germination"
+                },
+                {
+                    "name": "Dispersal of seeds",
+                    "difficulty": "medium",
+                    "estimated_minutes": 100,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to dispersal of seeds"
+                },
+                {
+                    "name": "Pitcher plant",
+                    "difficulty": "hard",
+                    "estimated_minutes": 100,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to pitcher plant"
+                }
             ],
             "learning_outcomes": [
-                "Observes stages of germination.",
-                "Explains how seeds travel."
-            ]
+                {
+                    "outcome": "Observes stages of germination.",
+                    "bloom_level": "apply",
+                    "assessment_type": "practice_problems"
+                },
+                {
+                    "outcome": "Explains how seeds travel.",
+                    "bloom_level": "analyze",
+                    "assessment_type": "practice_problems"
+                }
+            ],
+            "difficulty": "easy",
+            "estimated_hours": 5,
+            "prerequisites": [],
+            "resources": {
+                "video_topics": [
+                    "Seeds and Seeds"
+                ],
+                "practice_sets": [
+                    "Seeds and Seeds - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         },
         {
             "number": 6,
             "name": "Every Drop Counts",
             "theme": "Water",
             "key_topics": [
-                "Traditional water storage (Stepwells)",
-                "Water scarcity",
-                "Customs related to water"
+                {
+                    "name": "Traditional water storage (Stepwells)",
+                    "difficulty": "medium",
+                    "estimated_minutes": 100,
+                    "bloom_level": "understand",
+                    "description": "Understanding and applying concepts related to traditional water storage (stepwells)"
+                },
+                {
+                    "name": "Water scarcity",
+                    "difficulty": "medium",
+                    "estimated_minutes": 100,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to water scarcity"
+                },
+                {
+                    "name": "Customs related to water",
+                    "difficulty": "hard",
+                    "estimated_minutes": 100,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to customs related to water"
+                }
             ],
             "learning_outcomes": [
-                "Appreciates traditional water conservation.",
-                "Values every drop of water."
-            ]
+                {
+                    "outcome": "Appreciates traditional water conservation.",
+                    "bloom_level": "apply",
+                    "assessment_type": "practice_problems"
+                },
+                {
+                    "outcome": "Values every drop of water.",
+                    "bloom_level": "analyze",
+                    "assessment_type": "practice_problems"
+                }
+            ],
+            "difficulty": "easy",
+            "estimated_hours": 5,
+            "prerequisites": [],
+            "resources": {
+                "video_topics": [
+                    "Every Drop Counts"
+                ],
+                "practice_sets": [
+                    "Every Drop Counts - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         },
         {
             "number": 7,
             "name": "Experiments with Water",
             "theme": "Water",
             "key_topics": [
-                "Floating and sinking",
-                "Solubility",
-                "Dandi March (Salt)"
+                {
+                    "name": "Floating and sinking",
+                    "difficulty": "medium",
+                    "estimated_minutes": 100,
+                    "bloom_level": "understand",
+                    "description": "Understanding and applying concepts related to floating and sinking"
+                },
+                {
+                    "name": "Solubility",
+                    "difficulty": "medium",
+                    "estimated_minutes": 100,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to solubility"
+                },
+                {
+                    "name": "Dandi March (Salt)",
+                    "difficulty": "hard",
+                    "estimated_minutes": 100,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to dandi march (salt)"
+                }
             ],
             "learning_outcomes": [
-                "Conducts simple experiments with water.",
-                "Relates salt making to history."
-            ]
+                {
+                    "outcome": "Conducts simple experiments with water.",
+                    "bloom_level": "apply",
+                    "assessment_type": "practice_problems"
+                },
+                {
+                    "outcome": "Relates salt making to history.",
+                    "bloom_level": "analyze",
+                    "assessment_type": "practice_problems"
+                }
+            ],
+            "difficulty": "medium",
+            "estimated_hours": 5,
+            "prerequisites": [],
+            "resources": {
+                "video_topics": [
+                    "Experiments with Water"
+                ],
+                "practice_sets": [
+                    "Experiments with Water - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         },
         {
             "number": 8,
             "name": "A Treat for Mosquitoes",
             "theme": "Health",
             "key_topics": [
-                "Malaria and mosquitoes",
-                "Blood test",
-                "Anaemia and Iron"
+                {
+                    "name": "Malaria and mosquitoes",
+                    "difficulty": "medium",
+                    "estimated_minutes": 100,
+                    "bloom_level": "understand",
+                    "description": "Understanding and applying concepts related to malaria and mosquitoes"
+                },
+                {
+                    "name": "Blood test",
+                    "difficulty": "medium",
+                    "estimated_minutes": 100,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to blood test"
+                },
+                {
+                    "name": "Anaemia and Iron",
+                    "difficulty": "hard",
+                    "estimated_minutes": 100,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to anaemia and iron"
+                }
             ],
             "learning_outcomes": [
-                "Identifies symptoms of malaria.",
-                "Takes preventive measures against mosquitoes."
-            ]
+                {
+                    "outcome": "Identifies symptoms of malaria.",
+                    "bloom_level": "apply",
+                    "assessment_type": "practice_problems"
+                },
+                {
+                    "outcome": "Takes preventive measures against mosquitoes.",
+                    "bloom_level": "analyze",
+                    "assessment_type": "practice_problems"
+                }
+            ],
+            "difficulty": "medium",
+            "estimated_hours": 5,
+            "prerequisites": [],
+            "resources": {
+                "video_topics": [
+                    "A Treat for Mosquitoes"
+                ],
+                "practice_sets": [
+                    "A Treat for Mosquitoes - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         },
         {
             "number": 9,
             "name": "Up You Go!",
             "theme": "Adventure",
             "key_topics": [
-                "Mountaineering",
-                "Leadership qualities",
-                "Bachendri Pal"
+                {
+                    "name": "Mountaineering",
+                    "difficulty": "medium",
+                    "estimated_minutes": 100,
+                    "bloom_level": "understand",
+                    "description": "Understanding and applying concepts related to mountaineering"
+                },
+                {
+                    "name": "Leadership qualities",
+                    "difficulty": "medium",
+                    "estimated_minutes": 100,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to leadership qualities"
+                },
+                {
+                    "name": "Bachendri Pal",
+                    "difficulty": "hard",
+                    "estimated_minutes": 100,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to bachendri pal"
+                }
             ],
             "learning_outcomes": [
-                "Describes challenges of mountaineering.",
-                "Lists qualities of a leader."
-            ]
+                {
+                    "outcome": "Describes challenges of mountaineering.",
+                    "bloom_level": "apply",
+                    "assessment_type": "practice_problems"
+                },
+                {
+                    "outcome": "Lists qualities of a leader.",
+                    "bloom_level": "analyze",
+                    "assessment_type": "practice_problems"
+                }
+            ],
+            "difficulty": "medium",
+            "estimated_hours": 5,
+            "prerequisites": [],
+            "resources": {
+                "video_topics": [
+                    "Up You Go!"
+                ],
+                "practice_sets": [
+                    "Up You Go! - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         },
         {
             "number": 10,
             "name": "Walls Tell Stories",
             "theme": "History",
             "key_topics": [
-                "Golconda Fort",
-                "Museums",
-                "Historical maps"
+                {
+                    "name": "Golconda Fort",
+                    "difficulty": "medium",
+                    "estimated_minutes": 100,
+                    "bloom_level": "understand",
+                    "description": "Understanding and applying concepts related to golconda fort"
+                },
+                {
+                    "name": "Museums",
+                    "difficulty": "medium",
+                    "estimated_minutes": 100,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to museums"
+                },
+                {
+                    "name": "Historical maps",
+                    "difficulty": "hard",
+                    "estimated_minutes": 100,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to historical maps"
+                }
             ],
             "learning_outcomes": [
-                "Appreciates historical monuments.",
-                "Reads simple maps."
-            ]
+                {
+                    "outcome": "Appreciates historical monuments.",
+                    "bloom_level": "apply",
+                    "assessment_type": "practice_problems"
+                },
+                {
+                    "outcome": "Reads simple maps.",
+                    "bloom_level": "analyze",
+                    "assessment_type": "practice_problems"
+                }
+            ],
+            "difficulty": "medium",
+            "estimated_hours": 5,
+            "prerequisites": [],
+            "resources": {
+                "video_topics": [
+                    "Walls Tell Stories"
+                ],
+                "practice_sets": [
+                    "Walls Tell Stories - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         },
         {
             "number": 11,
             "name": "Sunita in Space",
             "theme": "Space",
             "key_topics": [
-                "Gravity",
-                "Life in spaceship",
-                "Earth as a globe"
+                {
+                    "name": "Gravity",
+                    "difficulty": "medium",
+                    "estimated_minutes": 100,
+                    "bloom_level": "understand",
+                    "description": "Understanding and applying concepts related to gravity"
+                },
+                {
+                    "name": "Life in spaceship",
+                    "difficulty": "medium",
+                    "estimated_minutes": 100,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to life in spaceship"
+                },
+                {
+                    "name": "Earth as a globe",
+                    "difficulty": "hard",
+                    "estimated_minutes": 100,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to earth as a globe"
+                }
             ],
             "learning_outcomes": [
-                "Understands concept of gravity.",
-                "Imagines life in space."
-            ]
+                {
+                    "outcome": "Understands concept of gravity.",
+                    "bloom_level": "apply",
+                    "assessment_type": "practice_problems"
+                },
+                {
+                    "outcome": "Imagines life in space.",
+                    "bloom_level": "analyze",
+                    "assessment_type": "practice_problems"
+                }
+            ],
+            "difficulty": "medium",
+            "estimated_hours": 5,
+            "prerequisites": [],
+            "resources": {
+                "video_topics": [
+                    "Sunita in Space"
+                ],
+                "practice_sets": [
+                    "Sunita in Space - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         },
         {
             "number": 12,
             "name": "What if it Finishes...?",
             "theme": "Fuel",
             "key_topics": [
-                "Petrol and Diesel",
-                "Traffic rules",
-                "Alternative energy"
+                {
+                    "name": "Petrol and Diesel",
+                    "difficulty": "medium",
+                    "estimated_minutes": 100,
+                    "bloom_level": "understand",
+                    "description": "Understanding and applying concepts related to petrol and diesel"
+                },
+                {
+                    "name": "Traffic rules",
+                    "difficulty": "medium",
+                    "estimated_minutes": 100,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to traffic rules"
+                },
+                {
+                    "name": "Alternative energy",
+                    "difficulty": "hard",
+                    "estimated_minutes": 100,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to alternative energy"
+                }
             ],
             "learning_outcomes": [
-                "Awareness about limited fuel resources.",
-                "Suggests ways to save fuel."
-            ]
+                {
+                    "outcome": "Awareness about limited fuel resources.",
+                    "bloom_level": "apply",
+                    "assessment_type": "practice_problems"
+                },
+                {
+                    "outcome": "Suggests ways to save fuel.",
+                    "bloom_level": "analyze",
+                    "assessment_type": "practice_problems"
+                }
+            ],
+            "difficulty": "medium",
+            "estimated_hours": 5,
+            "prerequisites": [],
+            "resources": {
+                "video_topics": [
+                    "What if it Finishes...?"
+                ],
+                "practice_sets": [
+                    "What if it Finishes...? - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         },
         {
             "number": 13,
             "name": "A Shelter so High!",
             "theme": "Shelter",
             "key_topics": [
-                "Changpa tribe",
-                "Pashmina shawl",
-                "Houses in Leh and Srinagar"
+                {
+                    "name": "Changpa tribe",
+                    "difficulty": "medium",
+                    "estimated_minutes": 100,
+                    "bloom_level": "understand",
+                    "description": "Understanding and applying concepts related to changpa tribe"
+                },
+                {
+                    "name": "Pashmina shawl",
+                    "difficulty": "medium",
+                    "estimated_minutes": 100,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to pashmina shawl"
+                },
+                {
+                    "name": "Houses in Leh and Srinagar",
+                    "difficulty": "hard",
+                    "estimated_minutes": 100,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to houses in leh and srinagar"
+                }
             ],
             "learning_outcomes": [
-                "Describes life in high altitudes.",
-                "Appreciates diversity in housing."
-            ]
+                {
+                    "outcome": "Describes life in high altitudes.",
+                    "bloom_level": "apply",
+                    "assessment_type": "practice_problems"
+                },
+                {
+                    "outcome": "Appreciates diversity in housing.",
+                    "bloom_level": "analyze",
+                    "assessment_type": "practice_problems"
+                }
+            ],
+            "difficulty": "medium",
+            "estimated_hours": 5,
+            "prerequisites": [],
+            "resources": {
+                "video_topics": [
+                    "A Shelter so High!"
+                ],
+                "practice_sets": [
+                    "A Shelter so High! - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         },
         {
             "number": 14,
             "name": "When the Earth Shook!",
             "theme": "Disaster",
             "key_topics": [
-                "Earthquake (Gujarat 2001)",
-                "Disaster management",
-                "Helping others"
+                {
+                    "name": "Earthquake (Gujarat 2001)",
+                    "difficulty": "medium",
+                    "estimated_minutes": 100,
+                    "bloom_level": "understand",
+                    "description": "Understanding and applying concepts related to earthquake (gujarat 2001)"
+                },
+                {
+                    "name": "Disaster management",
+                    "difficulty": "medium",
+                    "estimated_minutes": 100,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to disaster management"
+                },
+                {
+                    "name": "Helping others",
+                    "difficulty": "hard",
+                    "estimated_minutes": 100,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to helping others"
+                }
             ],
             "learning_outcomes": [
-                "Knows what to do during an earthquake.",
-                "Empathises with disaster victims."
-            ]
+                {
+                    "outcome": "Knows what to do during an earthquake.",
+                    "bloom_level": "apply",
+                    "assessment_type": "practice_problems"
+                },
+                {
+                    "outcome": "Empathises with disaster victims.",
+                    "bloom_level": "analyze",
+                    "assessment_type": "practice_problems"
+                }
+            ],
+            "difficulty": "medium",
+            "estimated_hours": 5,
+            "prerequisites": [],
+            "resources": {
+                "video_topics": [
+                    "When the Earth Shook!"
+                ],
+                "practice_sets": [
+                    "When the Earth Shook! - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         },
         {
             "number": 15,
             "name": "Blow Hot, Blow Cold",
             "theme": "Air",
             "key_topics": [
-                "Breathing",
-                "Stethoscope",
-                "Hot and cold air"
+                {
+                    "name": "Breathing",
+                    "difficulty": "medium",
+                    "estimated_minutes": 100,
+                    "bloom_level": "understand",
+                    "description": "Understanding and applying concepts related to breathing"
+                },
+                {
+                    "name": "Stethoscope",
+                    "difficulty": "medium",
+                    "estimated_minutes": 100,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to stethoscope"
+                },
+                {
+                    "name": "Hot and cold air",
+                    "difficulty": "hard",
+                    "estimated_minutes": 100,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to hot and cold air"
+                }
             ],
             "learning_outcomes": [
-                "Understands mechanism of breathing.",
-                "Experiments with breath."
-            ]
+                {
+                    "outcome": "Understands mechanism of breathing.",
+                    "bloom_level": "apply",
+                    "assessment_type": "practice_problems"
+                },
+                {
+                    "outcome": "Experiments with breath.",
+                    "bloom_level": "analyze",
+                    "assessment_type": "practice_problems"
+                }
+            ],
+            "difficulty": "medium",
+            "estimated_hours": 5,
+            "prerequisites": [],
+            "resources": {
+                "video_topics": [
+                    "Blow Hot, Blow Cold"
+                ],
+                "practice_sets": [
+                    "Blow Hot, Blow Cold - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         },
         {
             "number": 16,
             "name": "Who will do this Work?",
             "theme": "Social Issues",
             "key_topics": [
-                "Dignity of labour",
-                "Gandhiji's work",
-                "Untouchability"
+                {
+                    "name": "Dignity of labour",
+                    "difficulty": "medium",
+                    "estimated_minutes": 100,
+                    "bloom_level": "understand",
+                    "description": "Understanding and applying concepts related to dignity of labour"
+                },
+                {
+                    "name": "Gandhiji's work",
+                    "difficulty": "medium",
+                    "estimated_minutes": 100,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to gandhiji's work"
+                },
+                {
+                    "name": "Untouchability",
+                    "difficulty": "hard",
+                    "estimated_minutes": 100,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to untouchability"
+                }
             ],
             "learning_outcomes": [
-                "Respects all kinds of work.",
-                "Awareness about social equality."
-            ]
+                {
+                    "outcome": "Respects all kinds of work.",
+                    "bloom_level": "apply",
+                    "assessment_type": "practice_problems"
+                },
+                {
+                    "outcome": "Awareness about social equality.",
+                    "bloom_level": "analyze",
+                    "assessment_type": "practice_problems"
+                }
+            ],
+            "difficulty": "hard",
+            "estimated_hours": 5,
+            "prerequisites": [],
+            "resources": {
+                "video_topics": [
+                    "Who will do this Work?"
+                ],
+                "practice_sets": [
+                    "Who will do this Work? - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         },
         {
             "number": 17,
             "name": "Across the Wall",
             "theme": "Gender",
             "key_topics": [
-                "Girls in sports (Basketball)",
-                "Gender stereotype",
-                "Team spirit"
+                {
+                    "name": "Girls in sports (Basketball)",
+                    "difficulty": "medium",
+                    "estimated_minutes": 100,
+                    "bloom_level": "understand",
+                    "description": "Understanding and applying concepts related to girls in sports (basketball)"
+                },
+                {
+                    "name": "Gender stereotype",
+                    "difficulty": "medium",
+                    "estimated_minutes": 100,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to gender stereotype"
+                },
+                {
+                    "name": "Team spirit",
+                    "difficulty": "hard",
+                    "estimated_minutes": 100,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to team spirit"
+                }
             ],
             "learning_outcomes": [
-                "Challenges gender stereotypes.",
-                "Understands importance of team spirit."
-            ]
+                {
+                    "outcome": "Challenges gender stereotypes.",
+                    "bloom_level": "apply",
+                    "assessment_type": "practice_problems"
+                },
+                {
+                    "outcome": "Understands importance of team spirit.",
+                    "bloom_level": "analyze",
+                    "assessment_type": "practice_problems"
+                }
+            ],
+            "difficulty": "hard",
+            "estimated_hours": 5,
+            "prerequisites": [],
+            "resources": {
+                "video_topics": [
+                    "Across the Wall"
+                ],
+                "practice_sets": [
+                    "Across the Wall - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         },
         {
             "number": 18,
             "name": "No Place for Us?",
             "theme": "Migration",
             "key_topics": [
-                "Displacement due to dams",
-                "Village vs City life",
-                "Migration problems"
+                {
+                    "name": "Displacement due to dams",
+                    "difficulty": "medium",
+                    "estimated_minutes": 100,
+                    "bloom_level": "understand",
+                    "description": "Understanding and applying concepts related to displacement due to dams"
+                },
+                {
+                    "name": "Village vs City life",
+                    "difficulty": "medium",
+                    "estimated_minutes": 100,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to village vs city life"
+                },
+                {
+                    "name": "Migration problems",
+                    "difficulty": "hard",
+                    "estimated_minutes": 100,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to migration problems"
+                }
             ],
             "learning_outcomes": [
-                "Understands impact of displacement.",
-                "Discusses problems of migration."
-            ]
+                {
+                    "outcome": "Understands impact of displacement.",
+                    "bloom_level": "apply",
+                    "assessment_type": "practice_problems"
+                },
+                {
+                    "outcome": "Discusses problems of migration.",
+                    "bloom_level": "analyze",
+                    "assessment_type": "practice_problems"
+                }
+            ],
+            "difficulty": "hard",
+            "estimated_hours": 5,
+            "prerequisites": [],
+            "resources": {
+                "video_topics": [
+                    "No Place for Us?"
+                ],
+                "practice_sets": [
+                    "No Place for Us? - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         },
         {
             "number": 19,
             "name": "A Seed tells a Farmer's Story",
             "theme": "Farming",
             "key_topics": [
-                "Traditional vs Modern farming",
-                "Fertilisers and pesticides",
-                "Organic farming"
+                {
+                    "name": "Traditional vs Modern farming",
+                    "difficulty": "medium",
+                    "estimated_minutes": 100,
+                    "bloom_level": "understand",
+                    "description": "Understanding and applying concepts related to traditional vs modern farming"
+                },
+                {
+                    "name": "Fertilisers and pesticides",
+                    "difficulty": "medium",
+                    "estimated_minutes": 100,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to fertilisers and pesticides"
+                },
+                {
+                    "name": "Organic farming",
+                    "difficulty": "hard",
+                    "estimated_minutes": 100,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to organic farming"
+                }
             ],
             "learning_outcomes": [
-                "Compares old and new farming methods.",
-                "Awareness about chemical free food."
-            ]
+                {
+                    "outcome": "Compares old and new farming methods.",
+                    "bloom_level": "apply",
+                    "assessment_type": "practice_problems"
+                },
+                {
+                    "outcome": "Awareness about chemical free food.",
+                    "bloom_level": "analyze",
+                    "assessment_type": "practice_problems"
+                }
+            ],
+            "difficulty": "hard",
+            "estimated_hours": 5,
+            "prerequisites": [],
+            "resources": {
+                "video_topics": [
+                    "A Seed tells a Farmer's Story"
+                ],
+                "practice_sets": [
+                    "A Seed tells a Farmer's Story - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         },
         {
             "number": 20,
             "name": "Whose Forests?",
             "theme": "Forests",
             "key_topics": [
-                "Tribals and forests (Suryamani)",
-                "Right to Forest Act",
-                "Jhoom farming"
+                {
+                    "name": "Tribals and forests (Suryamani)",
+                    "difficulty": "medium",
+                    "estimated_minutes": 100,
+                    "bloom_level": "understand",
+                    "description": "Understanding and applying concepts related to tribals and forests (suryamani)"
+                },
+                {
+                    "name": "Right to Forest Act",
+                    "difficulty": "medium",
+                    "estimated_minutes": 100,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to right to forest act"
+                },
+                {
+                    "name": "Jhoom farming",
+                    "difficulty": "hard",
+                    "estimated_minutes": 100,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to jhoom farming"
+                }
             ],
             "learning_outcomes": [
-                "Understands relationship between tribals and forests.",
-                "Knows about forest rights."
-            ]
+                {
+                    "outcome": "Understands relationship between tribals and forests.",
+                    "bloom_level": "apply",
+                    "assessment_type": "practice_problems"
+                },
+                {
+                    "outcome": "Knows about forest rights.",
+                    "bloom_level": "analyze",
+                    "assessment_type": "practice_problems"
+                }
+            ],
+            "difficulty": "hard",
+            "estimated_hours": 5,
+            "prerequisites": [],
+            "resources": {
+                "video_topics": [
+                    "Whose Forests?"
+                ],
+                "practice_sets": [
+                    "Whose Forests? - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         },
         {
             "number": 21,
             "name": "Like Father, Like Daughter",
             "theme": "Family",
             "key_topics": [
-                "Heredity",
-                "Twins",
-                "Polio (not hereditary)"
+                {
+                    "name": "Heredity",
+                    "difficulty": "medium",
+                    "estimated_minutes": 100,
+                    "bloom_level": "understand",
+                    "description": "Understanding and applying concepts related to heredity"
+                },
+                {
+                    "name": "Twins",
+                    "difficulty": "medium",
+                    "estimated_minutes": 100,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to twins"
+                },
+                {
+                    "name": "Polio (not hereditary)",
+                    "difficulty": "hard",
+                    "estimated_minutes": 100,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to polio (not hereditary)"
+                }
             ],
             "learning_outcomes": [
-                "Identifies hereditary traits.",
-                "Understands that diseases like polio are not hereditary."
-            ]
+                {
+                    "outcome": "Identifies hereditary traits.",
+                    "bloom_level": "apply",
+                    "assessment_type": "practice_problems"
+                },
+                {
+                    "outcome": "Understands that diseases like polio are not hereditary.",
+                    "bloom_level": "analyze",
+                    "assessment_type": "practice_problems"
+                }
+            ],
+            "difficulty": "hard",
+            "estimated_hours": 5,
+            "prerequisites": [],
+            "resources": {
+                "video_topics": [
+                    "Like Father, Like Daughter"
+                ],
+                "practice_sets": [
+                    "Like Father, Like Daughter - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         },
         {
             "number": 22,
             "name": "On the Move Again",
             "theme": "Migration",
             "key_topics": [
-                "Sugarcane cutters",
-                "Seasonal migration",
-                "Schooling of migrant children"
+                {
+                    "name": "Sugarcane cutters",
+                    "difficulty": "medium",
+                    "estimated_minutes": 100,
+                    "bloom_level": "understand",
+                    "description": "Understanding and applying concepts related to sugarcane cutters"
+                },
+                {
+                    "name": "Seasonal migration",
+                    "difficulty": "medium",
+                    "estimated_minutes": 100,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to seasonal migration"
+                },
+                {
+                    "name": "Schooling of migrant children",
+                    "difficulty": "hard",
+                    "estimated_minutes": 100,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to schooling of migrant children"
+                }
             ],
             "learning_outcomes": [
-                "Discusses difficulties of migrant families.",
-                "Values continuity in education."
-            ]
+                {
+                    "outcome": "Discusses difficulties of migrant families.",
+                    "bloom_level": "apply",
+                    "assessment_type": "practice_problems"
+                },
+                {
+                    "outcome": "Values continuity in education.",
+                    "bloom_level": "analyze",
+                    "assessment_type": "practice_problems"
+                }
+            ],
+            "difficulty": "hard",
+            "estimated_hours": 5,
+            "prerequisites": [],
+            "resources": {
+                "video_topics": [
+                    "On the Move Again"
+                ],
+                "practice_sets": [
+                    "On the Move Again - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         }
-    ]
+    ],
+    "subject_icon": "leaf",
+    "subject_color": "green",
+    "total_chapters": 22,
+    "total_hours": 120,
+    "description": "CBSE Class 5 Environmental Studies curriculum aligned with NEP 2020 and CBSE guidelines."
 }

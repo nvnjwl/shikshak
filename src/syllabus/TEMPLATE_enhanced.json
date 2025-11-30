@@ -1,0 +1,182 @@
+{
+    "class": 7,
+    "board": "CBSE",
+    "academic_year": "2025-26",
+    "subject_code": "MATH",
+    "subject_name": "Mathematics",
+    "subject_icon": "calculator",
+    "subject_color": "blue",
+    "total_chapters": 15,
+    "total_hours": 180,
+    "description": "CBSE Class 7 Mathematics curriculum focusing on building strong foundational concepts in arithmetic, algebra, geometry, and data handling.",
+    "chapters": [
+        {
+            "number": 1,
+            "name": "Integers",
+            "theme": "Operations with integers",
+            "difficulty": "medium",
+            "estimated_hours": 12,
+            "prerequisites": [
+                "Basic arithmetic",
+                "Number line concepts",
+                "Positive and negative numbers"
+            ],
+            "key_topics": [
+                {
+                    "name": "Addition and subtraction of integers",
+                    "difficulty": "easy",
+                    "estimated_minutes": 180,
+                    "bloom_level": "apply",
+                    "description": "Understanding and performing addition and subtraction with positive and negative numbers"
+                },
+                {
+                    "name": "Multiplication and division of integers",
+                    "difficulty": "medium",
+                    "estimated_minutes": 180,
+                    "bloom_level": "apply",
+                    "description": "Rules for multiplying and dividing integers, including sign rules"
+                },
+                {
+                    "name": "Properties of operations on integers",
+                    "difficulty": "medium",
+                    "estimated_minutes": 120,
+                    "bloom_level": "understand",
+                    "description": "Commutative, associative, and distributive properties with integers"
+                }
+            ],
+            "learning_outcomes": [
+                {
+                    "outcome": "Performs all four operations on integers accurately",
+                    "bloom_level": "apply",
+                    "assessment_type": "practice_problems"
+                },
+                {
+                    "outcome": "Uses properties to simplify integer calculations",
+                    "bloom_level": "apply",
+                    "assessment_type": "problem_solving"
+                },
+                {
+                    "outcome": "Solves real-world problems involving integers",
+                    "bloom_level": "analyze",
+                    "assessment_type": "word_problems"
+                }
+            ],
+            "resources": {
+                "video_topics": [
+                    "Introduction to Integers",
+                    "Integer Operations",
+                    "Properties of Integers"
+                ],
+                "practice_sets": [
+                    "Basic Integer Operations",
+                    "Advanced Integer Problems",
+                    "Word Problems with Integers"
+                ],
+                "interactive_activities": [
+                    "Number Line Game",
+                    "Integer War Card Game"
+                ],
+                "real_world_examples": [
+                    "Temperature changes",
+                    "Profit and loss",
+                    "Elevation and depth",
+                    "Bank transactions"
+                ]
+            },
+            "common_misconceptions": [
+                "Negative × Negative = Negative (Correct: Negative × Negative = Positive)",
+                "Subtraction always makes numbers smaller",
+                "Adding a negative is the same as subtracting a positive (This is actually correct!)"
+            ],
+            "teaching_tips": [
+                "Use number line extensively for visualization",
+                "Relate to real-world contexts like temperature and money",
+                "Practice sign rules through repetition and patterns"
+            ]
+        },
+        {
+            "number": 2,
+            "name": "Fractions and Decimals",
+            "theme": "Operations with fractions and decimals",
+            "difficulty": "medium",
+            "estimated_hours": 14,
+            "prerequisites": [
+                "Basic fractions",
+                "Place value",
+                "Decimal notation"
+            ],
+            "key_topics": [
+                {
+                    "name": "Equivalent fractions and comparison",
+                    "difficulty": "easy",
+                    "estimated_minutes": 120,
+                    "bloom_level": "understand",
+                    "description": "Finding equivalent fractions and comparing fractions with different denominators"
+                },
+                {
+                    "name": "Addition, subtraction, multiplication of fractions",
+                    "difficulty": "medium",
+                    "estimated_minutes": 240,
+                    "bloom_level": "apply",
+                    "description": "Performing arithmetic operations on fractions including mixed numbers"
+                },
+                {
+                    "name": "Operations on decimals in daily contexts",
+                    "difficulty": "medium",
+                    "estimated_minutes": 180,
+                    "bloom_level": "apply",
+                    "description": "Adding, subtracting, multiplying decimals in real-life situations"
+                }
+            ],
+            "learning_outcomes": [
+                {
+                    "outcome": "Solves word problems involving fractions and decimals",
+                    "bloom_level": "apply",
+                    "assessment_type": "word_problems"
+                },
+                {
+                    "outcome": "Converts between fractions and decimals accurately",
+                    "bloom_level": "apply",
+                    "assessment_type": "conversion_exercises"
+                },
+                {
+                    "outcome": "Applies fraction and decimal operations in real-life scenarios",
+                    "bloom_level": "analyze",
+                    "assessment_type": "project_based"
+                }
+            ],
+            "resources": {
+                "video_topics": [
+                    "Fraction Basics",
+                    "Decimal Operations",
+                    "Fraction to Decimal Conversion"
+                ],
+                "practice_sets": [
+                    "Fraction Operations",
+                    "Decimal Practice",
+                    "Mixed Problems"
+                ],
+                "interactive_activities": [
+                    "Pizza Fraction Game",
+                    "Decimal Shopping Simulation"
+                ],
+                "real_world_examples": [
+                    "Cooking measurements",
+                    "Money calculations",
+                    "Sharing equally",
+                    "Discounts and sales"
+                ]
+            },
+            "common_misconceptions": [
+                "When adding fractions, add numerators and denominators separately",
+                "0.5 is larger than 0.50 (they are equal)",
+                "Multiplying fractions always gives a larger result"
+            ],
+            "teaching_tips": [
+                "Use visual models like fraction bars and circles",
+                "Connect to money for decimal understanding",
+                "Practice estimation before exact calculation"
+            ]
+        }
+    ]
+}

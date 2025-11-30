@@ -10,196 +10,775 @@
             "name": "Building with Bricks",
             "theme": "Shapes and Patterns",
             "key_topics": [
-                "Patterns with bricks",
-                "Faces, edges and corners of a brick",
-                "Drawing 3D shapes"
+                {
+                    "name": "Patterns with bricks",
+                    "difficulty": "medium",
+                    "estimated_minutes": 260,
+                    "bloom_level": "understand",
+                    "description": "Understanding and applying concepts related to patterns with bricks"
+                },
+                {
+                    "name": "Faces, edges and corners of a brick",
+                    "difficulty": "medium",
+                    "estimated_minutes": 260,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to faces, edges and corners of a brick"
+                },
+                {
+                    "name": "Drawing 3D shapes",
+                    "difficulty": "hard",
+                    "estimated_minutes": 260,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to drawing 3d shapes"
+                }
             ],
             "learning_outcomes": [
-                "Identifies patterns in surroundings.",
-                "Draws 3D shapes like cuboids."
-            ]
+                {
+                    "outcome": "Identifies patterns in surroundings.",
+                    "bloom_level": "apply",
+                    "assessment_type": "practice_problems"
+                },
+                {
+                    "outcome": "Draws 3D shapes like cuboids.",
+                    "bloom_level": "analyze",
+                    "assessment_type": "practice_problems"
+                }
+            ],
+            "difficulty": "easy",
+            "estimated_hours": 13,
+            "prerequisites": [],
+            "resources": {
+                "video_topics": [
+                    "Building with Bricks"
+                ],
+                "practice_sets": [
+                    "Building with Bricks - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         },
         {
             "number": 2,
             "name": "Long and Short",
             "theme": "Measurement",
             "key_topics": [
-                "Measuring length in cm, m and km",
-                "Converting units of length",
-                "Estimating distances"
+                {
+                    "name": "Measuring length in cm, m and km",
+                    "difficulty": "medium",
+                    "estimated_minutes": 260,
+                    "bloom_level": "understand",
+                    "description": "Understanding and applying concepts related to measuring length in cm, m and km"
+                },
+                {
+                    "name": "Converting units of length",
+                    "difficulty": "medium",
+                    "estimated_minutes": 260,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to converting units of length"
+                },
+                {
+                    "name": "Estimating distances",
+                    "difficulty": "hard",
+                    "estimated_minutes": 260,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to estimating distances"
+                }
             ],
             "learning_outcomes": [
-                "Measures length using standard units.",
-                "Converts between meters and centimeters."
-            ]
+                {
+                    "outcome": "Measures length using standard units.",
+                    "bloom_level": "apply",
+                    "assessment_type": "practice_problems"
+                },
+                {
+                    "outcome": "Converts between meters and centimeters.",
+                    "bloom_level": "analyze",
+                    "assessment_type": "practice_problems"
+                }
+            ],
+            "difficulty": "easy",
+            "estimated_hours": 13,
+            "prerequisites": [],
+            "resources": {
+                "video_topics": [
+                    "Long and Short"
+                ],
+                "practice_sets": [
+                    "Long and Short - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         },
         {
             "number": 3,
             "name": "A Trip to Bhopal",
             "theme": "Numbers and Operations",
             "key_topics": [
-                "Large numbers",
-                "Estimation of time and distance",
-                "Word problems involving four operations"
+                {
+                    "name": "Large numbers",
+                    "difficulty": "medium",
+                    "estimated_minutes": 260,
+                    "bloom_level": "understand",
+                    "description": "Understanding and applying concepts related to large numbers"
+                },
+                {
+                    "name": "Estimation of time and distance",
+                    "difficulty": "medium",
+                    "estimated_minutes": 260,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to estimation of time and distance"
+                },
+                {
+                    "name": "Word problems involving four operations",
+                    "difficulty": "medium",
+                    "estimated_minutes": 260,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to word problems involving four operations"
+                }
             ],
             "learning_outcomes": [
-                "Solves daily life problems involving large numbers.",
-                "Estimates time and distance for travel."
-            ]
+                {
+                    "outcome": "Solves daily life problems involving large numbers.",
+                    "bloom_level": "apply",
+                    "assessment_type": "practice_problems"
+                },
+                {
+                    "outcome": "Estimates time and distance for travel.",
+                    "bloom_level": "analyze",
+                    "assessment_type": "practice_problems"
+                }
+            ],
+            "difficulty": "easy",
+            "estimated_hours": 13,
+            "prerequisites": [],
+            "resources": {
+                "video_topics": [
+                    "A Trip to Bhopal"
+                ],
+                "practice_sets": [
+                    "A Trip to Bhopal - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         },
         {
             "number": 4,
             "name": "Tick-Tick-Tick",
             "theme": "Time",
             "key_topics": [
-                "Reading clock time (12-hour and 24-hour)",
-                "Calculating time duration",
-                "Calendar reading"
+                {
+                    "name": "Reading clock time (12-hour and 24-hour)",
+                    "difficulty": "medium",
+                    "estimated_minutes": 260,
+                    "bloom_level": "understand",
+                    "description": "Understanding and applying concepts related to reading clock time (12-hour and 24-hour)"
+                },
+                {
+                    "name": "Calculating time duration",
+                    "difficulty": "medium",
+                    "estimated_minutes": 260,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to calculating time duration"
+                },
+                {
+                    "name": "Calendar reading",
+                    "difficulty": "hard",
+                    "estimated_minutes": 260,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to calendar reading"
+                }
             ],
             "learning_outcomes": [
-                "Reads time from a clock.",
-                "Calculates duration of events."
-            ]
+                {
+                    "outcome": "Reads time from a clock.",
+                    "bloom_level": "apply",
+                    "assessment_type": "practice_problems"
+                },
+                {
+                    "outcome": "Calculates duration of events.",
+                    "bloom_level": "analyze",
+                    "assessment_type": "practice_problems"
+                }
+            ],
+            "difficulty": "easy",
+            "estimated_hours": 13,
+            "prerequisites": [],
+            "resources": {
+                "video_topics": [
+                    "Tick-Tick-Tick"
+                ],
+                "practice_sets": [
+                    "Tick-Tick-Tick - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         },
         {
             "number": 5,
             "name": "The Way The World Looks",
             "theme": "Geometry",
             "key_topics": [
-                "Top, front and side views of objects",
-                "Directions and mapping",
-                "3D objects and their 2D representations"
+                {
+                    "name": "Top, front and side views of objects",
+                    "difficulty": "medium",
+                    "estimated_minutes": 260,
+                    "bloom_level": "understand",
+                    "description": "Understanding and applying concepts related to top, front and side views of objects"
+                },
+                {
+                    "name": "Directions and mapping",
+                    "difficulty": "medium",
+                    "estimated_minutes": 260,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to directions and mapping"
+                },
+                {
+                    "name": "3D objects and their 2D representations",
+                    "difficulty": "hard",
+                    "estimated_minutes": 260,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to 3d objects and their 2d representations"
+                }
             ],
             "learning_outcomes": [
-                "Visualises objects from different perspectives.",
-                "Draws simple maps."
-            ]
+                {
+                    "outcome": "Visualises objects from different perspectives.",
+                    "bloom_level": "apply",
+                    "assessment_type": "practice_problems"
+                },
+                {
+                    "outcome": "Draws simple maps.",
+                    "bloom_level": "analyze",
+                    "assessment_type": "practice_problems"
+                }
+            ],
+            "difficulty": "medium",
+            "estimated_hours": 13,
+            "prerequisites": [],
+            "resources": {
+                "video_topics": [
+                    "The Way The World Looks"
+                ],
+                "practice_sets": [
+                    "The Way The World Looks - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         },
         {
             "number": 6,
             "name": "The Junk Seller",
             "theme": "Money",
             "key_topics": [
-                "Currency notes and coins",
-                "Profit and loss (basic)",
-                "Multiplication in money transactions"
+                {
+                    "name": "Currency notes and coins",
+                    "difficulty": "medium",
+                    "estimated_minutes": 260,
+                    "bloom_level": "understand",
+                    "description": "Understanding and applying concepts related to currency notes and coins"
+                },
+                {
+                    "name": "Profit and loss (basic)",
+                    "difficulty": "easy",
+                    "estimated_minutes": 260,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to profit and loss (basic)"
+                },
+                {
+                    "name": "Multiplication in money transactions",
+                    "difficulty": "hard",
+                    "estimated_minutes": 260,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to multiplication in money transactions"
+                }
             ],
             "learning_outcomes": [
-                "Calculates total cost and change.",
-                "Solves problems involving money."
-            ]
+                {
+                    "outcome": "Calculates total cost and change.",
+                    "bloom_level": "apply",
+                    "assessment_type": "practice_problems"
+                },
+                {
+                    "outcome": "Solves problems involving money.",
+                    "bloom_level": "analyze",
+                    "assessment_type": "practice_problems"
+                }
+            ],
+            "difficulty": "medium",
+            "estimated_hours": 13,
+            "prerequisites": [],
+            "resources": {
+                "video_topics": [
+                    "The Junk Seller"
+                ],
+                "practice_sets": [
+                    "The Junk Seller - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         },
         {
             "number": 7,
             "name": "Jugs and Mugs",
             "theme": "Capacity",
             "key_topics": [
-                "Measuring liquids in litres and millilitres",
-                "Conservation of volume",
-                "Word problems on capacity"
+                {
+                    "name": "Measuring liquids in litres and millilitres",
+                    "difficulty": "medium",
+                    "estimated_minutes": 260,
+                    "bloom_level": "understand",
+                    "description": "Understanding and applying concepts related to measuring liquids in litres and millilitres"
+                },
+                {
+                    "name": "Conservation of volume",
+                    "difficulty": "medium",
+                    "estimated_minutes": 260,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to conservation of volume"
+                },
+                {
+                    "name": "Word problems on capacity",
+                    "difficulty": "hard",
+                    "estimated_minutes": 260,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to word problems on capacity"
+                }
             ],
             "learning_outcomes": [
-                "Estimates and measures capacity.",
-                "Converts litres to millilitres."
-            ]
+                {
+                    "outcome": "Estimates and measures capacity.",
+                    "bloom_level": "apply",
+                    "assessment_type": "practice_problems"
+                },
+                {
+                    "outcome": "Converts litres to millilitres.",
+                    "bloom_level": "analyze",
+                    "assessment_type": "practice_problems"
+                }
+            ],
+            "difficulty": "medium",
+            "estimated_hours": 13,
+            "prerequisites": [],
+            "resources": {
+                "video_topics": [
+                    "Jugs and Mugs"
+                ],
+                "practice_sets": [
+                    "Jugs and Mugs - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         },
         {
             "number": 8,
             "name": "Carts and Wheels",
             "theme": "Circles",
             "key_topics": [
-                "Circle, centre, radius and diameter",
-                "Drawing circles with compass",
-                "Designs using circles"
+                {
+                    "name": "Circle, centre, radius and diameter",
+                    "difficulty": "medium",
+                    "estimated_minutes": 260,
+                    "bloom_level": "understand",
+                    "description": "Understanding and applying concepts related to circle, centre, radius and diameter"
+                },
+                {
+                    "name": "Drawing circles with compass",
+                    "difficulty": "medium",
+                    "estimated_minutes": 260,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to drawing circles with compass"
+                },
+                {
+                    "name": "Designs using circles",
+                    "difficulty": "hard",
+                    "estimated_minutes": 260,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to designs using circles"
+                }
             ],
             "learning_outcomes": [
-                "Identifies parts of a circle.",
-                "Draws circles of given radius."
-            ]
+                {
+                    "outcome": "Identifies parts of a circle.",
+                    "bloom_level": "apply",
+                    "assessment_type": "practice_problems"
+                },
+                {
+                    "outcome": "Draws circles of given radius.",
+                    "bloom_level": "analyze",
+                    "assessment_type": "practice_problems"
+                }
+            ],
+            "difficulty": "medium",
+            "estimated_hours": 13,
+            "prerequisites": [],
+            "resources": {
+                "video_topics": [
+                    "Carts and Wheels"
+                ],
+                "practice_sets": [
+                    "Carts and Wheels - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         },
         {
             "number": 9,
             "name": "Halves and Quarters",
             "theme": "Fractions",
             "key_topics": [
-                "Concept of 1/2, 1/4, 3/4",
-                "Equivalent fractions (visual)",
-                "Sharing equally"
+                {
+                    "name": "Concept of 1/2, 1/4, 3/4",
+                    "difficulty": "medium",
+                    "estimated_minutes": 260,
+                    "bloom_level": "understand",
+                    "description": "Understanding and applying concepts related to concept of 1/2, 1/4, 3/4"
+                },
+                {
+                    "name": "Equivalent fractions (visual)",
+                    "difficulty": "medium",
+                    "estimated_minutes": 260,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to equivalent fractions (visual)"
+                },
+                {
+                    "name": "Sharing equally",
+                    "difficulty": "hard",
+                    "estimated_minutes": 260,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to sharing equally"
+                }
             ],
             "learning_outcomes": [
-                "Identifies halves and quarters of a whole.",
-                "Solves simple problems on sharing."
-            ]
+                {
+                    "outcome": "Identifies halves and quarters of a whole.",
+                    "bloom_level": "apply",
+                    "assessment_type": "practice_problems"
+                },
+                {
+                    "outcome": "Solves simple problems on sharing.",
+                    "bloom_level": "analyze",
+                    "assessment_type": "practice_problems"
+                }
+            ],
+            "difficulty": "medium",
+            "estimated_hours": 13,
+            "prerequisites": [],
+            "resources": {
+                "video_topics": [
+                    "Halves and Quarters"
+                ],
+                "practice_sets": [
+                    "Halves and Quarters - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         },
         {
             "number": 10,
             "name": "Play with Patterns",
             "theme": "Patterns",
             "key_topics": [
-                "Repeating and growing patterns",
-                "Number patterns",
-                "Coding and decoding messages"
+                {
+                    "name": "Repeating and growing patterns",
+                    "difficulty": "medium",
+                    "estimated_minutes": 260,
+                    "bloom_level": "understand",
+                    "description": "Understanding and applying concepts related to repeating and growing patterns"
+                },
+                {
+                    "name": "Number patterns",
+                    "difficulty": "medium",
+                    "estimated_minutes": 260,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to number patterns"
+                },
+                {
+                    "name": "Coding and decoding messages",
+                    "difficulty": "hard",
+                    "estimated_minutes": 260,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to coding and decoding messages"
+                }
             ],
             "learning_outcomes": [
-                "Extends patterns in shapes and numbers.",
-                "Creates secret codes using patterns."
-            ]
+                {
+                    "outcome": "Extends patterns in shapes and numbers.",
+                    "bloom_level": "apply",
+                    "assessment_type": "practice_problems"
+                },
+                {
+                    "outcome": "Creates secret codes using patterns.",
+                    "bloom_level": "analyze",
+                    "assessment_type": "practice_problems"
+                }
+            ],
+            "difficulty": "hard",
+            "estimated_hours": 13,
+            "prerequisites": [],
+            "resources": {
+                "video_topics": [
+                    "Play with Patterns"
+                ],
+                "practice_sets": [
+                    "Play with Patterns - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         },
         {
             "number": 11,
             "name": "Tables and Shares",
             "theme": "Multiplication and Division",
             "key_topics": [
-                "Multiplication tables",
-                "Division as equal sharing",
-                "Word problems"
+                {
+                    "name": "Multiplication tables",
+                    "difficulty": "medium",
+                    "estimated_minutes": 260,
+                    "bloom_level": "understand",
+                    "description": "Understanding and applying concepts related to multiplication tables"
+                },
+                {
+                    "name": "Division as equal sharing",
+                    "difficulty": "medium",
+                    "estimated_minutes": 260,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to division as equal sharing"
+                },
+                {
+                    "name": "Word problems",
+                    "difficulty": "hard",
+                    "estimated_minutes": 260,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to word problems"
+                }
             ],
             "learning_outcomes": [
-                "Uses multiplication tables for calculation.",
-                "Divides numbers by grouping."
-            ]
+                {
+                    "outcome": "Uses multiplication tables for calculation.",
+                    "bloom_level": "apply",
+                    "assessment_type": "practice_problems"
+                },
+                {
+                    "outcome": "Divides numbers by grouping.",
+                    "bloom_level": "analyze",
+                    "assessment_type": "practice_problems"
+                }
+            ],
+            "difficulty": "hard",
+            "estimated_hours": 13,
+            "prerequisites": [],
+            "resources": {
+                "video_topics": [
+                    "Tables and Shares"
+                ],
+                "practice_sets": [
+                    "Tables and Shares - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         },
         {
             "number": 12,
             "name": "How Heavy? How Light?",
             "theme": "Weight",
             "key_topics": [
-                "Weighing objects (kg and g)",
-                "Balance scales",
-                "Estimation of weight"
+                {
+                    "name": "Weighing objects (kg and g)",
+                    "difficulty": "medium",
+                    "estimated_minutes": 260,
+                    "bloom_level": "understand",
+                    "description": "Understanding and applying concepts related to weighing objects (kg and g)"
+                },
+                {
+                    "name": "Balance scales",
+                    "difficulty": "medium",
+                    "estimated_minutes": 260,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to balance scales"
+                },
+                {
+                    "name": "Estimation of weight",
+                    "difficulty": "hard",
+                    "estimated_minutes": 260,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to estimation of weight"
+                }
             ],
             "learning_outcomes": [
-                "Estimates weight of common objects.",
-                "Converts kilograms to grams."
-            ]
+                {
+                    "outcome": "Estimates weight of common objects.",
+                    "bloom_level": "apply",
+                    "assessment_type": "practice_problems"
+                },
+                {
+                    "outcome": "Converts kilograms to grams.",
+                    "bloom_level": "analyze",
+                    "assessment_type": "practice_problems"
+                }
+            ],
+            "difficulty": "hard",
+            "estimated_hours": 13,
+            "prerequisites": [],
+            "resources": {
+                "video_topics": [
+                    "How Heavy? How Light?"
+                ],
+                "practice_sets": [
+                    "How Heavy? How Light? - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         },
         {
             "number": 13,
             "name": "Fields and Fences",
             "theme": "Perimeter and Area",
             "key_topics": [
-                "Length of boundary (Perimeter)",
-                "Area using squares",
-                "Fencing problems"
+                {
+                    "name": "Length of boundary (Perimeter)",
+                    "difficulty": "medium",
+                    "estimated_minutes": 260,
+                    "bloom_level": "understand",
+                    "description": "Understanding and applying concepts related to length of boundary (perimeter)"
+                },
+                {
+                    "name": "Area using squares",
+                    "difficulty": "medium",
+                    "estimated_minutes": 260,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to area using squares"
+                },
+                {
+                    "name": "Fencing problems",
+                    "difficulty": "hard",
+                    "estimated_minutes": 260,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to fencing problems"
+                }
             ],
             "learning_outcomes": [
-                "Calculates perimeter of simple shapes.",
-                "Compares areas by counting squares."
-            ]
+                {
+                    "outcome": "Calculates perimeter of simple shapes.",
+                    "bloom_level": "apply",
+                    "assessment_type": "practice_problems"
+                },
+                {
+                    "outcome": "Compares areas by counting squares.",
+                    "bloom_level": "analyze",
+                    "assessment_type": "practice_problems"
+                }
+            ],
+            "difficulty": "hard",
+            "estimated_hours": 13,
+            "prerequisites": [],
+            "resources": {
+                "video_topics": [
+                    "Fields and Fences"
+                ],
+                "practice_sets": [
+                    "Fields and Fences - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         },
         {
             "number": 14,
             "name": "Smart Charts",
             "theme": "Data Handling",
             "key_topics": [
-                "Pictographs and bar charts",
-                "Tally marks",
-                "Interpreting data"
+                {
+                    "name": "Pictographs and bar charts",
+                    "difficulty": "medium",
+                    "estimated_minutes": 260,
+                    "bloom_level": "understand",
+                    "description": "Understanding and applying concepts related to pictographs and bar charts"
+                },
+                {
+                    "name": "Tally marks",
+                    "difficulty": "medium",
+                    "estimated_minutes": 260,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to tally marks"
+                },
+                {
+                    "name": "Interpreting data",
+                    "difficulty": "hard",
+                    "estimated_minutes": 260,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to interpreting data"
+                }
             ],
             "learning_outcomes": [
-                "Represents data using charts.",
-                "Draws conclusions from data."
-            ]
+                {
+                    "outcome": "Represents data using charts.",
+                    "bloom_level": "apply",
+                    "assessment_type": "practice_problems"
+                },
+                {
+                    "outcome": "Draws conclusions from data.",
+                    "bloom_level": "analyze",
+                    "assessment_type": "practice_problems"
+                }
+            ],
+            "difficulty": "hard",
+            "estimated_hours": 13,
+            "prerequisites": [],
+            "resources": {
+                "video_topics": [
+                    "Smart Charts"
+                ],
+                "practice_sets": [
+                    "Smart Charts - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         }
-    ]
+    ],
+    "subject_icon": "calculator",
+    "subject_color": "blue",
+    "total_chapters": 14,
+    "total_hours": 180,
+    "description": "CBSE Class 4 Mathematics curriculum aligned with NEP 2020 and CBSE guidelines."
 }

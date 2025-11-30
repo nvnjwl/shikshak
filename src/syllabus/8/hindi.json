@@ -35,10 +35,10 @@
         }
     },
     "default_assessment_blueprint": {
-        "objective": 0.20,
-        "short_answer": 0.30,
-        "long_answer": 0.30,
-        "apathit_bodh": 0.20
+        "objective": 0.2,
+        "short_answer": 0.3,
+        "long_answer": 0.3,
+        "apathit_bodh": 0.2
     },
     "chapters": [
         {
@@ -55,7 +55,24 @@
             "themes": [
                 "ध्वनि_अनुभव",
                 "संवेग"
-            ]
+            ],
+            "difficulty": "easy",
+            "estimated_hours": 12,
+            "prerequisites": [],
+            "key_topics": [],
+            "learning_outcomes": [],
+            "resources": {
+                "video_topics": [
+                    null
+                ],
+                "practice_sets": [
+                    "undefined - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         },
         {
             "chapter_no": 2,
@@ -71,7 +88,24 @@
             "themes": [
                 "परिवार",
                 "आर्थिक_स्थिति"
-            ]
+            ],
+            "difficulty": "easy",
+            "estimated_hours": 12,
+            "prerequisites": [],
+            "key_topics": [],
+            "learning_outcomes": [],
+            "resources": {
+                "video_topics": [
+                    null
+                ],
+                "practice_sets": [
+                    "undefined - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         },
         {
             "chapter_no": 3,
@@ -86,7 +120,24 @@
             "themes": [
                 "यात्रा",
                 "समाज_अवलोकन"
-            ]
+            ],
+            "difficulty": "easy",
+            "estimated_hours": 12,
+            "prerequisites": [],
+            "key_topics": [],
+            "learning_outcomes": [],
+            "resources": {
+                "video_topics": [
+                    null
+                ],
+                "practice_sets": [
+                    "undefined - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         },
         {
             "chapter_no": 4,
@@ -102,7 +153,24 @@
             "themes": [
                 "विचार_स्वतंत्रता",
                 "संघर्ष"
-            ]
+            ],
+            "difficulty": "medium",
+            "estimated_hours": 12,
+            "prerequisites": [],
+            "key_topics": [],
+            "learning_outcomes": [],
+            "resources": {
+                "video_topics": [
+                    null
+                ],
+                "practice_sets": [
+                    "undefined - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         },
         {
             "chapter_no": 5,
@@ -118,7 +186,24 @@
             "themes": [
                 "संचार",
                 "संबंध"
-            ]
+            ],
+            "difficulty": "medium",
+            "estimated_hours": 12,
+            "prerequisites": [],
+            "key_topics": [],
+            "learning_outcomes": [],
+            "resources": {
+                "video_topics": [
+                    null
+                ],
+                "practice_sets": [
+                    "undefined - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         },
         {
             "chapter_no": 6,
@@ -133,7 +218,24 @@
             "themes": [
                 "सेवा",
                 "समर्पण"
-            ]
+            ],
+            "difficulty": "medium",
+            "estimated_hours": 12,
+            "prerequisites": [],
+            "key_topics": [],
+            "learning_outcomes": [],
+            "resources": {
+                "video_topics": [
+                    null
+                ],
+                "practice_sets": [
+                    "undefined - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         },
         {
             "chapter_no": 7,
@@ -149,7 +251,24 @@
             "themes": [
                 "आशावाद",
                 "संघर्ष"
-            ]
+            ],
+            "difficulty": "medium",
+            "estimated_hours": 12,
+            "prerequisites": [],
+            "key_topics": [],
+            "learning_outcomes": [],
+            "resources": {
+                "video_topics": [
+                    null
+                ],
+                "practice_sets": [
+                    "undefined - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         },
         {
             "chapter_no": 8,
@@ -164,7 +283,24 @@
             "themes": [
                 "आत्मबल",
                 "समस्याएँ"
-            ]
+            ],
+            "difficulty": "hard",
+            "estimated_hours": 12,
+            "prerequisites": [],
+            "key_topics": [],
+            "learning_outcomes": [],
+            "resources": {
+                "video_topics": [
+                    null
+                ],
+                "practice_sets": [
+                    "undefined - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         },
         {
             "chapter_no": 9,
@@ -180,7 +316,24 @@
             "themes": [
                 "भक्ति",
                 "नीति"
-            ]
+            ],
+            "difficulty": "hard",
+            "estimated_hours": 12,
+            "prerequisites": [],
+            "key_topics": [],
+            "learning_outcomes": [],
+            "resources": {
+                "video_topics": [
+                    null
+                ],
+                "practice_sets": [
+                    "undefined - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         },
         {
             "chapter_no": 10,
@@ -195,7 +348,29 @@
             "themes": [
                 "आलस्य",
                 "कर्तव्य"
-            ]
+            ],
+            "difficulty": "hard",
+            "estimated_hours": 12,
+            "prerequisites": [],
+            "key_topics": [],
+            "learning_outcomes": [],
+            "resources": {
+                "video_topics": [
+                    null
+                ],
+                "practice_sets": [
+                    "undefined - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         }
-    ]
+    ],
+    "subject_icon": "language",
+    "subject_color": "orange",
+    "total_chapters": 10,
+    "total_hours": 120,
+    "description": "CBSE Class undefined undefined curriculum aligned with NEP 2020 and CBSE guidelines."
 }

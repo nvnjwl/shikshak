@@ -54,11 +54,11 @@
         }
     },
     "default_assessment_blueprint": {
-        "mcq": 0.20,
-        "very_short_answer": 0.10,
-        "short_answer": 0.30,
-        "long_answer": 0.30,
-        "listening_speaking": 0.10
+        "mcq": 0.2,
+        "very_short_answer": 0.1,
+        "short_answer": 0.3,
+        "long_answer": 0.3,
+        "listening_speaking": 0.1
     },
     "chapters": [
         {
@@ -85,7 +85,24 @@
             "themes": [
                 "war_and_peace",
                 "responsibility"
-            ]
+            ],
+            "difficulty": "easy",
+            "estimated_hours": 15,
+            "prerequisites": [],
+            "key_topics": [],
+            "learning_outcomes": [],
+            "resources": {
+                "video_topics": [
+                    null
+                ],
+                "practice_sets": [
+                    "undefined - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         },
         {
             "chapter_no": 2,
@@ -111,7 +128,24 @@
             "themes": [
                 "natural_disasters",
                 "human_settlements"
-            ]
+            ],
+            "difficulty": "easy",
+            "estimated_hours": 15,
+            "prerequisites": [],
+            "key_topics": [],
+            "learning_outcomes": [],
+            "resources": {
+                "video_topics": [
+                    null
+                ],
+                "practice_sets": [
+                    "undefined - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         },
         {
             "chapter_no": 3,
@@ -136,7 +170,24 @@
             "themes": [
                 "freedom_struggle",
                 "characterisation"
-            ]
+            ],
+            "difficulty": "easy",
+            "estimated_hours": 15,
+            "prerequisites": [],
+            "key_topics": [],
+            "learning_outcomes": [],
+            "resources": {
+                "video_topics": [
+                    null
+                ],
+                "practice_sets": [
+                    "undefined - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         },
         {
             "chapter_no": 4,
@@ -161,7 +212,24 @@
             "themes": [
                 "memory",
                 "freedom_vs_money"
-            ]
+            ],
+            "difficulty": "medium",
+            "estimated_hours": 15,
+            "prerequisites": [],
+            "key_topics": [],
+            "learning_outcomes": [],
+            "resources": {
+                "video_topics": [
+                    null
+                ],
+                "practice_sets": [
+                    "undefined - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         },
         {
             "chapter_no": 5,
@@ -186,7 +254,24 @@
             "themes": [
                 "self_conquest",
                 "education_system"
-            ]
+            ],
+            "difficulty": "medium",
+            "estimated_hours": 15,
+            "prerequisites": [],
+            "key_topics": [],
+            "learning_outcomes": [],
+            "resources": {
+                "video_topics": [
+                    null
+                ],
+                "practice_sets": [
+                    "undefined - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         },
         {
             "chapter_no": 6,
@@ -211,7 +296,24 @@
             "themes": [
                 "compassion",
                 "humorous_verse"
-            ]
+            ],
+            "difficulty": "medium",
+            "estimated_hours": 15,
+            "prerequisites": [],
+            "key_topics": [],
+            "learning_outcomes": [],
+            "resources": {
+                "video_topics": [
+                    null
+                ],
+                "practice_sets": [
+                    "undefined - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         },
         {
             "chapter_no": 7,
@@ -236,7 +338,24 @@
             "themes": [
                 "disability_and_dignity",
                 "mystery_of_experience"
-            ]
+            ],
+            "difficulty": "medium",
+            "estimated_hours": 15,
+            "prerequisites": [],
+            "key_topics": [],
+            "learning_outcomes": [],
+            "resources": {
+                "video_topics": [
+                    null
+                ],
+                "practice_sets": [
+                    "undefined - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         },
         {
             "chapter_no": 8,
@@ -261,7 +380,24 @@
             "themes": [
                 "nature_diary",
                 "poetry_of_nature"
-            ]
+            ],
+            "difficulty": "hard",
+            "estimated_hours": 15,
+            "prerequisites": [],
+            "key_topics": [],
+            "learning_outcomes": [],
+            "resources": {
+                "video_topics": [
+                    null
+                ],
+                "practice_sets": [
+                    "undefined - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         },
         {
             "chapter_no": 9,
@@ -282,7 +418,24 @@
             "themes": [
                 "idealism",
                 "character"
-            ]
+            ],
+            "difficulty": "hard",
+            "estimated_hours": 15,
+            "prerequisites": [],
+            "key_topics": [],
+            "learning_outcomes": [],
+            "resources": {
+                "video_topics": [
+                    null
+                ],
+                "practice_sets": [
+                    "undefined - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         },
         {
             "chapter_no": 10,
@@ -303,7 +456,24 @@
             "themes": [
                 "true_greatness",
                 "expectation_vs_reality"
-            ]
+            ],
+            "difficulty": "hard",
+            "estimated_hours": 15,
+            "prerequisites": [],
+            "key_topics": [],
+            "learning_outcomes": [],
+            "resources": {
+                "video_topics": [
+                    null
+                ],
+                "practice_sets": [
+                    "undefined - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         }
     ],
     "supplementary_units": [
@@ -357,5 +527,10 @@
             "chapter_no": 10,
             "title": "The Comet – II"
         }
-    ]
+    ],
+    "subject_icon": "book",
+    "subject_color": "purple",
+    "total_chapters": 10,
+    "total_hours": 150,
+    "description": "CBSE Class undefined undefined curriculum aligned with NEP 2020 and CBSE guidelines."
 }

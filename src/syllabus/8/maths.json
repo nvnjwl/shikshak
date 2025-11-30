@@ -10,224 +10,885 @@
             "name": "Rational Numbers",
             "theme": "Properties and operations of rational numbers",
             "key_topics": [
-                "Rational numbers on number line",
-                "Standard form of rational numbers",
-                "Operations and properties (closure, associativity, etc.)"
+                {
+                    "name": "Rational numbers on number line",
+                    "difficulty": "medium",
+                    "estimated_minutes": 220,
+                    "bloom_level": "understand",
+                    "description": "Understanding and applying concepts related to rational numbers on number line"
+                },
+                {
+                    "name": "Standard form of rational numbers",
+                    "difficulty": "medium",
+                    "estimated_minutes": 220,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to standard form of rational numbers"
+                },
+                {
+                    "name": "Operations and properties (closure, associativity, etc.)",
+                    "difficulty": "medium",
+                    "estimated_minutes": 220,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to operations and properties (closure, associativity, etc.)"
+                }
             ],
             "learning_outcomes": [
-                "Represents rational numbers and identifies their position on number line.",
-                "Performs operations on rational numbers and simplifies."
-            ]
+                {
+                    "outcome": "Represents rational numbers and identifies their position on number line.",
+                    "bloom_level": "apply",
+                    "assessment_type": "practice_problems"
+                },
+                {
+                    "outcome": "Performs operations on rational numbers and simplifies.",
+                    "bloom_level": "analyze",
+                    "assessment_type": "practice_problems"
+                }
+            ],
+            "difficulty": "easy",
+            "estimated_hours": 11,
+            "prerequisites": [],
+            "resources": {
+                "video_topics": [
+                    "Rational Numbers"
+                ],
+                "practice_sets": [
+                    "Rational Numbers - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         },
         {
             "number": 2,
             "name": "Linear Equations in One Variable",
             "theme": "Solving linear equations systematically",
             "key_topics": [
-                "Equations with variables on one or both sides",
-                "Equations reducible to linear form",
-                "Real-life word problems"
+                {
+                    "name": "Equations with variables on one or both sides",
+                    "difficulty": "medium",
+                    "estimated_minutes": 220,
+                    "bloom_level": "understand",
+                    "description": "Understanding and applying concepts related to equations with variables on one or both sides"
+                },
+                {
+                    "name": "Equations reducible to linear form",
+                    "difficulty": "medium",
+                    "estimated_minutes": 220,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to equations reducible to linear form"
+                },
+                {
+                    "name": "Real-life word problems",
+                    "difficulty": "hard",
+                    "estimated_minutes": 220,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to real-life word problems"
+                }
             ],
             "learning_outcomes": [
-                "Solves linear equations involving brackets and fractions.",
-                "Formulates and solves word problems using linear equations."
-            ]
+                {
+                    "outcome": "Solves linear equations involving brackets and fractions.",
+                    "bloom_level": "apply",
+                    "assessment_type": "practice_problems"
+                },
+                {
+                    "outcome": "Formulates and solves word problems using linear equations.",
+                    "bloom_level": "analyze",
+                    "assessment_type": "practice_problems"
+                }
+            ],
+            "difficulty": "easy",
+            "estimated_hours": 11,
+            "prerequisites": [],
+            "resources": {
+                "video_topics": [
+                    "Linear Equations in One Variable"
+                ],
+                "practice_sets": [
+                    "Linear Equations in One Variable - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         },
         {
             "number": 3,
             "name": "Understanding Quadrilaterals",
             "theme": "Polygon and quadrilateral properties",
             "key_topics": [
-                "Polygons and their classification",
-                "Angle sum of polygons",
-                "Special quadrilaterals: parallelogram, rhombus, rectangle, square, kite"
+                {
+                    "name": "Polygons and their classification",
+                    "difficulty": "medium",
+                    "estimated_minutes": 220,
+                    "bloom_level": "understand",
+                    "description": "Understanding and applying concepts related to polygons and their classification"
+                },
+                {
+                    "name": "Angle sum of polygons",
+                    "difficulty": "medium",
+                    "estimated_minutes": 220,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to angle sum of polygons"
+                },
+                {
+                    "name": "Special quadrilaterals: parallelogram, rhombus, rectangle, square, kite",
+                    "difficulty": "hard",
+                    "estimated_minutes": 220,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to special quadrilaterals: parallelogram, rhombus, rectangle, square, kite"
+                }
             ],
             "learning_outcomes": [
-                "Finds interior angle sum of polygons.",
-                "Identifies and uses properties of special quadrilaterals."
-            ]
+                {
+                    "outcome": "Finds interior angle sum of polygons.",
+                    "bloom_level": "apply",
+                    "assessment_type": "practice_problems"
+                },
+                {
+                    "outcome": "Identifies and uses properties of special quadrilaterals.",
+                    "bloom_level": "analyze",
+                    "assessment_type": "practice_problems"
+                }
+            ],
+            "difficulty": "easy",
+            "estimated_hours": 11,
+            "prerequisites": [],
+            "resources": {
+                "video_topics": [
+                    "Understanding Quadrilaterals"
+                ],
+                "practice_sets": [
+                    "Understanding Quadrilaterals - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         },
         {
             "number": 4,
             "name": "Practical Geometry",
             "theme": "Construction of quadrilaterals",
             "key_topics": [
-                "Constructing quadrilaterals with given conditions (sides, angles, diagonals)",
-                "Special cases (parallelogram, rhombus)",
-                "Checking construction accuracy"
+                {
+                    "name": "Constructing quadrilaterals with given conditions (sides, angles, diagonals)",
+                    "difficulty": "medium",
+                    "estimated_minutes": 220,
+                    "bloom_level": "understand",
+                    "description": "Understanding and applying concepts related to constructing quadrilaterals with given conditions (sides, angles, diagonals)"
+                },
+                {
+                    "name": "Special cases (parallelogram, rhombus)",
+                    "difficulty": "medium",
+                    "estimated_minutes": 220,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to special cases (parallelogram, rhombus)"
+                },
+                {
+                    "name": "Checking construction accuracy",
+                    "difficulty": "hard",
+                    "estimated_minutes": 220,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to checking construction accuracy"
+                }
             ],
             "learning_outcomes": [
-                "Constructs quadrilaterals using ruler and compass given required data.",
-                "Verifies properties of constructed quadrilaterals."
-            ]
+                {
+                    "outcome": "Constructs quadrilaterals using ruler and compass given required data.",
+                    "bloom_level": "apply",
+                    "assessment_type": "practice_problems"
+                },
+                {
+                    "outcome": "Verifies properties of constructed quadrilaterals.",
+                    "bloom_level": "analyze",
+                    "assessment_type": "practice_problems"
+                }
+            ],
+            "difficulty": "easy",
+            "estimated_hours": 11,
+            "prerequisites": [],
+            "resources": {
+                "video_topics": [
+                    "Practical Geometry"
+                ],
+                "practice_sets": [
+                    "Practical Geometry - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         },
         {
             "number": 5,
             "name": "Data Handling",
             "theme": "Statistical representation and interpretation",
             "key_topics": [
-                "Bar graphs, pie charts (intro)",
-                "Mean, median, mode",
-                "Probability as chance (intuitive)"
+                {
+                    "name": "Bar graphs, pie charts (intro)",
+                    "difficulty": "medium",
+                    "estimated_minutes": 220,
+                    "bloom_level": "understand",
+                    "description": "Understanding and applying concepts related to bar graphs, pie charts (intro)"
+                },
+                {
+                    "name": "Mean, median, mode",
+                    "difficulty": "medium",
+                    "estimated_minutes": 220,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to mean, median, mode"
+                },
+                {
+                    "name": "Probability as chance (intuitive)",
+                    "difficulty": "hard",
+                    "estimated_minutes": 220,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to probability as chance (intuitive)"
+                }
             ],
             "learning_outcomes": [
-                "Computes central tendency measures for given data.",
-                "Represents data using suitable graph and interprets it."
-            ]
+                {
+                    "outcome": "Computes central tendency measures for given data.",
+                    "bloom_level": "apply",
+                    "assessment_type": "practice_problems"
+                },
+                {
+                    "outcome": "Represents data using suitable graph and interprets it.",
+                    "bloom_level": "analyze",
+                    "assessment_type": "practice_problems"
+                }
+            ],
+            "difficulty": "medium",
+            "estimated_hours": 11,
+            "prerequisites": [],
+            "resources": {
+                "video_topics": [
+                    "Data Handling"
+                ],
+                "practice_sets": [
+                    "Data Handling - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         },
         {
             "number": 6,
             "name": "Squares and Square Roots",
             "theme": "Square numbers and their roots",
             "key_topics": [
-                "Patterns of square numbers",
-                "Finding squares by formula and patterns",
-                "Finding square roots by prime factorisation and division method"
+                {
+                    "name": "Patterns of square numbers",
+                    "difficulty": "medium",
+                    "estimated_minutes": 220,
+                    "bloom_level": "understand",
+                    "description": "Understanding and applying concepts related to patterns of square numbers"
+                },
+                {
+                    "name": "Finding squares by formula and patterns",
+                    "difficulty": "medium",
+                    "estimated_minutes": 220,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to finding squares by formula and patterns"
+                },
+                {
+                    "name": "Finding square roots by prime factorisation and division method",
+                    "difficulty": "hard",
+                    "estimated_minutes": 220,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to finding square roots by prime factorisation and division method"
+                }
             ],
             "learning_outcomes": [
-                "Identifies perfect squares up to a reasonable limit.",
-                "Finds square roots of perfect squares using methods learnt."
-            ]
+                {
+                    "outcome": "Identifies perfect squares up to a reasonable limit.",
+                    "bloom_level": "apply",
+                    "assessment_type": "practice_problems"
+                },
+                {
+                    "outcome": "Finds square roots of perfect squares using methods learnt.",
+                    "bloom_level": "analyze",
+                    "assessment_type": "practice_problems"
+                }
+            ],
+            "difficulty": "medium",
+            "estimated_hours": 11,
+            "prerequisites": [],
+            "resources": {
+                "video_topics": [
+                    "Squares and Square Roots"
+                ],
+                "practice_sets": [
+                    "Squares and Square Roots - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         },
         {
             "number": 7,
             "name": "Cubes and Cube Roots",
             "theme": "Cubes and cube roots of numbers",
             "key_topics": [
-                "Patterns in cubes",
-                "Finding cubes of numbers",
-                "Cube roots by factorisation"
+                {
+                    "name": "Patterns in cubes",
+                    "difficulty": "medium",
+                    "estimated_minutes": 220,
+                    "bloom_level": "understand",
+                    "description": "Understanding and applying concepts related to patterns in cubes"
+                },
+                {
+                    "name": "Finding cubes of numbers",
+                    "difficulty": "medium",
+                    "estimated_minutes": 220,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to finding cubes of numbers"
+                },
+                {
+                    "name": "Cube roots by factorisation",
+                    "difficulty": "hard",
+                    "estimated_minutes": 220,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to cube roots by factorisation"
+                }
             ],
             "learning_outcomes": [
-                "Recognises perfect cubes and their cube roots.",
-                "Uses cubes and cube roots in simple problems."
-            ]
+                {
+                    "outcome": "Recognises perfect cubes and their cube roots.",
+                    "bloom_level": "apply",
+                    "assessment_type": "practice_problems"
+                },
+                {
+                    "outcome": "Uses cubes and cube roots in simple problems.",
+                    "bloom_level": "analyze",
+                    "assessment_type": "practice_problems"
+                }
+            ],
+            "difficulty": "medium",
+            "estimated_hours": 11,
+            "prerequisites": [],
+            "resources": {
+                "video_topics": [
+                    "Cubes and Cube Roots"
+                ],
+                "practice_sets": [
+                    "Cubes and Cube Roots - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         },
         {
             "number": 8,
             "name": "Comparing Quantities",
             "theme": "Percent, discount, profit-loss, tax and compound interest",
             "key_topics": [
-                "Percentage increase and decrease",
-                "Discount, sales tax/GST (basic idea)",
-                "Simple compound interest (two years, three years)"
+                {
+                    "name": "Percentage increase and decrease",
+                    "difficulty": "medium",
+                    "estimated_minutes": 220,
+                    "bloom_level": "understand",
+                    "description": "Understanding and applying concepts related to percentage increase and decrease"
+                },
+                {
+                    "name": "Discount, sales tax/GST (basic idea)",
+                    "difficulty": "easy",
+                    "estimated_minutes": 220,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to discount, sales tax/gst (basic idea)"
+                },
+                {
+                    "name": "Simple compound interest (two years, three years)",
+                    "difficulty": "easy",
+                    "estimated_minutes": 220,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to simple compound interest (two years, three years)"
+                }
             ],
             "learning_outcomes": [
-                "Solves problems involving percentage change.",
-                "Computes profit, loss, discount and simple compound interest."
-            ]
+                {
+                    "outcome": "Solves problems involving percentage change.",
+                    "bloom_level": "apply",
+                    "assessment_type": "practice_problems"
+                },
+                {
+                    "outcome": "Computes profit, loss, discount and simple compound interest.",
+                    "bloom_level": "analyze",
+                    "assessment_type": "practice_problems"
+                }
+            ],
+            "difficulty": "medium",
+            "estimated_hours": 11,
+            "prerequisites": [],
+            "resources": {
+                "video_topics": [
+                    "Comparing Quantities"
+                ],
+                "practice_sets": [
+                    "Comparing Quantities - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         },
         {
             "number": 9,
             "name": "Algebraic Expressions and Identities",
             "theme": "Manipulation of algebraic expressions",
             "key_topics": [
-                "Addition, subtraction and multiplication of expressions",
-                "Standard identities (a+b)², (a-b)², a²-b²",
-                "Using identities for fast computation"
+                {
+                    "name": "Addition, subtraction and multiplication of expressions",
+                    "difficulty": "medium",
+                    "estimated_minutes": 220,
+                    "bloom_level": "understand",
+                    "description": "Understanding and applying concepts related to addition, subtraction and multiplication of expressions"
+                },
+                {
+                    "name": "Standard identities (a+b)², (a-b)², a²-b²",
+                    "difficulty": "medium",
+                    "estimated_minutes": 220,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to standard identities (a+b)², (a-b)², a²-b²"
+                },
+                {
+                    "name": "Using identities for fast computation",
+                    "difficulty": "hard",
+                    "estimated_minutes": 220,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to using identities for fast computation"
+                }
             ],
             "learning_outcomes": [
-                "Multiplies algebraic expressions systematically.",
-                "Applies identities to simplify and compute quickly."
-            ]
+                {
+                    "outcome": "Multiplies algebraic expressions systematically.",
+                    "bloom_level": "apply",
+                    "assessment_type": "practice_problems"
+                },
+                {
+                    "outcome": "Applies identities to simplify and compute quickly.",
+                    "bloom_level": "analyze",
+                    "assessment_type": "practice_problems"
+                }
+            ],
+            "difficulty": "medium",
+            "estimated_hours": 11,
+            "prerequisites": [],
+            "resources": {
+                "video_topics": [
+                    "Algebraic Expressions and Identities"
+                ],
+                "practice_sets": [
+                    "Algebraic Expressions and Identities - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         },
         {
             "number": 10,
             "name": "Visualising Solid Shapes",
             "theme": "3D shapes and cross-sections",
             "key_topics": [
-                "Views of 3D shapes",
-                "Nets of common solids",
-                "Cross-sections of solids"
+                {
+                    "name": "Views of 3D shapes",
+                    "difficulty": "medium",
+                    "estimated_minutes": 220,
+                    "bloom_level": "understand",
+                    "description": "Understanding and applying concepts related to views of 3d shapes"
+                },
+                {
+                    "name": "Nets of common solids",
+                    "difficulty": "medium",
+                    "estimated_minutes": 220,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to nets of common solids"
+                },
+                {
+                    "name": "Cross-sections of solids",
+                    "difficulty": "hard",
+                    "estimated_minutes": 220,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to cross-sections of solids"
+                }
             ],
             "learning_outcomes": [
-                "Matches solids with nets and views.",
-                "Describes cross-sections formed by cutting solids."
-            ]
+                {
+                    "outcome": "Matches solids with nets and views.",
+                    "bloom_level": "apply",
+                    "assessment_type": "practice_problems"
+                },
+                {
+                    "outcome": "Describes cross-sections formed by cutting solids.",
+                    "bloom_level": "analyze",
+                    "assessment_type": "practice_problems"
+                }
+            ],
+            "difficulty": "medium",
+            "estimated_hours": 11,
+            "prerequisites": [],
+            "resources": {
+                "video_topics": [
+                    "Visualising Solid Shapes"
+                ],
+                "practice_sets": [
+                    "Visualising Solid Shapes - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         },
         {
             "number": 11,
             "name": "Mensuration",
             "theme": "Areas and volumes of 2D & 3D shapes",
             "key_topics": [
-                "Area of trapezium and special quadrilaterals",
-                "Surface area and volume of cube and cuboid",
-                "Conversion of units in mensuration"
+                {
+                    "name": "Area of trapezium and special quadrilaterals",
+                    "difficulty": "medium",
+                    "estimated_minutes": 220,
+                    "bloom_level": "understand",
+                    "description": "Understanding and applying concepts related to area of trapezium and special quadrilaterals"
+                },
+                {
+                    "name": "Surface area and volume of cube and cuboid",
+                    "difficulty": "medium",
+                    "estimated_minutes": 220,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to surface area and volume of cube and cuboid"
+                },
+                {
+                    "name": "Conversion of units in mensuration",
+                    "difficulty": "hard",
+                    "estimated_minutes": 220,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to conversion of units in mensuration"
+                }
             ],
             "learning_outcomes": [
-                "Finds surface area and volume of basic 3D solids.",
-                "Solves word problems involving mixed shapes."
-            ]
+                {
+                    "outcome": "Finds surface area and volume of basic 3D solids.",
+                    "bloom_level": "apply",
+                    "assessment_type": "practice_problems"
+                },
+                {
+                    "outcome": "Solves word problems involving mixed shapes.",
+                    "bloom_level": "analyze",
+                    "assessment_type": "practice_problems"
+                }
+            ],
+            "difficulty": "medium",
+            "estimated_hours": 11,
+            "prerequisites": [],
+            "resources": {
+                "video_topics": [
+                    "Mensuration"
+                ],
+                "practice_sets": [
+                    "Mensuration - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         },
         {
             "number": 12,
             "name": "Exponents and Powers",
             "theme": "Scientific notation and exponent rules",
             "key_topics": [
-                "Negative exponents",
-                "Standard form of numbers (scientific notation)",
-                "Laws of exponents (extended)"
+                {
+                    "name": "Negative exponents",
+                    "difficulty": "medium",
+                    "estimated_minutes": 220,
+                    "bloom_level": "understand",
+                    "description": "Understanding and applying concepts related to negative exponents"
+                },
+                {
+                    "name": "Standard form of numbers (scientific notation)",
+                    "difficulty": "medium",
+                    "estimated_minutes": 220,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to standard form of numbers (scientific notation)"
+                },
+                {
+                    "name": "Laws of exponents (extended)",
+                    "difficulty": "hard",
+                    "estimated_minutes": 220,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to laws of exponents (extended)"
+                }
             ],
             "learning_outcomes": [
-                "Uses laws of exponents to simplify expressions.",
-                "Expresses very large and very small numbers in standard form."
-            ]
+                {
+                    "outcome": "Uses laws of exponents to simplify expressions.",
+                    "bloom_level": "apply",
+                    "assessment_type": "practice_problems"
+                },
+                {
+                    "outcome": "Expresses very large and very small numbers in standard form.",
+                    "bloom_level": "analyze",
+                    "assessment_type": "practice_problems"
+                }
+            ],
+            "difficulty": "hard",
+            "estimated_hours": 11,
+            "prerequisites": [],
+            "resources": {
+                "video_topics": [
+                    "Exponents and Powers"
+                ],
+                "practice_sets": [
+                    "Exponents and Powers - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         },
         {
             "number": 13,
             "name": "Direct and Inverse Proportions",
             "theme": "Relationships between varying quantities",
             "key_topics": [
-                "Direct proportion (x ∝ y)",
-                "Inverse proportion (x ∝ 1/y)",
-                "Graphical understanding and simple applications"
+                {
+                    "name": "Direct proportion (x ∝ y)",
+                    "difficulty": "medium",
+                    "estimated_minutes": 220,
+                    "bloom_level": "understand",
+                    "description": "Understanding and applying concepts related to direct proportion (x ∝ y)"
+                },
+                {
+                    "name": "Inverse proportion (x ∝ 1/y)",
+                    "difficulty": "medium",
+                    "estimated_minutes": 220,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to inverse proportion (x ∝ 1/y)"
+                },
+                {
+                    "name": "Graphical understanding and simple applications",
+                    "difficulty": "easy",
+                    "estimated_minutes": 220,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to graphical understanding and simple applications"
+                }
             ],
             "learning_outcomes": [
-                "Identifies situations of direct and inverse proportion.",
-                "Solves numerical problems based on proportional reasoning."
-            ]
+                {
+                    "outcome": "Identifies situations of direct and inverse proportion.",
+                    "bloom_level": "apply",
+                    "assessment_type": "practice_problems"
+                },
+                {
+                    "outcome": "Solves numerical problems based on proportional reasoning.",
+                    "bloom_level": "analyze",
+                    "assessment_type": "practice_problems"
+                }
+            ],
+            "difficulty": "hard",
+            "estimated_hours": 11,
+            "prerequisites": [],
+            "resources": {
+                "video_topics": [
+                    "Direct and Inverse Proportions"
+                ],
+                "practice_sets": [
+                    "Direct and Inverse Proportions - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         },
         {
             "number": 14,
             "name": "Factorisation",
             "theme": "Breaking expressions into factors",
             "key_topics": [
-                "Common factor method",
-                "Grouping terms",
-                "Using identities for factorisation"
+                {
+                    "name": "Common factor method",
+                    "difficulty": "medium",
+                    "estimated_minutes": 220,
+                    "bloom_level": "understand",
+                    "description": "Understanding and applying concepts related to common factor method"
+                },
+                {
+                    "name": "Grouping terms",
+                    "difficulty": "medium",
+                    "estimated_minutes": 220,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to grouping terms"
+                },
+                {
+                    "name": "Using identities for factorisation",
+                    "difficulty": "hard",
+                    "estimated_minutes": 220,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to using identities for factorisation"
+                }
             ],
             "learning_outcomes": [
-                "Factorises simple algebraic expressions.",
-                "Checks factorisation by back multiplication."
-            ]
+                {
+                    "outcome": "Factorises simple algebraic expressions.",
+                    "bloom_level": "apply",
+                    "assessment_type": "practice_problems"
+                },
+                {
+                    "outcome": "Checks factorisation by back multiplication.",
+                    "bloom_level": "analyze",
+                    "assessment_type": "practice_problems"
+                }
+            ],
+            "difficulty": "hard",
+            "estimated_hours": 11,
+            "prerequisites": [],
+            "resources": {
+                "video_topics": [
+                    "Factorisation"
+                ],
+                "practice_sets": [
+                    "Factorisation - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         },
         {
             "number": 15,
             "name": "Introduction to Graphs",
             "theme": "Cartesian plane and basic graphs",
             "key_topics": [
-                "Coordinate axes and plotting points",
-                "Line graphs for real-life data",
-                "Reading information from graphs"
+                {
+                    "name": "Coordinate axes and plotting points",
+                    "difficulty": "medium",
+                    "estimated_minutes": 220,
+                    "bloom_level": "understand",
+                    "description": "Understanding and applying concepts related to coordinate axes and plotting points"
+                },
+                {
+                    "name": "Line graphs for real-life data",
+                    "difficulty": "medium",
+                    "estimated_minutes": 220,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to line graphs for real-life data"
+                },
+                {
+                    "name": "Reading information from graphs",
+                    "difficulty": "hard",
+                    "estimated_minutes": 220,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to reading information from graphs"
+                }
             ],
             "learning_outcomes": [
-                "Plots ordered pairs on Cartesian plane.",
-                "Interprets simple line graphs representing real data."
-            ]
+                {
+                    "outcome": "Plots ordered pairs on Cartesian plane.",
+                    "bloom_level": "apply",
+                    "assessment_type": "practice_problems"
+                },
+                {
+                    "outcome": "Interprets simple line graphs representing real data.",
+                    "bloom_level": "analyze",
+                    "assessment_type": "practice_problems"
+                }
+            ],
+            "difficulty": "easy",
+            "estimated_hours": 11,
+            "prerequisites": [],
+            "resources": {
+                "video_topics": [
+                    "Introduction to Graphs"
+                ],
+                "practice_sets": [
+                    "Introduction to Graphs - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         },
         {
             "number": 16,
             "name": "Playing with Numbers",
             "theme": "Patterns and divisibility in number system",
             "key_topics": [
-                "General form of numbers",
-                "Tests of divisibility revisited",
-                "Number puzzles and digit games"
+                {
+                    "name": "General form of numbers",
+                    "difficulty": "medium",
+                    "estimated_minutes": 220,
+                    "bloom_level": "understand",
+                    "description": "Understanding and applying concepts related to general form of numbers"
+                },
+                {
+                    "name": "Tests of divisibility revisited",
+                    "difficulty": "medium",
+                    "estimated_minutes": 220,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to tests of divisibility revisited"
+                },
+                {
+                    "name": "Number puzzles and digit games",
+                    "difficulty": "hard",
+                    "estimated_minutes": 220,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to number puzzles and digit games"
+                }
             ],
             "learning_outcomes": [
-                "Represents numbers algebraically using digits.",
-                "Solves simple puzzles using divisibility and patterns."
-            ]
+                {
+                    "outcome": "Represents numbers algebraically using digits.",
+                    "bloom_level": "apply",
+                    "assessment_type": "practice_problems"
+                },
+                {
+                    "outcome": "Solves simple puzzles using divisibility and patterns.",
+                    "bloom_level": "analyze",
+                    "assessment_type": "practice_problems"
+                }
+            ],
+            "difficulty": "hard",
+            "estimated_hours": 11,
+            "prerequisites": [],
+            "resources": {
+                "video_topics": [
+                    "Playing with Numbers"
+                ],
+                "practice_sets": [
+                    "Playing with Numbers - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         }
-    ]
+    ],
+    "subject_icon": "calculator",
+    "subject_color": "blue",
+    "total_chapters": 16,
+    "total_hours": 180,
+    "description": "CBSE Class 8 Mathematics curriculum aligned with NEP 2020 and CBSE guidelines."
 }

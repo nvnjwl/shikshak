@@ -10,210 +10,830 @@
             "name": "Integers",
             "theme": "Operations with integers",
             "key_topics": [
-                "Addition and subtraction of integers",
-                "Multiplication and division of integers",
-                "Properties of operations on integers"
+                {
+                    "name": "Addition and subtraction of integers",
+                    "difficulty": "medium",
+                    "estimated_minutes": 240,
+                    "bloom_level": "understand",
+                    "description": "Understanding and applying concepts related to addition and subtraction of integers"
+                },
+                {
+                    "name": "Multiplication and division of integers",
+                    "difficulty": "medium",
+                    "estimated_minutes": 240,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to multiplication and division of integers"
+                },
+                {
+                    "name": "Properties of operations on integers",
+                    "difficulty": "medium",
+                    "estimated_minutes": 240,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to properties of operations on integers"
+                }
             ],
             "learning_outcomes": [
-                "Performs all four operations on integers.",
-                "Uses properties to simplify integer calculations."
-            ]
+                {
+                    "outcome": "Performs all four operations on integers.",
+                    "bloom_level": "apply",
+                    "assessment_type": "practice_problems"
+                },
+                {
+                    "outcome": "Uses properties to simplify integer calculations.",
+                    "bloom_level": "analyze",
+                    "assessment_type": "practice_problems"
+                }
+            ],
+            "difficulty": "easy",
+            "estimated_hours": 12,
+            "prerequisites": [],
+            "resources": {
+                "video_topics": [
+                    "Integers"
+                ],
+                "practice_sets": [
+                    "Integers - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         },
         {
             "number": 2,
             "name": "Fractions and Decimals",
             "theme": "Operations with fractions and decimals",
             "key_topics": [
-                "Equivalent fractions and comparison",
-                "Addition, subtraction, multiplication of fractions",
-                "Operations on decimals in daily contexts"
+                {
+                    "name": "Equivalent fractions and comparison",
+                    "difficulty": "medium",
+                    "estimated_minutes": 240,
+                    "bloom_level": "understand",
+                    "description": "Understanding and applying concepts related to equivalent fractions and comparison"
+                },
+                {
+                    "name": "Addition, subtraction, multiplication of fractions",
+                    "difficulty": "medium",
+                    "estimated_minutes": 240,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to addition, subtraction, multiplication of fractions"
+                },
+                {
+                    "name": "Operations on decimals in daily contexts",
+                    "difficulty": "medium",
+                    "estimated_minutes": 240,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to operations on decimals in daily contexts"
+                }
             ],
             "learning_outcomes": [
-                "Solves word problems involving fractions and decimals.",
-                "Converts between fractions and decimals where appropriate."
-            ]
+                {
+                    "outcome": "Solves word problems involving fractions and decimals.",
+                    "bloom_level": "apply",
+                    "assessment_type": "practice_problems"
+                },
+                {
+                    "outcome": "Converts between fractions and decimals where appropriate.",
+                    "bloom_level": "analyze",
+                    "assessment_type": "practice_problems"
+                }
+            ],
+            "difficulty": "easy",
+            "estimated_hours": 12,
+            "prerequisites": [],
+            "resources": {
+                "video_topics": [
+                    "Fractions and Decimals"
+                ],
+                "practice_sets": [
+                    "Fractions and Decimals - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         },
         {
             "number": 3,
             "name": "Data Handling",
             "theme": "Organisation and analysis of data",
             "key_topics": [
-                "Collection and tabulation of data",
-                "Bar graphs and double bar graphs",
-                "Mean, median and mode (basic)"
+                {
+                    "name": "Collection and tabulation of data",
+                    "difficulty": "medium",
+                    "estimated_minutes": 240,
+                    "bloom_level": "understand",
+                    "description": "Understanding and applying concepts related to collection and tabulation of data"
+                },
+                {
+                    "name": "Bar graphs and double bar graphs",
+                    "difficulty": "medium",
+                    "estimated_minutes": 240,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to bar graphs and double bar graphs"
+                },
+                {
+                    "name": "Mean, median and mode (basic)",
+                    "difficulty": "easy",
+                    "estimated_minutes": 240,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to mean, median and mode (basic)"
+                }
             ],
             "learning_outcomes": [
-                "Organises data and represents it graphically.",
-                "Computes simple measures of central tendency."
-            ]
+                {
+                    "outcome": "Organises data and represents it graphically.",
+                    "bloom_level": "apply",
+                    "assessment_type": "practice_problems"
+                },
+                {
+                    "outcome": "Computes simple measures of central tendency.",
+                    "bloom_level": "analyze",
+                    "assessment_type": "practice_problems"
+                }
+            ],
+            "difficulty": "easy",
+            "estimated_hours": 12,
+            "prerequisites": [],
+            "resources": {
+                "video_topics": [
+                    "Data Handling"
+                ],
+                "practice_sets": [
+                    "Data Handling - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         },
         {
             "number": 4,
             "name": "Simple Equations",
             "theme": "Linear equations in one variable",
             "key_topics": [
-                "Forming equations from statements",
-                "Solving equations using inverse operations",
-                "Applications in word problems"
+                {
+                    "name": "Forming equations from statements",
+                    "difficulty": "medium",
+                    "estimated_minutes": 240,
+                    "bloom_level": "understand",
+                    "description": "Understanding and applying concepts related to forming equations from statements"
+                },
+                {
+                    "name": "Solving equations using inverse operations",
+                    "difficulty": "medium",
+                    "estimated_minutes": 240,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to solving equations using inverse operations"
+                },
+                {
+                    "name": "Applications in word problems",
+                    "difficulty": "hard",
+                    "estimated_minutes": 240,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to applications in word problems"
+                }
             ],
             "learning_outcomes": [
-                "Translates verbal statements to simple equations.",
-                "Solves one-variable linear equations step by step."
-            ]
+                {
+                    "outcome": "Translates verbal statements to simple equations.",
+                    "bloom_level": "apply",
+                    "assessment_type": "practice_problems"
+                },
+                {
+                    "outcome": "Solves one-variable linear equations step by step.",
+                    "bloom_level": "analyze",
+                    "assessment_type": "practice_problems"
+                }
+            ],
+            "difficulty": "easy",
+            "estimated_hours": 12,
+            "prerequisites": [],
+            "resources": {
+                "video_topics": [
+                    "Simple Equations"
+                ],
+                "practice_sets": [
+                    "Simple Equations - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         },
         {
             "number": 5,
             "name": "Lines and Angles",
             "theme": "Relationships between lines and angles",
             "key_topics": [
-                "Complementary and supplementary angles",
-                "Adjacent, vertical opposite angles",
-                "Angles formed by intersecting and parallel lines"
+                {
+                    "name": "Complementary and supplementary angles",
+                    "difficulty": "medium",
+                    "estimated_minutes": 240,
+                    "bloom_level": "understand",
+                    "description": "Understanding and applying concepts related to complementary and supplementary angles"
+                },
+                {
+                    "name": "Adjacent, vertical opposite angles",
+                    "difficulty": "medium",
+                    "estimated_minutes": 240,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to adjacent, vertical opposite angles"
+                },
+                {
+                    "name": "Angles formed by intersecting and parallel lines",
+                    "difficulty": "hard",
+                    "estimated_minutes": 240,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to angles formed by intersecting and parallel lines"
+                }
             ],
             "learning_outcomes": [
-                "Identifies angle relationships in given figures.",
-                "Uses angle properties to find unknown angles."
-            ]
+                {
+                    "outcome": "Identifies angle relationships in given figures.",
+                    "bloom_level": "apply",
+                    "assessment_type": "practice_problems"
+                },
+                {
+                    "outcome": "Uses angle properties to find unknown angles.",
+                    "bloom_level": "analyze",
+                    "assessment_type": "practice_problems"
+                }
+            ],
+            "difficulty": "medium",
+            "estimated_hours": 12,
+            "prerequisites": [],
+            "resources": {
+                "video_topics": [
+                    "Lines and Angles"
+                ],
+                "practice_sets": [
+                    "Lines and Angles - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         },
         {
             "number": 6,
             "name": "The Triangle and its Properties",
             "theme": "Properties of triangles",
             "key_topics": [
-                "Median and altitude",
-                "Angle sum property of triangle",
-                "Right triangles and Pythagorean triplets (intro)"
+                {
+                    "name": "Median and altitude",
+                    "difficulty": "medium",
+                    "estimated_minutes": 240,
+                    "bloom_level": "understand",
+                    "description": "Understanding and applying concepts related to median and altitude"
+                },
+                {
+                    "name": "Angle sum property of triangle",
+                    "difficulty": "medium",
+                    "estimated_minutes": 240,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to angle sum property of triangle"
+                },
+                {
+                    "name": "Right triangles and Pythagorean triplets (intro)",
+                    "difficulty": "hard",
+                    "estimated_minutes": 240,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to right triangles and pythagorean triplets (intro)"
+                }
             ],
             "learning_outcomes": [
-                "Uses angle sum property to find missing angles.",
-                "Identifies medians and altitudes in triangles."
-            ]
+                {
+                    "outcome": "Uses angle sum property to find missing angles.",
+                    "bloom_level": "apply",
+                    "assessment_type": "practice_problems"
+                },
+                {
+                    "outcome": "Identifies medians and altitudes in triangles.",
+                    "bloom_level": "analyze",
+                    "assessment_type": "practice_problems"
+                }
+            ],
+            "difficulty": "medium",
+            "estimated_hours": 12,
+            "prerequisites": [],
+            "resources": {
+                "video_topics": [
+                    "The Triangle and its Properties"
+                ],
+                "practice_sets": [
+                    "The Triangle and its Properties - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         },
         {
             "number": 7,
             "name": "Congruence of Triangles",
             "theme": "Triangle congruence and applications",
             "key_topics": [
-                "Concept of congruence",
-                "SSS, SAS, ASA criteria (intuitive)",
-                "Simple constructions using congruence ideas"
+                {
+                    "name": "Concept of congruence",
+                    "difficulty": "medium",
+                    "estimated_minutes": 240,
+                    "bloom_level": "understand",
+                    "description": "Understanding and applying concepts related to concept of congruence"
+                },
+                {
+                    "name": "SSS, SAS, ASA criteria (intuitive)",
+                    "difficulty": "medium",
+                    "estimated_minutes": 240,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to sss, sas, asa criteria (intuitive)"
+                },
+                {
+                    "name": "Simple constructions using congruence ideas",
+                    "difficulty": "easy",
+                    "estimated_minutes": 240,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to simple constructions using congruence ideas"
+                }
             ],
             "learning_outcomes": [
-                "Checks congruence of triangles using side and angle data.",
-                "Applies congruence in simple reasoning problems."
-            ]
+                {
+                    "outcome": "Checks congruence of triangles using side and angle data.",
+                    "bloom_level": "apply",
+                    "assessment_type": "practice_problems"
+                },
+                {
+                    "outcome": "Applies congruence in simple reasoning problems.",
+                    "bloom_level": "analyze",
+                    "assessment_type": "practice_problems"
+                }
+            ],
+            "difficulty": "medium",
+            "estimated_hours": 12,
+            "prerequisites": [],
+            "resources": {
+                "video_topics": [
+                    "Congruence of Triangles"
+                ],
+                "practice_sets": [
+                    "Congruence of Triangles - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         },
         {
             "number": 8,
             "name": "Comparing Quantities",
             "theme": "Percentages, profit-loss and simple interest",
             "key_topics": [
-                "Percentage and its conversion to fraction/decimal",
-                "Profit, loss and discount",
-                "Simple interest formula"
+                {
+                    "name": "Percentage and its conversion to fraction/decimal",
+                    "difficulty": "medium",
+                    "estimated_minutes": 240,
+                    "bloom_level": "understand",
+                    "description": "Understanding and applying concepts related to percentage and its conversion to fraction/decimal"
+                },
+                {
+                    "name": "Profit, loss and discount",
+                    "difficulty": "medium",
+                    "estimated_minutes": 240,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to profit, loss and discount"
+                },
+                {
+                    "name": "Simple interest formula",
+                    "difficulty": "easy",
+                    "estimated_minutes": 240,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to simple interest formula"
+                }
             ],
             "learning_outcomes": [
-                "Converts between ratios, fractions and percentages.",
-                "Solves problems on profit, loss and simple interest."
-            ]
+                {
+                    "outcome": "Converts between ratios, fractions and percentages.",
+                    "bloom_level": "apply",
+                    "assessment_type": "practice_problems"
+                },
+                {
+                    "outcome": "Solves problems on profit, loss and simple interest.",
+                    "bloom_level": "analyze",
+                    "assessment_type": "practice_problems"
+                }
+            ],
+            "difficulty": "medium",
+            "estimated_hours": 12,
+            "prerequisites": [],
+            "resources": {
+                "video_topics": [
+                    "Comparing Quantities"
+                ],
+                "practice_sets": [
+                    "Comparing Quantities - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         },
         {
             "number": 9,
             "name": "Rational Numbers",
             "theme": "Rational numbers and their representation",
             "key_topics": [
-                "Positive and negative rational numbers",
-                "Representation on number line",
-                "Standard form and comparison"
+                {
+                    "name": "Positive and negative rational numbers",
+                    "difficulty": "medium",
+                    "estimated_minutes": 240,
+                    "bloom_level": "understand",
+                    "description": "Understanding and applying concepts related to positive and negative rational numbers"
+                },
+                {
+                    "name": "Representation on number line",
+                    "difficulty": "medium",
+                    "estimated_minutes": 240,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to representation on number line"
+                },
+                {
+                    "name": "Standard form and comparison",
+                    "difficulty": "medium",
+                    "estimated_minutes": 240,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to standard form and comparison"
+                }
             ],
             "learning_outcomes": [
-                "Represents rational numbers on the number line.",
-                "Compares and orders rational numbers."
-            ]
+                {
+                    "outcome": "Represents rational numbers on the number line.",
+                    "bloom_level": "apply",
+                    "assessment_type": "practice_problems"
+                },
+                {
+                    "outcome": "Compares and orders rational numbers.",
+                    "bloom_level": "analyze",
+                    "assessment_type": "practice_problems"
+                }
+            ],
+            "difficulty": "medium",
+            "estimated_hours": 12,
+            "prerequisites": [],
+            "resources": {
+                "video_topics": [
+                    "Rational Numbers"
+                ],
+                "practice_sets": [
+                    "Rational Numbers - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         },
         {
             "number": 10,
             "name": "Practical Geometry",
             "theme": "Constructions with ruler and compass",
             "key_topics": [
-                "Constructing triangles with given conditions",
-                "Drawing parallel lines",
-                "Simple construction-based problems"
+                {
+                    "name": "Constructing triangles with given conditions",
+                    "difficulty": "medium",
+                    "estimated_minutes": 240,
+                    "bloom_level": "understand",
+                    "description": "Understanding and applying concepts related to constructing triangles with given conditions"
+                },
+                {
+                    "name": "Drawing parallel lines",
+                    "difficulty": "medium",
+                    "estimated_minutes": 240,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to drawing parallel lines"
+                },
+                {
+                    "name": "Simple construction-based problems",
+                    "difficulty": "easy",
+                    "estimated_minutes": 240,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to simple construction-based problems"
+                }
             ],
             "learning_outcomes": [
-                "Constructs triangles using SSS, SAS, ASA information.",
-                "Uses constructions to solve simple geometry tasks."
-            ]
+                {
+                    "outcome": "Constructs triangles using SSS, SAS, ASA information.",
+                    "bloom_level": "apply",
+                    "assessment_type": "practice_problems"
+                },
+                {
+                    "outcome": "Uses constructions to solve simple geometry tasks.",
+                    "bloom_level": "analyze",
+                    "assessment_type": "practice_problems"
+                }
+            ],
+            "difficulty": "medium",
+            "estimated_hours": 12,
+            "prerequisites": [],
+            "resources": {
+                "video_topics": [
+                    "Practical Geometry"
+                ],
+                "practice_sets": [
+                    "Practical Geometry - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         },
         {
             "number": 11,
             "name": "Perimeter and Area",
             "theme": "2D measurement of standard shapes",
             "key_topics": [
-                "Perimeter and area of rectangles and triangles",
-                "Area of parallelogram (intro)",
-                "Application problems"
+                {
+                    "name": "Perimeter and area of rectangles and triangles",
+                    "difficulty": "medium",
+                    "estimated_minutes": 240,
+                    "bloom_level": "understand",
+                    "description": "Understanding and applying concepts related to perimeter and area of rectangles and triangles"
+                },
+                {
+                    "name": "Area of parallelogram (intro)",
+                    "difficulty": "medium",
+                    "estimated_minutes": 240,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to area of parallelogram (intro)"
+                },
+                {
+                    "name": "Application problems",
+                    "difficulty": "hard",
+                    "estimated_minutes": 240,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to application problems"
+                }
             ],
             "learning_outcomes": [
-                "Computes perimeter and area of standard figures.",
-                "Solves daily-life problems involving perimeter and area."
-            ]
+                {
+                    "outcome": "Computes perimeter and area of standard figures.",
+                    "bloom_level": "apply",
+                    "assessment_type": "practice_problems"
+                },
+                {
+                    "outcome": "Solves daily-life problems involving perimeter and area.",
+                    "bloom_level": "analyze",
+                    "assessment_type": "practice_problems"
+                }
+            ],
+            "difficulty": "hard",
+            "estimated_hours": 12,
+            "prerequisites": [],
+            "resources": {
+                "video_topics": [
+                    "Perimeter and Area"
+                ],
+                "practice_sets": [
+                    "Perimeter and Area - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         },
         {
             "number": 12,
             "name": "Algebraic Expressions",
             "theme": "Expressions and basic operations",
             "key_topics": [
-                "Terms, coefficients and like/unlike terms",
-                "Addition and subtraction of expressions",
-                "Value of expression for given variable"
+                {
+                    "name": "Terms, coefficients and like/unlike terms",
+                    "difficulty": "medium",
+                    "estimated_minutes": 240,
+                    "bloom_level": "understand",
+                    "description": "Understanding and applying concepts related to terms, coefficients and like/unlike terms"
+                },
+                {
+                    "name": "Addition and subtraction of expressions",
+                    "difficulty": "medium",
+                    "estimated_minutes": 240,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to addition and subtraction of expressions"
+                },
+                {
+                    "name": "Value of expression for given variable",
+                    "difficulty": "hard",
+                    "estimated_minutes": 240,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to value of expression for given variable"
+                }
             ],
             "learning_outcomes": [
-                "Identifies parts of an algebraic expression.",
-                "Adds and subtracts simple algebraic expressions."
-            ]
+                {
+                    "outcome": "Identifies parts of an algebraic expression.",
+                    "bloom_level": "apply",
+                    "assessment_type": "practice_problems"
+                },
+                {
+                    "outcome": "Adds and subtracts simple algebraic expressions.",
+                    "bloom_level": "analyze",
+                    "assessment_type": "practice_problems"
+                }
+            ],
+            "difficulty": "hard",
+            "estimated_hours": 12,
+            "prerequisites": [],
+            "resources": {
+                "video_topics": [
+                    "Algebraic Expressions"
+                ],
+                "practice_sets": [
+                    "Algebraic Expressions - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         },
         {
             "number": 13,
             "name": "Exponents and Powers",
             "theme": "Exponential notation and laws",
             "key_topics": [
-                "Exponential form of numbers",
-                "Laws of exponents (product, quotient, power of power)",
-                "Standard form (introductory)"
+                {
+                    "name": "Exponential form of numbers",
+                    "difficulty": "medium",
+                    "estimated_minutes": 240,
+                    "bloom_level": "understand",
+                    "description": "Understanding and applying concepts related to exponential form of numbers"
+                },
+                {
+                    "name": "Laws of exponents (product, quotient, power of power)",
+                    "difficulty": "medium",
+                    "estimated_minutes": 240,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to laws of exponents (product, quotient, power of power)"
+                },
+                {
+                    "name": "Standard form (introductory)",
+                    "difficulty": "hard",
+                    "estimated_minutes": 240,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to standard form (introductory)"
+                }
             ],
             "learning_outcomes": [
-                "Writes repeated multiplication in exponential form.",
-                "Applies basic laws of exponents to simplify expressions."
-            ]
+                {
+                    "outcome": "Writes repeated multiplication in exponential form.",
+                    "bloom_level": "apply",
+                    "assessment_type": "practice_problems"
+                },
+                {
+                    "outcome": "Applies basic laws of exponents to simplify expressions.",
+                    "bloom_level": "analyze",
+                    "assessment_type": "practice_problems"
+                }
+            ],
+            "difficulty": "hard",
+            "estimated_hours": 12,
+            "prerequisites": [],
+            "resources": {
+                "video_topics": [
+                    "Exponents and Powers"
+                ],
+                "practice_sets": [
+                    "Exponents and Powers - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         },
         {
             "number": 14,
             "name": "Symmetry",
             "theme": "Rotational and line symmetry",
             "key_topics": [
-                "Lines of symmetry in regular polygons",
-                "Rotational symmetry and order",
-                "Symmetric patterns in art and design"
+                {
+                    "name": "Lines of symmetry in regular polygons",
+                    "difficulty": "medium",
+                    "estimated_minutes": 240,
+                    "bloom_level": "understand",
+                    "description": "Understanding and applying concepts related to lines of symmetry in regular polygons"
+                },
+                {
+                    "name": "Rotational symmetry and order",
+                    "difficulty": "medium",
+                    "estimated_minutes": 240,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to rotational symmetry and order"
+                },
+                {
+                    "name": "Symmetric patterns in art and design",
+                    "difficulty": "hard",
+                    "estimated_minutes": 240,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to symmetric patterns in art and design"
+                }
             ],
             "learning_outcomes": [
-                "Finds line and rotational symmetries in given figures.",
-                "Creates designs showing specified symmetries."
-            ]
+                {
+                    "outcome": "Finds line and rotational symmetries in given figures.",
+                    "bloom_level": "apply",
+                    "assessment_type": "practice_problems"
+                },
+                {
+                    "outcome": "Creates designs showing specified symmetries.",
+                    "bloom_level": "analyze",
+                    "assessment_type": "practice_problems"
+                }
+            ],
+            "difficulty": "hard",
+            "estimated_hours": 12,
+            "prerequisites": [],
+            "resources": {
+                "video_topics": [
+                    "Symmetry"
+                ],
+                "practice_sets": [
+                    "Symmetry - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         },
         {
             "number": 15,
             "name": "Visualising Solid Shapes",
             "theme": "3D shapes and their views",
             "key_topics": [
-                "Faces, edges and vertices of 3D objects",
-                "Nets of solids",
-                "Top, front and side views"
+                {
+                    "name": "Faces, edges and vertices of 3D objects",
+                    "difficulty": "medium",
+                    "estimated_minutes": 240,
+                    "bloom_level": "understand",
+                    "description": "Understanding and applying concepts related to faces, edges and vertices of 3d objects"
+                },
+                {
+                    "name": "Nets of solids",
+                    "difficulty": "medium",
+                    "estimated_minutes": 240,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to nets of solids"
+                },
+                {
+                    "name": "Top, front and side views",
+                    "difficulty": "hard",
+                    "estimated_minutes": 240,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to top, front and side views"
+                }
             ],
             "learning_outcomes": [
-                "Identifies common 3D shapes and their nets.",
-                "Matches solids to their different projected views."
-            ]
+                {
+                    "outcome": "Identifies common 3D shapes and their nets.",
+                    "bloom_level": "apply",
+                    "assessment_type": "practice_problems"
+                },
+                {
+                    "outcome": "Matches solids to their different projected views.",
+                    "bloom_level": "analyze",
+                    "assessment_type": "practice_problems"
+                }
+            ],
+            "difficulty": "hard",
+            "estimated_hours": 12,
+            "prerequisites": [],
+            "resources": {
+                "video_topics": [
+                    "Visualising Solid Shapes"
+                ],
+                "practice_sets": [
+                    "Visualising Solid Shapes - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         }
-    ]
+    ],
+    "subject_icon": "calculator",
+    "subject_color": "blue",
+    "total_chapters": 15,
+    "total_hours": 180,
+    "description": "CBSE Class 7 Mathematics curriculum aligned with NEP 2020 and CBSE guidelines."
 }

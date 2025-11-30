@@ -152,5 +152,11 @@
         "SOURCE_ANALYSIS": "Interpret historical sources, images, cartoons and tables.",
         "CIVIC_REASONING": "Apply constitutional values to real/imaginary scenarios.",
         "CASE_BASED_Q": "Multi-source, competency-based questions across SST."
-    }
+    },
+    "subject_icon": "globe",
+    "subject_color": "teal",
+    "total_chapters": 0,
+    "total_hours": 140,
+    "description": "CBSE Class undefined undefined curriculum aligned with NEP 2020 and CBSE guidelines.",
+    "chapters": []
 }

@@ -10,308 +10,1215 @@
             "name": "Going to School",
             "theme": "Travel",
             "key_topics": [
-                "Modes of transport to school",
-                "Bridges (Bamboo, Cement)",
-                "Difficult terrains"
+                {
+                    "name": "Modes of transport to school",
+                    "difficulty": "medium",
+                    "estimated_minutes": 100,
+                    "bloom_level": "understand",
+                    "description": "Understanding and applying concepts related to modes of transport to school"
+                },
+                {
+                    "name": "Bridges (Bamboo, Cement)",
+                    "difficulty": "medium",
+                    "estimated_minutes": 100,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to bridges (bamboo, cement)"
+                },
+                {
+                    "name": "Difficult terrains",
+                    "difficulty": "hard",
+                    "estimated_minutes": 100,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to difficult terrains"
+                }
             ],
             "learning_outcomes": [
-                "Identifies different ways children go to school.",
-                "Appreciates diversity in terrain and transport."
-            ]
+                {
+                    "outcome": "Identifies different ways children go to school.",
+                    "bloom_level": "apply",
+                    "assessment_type": "practice_problems"
+                },
+                {
+                    "outcome": "Appreciates diversity in terrain and transport.",
+                    "bloom_level": "analyze",
+                    "assessment_type": "practice_problems"
+                }
+            ],
+            "difficulty": "easy",
+            "estimated_hours": 5,
+            "prerequisites": [],
+            "resources": {
+                "video_topics": [
+                    "Going to School"
+                ],
+                "practice_sets": [
+                    "Going to School - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         },
         {
             "number": 2,
             "name": "Ear to Ear",
             "theme": "Animals",
             "key_topics": [
-                "Animals with external and internal ears",
-                "Skin patterns and hair",
-                "Oviparous and Viviparous animals"
+                {
+                    "name": "Animals with external and internal ears",
+                    "difficulty": "medium",
+                    "estimated_minutes": 100,
+                    "bloom_level": "understand",
+                    "description": "Understanding and applying concepts related to animals with external and internal ears"
+                },
+                {
+                    "name": "Skin patterns and hair",
+                    "difficulty": "medium",
+                    "estimated_minutes": 100,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to skin patterns and hair"
+                },
+                {
+                    "name": "Oviparous and Viviparous animals",
+                    "difficulty": "hard",
+                    "estimated_minutes": 100,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to oviparous and viviparous animals"
+                }
             ],
             "learning_outcomes": [
-                "Classifies animals based on ears and skin.",
-                "Understands reproduction basics in animals."
-            ]
+                {
+                    "outcome": "Classifies animals based on ears and skin.",
+                    "bloom_level": "apply",
+                    "assessment_type": "practice_problems"
+                },
+                {
+                    "outcome": "Understands reproduction basics in animals.",
+                    "bloom_level": "analyze",
+                    "assessment_type": "practice_problems"
+                }
+            ],
+            "difficulty": "easy",
+            "estimated_hours": 5,
+            "prerequisites": [],
+            "resources": {
+                "video_topics": [
+                    "Ear to Ear"
+                ],
+                "practice_sets": [
+                    "Ear to Ear - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         },
         {
             "number": 3,
             "name": "A Day with Nandu",
             "theme": "Animals",
             "key_topics": [
-                "Life of elephants",
-                "Herd behaviour",
-                "Animal senses"
+                {
+                    "name": "Life of elephants",
+                    "difficulty": "medium",
+                    "estimated_minutes": 100,
+                    "bloom_level": "understand",
+                    "description": "Understanding and applying concepts related to life of elephants"
+                },
+                {
+                    "name": "Herd behaviour",
+                    "difficulty": "medium",
+                    "estimated_minutes": 100,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to herd behaviour"
+                },
+                {
+                    "name": "Animal senses",
+                    "difficulty": "hard",
+                    "estimated_minutes": 100,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to animal senses"
+                }
             ],
             "learning_outcomes": [
-                "Describes the social behaviour of elephants.",
-                "Develops sensitivity towards animals."
-            ]
+                {
+                    "outcome": "Describes the social behaviour of elephants.",
+                    "bloom_level": "apply",
+                    "assessment_type": "practice_problems"
+                },
+                {
+                    "outcome": "Develops sensitivity towards animals.",
+                    "bloom_level": "analyze",
+                    "assessment_type": "practice_problems"
+                }
+            ],
+            "difficulty": "easy",
+            "estimated_hours": 5,
+            "prerequisites": [],
+            "resources": {
+                "video_topics": [
+                    "A Day with Nandu"
+                ],
+                "practice_sets": [
+                    "A Day with Nandu - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         },
         {
             "number": 4,
             "name": "The Story of Amrita",
             "theme": "Plants and Trees",
             "key_topics": [
-                "Importance of trees",
-                "Khejadi trees of Rajasthan",
-                "Protecting nature"
+                {
+                    "name": "Importance of trees",
+                    "difficulty": "medium",
+                    "estimated_minutes": 100,
+                    "bloom_level": "understand",
+                    "description": "Understanding and applying concepts related to importance of trees"
+                },
+                {
+                    "name": "Khejadi trees of Rajasthan",
+                    "difficulty": "medium",
+                    "estimated_minutes": 100,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to khejadi trees of rajasthan"
+                },
+                {
+                    "name": "Protecting nature",
+                    "difficulty": "hard",
+                    "estimated_minutes": 100,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to protecting nature"
+                }
             ],
             "learning_outcomes": [
-                "Understands the value of trees in environment.",
-                "Learns about community efforts to save trees."
-            ]
+                {
+                    "outcome": "Understands the value of trees in environment.",
+                    "bloom_level": "apply",
+                    "assessment_type": "practice_problems"
+                },
+                {
+                    "outcome": "Learns about community efforts to save trees.",
+                    "bloom_level": "analyze",
+                    "assessment_type": "practice_problems"
+                }
+            ],
+            "difficulty": "easy",
+            "estimated_hours": 5,
+            "prerequisites": [],
+            "resources": {
+                "video_topics": [
+                    "The Story of Amrita"
+                ],
+                "practice_sets": [
+                    "The Story of Amrita - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         },
         {
             "number": 5,
             "name": "Anita and the Honeybees",
             "theme": "Work and Insects",
             "key_topics": [
-                "Beekeeping",
-                "Life of a honeybee",
-                "Right to education (RTE)"
+                {
+                    "name": "Beekeeping",
+                    "difficulty": "medium",
+                    "estimated_minutes": 100,
+                    "bloom_level": "understand",
+                    "description": "Understanding and applying concepts related to beekeeping"
+                },
+                {
+                    "name": "Life of a honeybee",
+                    "difficulty": "medium",
+                    "estimated_minutes": 100,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to life of a honeybee"
+                },
+                {
+                    "name": "Right to education (RTE)",
+                    "difficulty": "hard",
+                    "estimated_minutes": 100,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to right to education (rte)"
+                }
             ],
             "learning_outcomes": [
-                "Explains the process of honey production.",
-                "Awareness about girl child education."
-            ]
+                {
+                    "outcome": "Explains the process of honey production.",
+                    "bloom_level": "apply",
+                    "assessment_type": "practice_problems"
+                },
+                {
+                    "outcome": "Awareness about girl child education.",
+                    "bloom_level": "analyze",
+                    "assessment_type": "practice_problems"
+                }
+            ],
+            "difficulty": "easy",
+            "estimated_hours": 5,
+            "prerequisites": [],
+            "resources": {
+                "video_topics": [
+                    "Anita and the Honeybees"
+                ],
+                "practice_sets": [
+                    "Anita and the Honeybees - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         },
         {
             "number": 6,
             "name": "Omana's Journey",
             "theme": "Travel",
             "key_topics": [
-                "Train travel",
-                "Railway station scenes",
-                "Ticket checking"
+                {
+                    "name": "Train travel",
+                    "difficulty": "medium",
+                    "estimated_minutes": 100,
+                    "bloom_level": "understand",
+                    "description": "Understanding and applying concepts related to train travel"
+                },
+                {
+                    "name": "Railway station scenes",
+                    "difficulty": "medium",
+                    "estimated_minutes": 100,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to railway station scenes"
+                },
+                {
+                    "name": "Ticket checking",
+                    "difficulty": "hard",
+                    "estimated_minutes": 100,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to ticket checking"
+                }
             ],
             "learning_outcomes": [
-                "Describes experiences of a train journey.",
-                "Identifies roles of railway staff."
-            ]
+                {
+                    "outcome": "Describes experiences of a train journey.",
+                    "bloom_level": "apply",
+                    "assessment_type": "practice_problems"
+                },
+                {
+                    "outcome": "Identifies roles of railway staff.",
+                    "bloom_level": "analyze",
+                    "assessment_type": "practice_problems"
+                }
+            ],
+            "difficulty": "easy",
+            "estimated_hours": 5,
+            "prerequisites": [],
+            "resources": {
+                "video_topics": [
+                    "Omana's Journey"
+                ],
+                "practice_sets": [
+                    "Omana's Journey - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         },
         {
             "number": 7,
             "name": "From the Window",
             "theme": "Travel",
             "key_topics": [
-                "Changing landscapes",
-                "Tunnels and bridges",
-                "Languages and food of different states"
+                {
+                    "name": "Changing landscapes",
+                    "difficulty": "medium",
+                    "estimated_minutes": 100,
+                    "bloom_level": "understand",
+                    "description": "Understanding and applying concepts related to changing landscapes"
+                },
+                {
+                    "name": "Tunnels and bridges",
+                    "difficulty": "medium",
+                    "estimated_minutes": 100,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to tunnels and bridges"
+                },
+                {
+                    "name": "Languages and food of different states",
+                    "difficulty": "hard",
+                    "estimated_minutes": 100,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to languages and food of different states"
+                }
             ],
             "learning_outcomes": [
-                "Observes diversity in landscape and culture.",
-                "Recognises different languages."
-            ]
+                {
+                    "outcome": "Observes diversity in landscape and culture.",
+                    "bloom_level": "apply",
+                    "assessment_type": "practice_problems"
+                },
+                {
+                    "outcome": "Recognises different languages.",
+                    "bloom_level": "analyze",
+                    "assessment_type": "practice_problems"
+                }
+            ],
+            "difficulty": "medium",
+            "estimated_hours": 5,
+            "prerequisites": [],
+            "resources": {
+                "video_topics": [
+                    "From the Window"
+                ],
+                "practice_sets": [
+                    "From the Window - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         },
         {
             "number": 8,
             "name": "Reaching Grandmother's House",
             "theme": "Travel",
             "key_topics": [
-                "Ferry ride (Kerala)",
-                "Railway time-table",
-                "Reading tickets"
+                {
+                    "name": "Ferry ride (Kerala)",
+                    "difficulty": "medium",
+                    "estimated_minutes": 100,
+                    "bloom_level": "understand",
+                    "description": "Understanding and applying concepts related to ferry ride (kerala)"
+                },
+                {
+                    "name": "Railway time-table",
+                    "difficulty": "medium",
+                    "estimated_minutes": 100,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to railway time-table"
+                },
+                {
+                    "name": "Reading tickets",
+                    "difficulty": "hard",
+                    "estimated_minutes": 100,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to reading tickets"
+                }
             ],
             "learning_outcomes": [
-                "Reads information from a ticket.",
-                "Understands different modes of water transport."
-            ]
+                {
+                    "outcome": "Reads information from a ticket.",
+                    "bloom_level": "apply",
+                    "assessment_type": "practice_problems"
+                },
+                {
+                    "outcome": "Understands different modes of water transport.",
+                    "bloom_level": "analyze",
+                    "assessment_type": "practice_problems"
+                }
+            ],
+            "difficulty": "medium",
+            "estimated_hours": 5,
+            "prerequisites": [],
+            "resources": {
+                "video_topics": [
+                    "Reaching Grandmother's House"
+                ],
+                "practice_sets": [
+                    "Reaching Grandmother's House - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         },
         {
             "number": 9,
             "name": "Changing Families",
             "theme": "Family",
             "key_topics": [
-                "Changes in family structure",
-                "Birth, marriage, transfer",
-                "Child marriage laws"
+                {
+                    "name": "Changes in family structure",
+                    "difficulty": "medium",
+                    "estimated_minutes": 100,
+                    "bloom_level": "understand",
+                    "description": "Understanding and applying concepts related to changes in family structure"
+                },
+                {
+                    "name": "Birth, marriage, transfer",
+                    "difficulty": "medium",
+                    "estimated_minutes": 100,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to birth, marriage, transfer"
+                },
+                {
+                    "name": "Child marriage laws",
+                    "difficulty": "hard",
+                    "estimated_minutes": 100,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to child marriage laws"
+                }
             ],
             "learning_outcomes": [
-                "Accepts changes in family life.",
-                "Awareness about social issues like child marriage."
-            ]
+                {
+                    "outcome": "Accepts changes in family life.",
+                    "bloom_level": "apply",
+                    "assessment_type": "practice_problems"
+                },
+                {
+                    "outcome": "Awareness about social issues like child marriage.",
+                    "bloom_level": "analyze",
+                    "assessment_type": "practice_problems"
+                }
+            ],
+            "difficulty": "medium",
+            "estimated_hours": 5,
+            "prerequisites": [],
+            "resources": {
+                "video_topics": [
+                    "Changing Families"
+                ],
+                "practice_sets": [
+                    "Changing Families - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         },
         {
             "number": 10,
             "name": "Hu Tu Tu, Hu Tu Tu",
             "theme": "Games",
             "key_topics": [
-                "Kabaddi rules",
-                "Team spirit",
-                "Women in sports (Karnam Malleswari)"
+                {
+                    "name": "Kabaddi rules",
+                    "difficulty": "medium",
+                    "estimated_minutes": 100,
+                    "bloom_level": "understand",
+                    "description": "Understanding and applying concepts related to kabaddi rules"
+                },
+                {
+                    "name": "Team spirit",
+                    "difficulty": "medium",
+                    "estimated_minutes": 100,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to team spirit"
+                },
+                {
+                    "name": "Women in sports (Karnam Malleswari)",
+                    "difficulty": "hard",
+                    "estimated_minutes": 100,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to women in sports (karnam malleswari)"
+                }
             ],
             "learning_outcomes": [
-                "Appreciates traditional games.",
-                "Recognises achievements of sportswomen."
-            ]
+                {
+                    "outcome": "Appreciates traditional games.",
+                    "bloom_level": "apply",
+                    "assessment_type": "practice_problems"
+                },
+                {
+                    "outcome": "Recognises achievements of sportswomen.",
+                    "bloom_level": "analyze",
+                    "assessment_type": "practice_problems"
+                }
+            ],
+            "difficulty": "medium",
+            "estimated_hours": 5,
+            "prerequisites": [],
+            "resources": {
+                "video_topics": [
+                    "Hu Tu Tu, Hu Tu Tu"
+                ],
+                "practice_sets": [
+                    "Hu Tu Tu, Hu Tu Tu - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         },
         {
             "number": 11,
             "name": "The Valley of Flowers",
             "theme": "Plants",
             "key_topics": [
-                "Flowers and their uses",
-                "Floral designs (Madhubani)",
-                "Parts of a flower"
+                {
+                    "name": "Flowers and their uses",
+                    "difficulty": "medium",
+                    "estimated_minutes": 100,
+                    "bloom_level": "understand",
+                    "description": "Understanding and applying concepts related to flowers and their uses"
+                },
+                {
+                    "name": "Floral designs (Madhubani)",
+                    "difficulty": "medium",
+                    "estimated_minutes": 100,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to floral designs (madhubani)"
+                },
+                {
+                    "name": "Parts of a flower",
+                    "difficulty": "hard",
+                    "estimated_minutes": 100,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to parts of a flower"
+                }
             ],
             "learning_outcomes": [
-                "Identifies different flowers.",
-                "Knows uses of flowers in daily life."
-            ]
+                {
+                    "outcome": "Identifies different flowers.",
+                    "bloom_level": "apply",
+                    "assessment_type": "practice_problems"
+                },
+                {
+                    "outcome": "Knows uses of flowers in daily life.",
+                    "bloom_level": "analyze",
+                    "assessment_type": "practice_problems"
+                }
+            ],
+            "difficulty": "medium",
+            "estimated_hours": 5,
+            "prerequisites": [],
+            "resources": {
+                "video_topics": [
+                    "The Valley of Flowers"
+                ],
+                "practice_sets": [
+                    "The Valley of Flowers - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         },
         {
             "number": 12,
             "name": "Changing Times",
             "theme": "Shelter",
             "key_topics": [
-                "Evolution of houses",
-                "Materials used in construction",
-                "Partition of India (briefly)"
+                {
+                    "name": "Evolution of houses",
+                    "difficulty": "medium",
+                    "estimated_minutes": 100,
+                    "bloom_level": "understand",
+                    "description": "Understanding and applying concepts related to evolution of houses"
+                },
+                {
+                    "name": "Materials used in construction",
+                    "difficulty": "medium",
+                    "estimated_minutes": 100,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to materials used in construction"
+                },
+                {
+                    "name": "Partition of India (briefly)",
+                    "difficulty": "hard",
+                    "estimated_minutes": 100,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to partition of india (briefly)"
+                }
             ],
             "learning_outcomes": [
-                "Traces changes in housing over time.",
-                "Identifies building materials."
-            ]
+                {
+                    "outcome": "Traces changes in housing over time.",
+                    "bloom_level": "apply",
+                    "assessment_type": "practice_problems"
+                },
+                {
+                    "outcome": "Identifies building materials.",
+                    "bloom_level": "analyze",
+                    "assessment_type": "practice_problems"
+                }
+            ],
+            "difficulty": "medium",
+            "estimated_hours": 5,
+            "prerequisites": [],
+            "resources": {
+                "video_topics": [
+                    "Changing Times"
+                ],
+                "practice_sets": [
+                    "Changing Times - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         },
         {
             "number": 13,
             "name": "A River's Tale",
             "theme": "Water",
             "key_topics": [
-                "Water pollution",
-                "Sources of water",
-                "Soluble and insoluble substances"
+                {
+                    "name": "Water pollution",
+                    "difficulty": "medium",
+                    "estimated_minutes": 100,
+                    "bloom_level": "understand",
+                    "description": "Understanding and applying concepts related to water pollution"
+                },
+                {
+                    "name": "Sources of water",
+                    "difficulty": "medium",
+                    "estimated_minutes": 100,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to sources of water"
+                },
+                {
+                    "name": "Soluble and insoluble substances",
+                    "difficulty": "hard",
+                    "estimated_minutes": 100,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to soluble and insoluble substances"
+                }
             ],
             "learning_outcomes": [
-                "Understands causes of water pollution.",
-                "Suggests ways to keep water clean."
-            ]
+                {
+                    "outcome": "Understands causes of water pollution.",
+                    "bloom_level": "apply",
+                    "assessment_type": "practice_problems"
+                },
+                {
+                    "outcome": "Suggests ways to keep water clean.",
+                    "bloom_level": "analyze",
+                    "assessment_type": "practice_problems"
+                }
+            ],
+            "difficulty": "medium",
+            "estimated_hours": 5,
+            "prerequisites": [],
+            "resources": {
+                "video_topics": [
+                    "A River's Tale"
+                ],
+                "practice_sets": [
+                    "A River's Tale - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         },
         {
             "number": 14,
             "name": "Basva's Farm",
             "theme": "Food",
             "key_topics": [
-                "Farming steps (Onion crop)",
-                "Tools used in farming",
-                "Weeding"
+                {
+                    "name": "Farming steps (Onion crop)",
+                    "difficulty": "medium",
+                    "estimated_minutes": 100,
+                    "bloom_level": "understand",
+                    "description": "Understanding and applying concepts related to farming steps (onion crop)"
+                },
+                {
+                    "name": "Tools used in farming",
+                    "difficulty": "medium",
+                    "estimated_minutes": 100,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to tools used in farming"
+                },
+                {
+                    "name": "Weeding",
+                    "difficulty": "hard",
+                    "estimated_minutes": 100,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to weeding"
+                }
             ],
             "learning_outcomes": [
-                "Describes the process of growing crops.",
-                "Identifies agricultural tools."
-            ]
+                {
+                    "outcome": "Describes the process of growing crops.",
+                    "bloom_level": "apply",
+                    "assessment_type": "practice_problems"
+                },
+                {
+                    "outcome": "Identifies agricultural tools.",
+                    "bloom_level": "analyze",
+                    "assessment_type": "practice_problems"
+                }
+            ],
+            "difficulty": "medium",
+            "estimated_hours": 5,
+            "prerequisites": [],
+            "resources": {
+                "video_topics": [
+                    "Basva's Farm"
+                ],
+                "practice_sets": [
+                    "Basva's Farm - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         },
         {
             "number": 15,
             "name": "From Market to Home",
             "theme": "Food",
             "key_topics": [
-                "Vegetable sellers",
-                "Sorting vegetables",
-                "Spoilage of food"
+                {
+                    "name": "Vegetable sellers",
+                    "difficulty": "medium",
+                    "estimated_minutes": 100,
+                    "bloom_level": "understand",
+                    "description": "Understanding and applying concepts related to vegetable sellers"
+                },
+                {
+                    "name": "Sorting vegetables",
+                    "difficulty": "medium",
+                    "estimated_minutes": 100,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to sorting vegetables"
+                },
+                {
+                    "name": "Spoilage of food",
+                    "difficulty": "hard",
+                    "estimated_minutes": 100,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to spoilage of food"
+                }
             ],
             "learning_outcomes": [
-                "Understands the journey of vegetables.",
-                "Differentiates fresh and spoiled food."
-            ]
+                {
+                    "outcome": "Understands the journey of vegetables.",
+                    "bloom_level": "apply",
+                    "assessment_type": "practice_problems"
+                },
+                {
+                    "outcome": "Differentiates fresh and spoiled food.",
+                    "bloom_level": "analyze",
+                    "assessment_type": "practice_problems"
+                }
+            ],
+            "difficulty": "medium",
+            "estimated_hours": 5,
+            "prerequisites": [],
+            "resources": {
+                "video_topics": [
+                    "From Market to Home"
+                ],
+                "practice_sets": [
+                    "From Market to Home - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         },
         {
             "number": 16,
             "name": "A Busy Month",
             "theme": "Birds",
             "key_topics": [
-                "Bird nests",
-                "Beaks and claws",
-                "Enemies of birds"
+                {
+                    "name": "Bird nests",
+                    "difficulty": "medium",
+                    "estimated_minutes": 100,
+                    "bloom_level": "understand",
+                    "description": "Understanding and applying concepts related to bird nests"
+                },
+                {
+                    "name": "Beaks and claws",
+                    "difficulty": "medium",
+                    "estimated_minutes": 100,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to beaks and claws"
+                },
+                {
+                    "name": "Enemies of birds",
+                    "difficulty": "hard",
+                    "estimated_minutes": 100,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to enemies of birds"
+                }
             ],
             "learning_outcomes": [
-                "Identifies birds and their nests.",
-                "Relates beak shape to food habits."
-            ]
+                {
+                    "outcome": "Identifies birds and their nests.",
+                    "bloom_level": "apply",
+                    "assessment_type": "practice_problems"
+                },
+                {
+                    "outcome": "Relates beak shape to food habits.",
+                    "bloom_level": "analyze",
+                    "assessment_type": "practice_problems"
+                }
+            ],
+            "difficulty": "hard",
+            "estimated_hours": 5,
+            "prerequisites": [],
+            "resources": {
+                "video_topics": [
+                    "A Busy Month"
+                ],
+                "practice_sets": [
+                    "A Busy Month - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         },
         {
             "number": 17,
             "name": "Nandita in Mumbai",
             "theme": "Shelter",
             "key_topics": [
-                "Village vs City life",
-                "Slums and high-rise buildings",
-                "Water scarcity"
+                {
+                    "name": "Village vs City life",
+                    "difficulty": "medium",
+                    "estimated_minutes": 100,
+                    "bloom_level": "understand",
+                    "description": "Understanding and applying concepts related to village vs city life"
+                },
+                {
+                    "name": "Slums and high-rise buildings",
+                    "difficulty": "medium",
+                    "estimated_minutes": 100,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to slums and high-rise buildings"
+                },
+                {
+                    "name": "Water scarcity",
+                    "difficulty": "hard",
+                    "estimated_minutes": 100,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to water scarcity"
+                }
             ],
             "learning_outcomes": [
-                "Compares life in village and city.",
-                "Empathises with urban poor."
-            ]
+                {
+                    "outcome": "Compares life in village and city.",
+                    "bloom_level": "apply",
+                    "assessment_type": "practice_problems"
+                },
+                {
+                    "outcome": "Empathises with urban poor.",
+                    "bloom_level": "analyze",
+                    "assessment_type": "practice_problems"
+                }
+            ],
+            "difficulty": "hard",
+            "estimated_hours": 5,
+            "prerequisites": [],
+            "resources": {
+                "video_topics": [
+                    "Nandita in Mumbai"
+                ],
+                "practice_sets": [
+                    "Nandita in Mumbai - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         },
         {
             "number": 18,
             "name": "Too Much Water, Too Little Water",
             "theme": "Water",
             "key_topics": [
-                "Water borne diseases",
-                "ORS (Oral Rehydration Solution)",
-                "Water parks vs water scarcity"
+                {
+                    "name": "Water borne diseases",
+                    "difficulty": "medium",
+                    "estimated_minutes": 100,
+                    "bloom_level": "understand",
+                    "description": "Understanding and applying concepts related to water borne diseases"
+                },
+                {
+                    "name": "ORS (Oral Rehydration Solution)",
+                    "difficulty": "medium",
+                    "estimated_minutes": 100,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to ors (oral rehydration solution)"
+                },
+                {
+                    "name": "Water parks vs water scarcity",
+                    "difficulty": "hard",
+                    "estimated_minutes": 100,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to water parks vs water scarcity"
+                }
             ],
             "learning_outcomes": [
-                "Prepares ORS.",
-                "Understands inequality in water distribution."
-            ]
+                {
+                    "outcome": "Prepares ORS.",
+                    "bloom_level": "apply",
+                    "assessment_type": "practice_problems"
+                },
+                {
+                    "outcome": "Understands inequality in water distribution.",
+                    "bloom_level": "analyze",
+                    "assessment_type": "practice_problems"
+                }
+            ],
+            "difficulty": "hard",
+            "estimated_hours": 5,
+            "prerequisites": [],
+            "resources": {
+                "video_topics": [
+                    "Too Much Water, Too Little Water"
+                ],
+                "practice_sets": [
+                    "Too Much Water, Too Little Water - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         },
         {
             "number": 19,
             "name": "Abdul in the Garden",
             "theme": "Plants",
             "key_topics": [
-                "Roots and their functions",
-                "Desert Oak",
-                "Growth of plants"
+                {
+                    "name": "Roots and their functions",
+                    "difficulty": "medium",
+                    "estimated_minutes": 100,
+                    "bloom_level": "understand",
+                    "description": "Understanding and applying concepts related to roots and their functions"
+                },
+                {
+                    "name": "Desert Oak",
+                    "difficulty": "medium",
+                    "estimated_minutes": 100,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to desert oak"
+                },
+                {
+                    "name": "Growth of plants",
+                    "difficulty": "hard",
+                    "estimated_minutes": 100,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to growth of plants"
+                }
             ],
             "learning_outcomes": [
-                "Observes roots of different plants.",
-                "Understands adaptations of desert plants."
-            ]
+                {
+                    "outcome": "Observes roots of different plants.",
+                    "bloom_level": "apply",
+                    "assessment_type": "practice_problems"
+                },
+                {
+                    "outcome": "Understands adaptations of desert plants.",
+                    "bloom_level": "analyze",
+                    "assessment_type": "practice_problems"
+                }
+            ],
+            "difficulty": "hard",
+            "estimated_hours": 5,
+            "prerequisites": [],
+            "resources": {
+                "video_topics": [
+                    "Abdul in the Garden"
+                ],
+                "practice_sets": [
+                    "Abdul in the Garden - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         },
         {
             "number": 20,
             "name": "Eating Together",
             "theme": "Food",
             "key_topics": [
-                "Class parties",
-                "Bihu festival",
-                "Mid-day meal"
+                {
+                    "name": "Class parties",
+                    "difficulty": "medium",
+                    "estimated_minutes": 100,
+                    "bloom_level": "understand",
+                    "description": "Understanding and applying concepts related to class parties"
+                },
+                {
+                    "name": "Bihu festival",
+                    "difficulty": "medium",
+                    "estimated_minutes": 100,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to bihu festival"
+                },
+                {
+                    "name": "Mid-day meal",
+                    "difficulty": "hard",
+                    "estimated_minutes": 100,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to mid-day meal"
+                }
             ],
             "learning_outcomes": [
-                "Appreciates community eating.",
-                "Knows about traditional festivals."
-            ]
+                {
+                    "outcome": "Appreciates community eating.",
+                    "bloom_level": "apply",
+                    "assessment_type": "practice_problems"
+                },
+                {
+                    "outcome": "Knows about traditional festivals.",
+                    "bloom_level": "analyze",
+                    "assessment_type": "practice_problems"
+                }
+            ],
+            "difficulty": "hard",
+            "estimated_hours": 5,
+            "prerequisites": [],
+            "resources": {
+                "video_topics": [
+                    "Eating Together"
+                ],
+                "practice_sets": [
+                    "Eating Together - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         },
         {
             "number": 21,
             "name": "Food and Fun",
             "theme": "Food",
             "key_topics": [
-                "Cooking at Gurudwara (Langars)",
-                "Community service",
-                "Hygiene in cooking"
+                {
+                    "name": "Cooking at Gurudwara (Langars)",
+                    "difficulty": "medium",
+                    "estimated_minutes": 100,
+                    "bloom_level": "understand",
+                    "description": "Understanding and applying concepts related to cooking at gurudwara (langars)"
+                },
+                {
+                    "name": "Community service",
+                    "difficulty": "medium",
+                    "estimated_minutes": 100,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to community service"
+                },
+                {
+                    "name": "Hygiene in cooking",
+                    "difficulty": "hard",
+                    "estimated_minutes": 100,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to hygiene in cooking"
+                }
             ],
             "learning_outcomes": [
-                "Values community service.",
-                "Describes large scale cooking."
-            ]
+                {
+                    "outcome": "Values community service.",
+                    "bloom_level": "apply",
+                    "assessment_type": "practice_problems"
+                },
+                {
+                    "outcome": "Describes large scale cooking.",
+                    "bloom_level": "analyze",
+                    "assessment_type": "practice_problems"
+                }
+            ],
+            "difficulty": "hard",
+            "estimated_hours": 5,
+            "prerequisites": [],
+            "resources": {
+                "video_topics": [
+                    "Food and Fun"
+                ],
+                "practice_sets": [
+                    "Food and Fun - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         },
         {
             "number": 22,
             "name": "The World in my Home",
             "theme": "Family",
             "key_topics": [
-                "TV and family",
-                "Gender discrimination",
-                "Honesty"
+                {
+                    "name": "TV and family",
+                    "difficulty": "medium",
+                    "estimated_minutes": 100,
+                    "bloom_level": "understand",
+                    "description": "Understanding and applying concepts related to tv and family"
+                },
+                {
+                    "name": "Gender discrimination",
+                    "difficulty": "medium",
+                    "estimated_minutes": 100,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to gender discrimination"
+                },
+                {
+                    "name": "Honesty",
+                    "difficulty": "hard",
+                    "estimated_minutes": 100,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to honesty"
+                }
             ],
             "learning_outcomes": [
-                "Critically analyses media influence.",
-                "Identifies gender bias in daily life."
-            ]
+                {
+                    "outcome": "Critically analyses media influence.",
+                    "bloom_level": "apply",
+                    "assessment_type": "practice_problems"
+                },
+                {
+                    "outcome": "Identifies gender bias in daily life.",
+                    "bloom_level": "analyze",
+                    "assessment_type": "practice_problems"
+                }
+            ],
+            "difficulty": "hard",
+            "estimated_hours": 5,
+            "prerequisites": [],
+            "resources": {
+                "video_topics": [
+                    "The World in my Home"
+                ],
+                "practice_sets": [
+                    "The World in my Home - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         }
-    ]
+    ],
+    "subject_icon": "leaf",
+    "subject_color": "green",
+    "total_chapters": 22,
+    "total_hours": 120,
+    "description": "CBSE Class 4 Environmental Studies curriculum aligned with NEP 2020 and CBSE guidelines."
 }

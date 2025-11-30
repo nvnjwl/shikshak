@@ -1,147 +1,445 @@
 {
-  "grade": 6,
-  "board": "CBSE",
-  "subject": "Hindi",
-  "subject_code": "HIN",
-  "language_of_instruction": "Hindi",
-  "script": "Devanagari",
-  "syllabus_version": "NCERT_2025_26_APPROX",
-  "ncert_core_books": [
-    { "name": "वसंत भाग 1 (Vasant I)", "type": "main_reader" }
-  ],
-  "skills_taxonomy": {
-    "PATHAN": { "code": "PATHAN", "description": "गद्य और पद्य का शुद्ध और भावपूर्ण पठन।" },
-    "APATHIT_BODH": { "code": "APATHIT_BODH", "description": "अपठित गद्यांश और पद्यांश की समझ।" },
-    "VYAKARAN_MOOL": { "code": "VYAKARAN_MOOL", "description": "संज्ञा, सर्वनाम, क्रिया, विशेषण, लिंग, वचन आदि।" },
-    "RACHANATMAK_LEKHAN": { "code": "RACHANATMAK_LEKHAN", "description": "अनुच्छेद, पत्र, वर्णनात्मक लेखन।" },
-    "KAVITA_ABHIVYAKTI": { "code": "KAVITA_ABHIVYAKTI", "description": "कविता की व्याख्या, भावार्थ, काव्य अलंकार की पहचान।" }
-  },
-  "default_assessment_blueprint": {
-    "objective": 0.20,
-    "short_answer": 0.40,
-    "long_answer": 0.25,
-    "apathit_bodh": 0.15
-  },
-  "chapters": [
-    {
-      "chapter_no": 1,
-      "book": "वसंत",
-      "chapter_id": "HIN6_VASANT_01",
-      "title": "वह चिड़िया जो",
-      "type": "poem",
-      "term": "T1",
-      "linked_skills": ["PATHAN", "KAVITA_ABHIVYAKTI", "APATHIT_BODH"],
-      "themes": ["स्वतंत्रता", "प्रकृति"]
+    "grade": 6,
+    "board": "CBSE",
+    "subject": "Hindi",
+    "subject_code": "HIN",
+    "language_of_instruction": "Hindi",
+    "script": "Devanagari",
+    "syllabus_version": "NCERT_2025_26_APPROX",
+    "ncert_core_books": [
+        {
+            "name": "वसंत भाग 1 (Vasant I)",
+            "type": "main_reader"
+        }
+    ],
+    "skills_taxonomy": {
+        "PATHAN": {
+            "code": "PATHAN",
+            "description": "गद्य और पद्य का शुद्ध और भावपूर्ण पठन।"
+        },
+        "APATHIT_BODH": {
+            "code": "APATHIT_BODH",
+            "description": "अपठित गद्यांश और पद्यांश की समझ।"
+        },
+        "VYAKARAN_MOOL": {
+            "code": "VYAKARAN_MOOL",
+            "description": "संज्ञा, सर्वनाम, क्रिया, विशेषण, लिंग, वचन आदि।"
+        },
+        "RACHANATMAK_LEKHAN": {
+            "code": "RACHANATMAK_LEKHAN",
+            "description": "अनुच्छेद, पत्र, वर्णनात्मक लेखन।"
+        },
+        "KAVITA_ABHIVYAKTI": {
+            "code": "KAVITA_ABHIVYAKTI",
+            "description": "कविता की व्याख्या, भावार्थ, काव्य अलंकार की पहचान।"
+        }
     },
-    {
-      "chapter_no": 2,
-      "book": "वसंत",
-      "chapter_id": "HIN6_VASANT_02",
-      "title": "बचपन",
-      "type": "prose",
-      "term": "T1",
-      "linked_skills": ["PATHAN", "RACHANATMAK_LEKHAN"],
-      "themes": ["स्मृतियाँ", "बाल्यावस्था"]
+    "default_assessment_blueprint": {
+        "objective": 0.2,
+        "short_answer": 0.4,
+        "long_answer": 0.25,
+        "apathit_bodh": 0.15
     },
-    {
-      "chapter_no": 3,
-      "book": "वसंत",
-      "chapter_id": "HIN6_VASANT_03",
-      "title": "नादान दोस्त",
-      "type": "prose",
-      "term": "T1",
-      "linked_skills": ["APATHIT_BODH", "VYAKARAN_MOOL"],
-      "themes": ["दोस्ती", "संवेदनशीलता"]
-    },
-    {
-      "chapter_no": 4,
-      "book": "वसंत",
-      "chapter_id": "HIN6_VASANT_04",
-      "title": "चाँद से थोड़ी-सी गप्पें",
-      "type": "poem",
-      "term": "T1",
-      "linked_skills": ["PATHAN", "KAVITA_ABHIVYAKTI"],
-      "themes": ["कल्पना", "प्रकृति"]
-    },
-    {
-      "chapter_no": 5,
-      "book": "वसंत",
-      "chapter_id": "HIN6_VASANT_05",
-      "title": "अक्षरों का महत्व",
-      "type": "prose",
-      "term": "T1",
-      "linked_skills": ["APATHIT_BODH", "RACHANATMAK_LEKHAN"],
-      "themes": ["शिक्षा", "भाषा_जागरूकता"]
-    },
-    {
-      "chapter_no": 6,
-      "book": "वसंत",
-      "chapter_id": "HIN6_VASANT_06",
-      "title": "पार नज़र के",
-      "type": "prose",
-      "term": "T2",
-      "linked_skills": ["APATHIT_BODH", "VYAKARAN_MOOL"],
-      "themes": ["कल्पना", "अनुभव"]
-    },
-    {
-      "chapter_no": 7,
-      "book": "वसंत",
-      "chapter_id": "HIN6_VASANT_07",
-      "title": "साथी हाथ बढ़ाना",
-      "type": "poem",
-      "term": "T2",
-      "linked_skills": ["PATHAN", "KAVITA_ABHIVYAKTI"],
-      "themes": ["सहयोग", "एकता"]
-    },
-    {
-      "chapter_no": 8,
-      "book": "वसंत",
-      "chapter_id": "HIN6_VASANT_08",
-      "title": "ऐसे-ऐसे",
-      "type": "prose",
-      "term": "T2",
-      "linked_skills": ["APATHIT_BODH"],
-      "themes": ["हास्य", "दैनिक_जीवन"]
-    },
-    {
-      "chapter_no": 9,
-      "book": "वसंत",
-      "chapter_id": "HIN6_VASANT_09",
-      "title": "टिकट अलबम",
-      "type": "prose",
-      "term": "T2",
-      "linked_skills": ["APATHIT_BODH", "RACHANATMAK_LEKHAN"],
-      "themes": ["शौक", "संग्रह"]
-    },
-    {
-      "chapter_no": 10,
-      "book": "वसंत",
-      "chapter_id": "HIN6_VASANT_10",
-      "title": "झाँसी की रानी",
-      "type": "poem",
-      "term": "T2",
-      "linked_skills": ["PATHAN", "KAVITA_ABHIVYAKTI"],
-      "themes": ["देशभक्ति", "इतिहास"]
-    },
-    {
-      "chapter_no": 11,
-      "book": "वसंत",
-      "chapter_id": "HIN6_VASANT_11",
-      "title": "जो देखकर भी नहीं देखते",
-      "type": "prose",
-      "term": "T2",
-      "linked_skills": ["APATHIT_BODH", "VYAKARAN_MOOL"],
-      "themes": ["संवेदनशीलता", "समाज"]
-    },
-    {
-      "chapter_no": 12,
-      "book": "वसंत",
-      "chapter_id": "HIN6_VASANT_12",
-      "title": "संसार पुस्तक है",
-      "type": "prose",
-      "term": "T2",
-      "linked_skills": ["APATHIT_BODH", "RACHANATMAK_LEKHAN"],
-      "themes": ["अनुभव_से_सीखना"]
-    }
-  ]
+    "chapters": [
+        {
+            "chapter_no": 1,
+            "book": "वसंत",
+            "chapter_id": "HIN6_VASANT_01",
+            "title": "वह चिड़िया जो",
+            "type": "poem",
+            "term": "T1",
+            "linked_skills": [
+                "PATHAN",
+                "KAVITA_ABHIVYAKTI",
+                "APATHIT_BODH"
+            ],
+            "themes": [
+                "स्वतंत्रता",
+                "प्रकृति"
+            ],
+            "difficulty": "easy",
+            "estimated_hours": 10,
+            "prerequisites": [],
+            "key_topics": [],
+            "learning_outcomes": [],
+            "resources": {
+                "video_topics": [
+                    null
+                ],
+                "practice_sets": [
+                    "undefined - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
+        },
+        {
+            "chapter_no": 2,
+            "book": "वसंत",
+            "chapter_id": "HIN6_VASANT_02",
+            "title": "बचपन",
+            "type": "prose",
+            "term": "T1",
+            "linked_skills": [
+                "PATHAN",
+                "RACHANATMAK_LEKHAN"
+            ],
+            "themes": [
+                "स्मृतियाँ",
+                "बाल्यावस्था"
+            ],
+            "difficulty": "easy",
+            "estimated_hours": 10,
+            "prerequisites": [],
+            "key_topics": [],
+            "learning_outcomes": [],
+            "resources": {
+                "video_topics": [
+                    null
+                ],
+                "practice_sets": [
+                    "undefined - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
+        },
+        {
+            "chapter_no": 3,
+            "book": "वसंत",
+            "chapter_id": "HIN6_VASANT_03",
+            "title": "नादान दोस्त",
+            "type": "prose",
+            "term": "T1",
+            "linked_skills": [
+                "APATHIT_BODH",
+                "VYAKARAN_MOOL"
+            ],
+            "themes": [
+                "दोस्ती",
+                "संवेदनशीलता"
+            ],
+            "difficulty": "easy",
+            "estimated_hours": 10,
+            "prerequisites": [],
+            "key_topics": [],
+            "learning_outcomes": [],
+            "resources": {
+                "video_topics": [
+                    null
+                ],
+                "practice_sets": [
+                    "undefined - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
+        },
+        {
+            "chapter_no": 4,
+            "book": "वसंत",
+            "chapter_id": "HIN6_VASANT_04",
+            "title": "चाँद से थोड़ी-सी गप्पें",
+            "type": "poem",
+            "term": "T1",
+            "linked_skills": [
+                "PATHAN",
+                "KAVITA_ABHIVYAKTI"
+            ],
+            "themes": [
+                "कल्पना",
+                "प्रकृति"
+            ],
+            "difficulty": "medium",
+            "estimated_hours": 10,
+            "prerequisites": [],
+            "key_topics": [],
+            "learning_outcomes": [],
+            "resources": {
+                "video_topics": [
+                    null
+                ],
+                "practice_sets": [
+                    "undefined - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
+        },
+        {
+            "chapter_no": 5,
+            "book": "वसंत",
+            "chapter_id": "HIN6_VASANT_05",
+            "title": "अक्षरों का महत्व",
+            "type": "prose",
+            "term": "T1",
+            "linked_skills": [
+                "APATHIT_BODH",
+                "RACHANATMAK_LEKHAN"
+            ],
+            "themes": [
+                "शिक्षा",
+                "भाषा_जागरूकता"
+            ],
+            "difficulty": "medium",
+            "estimated_hours": 10,
+            "prerequisites": [],
+            "key_topics": [],
+            "learning_outcomes": [],
+            "resources": {
+                "video_topics": [
+                    null
+                ],
+                "practice_sets": [
+                    "undefined - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
+        },
+        {
+            "chapter_no": 6,
+            "book": "वसंत",
+            "chapter_id": "HIN6_VASANT_06",
+            "title": "पार नज़र के",
+            "type": "prose",
+            "term": "T2",
+            "linked_skills": [
+                "APATHIT_BODH",
+                "VYAKARAN_MOOL"
+            ],
+            "themes": [
+                "कल्पना",
+                "अनुभव"
+            ],
+            "difficulty": "medium",
+            "estimated_hours": 10,
+            "prerequisites": [],
+            "key_topics": [],
+            "learning_outcomes": [],
+            "resources": {
+                "video_topics": [
+                    null
+                ],
+                "practice_sets": [
+                    "undefined - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
+        },
+        {
+            "chapter_no": 7,
+            "book": "वसंत",
+            "chapter_id": "HIN6_VASANT_07",
+            "title": "साथी हाथ बढ़ाना",
+            "type": "poem",
+            "term": "T2",
+            "linked_skills": [
+                "PATHAN",
+                "KAVITA_ABHIVYAKTI"
+            ],
+            "themes": [
+                "सहयोग",
+                "एकता"
+            ],
+            "difficulty": "medium",
+            "estimated_hours": 10,
+            "prerequisites": [],
+            "key_topics": [],
+            "learning_outcomes": [],
+            "resources": {
+                "video_topics": [
+                    null
+                ],
+                "practice_sets": [
+                    "undefined - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
+        },
+        {
+            "chapter_no": 8,
+            "book": "वसंत",
+            "chapter_id": "HIN6_VASANT_08",
+            "title": "ऐसे-ऐसे",
+            "type": "prose",
+            "term": "T2",
+            "linked_skills": [
+                "APATHIT_BODH"
+            ],
+            "themes": [
+                "हास्य",
+                "दैनिक_जीवन"
+            ],
+            "difficulty": "medium",
+            "estimated_hours": 10,
+            "prerequisites": [],
+            "key_topics": [],
+            "learning_outcomes": [],
+            "resources": {
+                "video_topics": [
+                    null
+                ],
+                "practice_sets": [
+                    "undefined - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
+        },
+        {
+            "chapter_no": 9,
+            "book": "वसंत",
+            "chapter_id": "HIN6_VASANT_09",
+            "title": "टिकट अलबम",
+            "type": "prose",
+            "term": "T2",
+            "linked_skills": [
+                "APATHIT_BODH",
+                "RACHANATMAK_LEKHAN"
+            ],
+            "themes": [
+                "शौक",
+                "संग्रह"
+            ],
+            "difficulty": "hard",
+            "estimated_hours": 10,
+            "prerequisites": [],
+            "key_topics": [],
+            "learning_outcomes": [],
+            "resources": {
+                "video_topics": [
+                    null
+                ],
+                "practice_sets": [
+                    "undefined - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
+        },
+        {
+            "chapter_no": 10,
+            "book": "वसंत",
+            "chapter_id": "HIN6_VASANT_10",
+            "title": "झाँसी की रानी",
+            "type": "poem",
+            "term": "T2",
+            "linked_skills": [
+                "PATHAN",
+                "KAVITA_ABHIVYAKTI"
+            ],
+            "themes": [
+                "देशभक्ति",
+                "इतिहास"
+            ],
+            "difficulty": "hard",
+            "estimated_hours": 10,
+            "prerequisites": [],
+            "key_topics": [],
+            "learning_outcomes": [],
+            "resources": {
+                "video_topics": [
+                    null
+                ],
+                "practice_sets": [
+                    "undefined - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
+        },
+        {
+            "chapter_no": 11,
+            "book": "वसंत",
+            "chapter_id": "HIN6_VASANT_11",
+            "title": "जो देखकर भी नहीं देखते",
+            "type": "prose",
+            "term": "T2",
+            "linked_skills": [
+                "APATHIT_BODH",
+                "VYAKARAN_MOOL"
+            ],
+            "themes": [
+                "संवेदनशीलता",
+                "समाज"
+            ],
+            "difficulty": "hard",
+            "estimated_hours": 10,
+            "prerequisites": [],
+            "key_topics": [],
+            "learning_outcomes": [],
+            "resources": {
+                "video_topics": [
+                    null
+                ],
+                "practice_sets": [
+                    "undefined - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
+        },
+        {
+            "chapter_no": 12,
+            "book": "वसंत",
+            "chapter_id": "HIN6_VASANT_12",
+            "title": "संसार पुस्तक है",
+            "type": "prose",
+            "term": "T2",
+            "linked_skills": [
+                "APATHIT_BODH",
+                "RACHANATMAK_LEKHAN"
+            ],
+            "themes": [
+                "अनुभव_से_सीखना"
+            ],
+            "difficulty": "hard",
+            "estimated_hours": 10,
+            "prerequisites": [],
+            "key_topics": [],
+            "learning_outcomes": [],
+            "resources": {
+                "video_topics": [
+                    null
+                ],
+                "practice_sets": [
+                    "undefined - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
+        }
+    ],
+    "subject_icon": "language",
+    "subject_color": "orange",
+    "total_chapters": 12,
+    "total_hours": 120,
+    "description": "CBSE Class undefined undefined curriculum aligned with NEP 2020 and CBSE guidelines."
 }

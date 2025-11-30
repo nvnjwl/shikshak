@@ -35,9 +35,9 @@
         }
     },
     "default_assessment_blueprint": {
-        "objective": 0.20,
+        "objective": 0.2,
         "short_answer": 0.35,
-        "long_answer": 0.30,
+        "long_answer": 0.3,
         "apathit_bodh": 0.15
     },
     "chapters": [
@@ -55,7 +55,24 @@
             "themes": [
                 "स्वतंत्रता",
                 "प्रकृति"
-            ]
+            ],
+            "difficulty": "easy",
+            "estimated_hours": 9,
+            "prerequisites": [],
+            "key_topics": [],
+            "learning_outcomes": [],
+            "resources": {
+                "video_topics": [
+                    null
+                ],
+                "practice_sets": [
+                    "undefined - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         },
         {
             "chapter_no": 2,
@@ -71,7 +88,24 @@
             "themes": [
                 "संस्कार",
                 "परिवार"
-            ]
+            ],
+            "difficulty": "easy",
+            "estimated_hours": 9,
+            "prerequisites": [],
+            "key_topics": [],
+            "learning_outcomes": [],
+            "resources": {
+                "video_topics": [
+                    null
+                ],
+                "practice_sets": [
+                    "undefined - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         },
         {
             "chapter_no": 3,
@@ -88,7 +122,24 @@
                 "भूगोल",
                 "समाज",
                 "नदियाँ"
-            ]
+            ],
+            "difficulty": "easy",
+            "estimated_hours": 9,
+            "prerequisites": [],
+            "key_topics": [],
+            "learning_outcomes": [],
+            "resources": {
+                "video_topics": [
+                    null
+                ],
+                "practice_sets": [
+                    "undefined - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         },
         {
             "chapter_no": 4,
@@ -103,7 +154,24 @@
             "themes": [
                 "लोक-संस्कृति",
                 "मनोरंजन"
-            ]
+            ],
+            "difficulty": "easy",
+            "estimated_hours": 9,
+            "prerequisites": [],
+            "key_topics": [],
+            "learning_outcomes": [],
+            "resources": {
+                "video_topics": [
+                    null
+                ],
+                "practice_sets": [
+                    "undefined - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         },
         {
             "chapter_no": 5,
@@ -119,7 +187,24 @@
             "themes": [
                 "बाल्य_जीवन",
                 "व्यापार"
-            ]
+            ],
+            "difficulty": "medium",
+            "estimated_hours": 9,
+            "prerequisites": [],
+            "key_topics": [],
+            "learning_outcomes": [],
+            "resources": {
+                "video_topics": [
+                    null
+                ],
+                "practice_sets": [
+                    "undefined - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         },
         {
             "chapter_no": 6,
@@ -134,7 +219,24 @@
             "themes": [
                 "विज्ञान",
                 "स्वास्थ्य"
-            ]
+            ],
+            "difficulty": "medium",
+            "estimated_hours": 9,
+            "prerequisites": [],
+            "key_topics": [],
+            "learning_outcomes": [],
+            "resources": {
+                "video_topics": [
+                    null
+                ],
+                "practice_sets": [
+                    "undefined - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         },
         {
             "chapter_no": 7,
@@ -149,7 +251,24 @@
             "themes": [
                 "भावनाएँ",
                 "परिवार"
-            ]
+            ],
+            "difficulty": "medium",
+            "estimated_hours": 9,
+            "prerequisites": [],
+            "key_topics": [],
+            "learning_outcomes": [],
+            "resources": {
+                "video_topics": [
+                    null
+                ],
+                "practice_sets": [
+                    "undefined - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         },
         {
             "chapter_no": 8,
@@ -165,7 +284,24 @@
             "themes": [
                 "किसान_जीवन",
                 "प्रकृति"
-            ]
+            ],
+            "difficulty": "medium",
+            "estimated_hours": 9,
+            "prerequisites": [],
+            "key_topics": [],
+            "learning_outcomes": [],
+            "resources": {
+                "video_topics": [
+                    null
+                ],
+                "practice_sets": [
+                    "undefined - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         },
         {
             "chapter_no": 9,
@@ -181,7 +317,24 @@
             "themes": [
                 "अनुभव",
                 "यात्रा"
-            ]
+            ],
+            "difficulty": "medium",
+            "estimated_hours": 9,
+            "prerequisites": [],
+            "key_topics": [],
+            "learning_outcomes": [],
+            "resources": {
+                "video_topics": [
+                    null
+                ],
+                "practice_sets": [
+                    "undefined - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         },
         {
             "chapter_no": 10,
@@ -197,7 +350,24 @@
             "themes": [
                 "नीतिवचन",
                 "लोक_ज्ञान"
-            ]
+            ],
+            "difficulty": "hard",
+            "estimated_hours": 9,
+            "prerequisites": [],
+            "key_topics": [],
+            "learning_outcomes": [],
+            "resources": {
+                "video_topics": [
+                    null
+                ],
+                "practice_sets": [
+                    "undefined - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         },
         {
             "chapter_no": 11,
@@ -212,7 +382,24 @@
             "themes": [
                 "पक्षी_अवलोकन",
                 "पर्यावरण"
-            ]
+            ],
+            "difficulty": "hard",
+            "estimated_hours": 9,
+            "prerequisites": [],
+            "key_topics": [],
+            "learning_outcomes": [],
+            "resources": {
+                "video_topics": [
+                    null
+                ],
+                "practice_sets": [
+                    "undefined - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         },
         {
             "chapter_no": 12,
@@ -228,7 +415,24 @@
             "themes": [
                 "ऋतु_चित्रण",
                 "प्रकृति"
-            ]
+            ],
+            "difficulty": "hard",
+            "estimated_hours": 9,
+            "prerequisites": [],
+            "key_topics": [],
+            "learning_outcomes": [],
+            "resources": {
+                "video_topics": [
+                    null
+                ],
+                "practice_sets": [
+                    "undefined - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         },
         {
             "chapter_no": 13,
@@ -243,7 +447,24 @@
             "themes": [
                 "स्वतंत्रता_संग्राम",
                 "वीरता"
-            ]
+            ],
+            "difficulty": "hard",
+            "estimated_hours": 9,
+            "prerequisites": [],
+            "key_topics": [],
+            "learning_outcomes": [],
+            "resources": {
+                "video_topics": [
+                    null
+                ],
+                "practice_sets": [
+                    "undefined - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         },
         {
             "chapter_no": 14,
@@ -259,7 +480,29 @@
             "themes": [
                 "संघर्ष",
                 "व्यक्तित्व_विकास"
-            ]
+            ],
+            "difficulty": "hard",
+            "estimated_hours": 9,
+            "prerequisites": [],
+            "key_topics": [],
+            "learning_outcomes": [],
+            "resources": {
+                "video_topics": [
+                    null
+                ],
+                "practice_sets": [
+                    "undefined - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         }
-    ]
+    ],
+    "subject_icon": "language",
+    "subject_color": "orange",
+    "total_chapters": 14,
+    "total_hours": 120,
+    "description": "CBSE Class undefined undefined curriculum aligned with NEP 2020 and CBSE guidelines."
 }

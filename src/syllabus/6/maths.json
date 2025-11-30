@@ -10,196 +10,775 @@
             "name": "Knowing Our Numbers",
             "theme": "Large numbers and place value",
             "key_topics": [
-                "Indian and international place value system",
-                "Comparing and ordering large numbers",
-                "Estimation and rounding"
+                {
+                    "name": "Indian and international place value system",
+                    "difficulty": "medium",
+                    "estimated_minutes": 260,
+                    "bloom_level": "understand",
+                    "description": "Understanding and applying concepts related to indian and international place value system"
+                },
+                {
+                    "name": "Comparing and ordering large numbers",
+                    "difficulty": "medium",
+                    "estimated_minutes": 260,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to comparing and ordering large numbers"
+                },
+                {
+                    "name": "Estimation and rounding",
+                    "difficulty": "hard",
+                    "estimated_minutes": 260,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to estimation and rounding"
+                }
             ],
             "learning_outcomes": [
-                "Reads and writes numbers up to at least 9 digits.",
-                "Estimates sums and differences using rounding."
-            ]
+                {
+                    "outcome": "Reads and writes numbers up to at least 9 digits.",
+                    "bloom_level": "apply",
+                    "assessment_type": "practice_problems"
+                },
+                {
+                    "outcome": "Estimates sums and differences using rounding.",
+                    "bloom_level": "analyze",
+                    "assessment_type": "practice_problems"
+                }
+            ],
+            "difficulty": "easy",
+            "estimated_hours": 13,
+            "prerequisites": [],
+            "resources": {
+                "video_topics": [
+                    "Knowing Our Numbers"
+                ],
+                "practice_sets": [
+                    "Knowing Our Numbers - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         },
         {
             "number": 2,
             "name": "Whole Numbers",
             "theme": "Whole numbers and their properties",
             "key_topics": [
-                "Whole numbers on number line",
-                "Successor and predecessor",
-                "Properties: closure, commutativity, associativity, distributivity"
+                {
+                    "name": "Whole numbers on number line",
+                    "difficulty": "medium",
+                    "estimated_minutes": 260,
+                    "bloom_level": "understand",
+                    "description": "Understanding and applying concepts related to whole numbers on number line"
+                },
+                {
+                    "name": "Successor and predecessor",
+                    "difficulty": "medium",
+                    "estimated_minutes": 260,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to successor and predecessor"
+                },
+                {
+                    "name": "Properties: closure, commutativity, associativity, distributivity",
+                    "difficulty": "medium",
+                    "estimated_minutes": 260,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to properties: closure, commutativity, associativity, distributivity"
+                }
             ],
             "learning_outcomes": [
-                "Represents whole numbers on a number line.",
-                "Uses basic properties of operations to simplify calculations."
-            ]
+                {
+                    "outcome": "Represents whole numbers on a number line.",
+                    "bloom_level": "apply",
+                    "assessment_type": "practice_problems"
+                },
+                {
+                    "outcome": "Uses basic properties of operations to simplify calculations.",
+                    "bloom_level": "analyze",
+                    "assessment_type": "practice_problems"
+                }
+            ],
+            "difficulty": "easy",
+            "estimated_hours": 13,
+            "prerequisites": [],
+            "resources": {
+                "video_topics": [
+                    "Whole Numbers"
+                ],
+                "practice_sets": [
+                    "Whole Numbers - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         },
         {
             "number": 3,
             "name": "Playing with Numbers",
             "theme": "Factors, multiples and primes",
             "key_topics": [
-                "Prime, composite and co-prime numbers",
-                "HCF and LCM (by factorisation)",
-                "Divisibility tests"
+                {
+                    "name": "Prime, composite and co-prime numbers",
+                    "difficulty": "medium",
+                    "estimated_minutes": 260,
+                    "bloom_level": "understand",
+                    "description": "Understanding and applying concepts related to prime, composite and co-prime numbers"
+                },
+                {
+                    "name": "HCF and LCM (by factorisation)",
+                    "difficulty": "medium",
+                    "estimated_minutes": 260,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to hcf and lcm (by factorisation)"
+                },
+                {
+                    "name": "Divisibility tests",
+                    "difficulty": "hard",
+                    "estimated_minutes": 260,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to divisibility tests"
+                }
             ],
             "learning_outcomes": [
-                "Finds HCF and LCM of small numbers.",
-                "Applies divisibility rules to test divisibility quickly."
-            ]
+                {
+                    "outcome": "Finds HCF and LCM of small numbers.",
+                    "bloom_level": "apply",
+                    "assessment_type": "practice_problems"
+                },
+                {
+                    "outcome": "Applies divisibility rules to test divisibility quickly.",
+                    "bloom_level": "analyze",
+                    "assessment_type": "practice_problems"
+                }
+            ],
+            "difficulty": "easy",
+            "estimated_hours": 13,
+            "prerequisites": [],
+            "resources": {
+                "video_topics": [
+                    "Playing with Numbers"
+                ],
+                "practice_sets": [
+                    "Playing with Numbers - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         },
         {
             "number": 4,
             "name": "Basic Geometrical Ideas",
             "theme": "Foundational geometry vocabulary",
             "key_topics": [
-                "Points, lines, line segments, rays",
-                "Intersections and parallel lines",
-                "Curves, polygons and circles (radius, diameter, chord)"
+                {
+                    "name": "Points, lines, line segments, rays",
+                    "difficulty": "medium",
+                    "estimated_minutes": 260,
+                    "bloom_level": "understand",
+                    "description": "Understanding and applying concepts related to points, lines, line segments, rays"
+                },
+                {
+                    "name": "Intersections and parallel lines",
+                    "difficulty": "medium",
+                    "estimated_minutes": 260,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to intersections and parallel lines"
+                },
+                {
+                    "name": "Curves, polygons and circles (radius, diameter, chord)",
+                    "difficulty": "hard",
+                    "estimated_minutes": 260,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to curves, polygons and circles (radius, diameter, chord)"
+                }
             ],
             "learning_outcomes": [
-                "Uses correct terms for basic geometrical objects.",
-                "Identifies elements of circles and polygons in figures."
-            ]
+                {
+                    "outcome": "Uses correct terms for basic geometrical objects.",
+                    "bloom_level": "apply",
+                    "assessment_type": "practice_problems"
+                },
+                {
+                    "outcome": "Identifies elements of circles and polygons in figures.",
+                    "bloom_level": "analyze",
+                    "assessment_type": "practice_problems"
+                }
+            ],
+            "difficulty": "easy",
+            "estimated_hours": 13,
+            "prerequisites": [],
+            "resources": {
+                "video_topics": [
+                    "Basic Geometrical Ideas"
+                ],
+                "practice_sets": [
+                    "Basic Geometrical Ideas - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         },
         {
             "number": 5,
             "name": "Understanding Elementary Shapes",
             "theme": "Types of angles and shapes",
             "key_topics": [
-                "Measuring angles with protractor",
-                "Types of triangles and quadrilaterals",
-                "Right, acute, obtuse and reflex angles"
+                {
+                    "name": "Measuring angles with protractor",
+                    "difficulty": "medium",
+                    "estimated_minutes": 260,
+                    "bloom_level": "understand",
+                    "description": "Understanding and applying concepts related to measuring angles with protractor"
+                },
+                {
+                    "name": "Types of triangles and quadrilaterals",
+                    "difficulty": "medium",
+                    "estimated_minutes": 260,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to types of triangles and quadrilaterals"
+                },
+                {
+                    "name": "Right, acute, obtuse and reflex angles",
+                    "difficulty": "hard",
+                    "estimated_minutes": 260,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to right, acute, obtuse and reflex angles"
+                }
             ],
             "learning_outcomes": [
-                "Measures angles using a protractor to nearest degree.",
-                "Classifies triangles and quadrilaterals by sides and angles."
-            ]
+                {
+                    "outcome": "Measures angles using a protractor to nearest degree.",
+                    "bloom_level": "apply",
+                    "assessment_type": "practice_problems"
+                },
+                {
+                    "outcome": "Classifies triangles and quadrilaterals by sides and angles.",
+                    "bloom_level": "analyze",
+                    "assessment_type": "practice_problems"
+                }
+            ],
+            "difficulty": "medium",
+            "estimated_hours": 13,
+            "prerequisites": [],
+            "resources": {
+                "video_topics": [
+                    "Understanding Elementary Shapes"
+                ],
+                "practice_sets": [
+                    "Understanding Elementary Shapes - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         },
         {
             "number": 6,
             "name": "Integers",
             "theme": "Integers and operations on them",
             "key_topics": [
-                "Integers on number line",
-                "Ordering and comparing integers",
-                "Addition and subtraction of integers"
+                {
+                    "name": "Integers on number line",
+                    "difficulty": "medium",
+                    "estimated_minutes": 260,
+                    "bloom_level": "understand",
+                    "description": "Understanding and applying concepts related to integers on number line"
+                },
+                {
+                    "name": "Ordering and comparing integers",
+                    "difficulty": "medium",
+                    "estimated_minutes": 260,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to ordering and comparing integers"
+                },
+                {
+                    "name": "Addition and subtraction of integers",
+                    "difficulty": "hard",
+                    "estimated_minutes": 260,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to addition and subtraction of integers"
+                }
             ],
             "learning_outcomes": [
-                "Represents integers on number line.",
-                "Adds and subtracts integers using rules and diagrams."
-            ]
+                {
+                    "outcome": "Represents integers on number line.",
+                    "bloom_level": "apply",
+                    "assessment_type": "practice_problems"
+                },
+                {
+                    "outcome": "Adds and subtracts integers using rules and diagrams.",
+                    "bloom_level": "analyze",
+                    "assessment_type": "practice_problems"
+                }
+            ],
+            "difficulty": "medium",
+            "estimated_hours": 13,
+            "prerequisites": [],
+            "resources": {
+                "video_topics": [
+                    "Integers"
+                ],
+                "practice_sets": [
+                    "Integers - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         },
         {
             "number": 7,
             "name": "Fractions",
             "theme": "Fraction concepts and operations",
             "key_topics": [
-                "Like and unlike fractions",
-                "Equivalent fractions and simplest form",
-                "Addition and subtraction of like fractions"
+                {
+                    "name": "Like and unlike fractions",
+                    "difficulty": "medium",
+                    "estimated_minutes": 260,
+                    "bloom_level": "understand",
+                    "description": "Understanding and applying concepts related to like and unlike fractions"
+                },
+                {
+                    "name": "Equivalent fractions and simplest form",
+                    "difficulty": "easy",
+                    "estimated_minutes": 260,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to equivalent fractions and simplest form"
+                },
+                {
+                    "name": "Addition and subtraction of like fractions",
+                    "difficulty": "hard",
+                    "estimated_minutes": 260,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to addition and subtraction of like fractions"
+                }
             ],
             "learning_outcomes": [
-                "Finds equivalent fractions and simplifies them.",
-                "Adds and subtracts fractions with same denominators."
-            ]
+                {
+                    "outcome": "Finds equivalent fractions and simplifies them.",
+                    "bloom_level": "apply",
+                    "assessment_type": "practice_problems"
+                },
+                {
+                    "outcome": "Adds and subtracts fractions with same denominators.",
+                    "bloom_level": "analyze",
+                    "assessment_type": "practice_problems"
+                }
+            ],
+            "difficulty": "medium",
+            "estimated_hours": 13,
+            "prerequisites": [],
+            "resources": {
+                "video_topics": [
+                    "Fractions"
+                ],
+                "practice_sets": [
+                    "Fractions - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         },
         {
             "number": 8,
             "name": "Decimals",
             "theme": "Decimal representation and operations",
             "key_topics": [
-                "Place value of decimals",
-                "Comparing and ordering decimals",
-                "Addition and subtraction of decimals (money, length)"
+                {
+                    "name": "Place value of decimals",
+                    "difficulty": "medium",
+                    "estimated_minutes": 260,
+                    "bloom_level": "understand",
+                    "description": "Understanding and applying concepts related to place value of decimals"
+                },
+                {
+                    "name": "Comparing and ordering decimals",
+                    "difficulty": "medium",
+                    "estimated_minutes": 260,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to comparing and ordering decimals"
+                },
+                {
+                    "name": "Addition and subtraction of decimals (money, length)",
+                    "difficulty": "hard",
+                    "estimated_minutes": 260,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to addition and subtraction of decimals (money, length)"
+                }
             ],
             "learning_outcomes": [
-                "Reads and writes decimals to two or three places.",
-                "Adds and subtracts decimals in practical contexts."
-            ]
+                {
+                    "outcome": "Reads and writes decimals to two or three places.",
+                    "bloom_level": "apply",
+                    "assessment_type": "practice_problems"
+                },
+                {
+                    "outcome": "Adds and subtracts decimals in practical contexts.",
+                    "bloom_level": "analyze",
+                    "assessment_type": "practice_problems"
+                }
+            ],
+            "difficulty": "medium",
+            "estimated_hours": 13,
+            "prerequisites": [],
+            "resources": {
+                "video_topics": [
+                    "Decimals"
+                ],
+                "practice_sets": [
+                    "Decimals - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         },
         {
             "number": 9,
             "name": "Data Handling",
             "theme": "Collecting and representing data",
             "key_topics": [
-                "Tally marks and frequency tables",
-                "Bar graphs",
-                "Reading and interpreting data"
+                {
+                    "name": "Tally marks and frequency tables",
+                    "difficulty": "medium",
+                    "estimated_minutes": 260,
+                    "bloom_level": "understand",
+                    "description": "Understanding and applying concepts related to tally marks and frequency tables"
+                },
+                {
+                    "name": "Bar graphs",
+                    "difficulty": "medium",
+                    "estimated_minutes": 260,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to bar graphs"
+                },
+                {
+                    "name": "Reading and interpreting data",
+                    "difficulty": "hard",
+                    "estimated_minutes": 260,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to reading and interpreting data"
+                }
             ],
             "learning_outcomes": [
-                "Collects data and organises in a frequency table.",
-                "Interprets bar graphs and answers related questions."
-            ]
+                {
+                    "outcome": "Collects data and organises in a frequency table.",
+                    "bloom_level": "apply",
+                    "assessment_type": "practice_problems"
+                },
+                {
+                    "outcome": "Interprets bar graphs and answers related questions.",
+                    "bloom_level": "analyze",
+                    "assessment_type": "practice_problems"
+                }
+            ],
+            "difficulty": "medium",
+            "estimated_hours": 13,
+            "prerequisites": [],
+            "resources": {
+                "video_topics": [
+                    "Data Handling"
+                ],
+                "practice_sets": [
+                    "Data Handling - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         },
         {
             "number": 10,
             "name": "Mensuration",
             "theme": "Perimeter and area basics",
             "key_topics": [
-                "Perimeter of rectangle and square",
-                "Area of rectangle and square",
-                "Converting units (cm, m, km)"
+                {
+                    "name": "Perimeter of rectangle and square",
+                    "difficulty": "medium",
+                    "estimated_minutes": 260,
+                    "bloom_level": "understand",
+                    "description": "Understanding and applying concepts related to perimeter of rectangle and square"
+                },
+                {
+                    "name": "Area of rectangle and square",
+                    "difficulty": "medium",
+                    "estimated_minutes": 260,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to area of rectangle and square"
+                },
+                {
+                    "name": "Converting units (cm, m, km)",
+                    "difficulty": "hard",
+                    "estimated_minutes": 260,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to converting units (cm, m, km)"
+                }
             ],
             "learning_outcomes": [
-                "Calculates perimeter and area of rectangles and squares.",
-                "Uses appropriate units for length and area."
-            ]
+                {
+                    "outcome": "Calculates perimeter and area of rectangles and squares.",
+                    "bloom_level": "apply",
+                    "assessment_type": "practice_problems"
+                },
+                {
+                    "outcome": "Uses appropriate units for length and area.",
+                    "bloom_level": "analyze",
+                    "assessment_type": "practice_problems"
+                }
+            ],
+            "difficulty": "hard",
+            "estimated_hours": 13,
+            "prerequisites": [],
+            "resources": {
+                "video_topics": [
+                    "Mensuration"
+                ],
+                "practice_sets": [
+                    "Mensuration - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         },
         {
             "number": 11,
             "name": "Algebra",
             "theme": "Introduction to variables and expressions",
             "key_topics": [
-                "Variables and constants",
-                "Forming simple expressions",
-                "Evaluating expressions for given values"
+                {
+                    "name": "Variables and constants",
+                    "difficulty": "medium",
+                    "estimated_minutes": 260,
+                    "bloom_level": "understand",
+                    "description": "Understanding and applying concepts related to variables and constants"
+                },
+                {
+                    "name": "Forming simple expressions",
+                    "difficulty": "easy",
+                    "estimated_minutes": 260,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to forming simple expressions"
+                },
+                {
+                    "name": "Evaluating expressions for given values",
+                    "difficulty": "hard",
+                    "estimated_minutes": 260,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to evaluating expressions for given values"
+                }
             ],
             "learning_outcomes": [
-                "Represents patterns using simple algebraic expressions.",
-                "Substitutes values to evaluate expressions."
-            ]
+                {
+                    "outcome": "Represents patterns using simple algebraic expressions.",
+                    "bloom_level": "apply",
+                    "assessment_type": "practice_problems"
+                },
+                {
+                    "outcome": "Substitutes values to evaluate expressions.",
+                    "bloom_level": "analyze",
+                    "assessment_type": "practice_problems"
+                }
+            ],
+            "difficulty": "hard",
+            "estimated_hours": 13,
+            "prerequisites": [],
+            "resources": {
+                "video_topics": [
+                    "Algebra"
+                ],
+                "practice_sets": [
+                    "Algebra - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         },
         {
             "number": 12,
             "name": "Ratio and Proportion",
             "theme": "Comparing quantities",
             "key_topics": [
-                "Ratio as comparison",
-                "Equivalent ratios",
-                "Proportion in simple situations"
+                {
+                    "name": "Ratio as comparison",
+                    "difficulty": "medium",
+                    "estimated_minutes": 260,
+                    "bloom_level": "understand",
+                    "description": "Understanding and applying concepts related to ratio as comparison"
+                },
+                {
+                    "name": "Equivalent ratios",
+                    "difficulty": "medium",
+                    "estimated_minutes": 260,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to equivalent ratios"
+                },
+                {
+                    "name": "Proportion in simple situations",
+                    "difficulty": "easy",
+                    "estimated_minutes": 260,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to proportion in simple situations"
+                }
             ],
             "learning_outcomes": [
-                "Expresses comparison of two quantities as ratio.",
-                "Identifies if two ratios form a proportion."
-            ]
+                {
+                    "outcome": "Expresses comparison of two quantities as ratio.",
+                    "bloom_level": "apply",
+                    "assessment_type": "practice_problems"
+                },
+                {
+                    "outcome": "Identifies if two ratios form a proportion.",
+                    "bloom_level": "analyze",
+                    "assessment_type": "practice_problems"
+                }
+            ],
+            "difficulty": "hard",
+            "estimated_hours": 13,
+            "prerequisites": [],
+            "resources": {
+                "video_topics": [
+                    "Ratio and Proportion"
+                ],
+                "practice_sets": [
+                    "Ratio and Proportion - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         },
         {
             "number": 13,
             "name": "Symmetry",
             "theme": "Lines of symmetry in 2D figures",
             "key_topics": [
-                "Line(s) of symmetry in regular shapes",
-                "Symmetry in daily-life objects",
-                "Paper folding and mirror activities"
+                {
+                    "name": "Line(s) of symmetry in regular shapes",
+                    "difficulty": "medium",
+                    "estimated_minutes": 260,
+                    "bloom_level": "understand",
+                    "description": "Understanding and applying concepts related to line(s) of symmetry in regular shapes"
+                },
+                {
+                    "name": "Symmetry in daily-life objects",
+                    "difficulty": "medium",
+                    "estimated_minutes": 260,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to symmetry in daily-life objects"
+                },
+                {
+                    "name": "Paper folding and mirror activities",
+                    "difficulty": "hard",
+                    "estimated_minutes": 260,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to paper folding and mirror activities"
+                }
             ],
             "learning_outcomes": [
-                "Finds lines of symmetry of given figures.",
-                "Creates symmetrical designs using folding or drawing."
-            ]
+                {
+                    "outcome": "Finds lines of symmetry of given figures.",
+                    "bloom_level": "apply",
+                    "assessment_type": "practice_problems"
+                },
+                {
+                    "outcome": "Creates symmetrical designs using folding or drawing.",
+                    "bloom_level": "analyze",
+                    "assessment_type": "practice_problems"
+                }
+            ],
+            "difficulty": "hard",
+            "estimated_hours": 13,
+            "prerequisites": [],
+            "resources": {
+                "video_topics": [
+                    "Symmetry"
+                ],
+                "practice_sets": [
+                    "Symmetry - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         },
         {
             "number": 14,
             "name": "Practical Geometry",
             "theme": "Basic constructions",
             "key_topics": [
-                "Drawing line segments of given length",
-                "Constructing perpendiculars and circles",
-                "Using compass and ruler correctly"
+                {
+                    "name": "Drawing line segments of given length",
+                    "difficulty": "medium",
+                    "estimated_minutes": 260,
+                    "bloom_level": "understand",
+                    "description": "Understanding and applying concepts related to drawing line segments of given length"
+                },
+                {
+                    "name": "Constructing perpendiculars and circles",
+                    "difficulty": "medium",
+                    "estimated_minutes": 260,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to constructing perpendiculars and circles"
+                },
+                {
+                    "name": "Using compass and ruler correctly",
+                    "difficulty": "hard",
+                    "estimated_minutes": 260,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to using compass and ruler correctly"
+                }
             ],
             "learning_outcomes": [
-                "Constructs line segments and circles accurately.",
-                "Draws perpendiculars from a point on and outside a line."
-            ]
+                {
+                    "outcome": "Constructs line segments and circles accurately.",
+                    "bloom_level": "apply",
+                    "assessment_type": "practice_problems"
+                },
+                {
+                    "outcome": "Draws perpendiculars from a point on and outside a line.",
+                    "bloom_level": "analyze",
+                    "assessment_type": "practice_problems"
+                }
+            ],
+            "difficulty": "hard",
+            "estimated_hours": 13,
+            "prerequisites": [],
+            "resources": {
+                "video_topics": [
+                    "Practical Geometry"
+                ],
+                "practice_sets": [
+                    "Practical Geometry - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         }
-    ]
+    ],
+    "subject_icon": "calculator",
+    "subject_color": "blue",
+    "total_chapters": 14,
+    "total_hours": 180,
+    "description": "CBSE Class 6 Mathematics curriculum aligned with NEP 2020 and CBSE guidelines."
 }

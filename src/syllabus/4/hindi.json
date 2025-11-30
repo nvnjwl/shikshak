@@ -10,196 +10,775 @@
             "name": "मन के भोले-भाले बादल",
             "theme": "Nature",
             "key_topics": [
-                "बादलों का वर्णन",
-                "कविता पाठ",
-                "तुकांत शब्द"
+                {
+                    "name": "बादलों का वर्णन",
+                    "difficulty": "medium",
+                    "estimated_minutes": 180,
+                    "bloom_level": "understand",
+                    "description": "Understanding and applying concepts related to बादलों का वर्णन"
+                },
+                {
+                    "name": "कविता पाठ",
+                    "difficulty": "medium",
+                    "estimated_minutes": 180,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to कविता पाठ"
+                },
+                {
+                    "name": "तुकांत शब्द",
+                    "difficulty": "hard",
+                    "estimated_minutes": 180,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to तुकांत शब्द"
+                }
             ],
             "learning_outcomes": [
-                "कविता का आनंद लेता है।",
-                "प्रकृति का वर्णन करता है।"
-            ]
+                {
+                    "outcome": "कविता का आनंद लेता है।",
+                    "bloom_level": "apply",
+                    "assessment_type": "practice_problems"
+                },
+                {
+                    "outcome": "प्रकृति का वर्णन करता है।",
+                    "bloom_level": "analyze",
+                    "assessment_type": "practice_problems"
+                }
+            ],
+            "difficulty": "easy",
+            "estimated_hours": 9,
+            "prerequisites": [],
+            "resources": {
+                "video_topics": [
+                    "मन के भोले-भाले बादल"
+                ],
+                "practice_sets": [
+                    "मन के भोले-भाले बादल - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         },
         {
             "number": 2,
             "name": "जैसा सवाल वैसा जवाब",
             "theme": "Wit",
             "key_topics": [
-                "अकबर-बीरबल की कहानी",
-                "हाज़िरजवाबी",
-                "मुहावरे"
+                {
+                    "name": "अकबर-बीरबल की कहानी",
+                    "difficulty": "medium",
+                    "estimated_minutes": 180,
+                    "bloom_level": "understand",
+                    "description": "Understanding and applying concepts related to अकबर-बीरबल की कहानी"
+                },
+                {
+                    "name": "हाज़िरजवाबी",
+                    "difficulty": "medium",
+                    "estimated_minutes": 180,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to हाज़िरजवाबी"
+                },
+                {
+                    "name": "मुहावरे",
+                    "difficulty": "hard",
+                    "estimated_minutes": 180,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to मुहावरे"
+                }
             ],
             "learning_outcomes": [
-                "कहानी सुनकर समझता है।",
-                "प्रश्नों के उत्तर देता है।"
-            ]
+                {
+                    "outcome": "कहानी सुनकर समझता है।",
+                    "bloom_level": "apply",
+                    "assessment_type": "practice_problems"
+                },
+                {
+                    "outcome": "प्रश्नों के उत्तर देता है।",
+                    "bloom_level": "analyze",
+                    "assessment_type": "practice_problems"
+                }
+            ],
+            "difficulty": "easy",
+            "estimated_hours": 9,
+            "prerequisites": [],
+            "resources": {
+                "video_topics": [
+                    "जैसा सवाल वैसा जवाब"
+                ],
+                "practice_sets": [
+                    "जैसा सवाल वैसा जवाब - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         },
         {
             "number": 3,
             "name": "किरमिच की गेंद",
             "theme": "Sports",
             "key_topics": [
-                "गेंद का खेल",
-                "ईमानदारी",
-                "मित्रता"
+                {
+                    "name": "गेंद का खेल",
+                    "difficulty": "medium",
+                    "estimated_minutes": 180,
+                    "bloom_level": "understand",
+                    "description": "Understanding and applying concepts related to गेंद का खेल"
+                },
+                {
+                    "name": "ईमानदारी",
+                    "difficulty": "medium",
+                    "estimated_minutes": 180,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to ईमानदारी"
+                },
+                {
+                    "name": "मित्रता",
+                    "difficulty": "hard",
+                    "estimated_minutes": 180,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to मित्रता"
+                }
             ],
             "learning_outcomes": [
-                "खेलों के बारे में बात करता है।",
-                "ईमानदारी का महत्व समझता है।"
-            ]
+                {
+                    "outcome": "खेलों के बारे में बात करता है।",
+                    "bloom_level": "apply",
+                    "assessment_type": "practice_problems"
+                },
+                {
+                    "outcome": "ईमानदारी का महत्व समझता है।",
+                    "bloom_level": "analyze",
+                    "assessment_type": "practice_problems"
+                }
+            ],
+            "difficulty": "easy",
+            "estimated_hours": 9,
+            "prerequisites": [],
+            "resources": {
+                "video_topics": [
+                    "किरमिच की गेंद"
+                ],
+                "practice_sets": [
+                    "किरमिच की गेंद - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         },
         {
             "number": 4,
             "name": "पापा जब बच्चे थे",
             "theme": "Childhood",
             "key_topics": [
-                "बचपन की यादें",
-                "भविष्य के सपने",
-                "संस्मरण"
+                {
+                    "name": "बचपन की यादें",
+                    "difficulty": "medium",
+                    "estimated_minutes": 180,
+                    "bloom_level": "understand",
+                    "description": "Understanding and applying concepts related to बचपन की यादें"
+                },
+                {
+                    "name": "भविष्य के सपने",
+                    "difficulty": "medium",
+                    "estimated_minutes": 180,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to भविष्य के सपने"
+                },
+                {
+                    "name": "संस्मरण",
+                    "difficulty": "hard",
+                    "estimated_minutes": 180,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to संस्मरण"
+                }
             ],
             "learning_outcomes": [
-                "अपने बचपन के बारे में बताता है।",
-                "विभिन्न व्यवसायों को पहचानता है।"
-            ]
+                {
+                    "outcome": "अपने बचपन के बारे में बताता है।",
+                    "bloom_level": "apply",
+                    "assessment_type": "practice_problems"
+                },
+                {
+                    "outcome": "विभिन्न व्यवसायों को पहचानता है।",
+                    "bloom_level": "analyze",
+                    "assessment_type": "practice_problems"
+                }
+            ],
+            "difficulty": "easy",
+            "estimated_hours": 9,
+            "prerequisites": [],
+            "resources": {
+                "video_topics": [
+                    "पापा जब बच्चे थे"
+                ],
+                "practice_sets": [
+                    "पापा जब बच्चे थे - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         },
         {
             "number": 5,
             "name": "दोस्त की पोशाक",
             "theme": "Friendship",
             "key_topics": [
-                "नसीरुद्दीन की कहानी",
-                "दिखावा",
-                "हास्य"
+                {
+                    "name": "नसीरुद्दीन की कहानी",
+                    "difficulty": "medium",
+                    "estimated_minutes": 180,
+                    "bloom_level": "understand",
+                    "description": "Understanding and applying concepts related to नसीरुद्दीन की कहानी"
+                },
+                {
+                    "name": "दिखावा",
+                    "difficulty": "medium",
+                    "estimated_minutes": 180,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to दिखावा"
+                },
+                {
+                    "name": "हास्य",
+                    "difficulty": "hard",
+                    "estimated_minutes": 180,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to हास्य"
+                }
             ],
             "learning_outcomes": [
-                "कहानी का मज़ा लेता है।",
-                "सरल वाक्यों में अपनी बात कहता है।"
-            ]
+                {
+                    "outcome": "कहानी का मज़ा लेता है।",
+                    "bloom_level": "apply",
+                    "assessment_type": "practice_problems"
+                },
+                {
+                    "outcome": "सरल वाक्यों में अपनी बात कहता है।",
+                    "bloom_level": "analyze",
+                    "assessment_type": "practice_problems"
+                }
+            ],
+            "difficulty": "medium",
+            "estimated_hours": 9,
+            "prerequisites": [],
+            "resources": {
+                "video_topics": [
+                    "दोस्त की पोशाक"
+                ],
+                "practice_sets": [
+                    "दोस्त की पोशाक - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         },
         {
             "number": 6,
             "name": "नाव बनाओ नाव बनाओ",
             "theme": "Rain",
             "key_topics": [
-                "बारिश का मज़ा",
-                "कागज़ की नाव",
-                "कविता"
+                {
+                    "name": "बारिश का मज़ा",
+                    "difficulty": "medium",
+                    "estimated_minutes": 180,
+                    "bloom_level": "understand",
+                    "description": "Understanding and applying concepts related to बारिश का मज़ा"
+                },
+                {
+                    "name": "कागज़ की नाव",
+                    "difficulty": "medium",
+                    "estimated_minutes": 180,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to कागज़ की नाव"
+                },
+                {
+                    "name": "कविता",
+                    "difficulty": "hard",
+                    "estimated_minutes": 180,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to कविता"
+                }
             ],
             "learning_outcomes": [
-                "बारिश के अनुभव साझा करता है।",
-                "कागज़ से चीज़ें बनाना सीखता है।"
-            ]
+                {
+                    "outcome": "बारिश के अनुभव साझा करता है।",
+                    "bloom_level": "apply",
+                    "assessment_type": "practice_problems"
+                },
+                {
+                    "outcome": "कागज़ से चीज़ें बनाना सीखता है।",
+                    "bloom_level": "analyze",
+                    "assessment_type": "practice_problems"
+                }
+            ],
+            "difficulty": "medium",
+            "estimated_hours": 9,
+            "prerequisites": [],
+            "resources": {
+                "video_topics": [
+                    "नाव बनाओ नाव बनाओ"
+                ],
+                "practice_sets": [
+                    "नाव बनाओ नाव बनाओ - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         },
         {
             "number": 7,
             "name": "दान का हिसाब",
             "theme": "Generosity",
             "key_topics": [
-                "राजा और भिक्षुक",
-                "गणित का प्रयोग",
-                "कंजूसी vs दान"
+                {
+                    "name": "राजा और भिक्षुक",
+                    "difficulty": "medium",
+                    "estimated_minutes": 180,
+                    "bloom_level": "understand",
+                    "description": "Understanding and applying concepts related to राजा और भिक्षुक"
+                },
+                {
+                    "name": "गणित का प्रयोग",
+                    "difficulty": "medium",
+                    "estimated_minutes": 180,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to गणित का प्रयोग"
+                },
+                {
+                    "name": "कंजूसी vs दान",
+                    "difficulty": "hard",
+                    "estimated_minutes": 180,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to कंजूसी vs दान"
+                }
             ],
             "learning_outcomes": [
-                "कहानी से सीख लेता है।",
-                "गणितीय पहेली को समझता है।"
-            ]
+                {
+                    "outcome": "कहानी से सीख लेता है।",
+                    "bloom_level": "apply",
+                    "assessment_type": "practice_problems"
+                },
+                {
+                    "outcome": "गणितीय पहेली को समझता है।",
+                    "bloom_level": "analyze",
+                    "assessment_type": "practice_problems"
+                }
+            ],
+            "difficulty": "medium",
+            "estimated_hours": 9,
+            "prerequisites": [],
+            "resources": {
+                "video_topics": [
+                    "दान का हिसाब"
+                ],
+                "practice_sets": [
+                    "दान का हिसाब - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         },
         {
             "number": 8,
             "name": "कौन?",
             "theme": "Animals",
             "key_topics": [
-                "चूहे की शरारत",
-                "कविता",
-                "घर का सामान"
+                {
+                    "name": "चूहे की शरारत",
+                    "difficulty": "medium",
+                    "estimated_minutes": 180,
+                    "bloom_level": "understand",
+                    "description": "Understanding and applying concepts related to चूहे की शरारत"
+                },
+                {
+                    "name": "कविता",
+                    "difficulty": "medium",
+                    "estimated_minutes": 180,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to कविता"
+                },
+                {
+                    "name": "घर का सामान",
+                    "difficulty": "hard",
+                    "estimated_minutes": 180,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to घर का सामान"
+                }
             ],
             "learning_outcomes": [
-                "जानवरों की आवाज़ें पहचानता है।",
-                "कविता याद करता है।"
-            ]
+                {
+                    "outcome": "जानवरों की आवाज़ें पहचानता है।",
+                    "bloom_level": "apply",
+                    "assessment_type": "practice_problems"
+                },
+                {
+                    "outcome": "कविता याद करता है।",
+                    "bloom_level": "analyze",
+                    "assessment_type": "practice_problems"
+                }
+            ],
+            "difficulty": "medium",
+            "estimated_hours": 9,
+            "prerequisites": [],
+            "resources": {
+                "video_topics": [
+                    "कौन?"
+                ],
+                "practice_sets": [
+                    "कौन? - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         },
         {
             "number": 9,
             "name": "स्वतंत्रता की ओर",
             "theme": "History",
             "key_topics": [
-                "गांधीजी",
-                "दांडी यात्रा",
-                "आज़ादी की लड़ाई"
+                {
+                    "name": "गांधीजी",
+                    "difficulty": "medium",
+                    "estimated_minutes": 180,
+                    "bloom_level": "understand",
+                    "description": "Understanding and applying concepts related to गांधीजी"
+                },
+                {
+                    "name": "दांडी यात्रा",
+                    "difficulty": "medium",
+                    "estimated_minutes": 180,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to दांडी यात्रा"
+                },
+                {
+                    "name": "आज़ादी की लड़ाई",
+                    "difficulty": "hard",
+                    "estimated_minutes": 180,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to आज़ादी की लड़ाई"
+                }
             ],
             "learning_outcomes": [
-                "स्वतंत्रता सेनानियों के बारे में जानता है।",
-                "गांधीजी के जीवन से प्रेरणा लेता है।"
-            ]
+                {
+                    "outcome": "स्वतंत्रता सेनानियों के बारे में जानता है।",
+                    "bloom_level": "apply",
+                    "assessment_type": "practice_problems"
+                },
+                {
+                    "outcome": "गांधीजी के जीवन से प्रेरणा लेता है।",
+                    "bloom_level": "analyze",
+                    "assessment_type": "practice_problems"
+                }
+            ],
+            "difficulty": "medium",
+            "estimated_hours": 9,
+            "prerequisites": [],
+            "resources": {
+                "video_topics": [
+                    "स्वतंत्रता की ओर"
+                ],
+                "practice_sets": [
+                    "स्वतंत्रता की ओर - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         },
         {
             "number": 10,
             "name": "थप्प रोटी थप्प दाल",
             "theme": "Play",
             "key_topics": [
-                "नाटक",
-                "खाना बनाना",
-                "अभिनय"
+                {
+                    "name": "नाटक",
+                    "difficulty": "medium",
+                    "estimated_minutes": 180,
+                    "bloom_level": "understand",
+                    "description": "Understanding and applying concepts related to नाटक"
+                },
+                {
+                    "name": "खाना बनाना",
+                    "difficulty": "medium",
+                    "estimated_minutes": 180,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to खाना बनाना"
+                },
+                {
+                    "name": "अभिनय",
+                    "difficulty": "hard",
+                    "estimated_minutes": 180,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to अभिनय"
+                }
             ],
             "learning_outcomes": [
-                "नाटक में भाग लेता है।",
-                "संवाद बोलता है।"
-            ]
+                {
+                    "outcome": "नाटक में भाग लेता है।",
+                    "bloom_level": "apply",
+                    "assessment_type": "practice_problems"
+                },
+                {
+                    "outcome": "संवाद बोलता है।",
+                    "bloom_level": "analyze",
+                    "assessment_type": "practice_problems"
+                }
+            ],
+            "difficulty": "hard",
+            "estimated_hours": 9,
+            "prerequisites": [],
+            "resources": {
+                "video_topics": [
+                    "थप्प रोटी थप्प दाल"
+                ],
+                "practice_sets": [
+                    "थप्प रोटी थप्प दाल - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         },
         {
             "number": 11,
             "name": "पढ़क्कू की सूझ",
             "theme": "Wit",
             "key_topics": [
-                "तर्क",
-                "कविता",
-                "कोल्हू का बैल"
+                {
+                    "name": "तर्क",
+                    "difficulty": "medium",
+                    "estimated_minutes": 180,
+                    "bloom_level": "understand",
+                    "description": "Understanding and applying concepts related to तर्क"
+                },
+                {
+                    "name": "कविता",
+                    "difficulty": "medium",
+                    "estimated_minutes": 180,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to कविता"
+                },
+                {
+                    "name": "कोल्हू का बैल",
+                    "difficulty": "hard",
+                    "estimated_minutes": 180,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to कोल्हू का बैल"
+                }
             ],
             "learning_outcomes": [
-                "तर्क-वितर्क समझता है।",
-                "नए शब्द सीखता है।"
-            ]
+                {
+                    "outcome": "तर्क-वितर्क समझता है।",
+                    "bloom_level": "apply",
+                    "assessment_type": "practice_problems"
+                },
+                {
+                    "outcome": "नए शब्द सीखता है।",
+                    "bloom_level": "analyze",
+                    "assessment_type": "practice_problems"
+                }
+            ],
+            "difficulty": "hard",
+            "estimated_hours": 9,
+            "prerequisites": [],
+            "resources": {
+                "video_topics": [
+                    "पढ़क्कू की सूझ"
+                ],
+                "practice_sets": [
+                    "पढ़क्कू की सूझ - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         },
         {
             "number": 12,
             "name": "सुनीता की पहिया कुर्सी",
             "theme": "Disability",
             "key_topics": [
-                "शारीरिक चुनौती",
-                "आत्मविश्वास",
-                "समानता"
+                {
+                    "name": "शारीरिक चुनौती",
+                    "difficulty": "medium",
+                    "estimated_minutes": 180,
+                    "bloom_level": "understand",
+                    "description": "Understanding and applying concepts related to शारीरिक चुनौती"
+                },
+                {
+                    "name": "आत्मविश्वास",
+                    "difficulty": "medium",
+                    "estimated_minutes": 180,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to आत्मविश्वास"
+                },
+                {
+                    "name": "समानता",
+                    "difficulty": "hard",
+                    "estimated_minutes": 180,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to समानता"
+                }
             ],
             "learning_outcomes": [
-                "दिव्यांगों के प्रति संवेदनशील बनता है।",
-                "समानता का भाव रखता है।"
-            ]
+                {
+                    "outcome": "दिव्यांगों के प्रति संवेदनशील बनता है।",
+                    "bloom_level": "apply",
+                    "assessment_type": "practice_problems"
+                },
+                {
+                    "outcome": "समानता का भाव रखता है।",
+                    "bloom_level": "analyze",
+                    "assessment_type": "practice_problems"
+                }
+            ],
+            "difficulty": "hard",
+            "estimated_hours": 9,
+            "prerequisites": [],
+            "resources": {
+                "video_topics": [
+                    "सुनीता की पहिया कुर्सी"
+                ],
+                "practice_sets": [
+                    "सुनीता की पहिया कुर्सी - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         },
         {
             "number": 13,
             "name": "हुदहुद",
             "theme": "Birds",
             "key_topics": [
-                "पक्षी की जानकारी",
-                "कहानी",
-                "सुलेमान बादशाह"
+                {
+                    "name": "पक्षी की जानकारी",
+                    "difficulty": "medium",
+                    "estimated_minutes": 180,
+                    "bloom_level": "understand",
+                    "description": "Understanding and applying concepts related to पक्षी की जानकारी"
+                },
+                {
+                    "name": "कहानी",
+                    "difficulty": "medium",
+                    "estimated_minutes": 180,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to कहानी"
+                },
+                {
+                    "name": "सुलेमान बादशाह",
+                    "difficulty": "hard",
+                    "estimated_minutes": 180,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to सुलेमान बादशाह"
+                }
             ],
             "learning_outcomes": [
-                "पक्षियों के बारे में जानकारी एकत्र करता है।",
-                "कहानी सुनाता है।"
-            ]
+                {
+                    "outcome": "पक्षियों के बारे में जानकारी एकत्र करता है।",
+                    "bloom_level": "apply",
+                    "assessment_type": "practice_problems"
+                },
+                {
+                    "outcome": "कहानी सुनाता है।",
+                    "bloom_level": "analyze",
+                    "assessment_type": "practice_problems"
+                }
+            ],
+            "difficulty": "hard",
+            "estimated_hours": 9,
+            "prerequisites": [],
+            "resources": {
+                "video_topics": [
+                    "हुदहुद"
+                ],
+                "practice_sets": [
+                    "हुदहुद - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         },
         {
             "number": 14,
             "name": "मुफ़्त ही मुफ़्त",
             "theme": "Folktale",
             "key_topics": [
-                "गुजराती लोककथा",
-                "लालच",
-                "नारियल"
+                {
+                    "name": "गुजराती लोककथा",
+                    "difficulty": "medium",
+                    "estimated_minutes": 180,
+                    "bloom_level": "understand",
+                    "description": "Understanding and applying concepts related to गुजराती लोककथा"
+                },
+                {
+                    "name": "लालच",
+                    "difficulty": "medium",
+                    "estimated_minutes": 180,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to लालच"
+                },
+                {
+                    "name": "नारियल",
+                    "difficulty": "hard",
+                    "estimated_minutes": 180,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to नारियल"
+                }
             ],
             "learning_outcomes": [
-                "लोककथाओं में रुचि लेता है।",
-                "लालच के परिणाम को समझता है।"
-            ]
+                {
+                    "outcome": "लोककथाओं में रुचि लेता है।",
+                    "bloom_level": "apply",
+                    "assessment_type": "practice_problems"
+                },
+                {
+                    "outcome": "लालच के परिणाम को समझता है।",
+                    "bloom_level": "analyze",
+                    "assessment_type": "practice_problems"
+                }
+            ],
+            "difficulty": "hard",
+            "estimated_hours": 9,
+            "prerequisites": [],
+            "resources": {
+                "video_topics": [
+                    "मुफ़्त ही मुफ़्त"
+                ],
+                "practice_sets": [
+                    "मुफ़्त ही मुफ़्त - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         }
-    ]
+    ],
+    "subject_icon": "language",
+    "subject_color": "orange",
+    "total_chapters": 14,
+    "total_hours": 120,
+    "description": "CBSE Class 4 Hindi curriculum aligned with NEP 2020 and CBSE guidelines."
 }

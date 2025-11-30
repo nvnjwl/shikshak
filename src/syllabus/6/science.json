@@ -10,157 +10,631 @@
             "name": "Components of Food",
             "theme": "Food",
             "key_topics": [
-                "Nutrients (carbohydrates, proteins, fats, vitamins, minerals)",
-                "Balanced diet",
-                "Deficiency diseases"
+                {
+                    "name": "Nutrients (carbohydrates, proteins, fats, vitamins, minerals)",
+                    "difficulty": "medium",
+                    "estimated_minutes": 280,
+                    "bloom_level": "understand",
+                    "description": "Understanding and applying concepts related to nutrients (carbohydrates, proteins, fats, vitamins, minerals)"
+                },
+                {
+                    "name": "Balanced diet",
+                    "difficulty": "medium",
+                    "estimated_minutes": 280,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to balanced diet"
+                },
+                {
+                    "name": "Deficiency diseases",
+                    "difficulty": "hard",
+                    "estimated_minutes": 280,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to deficiency diseases"
+                }
             ],
             "learning_outcomes": [
-                "Identifies major nutrients in food items.",
-                "Understands the importance of a balanced diet."
-            ]
+                {
+                    "outcome": "Identifies major nutrients in food items.",
+                    "bloom_level": "apply",
+                    "assessment_type": "practice_problems"
+                },
+                {
+                    "outcome": "Understands the importance of a balanced diet.",
+                    "bloom_level": "analyze",
+                    "assessment_type": "practice_problems"
+                }
+            ],
+            "difficulty": "easy",
+            "estimated_hours": 14,
+            "prerequisites": [],
+            "resources": {
+                "video_topics": [
+                    "Components of Food"
+                ],
+                "practice_sets": [
+                    "Components of Food - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         },
         {
             "number": 2,
             "name": "Sorting Materials into Groups",
             "theme": "Materials",
             "key_topics": [
-                "Properties of materials (appearance, hardness, solubility)",
-                "Transparent, translucent and opaque objects",
-                "Grouping materials based on properties"
+                {
+                    "name": "Properties of materials (appearance, hardness, solubility)",
+                    "difficulty": "medium",
+                    "estimated_minutes": 280,
+                    "bloom_level": "understand",
+                    "description": "Understanding and applying concepts related to properties of materials (appearance, hardness, solubility)"
+                },
+                {
+                    "name": "Transparent, translucent and opaque objects",
+                    "difficulty": "medium",
+                    "estimated_minutes": 280,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to transparent, translucent and opaque objects"
+                },
+                {
+                    "name": "Grouping materials based on properties",
+                    "difficulty": "medium",
+                    "estimated_minutes": 280,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to grouping materials based on properties"
+                }
             ],
             "learning_outcomes": [
-                "Classifies materials based on their properties.",
-                "Differentiates between soluble and insoluble substances."
-            ]
+                {
+                    "outcome": "Classifies materials based on their properties.",
+                    "bloom_level": "apply",
+                    "assessment_type": "practice_problems"
+                },
+                {
+                    "outcome": "Differentiates between soluble and insoluble substances.",
+                    "bloom_level": "analyze",
+                    "assessment_type": "practice_problems"
+                }
+            ],
+            "difficulty": "easy",
+            "estimated_hours": 14,
+            "prerequisites": [],
+            "resources": {
+                "video_topics": [
+                    "Sorting Materials into Groups"
+                ],
+                "practice_sets": [
+                    "Sorting Materials into Groups - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         },
         {
             "number": 3,
             "name": "Separation of Substances",
             "theme": "Materials",
             "key_topics": [
-                "Methods of separation: handpicking, threshing, winnowing, sieving",
-                "Sedimentation, decantation and filtration",
-                "Evaporation and condensation"
+                {
+                    "name": "Methods of separation: handpicking, threshing, winnowing, sieving",
+                    "difficulty": "medium",
+                    "estimated_minutes": 280,
+                    "bloom_level": "understand",
+                    "description": "Understanding and applying concepts related to methods of separation: handpicking, threshing, winnowing, sieving"
+                },
+                {
+                    "name": "Sedimentation, decantation and filtration",
+                    "difficulty": "medium",
+                    "estimated_minutes": 280,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to sedimentation, decantation and filtration"
+                },
+                {
+                    "name": "Evaporation and condensation",
+                    "difficulty": "hard",
+                    "estimated_minutes": 280,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to evaporation and condensation"
+                }
             ],
             "learning_outcomes": [
-                "Selects appropriate methods for separating mixtures.",
-                "Explains the process of obtaining salt from sea water."
-            ]
+                {
+                    "outcome": "Selects appropriate methods for separating mixtures.",
+                    "bloom_level": "apply",
+                    "assessment_type": "practice_problems"
+                },
+                {
+                    "outcome": "Explains the process of obtaining salt from sea water.",
+                    "bloom_level": "analyze",
+                    "assessment_type": "practice_problems"
+                }
+            ],
+            "difficulty": "easy",
+            "estimated_hours": 14,
+            "prerequisites": [],
+            "resources": {
+                "video_topics": [
+                    "Separation of Substances"
+                ],
+                "practice_sets": [
+                    "Separation of Substances - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         },
         {
             "number": 4,
             "name": "Getting to Know Plants",
             "theme": "The World of the Living",
             "key_topics": [
-                "Herbs, shrubs and trees",
-                "Parts of a plant: stem, leaf, root, flower",
-                "Structure and function of flower parts"
+                {
+                    "name": "Herbs, shrubs and trees",
+                    "difficulty": "medium",
+                    "estimated_minutes": 280,
+                    "bloom_level": "understand",
+                    "description": "Understanding and applying concepts related to herbs, shrubs and trees"
+                },
+                {
+                    "name": "Parts of a plant: stem, leaf, root, flower",
+                    "difficulty": "medium",
+                    "estimated_minutes": 280,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to parts of a plant: stem, leaf, root, flower"
+                },
+                {
+                    "name": "Structure and function of flower parts",
+                    "difficulty": "hard",
+                    "estimated_minutes": 280,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to structure and function of flower parts"
+                }
             ],
             "learning_outcomes": [
-                "Identifies different types of plants.",
-                "Labels parts of a plant and explains their functions."
-            ]
+                {
+                    "outcome": "Identifies different types of plants.",
+                    "bloom_level": "apply",
+                    "assessment_type": "practice_problems"
+                },
+                {
+                    "outcome": "Labels parts of a plant and explains their functions.",
+                    "bloom_level": "analyze",
+                    "assessment_type": "practice_problems"
+                }
+            ],
+            "difficulty": "medium",
+            "estimated_hours": 14,
+            "prerequisites": [],
+            "resources": {
+                "video_topics": [
+                    "Getting to Know Plants"
+                ],
+                "practice_sets": [
+                    "Getting to Know Plants - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         },
         {
             "number": 5,
             "name": "Body Movements",
             "theme": "The World of the Living",
             "key_topics": [
-                "Human body and its movements",
-                "Joints: ball and socket, pivotal, hinge, fixed",
-                "Gait of animals (earthworm, snail, cockroach, birds, fish, snakes)"
+                {
+                    "name": "Human body and its movements",
+                    "difficulty": "medium",
+                    "estimated_minutes": 280,
+                    "bloom_level": "understand",
+                    "description": "Understanding and applying concepts related to human body and its movements"
+                },
+                {
+                    "name": "Joints: ball and socket, pivotal, hinge, fixed",
+                    "difficulty": "medium",
+                    "estimated_minutes": 280,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to joints: ball and socket, pivotal, hinge, fixed"
+                },
+                {
+                    "name": "Gait of animals (earthworm, snail, cockroach, birds, fish, snakes)",
+                    "difficulty": "hard",
+                    "estimated_minutes": 280,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to gait of animals (earthworm, snail, cockroach, birds, fish, snakes)"
+                }
             ],
             "learning_outcomes": [
-                "Identifies different types of joints in the human body.",
-                "Describes how different animals move."
-            ]
+                {
+                    "outcome": "Identifies different types of joints in the human body.",
+                    "bloom_level": "apply",
+                    "assessment_type": "practice_problems"
+                },
+                {
+                    "outcome": "Describes how different animals move.",
+                    "bloom_level": "analyze",
+                    "assessment_type": "practice_problems"
+                }
+            ],
+            "difficulty": "medium",
+            "estimated_hours": 14,
+            "prerequisites": [],
+            "resources": {
+                "video_topics": [
+                    "Body Movements"
+                ],
+                "practice_sets": [
+                    "Body Movements - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         },
         {
             "number": 6,
             "name": "The Living Organisms — Characteristics and Habitats",
             "theme": "The World of the Living",
             "key_topics": [
-                "Organisms and surroundings",
-                "Habitat and adaptation",
-                "Characteristics of living things"
+                {
+                    "name": "Organisms and surroundings",
+                    "difficulty": "medium",
+                    "estimated_minutes": 280,
+                    "bloom_level": "understand",
+                    "description": "Understanding and applying concepts related to organisms and surroundings"
+                },
+                {
+                    "name": "Habitat and adaptation",
+                    "difficulty": "medium",
+                    "estimated_minutes": 280,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to habitat and adaptation"
+                },
+                {
+                    "name": "Characteristics of living things",
+                    "difficulty": "hard",
+                    "estimated_minutes": 280,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to characteristics of living things"
+                }
             ],
             "learning_outcomes": [
-                "Lists characteristics of living organisms.",
-                "Relates adaptations of animals to their habitats."
-            ]
+                {
+                    "outcome": "Lists characteristics of living organisms.",
+                    "bloom_level": "apply",
+                    "assessment_type": "practice_problems"
+                },
+                {
+                    "outcome": "Relates adaptations of animals to their habitats.",
+                    "bloom_level": "analyze",
+                    "assessment_type": "practice_problems"
+                }
+            ],
+            "difficulty": "medium",
+            "estimated_hours": 14,
+            "prerequisites": [],
+            "resources": {
+                "video_topics": [
+                    "The Living Organisms — Characteristics and Habitats"
+                ],
+                "practice_sets": [
+                    "The Living Organisms — Characteristics and Habitats - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         },
         {
             "number": 7,
             "name": "Motion and Measurement of Distances",
             "theme": "Moving Things, People and Ideas",
             "key_topics": [
-                "Story of transport",
-                "Measurement of length",
-                "Standard units of measurement",
-                "Types of motion (rectilinear, circular, periodic)"
+                {
+                    "name": "Story of transport",
+                    "difficulty": "easy",
+                    "estimated_minutes": 210,
+                    "bloom_level": "understand",
+                    "description": "Understanding and applying concepts related to story of transport"
+                },
+                {
+                    "name": "Measurement of length",
+                    "difficulty": "medium",
+                    "estimated_minutes": 210,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to measurement of length"
+                },
+                {
+                    "name": "Standard units of measurement",
+                    "difficulty": "hard",
+                    "estimated_minutes": 210,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to standard units of measurement"
+                },
+                {
+                    "name": "Types of motion (rectilinear, circular, periodic)",
+                    "difficulty": "hard",
+                    "estimated_minutes": 210,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to types of motion (rectilinear, circular, periodic)"
+                }
             ],
             "learning_outcomes": [
-                "Measures length using standard units.",
-                "Differentiates between different types of motion."
-            ]
+                {
+                    "outcome": "Measures length using standard units.",
+                    "bloom_level": "apply",
+                    "assessment_type": "practice_problems"
+                },
+                {
+                    "outcome": "Differentiates between different types of motion.",
+                    "bloom_level": "analyze",
+                    "assessment_type": "practice_problems"
+                }
+            ],
+            "difficulty": "medium",
+            "estimated_hours": 14,
+            "prerequisites": [],
+            "resources": {
+                "video_topics": [
+                    "Motion and Measurement of Distances"
+                ],
+                "practice_sets": [
+                    "Motion and Measurement of Distances - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         },
         {
             "number": 8,
             "name": "Light, Shadows and Reflections",
             "theme": "Natural Phenomena",
             "key_topics": [
-                "Transparent, opaque and translucent objects",
-                "Formation of shadows",
-                "Pinhole camera",
-                "Mirrors and reflections"
+                {
+                    "name": "Transparent, opaque and translucent objects",
+                    "difficulty": "easy",
+                    "estimated_minutes": 210,
+                    "bloom_level": "understand",
+                    "description": "Understanding and applying concepts related to transparent, opaque and translucent objects"
+                },
+                {
+                    "name": "Formation of shadows",
+                    "difficulty": "medium",
+                    "estimated_minutes": 210,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to formation of shadows"
+                },
+                {
+                    "name": "Pinhole camera",
+                    "difficulty": "hard",
+                    "estimated_minutes": 210,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to pinhole camera"
+                },
+                {
+                    "name": "Mirrors and reflections",
+                    "difficulty": "hard",
+                    "estimated_minutes": 210,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to mirrors and reflections"
+                }
             ],
             "learning_outcomes": [
-                "Explains how shadows are formed.",
-                "Distinguishes between shadow and image."
-            ]
+                {
+                    "outcome": "Explains how shadows are formed.",
+                    "bloom_level": "apply",
+                    "assessment_type": "practice_problems"
+                },
+                {
+                    "outcome": "Distinguishes between shadow and image.",
+                    "bloom_level": "analyze",
+                    "assessment_type": "practice_problems"
+                }
+            ],
+            "difficulty": "hard",
+            "estimated_hours": 14,
+            "prerequisites": [],
+            "resources": {
+                "video_topics": [
+                    "Light, Shadows and Reflections"
+                ],
+                "practice_sets": [
+                    "Light, Shadows and Reflections - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         },
         {
             "number": 9,
             "name": "Electricity and Circuits",
             "theme": "How Things Work",
             "key_topics": [
-                "Electric cell and bulb",
-                "Electric circuits",
-                "Conductors and insulators"
+                {
+                    "name": "Electric cell and bulb",
+                    "difficulty": "medium",
+                    "estimated_minutes": 280,
+                    "bloom_level": "understand",
+                    "description": "Understanding and applying concepts related to electric cell and bulb"
+                },
+                {
+                    "name": "Electric circuits",
+                    "difficulty": "medium",
+                    "estimated_minutes": 280,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to electric circuits"
+                },
+                {
+                    "name": "Conductors and insulators",
+                    "difficulty": "hard",
+                    "estimated_minutes": 280,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to conductors and insulators"
+                }
             ],
             "learning_outcomes": [
-                "Constructs a simple electric circuit.",
-                "Classifies materials as conductors and insulators."
-            ]
+                {
+                    "outcome": "Constructs a simple electric circuit.",
+                    "bloom_level": "apply",
+                    "assessment_type": "practice_problems"
+                },
+                {
+                    "outcome": "Classifies materials as conductors and insulators.",
+                    "bloom_level": "analyze",
+                    "assessment_type": "practice_problems"
+                }
+            ],
+            "difficulty": "hard",
+            "estimated_hours": 14,
+            "prerequisites": [],
+            "resources": {
+                "video_topics": [
+                    "Electricity and Circuits"
+                ],
+                "practice_sets": [
+                    "Electricity and Circuits - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         },
         {
             "number": 10,
             "name": "Fun with Magnets",
             "theme": "How Things Work",
             "key_topics": [
-                "Discovery of magnets",
-                "Magnetic and non-magnetic materials",
-                "Poles of a magnet",
-                "Finding directions"
+                {
+                    "name": "Discovery of magnets",
+                    "difficulty": "easy",
+                    "estimated_minutes": 210,
+                    "bloom_level": "understand",
+                    "description": "Understanding and applying concepts related to discovery of magnets"
+                },
+                {
+                    "name": "Magnetic and non-magnetic materials",
+                    "difficulty": "medium",
+                    "estimated_minutes": 210,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to magnetic and non-magnetic materials"
+                },
+                {
+                    "name": "Poles of a magnet",
+                    "difficulty": "hard",
+                    "estimated_minutes": 210,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to poles of a magnet"
+                },
+                {
+                    "name": "Finding directions",
+                    "difficulty": "hard",
+                    "estimated_minutes": 210,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to finding directions"
+                }
             ],
             "learning_outcomes": [
-                "Identifies magnetic and non-magnetic materials.",
-                "Uses a magnet to find directions."
-            ]
+                {
+                    "outcome": "Identifies magnetic and non-magnetic materials.",
+                    "bloom_level": "apply",
+                    "assessment_type": "practice_problems"
+                },
+                {
+                    "outcome": "Uses a magnet to find directions.",
+                    "bloom_level": "analyze",
+                    "assessment_type": "practice_problems"
+                }
+            ],
+            "difficulty": "hard",
+            "estimated_hours": 14,
+            "prerequisites": [],
+            "resources": {
+                "video_topics": [
+                    "Fun with Magnets"
+                ],
+                "practice_sets": [
+                    "Fun with Magnets - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         },
         {
             "number": 11,
             "name": "Air Around Us",
             "theme": "Natural Resources",
             "key_topics": [
-                "Composition of air",
-                "Availability of oxygen",
-                "Importance of air for life"
+                {
+                    "name": "Composition of air",
+                    "difficulty": "medium",
+                    "estimated_minutes": 280,
+                    "bloom_level": "understand",
+                    "description": "Understanding and applying concepts related to composition of air"
+                },
+                {
+                    "name": "Availability of oxygen",
+                    "difficulty": "medium",
+                    "estimated_minutes": 280,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to availability of oxygen"
+                },
+                {
+                    "name": "Importance of air for life",
+                    "difficulty": "hard",
+                    "estimated_minutes": 280,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to importance of air for life"
+                }
             ],
             "learning_outcomes": [
-                "Lists the components of air.",
-                "Explains the importance of air for living beings."
-            ]
+                {
+                    "outcome": "Lists the components of air.",
+                    "bloom_level": "apply",
+                    "assessment_type": "practice_problems"
+                },
+                {
+                    "outcome": "Explains the importance of air for living beings.",
+                    "bloom_level": "analyze",
+                    "assessment_type": "practice_problems"
+                }
+            ],
+            "difficulty": "hard",
+            "estimated_hours": 14,
+            "prerequisites": [],
+            "resources": {
+                "video_topics": [
+                    "Air Around Us"
+                ],
+                "practice_sets": [
+                    "Air Around Us - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         }
-    ]
+    ],
+    "subject_icon": "flask",
+    "subject_color": "green",
+    "total_chapters": 11,
+    "total_hours": 150,
+    "description": "CBSE Class 6 Science curriculum aligned with NEP 2020 and CBSE guidelines."
 }

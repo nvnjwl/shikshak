@@ -10,140 +10,555 @@
             "name": "Wake Up! / Neha's Alarm Clock",
             "theme": "Morning Routine",
             "key_topics": [
-                "Nature in morning",
-                "Punctuality",
-                "Reading comprehension"
+                {
+                    "name": "Nature in morning",
+                    "difficulty": "medium",
+                    "estimated_minutes": 300,
+                    "bloom_level": "understand",
+                    "description": "Understanding and applying concepts related to nature in morning"
+                },
+                {
+                    "name": "Punctuality",
+                    "difficulty": "medium",
+                    "estimated_minutes": 300,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to punctuality"
+                },
+                {
+                    "name": "Reading comprehension",
+                    "difficulty": "hard",
+                    "estimated_minutes": 300,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to reading comprehension"
+                }
             ],
             "learning_outcomes": [
-                "Recites poems with expression.",
-                "Understands the importance of time."
-            ]
+                {
+                    "outcome": "Recites poems with expression.",
+                    "bloom_level": "apply",
+                    "assessment_type": "practice_problems"
+                },
+                {
+                    "outcome": "Understands the importance of time.",
+                    "bloom_level": "analyze",
+                    "assessment_type": "practice_problems"
+                }
+            ],
+            "difficulty": "easy",
+            "estimated_hours": 15,
+            "prerequisites": [],
+            "resources": {
+                "video_topics": [
+                    "Wake Up! / Neha's Alarm Clock"
+                ],
+                "practice_sets": [
+                    "Wake Up! / Neha's Alarm Clock - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         },
         {
             "number": 2,
             "name": "Noses / The Little Fir Tree",
             "theme": "Self-acceptance",
             "key_topics": [
-                "Body parts",
-                "Contentment",
-                "Magician story"
+                {
+                    "name": "Body parts",
+                    "difficulty": "medium",
+                    "estimated_minutes": 300,
+                    "bloom_level": "understand",
+                    "description": "Understanding and applying concepts related to body parts"
+                },
+                {
+                    "name": "Contentment",
+                    "difficulty": "medium",
+                    "estimated_minutes": 300,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to contentment"
+                },
+                {
+                    "name": "Magician story",
+                    "difficulty": "hard",
+                    "estimated_minutes": 300,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to magician story"
+                }
             ],
             "learning_outcomes": [
-                "Appreciates one's own features.",
-                "Learns new vocabulary related to nature."
-            ]
+                {
+                    "outcome": "Appreciates one's own features.",
+                    "bloom_level": "apply",
+                    "assessment_type": "practice_problems"
+                },
+                {
+                    "outcome": "Learns new vocabulary related to nature.",
+                    "bloom_level": "analyze",
+                    "assessment_type": "practice_problems"
+                }
+            ],
+            "difficulty": "easy",
+            "estimated_hours": 15,
+            "prerequisites": [],
+            "resources": {
+                "video_topics": [
+                    "Noses / The Little Fir Tree"
+                ],
+                "practice_sets": [
+                    "Noses / The Little Fir Tree - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         },
         {
             "number": 3,
             "name": "Run! / Nasruddin's Aim",
             "theme": "Sports and Fun",
             "key_topics": [
-                "Outdoor games",
-                "Archery",
-                "Boasting vs Skill"
+                {
+                    "name": "Outdoor games",
+                    "difficulty": "medium",
+                    "estimated_minutes": 300,
+                    "bloom_level": "understand",
+                    "description": "Understanding and applying concepts related to outdoor games"
+                },
+                {
+                    "name": "Archery",
+                    "difficulty": "medium",
+                    "estimated_minutes": 300,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to archery"
+                },
+                {
+                    "name": "Boasting vs Skill",
+                    "difficulty": "hard",
+                    "estimated_minutes": 300,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to boasting vs skill"
+                }
             ],
             "learning_outcomes": [
-                "Enjoys reading adventure stories.",
-                "Uses action words correctly."
-            ]
+                {
+                    "outcome": "Enjoys reading adventure stories.",
+                    "bloom_level": "apply",
+                    "assessment_type": "practice_problems"
+                },
+                {
+                    "outcome": "Uses action words correctly.",
+                    "bloom_level": "analyze",
+                    "assessment_type": "practice_problems"
+                }
+            ],
+            "difficulty": "easy",
+            "estimated_hours": 15,
+            "prerequisites": [],
+            "resources": {
+                "video_topics": [
+                    "Run! / Nasruddin's Aim"
+                ],
+                "practice_sets": [
+                    "Run! / Nasruddin's Aim - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         },
         {
             "number": 4,
             "name": "Why? / Alice in Wonderland",
             "theme": "Curiosity",
             "key_topics": [
-                "Asking questions",
-                "Fantasy world",
-                "Describing words"
+                {
+                    "name": "Asking questions",
+                    "difficulty": "medium",
+                    "estimated_minutes": 300,
+                    "bloom_level": "understand",
+                    "description": "Understanding and applying concepts related to asking questions"
+                },
+                {
+                    "name": "Fantasy world",
+                    "difficulty": "medium",
+                    "estimated_minutes": 300,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to fantasy world"
+                },
+                {
+                    "name": "Describing words",
+                    "difficulty": "hard",
+                    "estimated_minutes": 300,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to describing words"
+                }
             ],
             "learning_outcomes": [
-                "Frames questions using 'why'.",
-                "Describes imaginary scenes."
-            ]
+                {
+                    "outcome": "Frames questions using 'why'.",
+                    "bloom_level": "apply",
+                    "assessment_type": "practice_problems"
+                },
+                {
+                    "outcome": "Describes imaginary scenes.",
+                    "bloom_level": "analyze",
+                    "assessment_type": "practice_problems"
+                }
+            ],
+            "difficulty": "medium",
+            "estimated_hours": 15,
+            "prerequisites": [],
+            "resources": {
+                "video_topics": [
+                    "Why? / Alice in Wonderland"
+                ],
+                "practice_sets": [
+                    "Why? / Alice in Wonderland - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         },
         {
             "number": 5,
             "name": "Don't be Afraid of the Dark / Helen Keller",
             "theme": "Courage",
             "key_topics": [
-                "Overcoming fear",
-                "Disability and determination",
-                "Sign language"
+                {
+                    "name": "Overcoming fear",
+                    "difficulty": "medium",
+                    "estimated_minutes": 300,
+                    "bloom_level": "understand",
+                    "description": "Understanding and applying concepts related to overcoming fear"
+                },
+                {
+                    "name": "Disability and determination",
+                    "difficulty": "medium",
+                    "estimated_minutes": 300,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to disability and determination"
+                },
+                {
+                    "name": "Sign language",
+                    "difficulty": "hard",
+                    "estimated_minutes": 300,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to sign language"
+                }
             ],
             "learning_outcomes": [
-                "Overcomes fear of darkness.",
-                "Inspires from lives of great people."
-            ]
+                {
+                    "outcome": "Overcomes fear of darkness.",
+                    "bloom_level": "apply",
+                    "assessment_type": "practice_problems"
+                },
+                {
+                    "outcome": "Inspires from lives of great people.",
+                    "bloom_level": "analyze",
+                    "assessment_type": "practice_problems"
+                }
+            ],
+            "difficulty": "medium",
+            "estimated_hours": 15,
+            "prerequisites": [],
+            "resources": {
+                "video_topics": [
+                    "Don't be Afraid of the Dark / Helen Keller"
+                ],
+                "practice_sets": [
+                    "Don't be Afraid of the Dark / Helen Keller - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         },
         {
             "number": 6,
             "name": "The Donkey / I had a Little Pony / The Milkman's Cow",
             "theme": "Animals",
             "key_topics": [
-                "Kindness to animals",
-                "Animal sounds",
-                "Humour"
+                {
+                    "name": "Kindness to animals",
+                    "difficulty": "medium",
+                    "estimated_minutes": 300,
+                    "bloom_level": "understand",
+                    "description": "Understanding and applying concepts related to kindness to animals"
+                },
+                {
+                    "name": "Animal sounds",
+                    "difficulty": "medium",
+                    "estimated_minutes": 300,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to animal sounds"
+                },
+                {
+                    "name": "Humour",
+                    "difficulty": "hard",
+                    "estimated_minutes": 300,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to humour"
+                }
             ],
             "learning_outcomes": [
-                "Treats animals with kindness.",
-                "Enjoys humorous stories."
-            ]
+                {
+                    "outcome": "Treats animals with kindness.",
+                    "bloom_level": "apply",
+                    "assessment_type": "practice_problems"
+                },
+                {
+                    "outcome": "Enjoys humorous stories.",
+                    "bloom_level": "analyze",
+                    "assessment_type": "practice_problems"
+                }
+            ],
+            "difficulty": "medium",
+            "estimated_hours": 15,
+            "prerequisites": [],
+            "resources": {
+                "video_topics": [
+                    "The Donkey / I had a Little Pony / The Milkman's Cow"
+                ],
+                "practice_sets": [
+                    "The Donkey / I had a Little Pony / The Milkman's Cow - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         },
         {
             "number": 7,
             "name": "Hiawatha / The Scholar's Mother Tongue",
             "theme": "Culture and Language",
             "key_topics": [
-                "Native American life",
-                "Languages",
-                "Wit and wisdom (Akbar-Birbal)"
+                {
+                    "name": "Native American life",
+                    "difficulty": "medium",
+                    "estimated_minutes": 300,
+                    "bloom_level": "understand",
+                    "description": "Understanding and applying concepts related to native american life"
+                },
+                {
+                    "name": "Languages",
+                    "difficulty": "medium",
+                    "estimated_minutes": 300,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to languages"
+                },
+                {
+                    "name": "Wit and wisdom (Akbar-Birbal)",
+                    "difficulty": "hard",
+                    "estimated_minutes": 300,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to wit and wisdom (akbar-birbal)"
+                }
             ],
             "learning_outcomes": [
-                "Respects different cultures.",
-                "Appreciates folk tales."
-            ]
+                {
+                    "outcome": "Respects different cultures.",
+                    "bloom_level": "apply",
+                    "assessment_type": "practice_problems"
+                },
+                {
+                    "outcome": "Appreciates folk tales.",
+                    "bloom_level": "analyze",
+                    "assessment_type": "practice_problems"
+                }
+            ],
+            "difficulty": "medium",
+            "estimated_hours": 15,
+            "prerequisites": [],
+            "resources": {
+                "video_topics": [
+                    "Hiawatha / The Scholar's Mother Tongue"
+                ],
+                "practice_sets": [
+                    "Hiawatha / The Scholar's Mother Tongue - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         },
         {
             "number": 8,
             "name": "A Watering Rhyme / The Giving Tree",
             "theme": "Nature",
             "key_topics": [
-                "Gardening",
-                "Sacrifice and love",
-                "Trees"
+                {
+                    "name": "Gardening",
+                    "difficulty": "medium",
+                    "estimated_minutes": 300,
+                    "bloom_level": "understand",
+                    "description": "Understanding and applying concepts related to gardening"
+                },
+                {
+                    "name": "Sacrifice and love",
+                    "difficulty": "medium",
+                    "estimated_minutes": 300,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to sacrifice and love"
+                },
+                {
+                    "name": "Trees",
+                    "difficulty": "hard",
+                    "estimated_minutes": 300,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to trees"
+                }
             ],
             "learning_outcomes": [
-                "Cares for plants.",
-                "Understands the value of giving."
-            ]
+                {
+                    "outcome": "Cares for plants.",
+                    "bloom_level": "apply",
+                    "assessment_type": "practice_problems"
+                },
+                {
+                    "outcome": "Understands the value of giving.",
+                    "bloom_level": "analyze",
+                    "assessment_type": "practice_problems"
+                }
+            ],
+            "difficulty": "hard",
+            "estimated_hours": 15,
+            "prerequisites": [],
+            "resources": {
+                "video_topics": [
+                    "A Watering Rhyme / The Giving Tree"
+                ],
+                "practice_sets": [
+                    "A Watering Rhyme / The Giving Tree - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         },
         {
             "number": 9,
             "name": "Books / Going to Buy a Book",
             "theme": "Reading",
             "key_topics": [
-                "Library",
-                "Choosing books",
-                "Joy of reading"
+                {
+                    "name": "Library",
+                    "difficulty": "medium",
+                    "estimated_minutes": 300,
+                    "bloom_level": "understand",
+                    "description": "Understanding and applying concepts related to library"
+                },
+                {
+                    "name": "Choosing books",
+                    "difficulty": "medium",
+                    "estimated_minutes": 300,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to choosing books"
+                },
+                {
+                    "name": "Joy of reading",
+                    "difficulty": "hard",
+                    "estimated_minutes": 300,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to joy of reading"
+                }
             ],
             "learning_outcomes": [
-                "Develops habit of reading.",
-                "Describes experience of visiting a library."
-            ]
+                {
+                    "outcome": "Develops habit of reading.",
+                    "bloom_level": "apply",
+                    "assessment_type": "practice_problems"
+                },
+                {
+                    "outcome": "Describes experience of visiting a library.",
+                    "bloom_level": "analyze",
+                    "assessment_type": "practice_problems"
+                }
+            ],
+            "difficulty": "hard",
+            "estimated_hours": 15,
+            "prerequisites": [],
+            "resources": {
+                "video_topics": [
+                    "Books / Going to Buy a Book"
+                ],
+                "practice_sets": [
+                    "Books / Going to Buy a Book - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         },
         {
             "number": 10,
             "name": "The Naughty Boy / Pinocchio",
             "theme": "Adventure",
             "key_topics": [
-                "Puppets",
-                "Truth vs Lie",
-                "Carpentry"
+                {
+                    "name": "Puppets",
+                    "difficulty": "medium",
+                    "estimated_minutes": 300,
+                    "bloom_level": "understand",
+                    "description": "Understanding and applying concepts related to puppets"
+                },
+                {
+                    "name": "Truth vs Lie",
+                    "difficulty": "medium",
+                    "estimated_minutes": 300,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to truth vs lie"
+                },
+                {
+                    "name": "Carpentry",
+                    "difficulty": "hard",
+                    "estimated_minutes": 300,
+                    "bloom_level": "apply",
+                    "description": "Understanding and applying concepts related to carpentry"
+                }
             ],
             "learning_outcomes": [
-                "Learns moral values.",
-                "Retells story in own words."
-            ]
+                {
+                    "outcome": "Learns moral values.",
+                    "bloom_level": "apply",
+                    "assessment_type": "practice_problems"
+                },
+                {
+                    "outcome": "Retells story in own words.",
+                    "bloom_level": "analyze",
+                    "assessment_type": "practice_problems"
+                }
+            ],
+            "difficulty": "hard",
+            "estimated_hours": 15,
+            "prerequisites": [],
+            "resources": {
+                "video_topics": [
+                    "The Naughty Boy / Pinocchio"
+                ],
+                "practice_sets": [
+                    "The Naughty Boy / Pinocchio - Practice Set 1"
+                ],
+                "interactive_activities": [],
+                "real_world_examples": []
+            },
+            "common_misconceptions": [],
+            "teaching_tips": []
         }
-    ]
+    ],
+    "subject_icon": "book",
+    "subject_color": "purple",
+    "total_chapters": 10,
+    "total_hours": 150,
+    "description": "CBSE Class 4 English curriculum aligned with NEP 2020 and CBSE guidelines."
 }
